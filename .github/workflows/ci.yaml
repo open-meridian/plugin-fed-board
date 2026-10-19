@@ -9,9 +9,9 @@
 # `meridian plugin upload` does, which is checked by ci-local before every
 # push.
 #
-# Red until open-meridian 0.26.0 is on PyPI: the tests' container installs the
-# pin from there on a runner. Locally the Makefile installs it from the
-# sibling meridian-python checkout.
+# The tests' container installs the SDK the plugin pins from PyPI on a
+# runner. Locally the Makefile installs it from the sibling meridian-python
+# checkout when that carries the pinned version.
 
 name: ci
 

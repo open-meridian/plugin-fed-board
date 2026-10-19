@@ -1,7 +1,7 @@
 # meridian-fed-h10
 
 The Federal Reserve Board's H.10 foreign exchange rates as an Open Meridian
-data plugin, in Python on the open-meridian SDK (0.26.0, contract v22). It
+data plugin, in Python on the open-meridian SDK (0.31.0, contract v26). It
 runs beside a sidecar in a Meridian deployment and puts each week's noon
 buying rates into the deployment's lake, each rate the price of one
 currency's cash instrument in the other, as the Board quotes it. What it may
