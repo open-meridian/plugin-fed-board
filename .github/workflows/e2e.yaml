@@ -5,10 +5,9 @@
 # images pull without a token, H.10 needs no key, and synthetic mode reads
 # only the Board's responses committed with the plugin.
 #
-# Red until open-meridian 0.26.0 is on PyPI and its base image on ghcr.io: the
-# plugin's image is built on plugin-python:0.26.0, which a runner cannot pull
-# before the SDK's release. Locally the Makefile builds it from the sibling
-# meridian-python checkout.
+# The plugin's image is built on the base image of the SDK it pins, pulled
+# from ghcr.io. Locally the Makefile builds it from the sibling
+# meridian-python checkout when that carries the pinned version.
 #
 # The job is named for the make target that runs it locally: `make e2e`, part
 # of ci-local and so of the pre-push hook. It is its own workflow rather than

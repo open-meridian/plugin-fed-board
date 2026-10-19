@@ -21,6 +21,11 @@ its dataset's licences among them.
 the Board does correct a published rate; the plugin records the corrected
 rate under the same row key, which the lake keeps as the row's next version.
 That is the case's outcome, and the producer gives the plugin a correction.
+
+Contract v26's `queries-the-lake-within-bounds` is mapped as the SDK's data
+template maps it: one bounded query of the kind the role reads, its prices,
+of one subject it records (`lake_query`). The plugin itself asks the lake
+nothing; contract v26's event-group case is the SDK's.
 """
 
 from __future__ import annotations
@@ -30,6 +35,7 @@ from pathlib import Path
 from typing import Any
 
 from meridian.plugin.v1 import operations_pb2 as ops
+from meridian.roles.data.testing import lake_query
 from meridian.suites import ANSWERED_BY_SDK, Recorder, run, suite
 
 from fed_h10.board import CURRENT, Fetched
@@ -151,6 +157,7 @@ def producers(tmp: Path) -> dict[str, Callable[[Recorder], Awaitable[None]]]:
         "a-subject-declined": wanted(want("w-2", ["LCL-CHF"], day="2026-10-02").message),
         "a-standing-want-withdrawn": withdrawn,
         "reads-its-datasets-licences": licences,
+        "queries-the-lake-within-bounds": lake_query("LCL-USD"),
     }
 
 
@@ -158,8 +165,9 @@ def test_the_data_suite_passes(tmp_path: Path) -> None:
     report = run("data", producers(tmp_path), not_presented=NOT_PRESENTED, instance_id="fed-h10")
     assert report.passed, report.failures
     assert sorted(report.not_presented) == sorted(NOT_PRESENTED)
-    # Contract v24: the two cases every suite holds, which the SDK answers.
-    assert len(report.passed_cases) == 11
+    # The cases every suite holds, which the SDK answers (contract v24's two,
+    # v26's event group), beside the plugin's own.
+    assert len(report.passed_cases) == 13
     assert report.answered_by_sdk == list(ANSWERED_BY_SDK)
 
 
