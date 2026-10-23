@@ -10,13 +10,19 @@ standard library only.
 2. Sample data on (a developer's setting, accepted on the harness): the
    plugin reads the committed release of 5 October 2026, resolves the
    dollar and the 23 currencies to cash instruments, and records 115 rates;
-   Datasets lists each currency with its instrument.
+   Datasets lists each currency with its instrument. It reads H.15's and the
+   zero curve's committed files too (Connection's Sources tab), and, the
+   harness's master holding none of the referential records the platform
+   seeds (only two by test FIGIs), reports each record missing and records
+   no rate: what a deployment without them sees (Datasets' Records tab).
 3. Parity: through the deployment's MCP, `read_connection` and
    `read_datasets` answer what the pages show, under the data role's names
    (contract v20) -- the release, its days, its
    publication, every currency's instrument -- and core's
-   `dashboard__list_datasets` lists `fed-h10:daily` as the catalogue declares
-   it: push and pull, weekly, New York's day ending at noon, public domain.
+   `dashboard__list_datasets` lists `fed-board:daily` as the catalogue declares
+   it: push and pull, weekly, New York's day ending at noon, public domain;
+   and `fed-board:fed_h15` and `fed-board:fed_zero` as rates, daily and
+   weekly, New York's day.
 4. Licensed and entitled at the Data sources page: the reader is entitled.
 5. Read back: the dollar's cash instrument on 2 October 2026 is priced in 19
    currencies, francs at 0.8293 in the franc's instrument; the euro's at
@@ -27,7 +33,11 @@ standard library only.
    reader then reads it. A day not published yet, 8 October, is declined
    `source_silent`; the franc's own instrument, which H.10 never prices
    (the Board quotes francs per dollar, and nothing inverts it), `not_covered`.
-7. `store lake` is e2e/expected.lake, each subject named by its ISO code.
+7. `store lake` is e2e/expected.lake, each subject named by its ISO code;
+   its `miss` line, the records the rates are about reported missing, is
+   held apart: four a process, once a day each, and the harness restarts the
+   plugin when it rewrites its configuration (`entitle`), so the count is
+   four or a multiple of it.
 8. A new container: it reads the release again and records nothing twice;
    the lake is unchanged.
 """
@@ -38,12 +48,12 @@ import subprocess
 import sys
 import time
 
-PROJECT = "fed-h10-e2e"
+PROJECT = "fed-board-e2e"
 LOG = ".e2e/runner.log"
 COMPONENTS = ".e2e/components.log"
 COMPOSE = ["docker", "compose", "-p", PROJECT, "-f", ".e2e/harness/compose.yaml",
            "-f", ".e2e/harness/plugins.yaml", "-f", "e2e/plugin.yaml"]
-DATASET = "fed-h10:daily"
+DATASET = "fed-board:daily"
 
 
 class Failed(Exception):
@@ -116,11 +126,20 @@ def store_lake():
     return compose("run", "--rm", "-T", "store", "lake").stdout
 
 
+def misses(lines):
+    """The misses `store lake` counts for the plugin: 0 where none."""
+    found = [line.split("|")[2] for line in lines.splitlines() if line.startswith("miss|fed-board|")]
+    return int(found[0]) if found else 0
+
+
 def named(lines, codes):
-    """`store lake` with each subject's ID, drawn per run, as its ISO code."""
+    """`store lake` with each subject's ID, drawn per run, as its ISO code,
+    and its misses held apart (`misses`)."""
     out = []
     for line in lines.strip().splitlines():
         parts = line.split("|")
+        if parts[0] == "miss":
+            continue
         if parts[0] == "row":
             parts[6] = codes.get(parts[6], parts[6])
         elif parts[0] == "want":
@@ -146,19 +165,29 @@ def run():
 
     # 2. Sample data: the release of 5 October 2026 recorded.
     runner("settings", "sample_data=true")
-    runner("page", "--level", "admin", "/datasets", "--until", 'data-code="VES"', "--seconds", "120")
-    runner("page", "--level", "admin", "/", "--until", "Mon 05 Oct", "--seconds", "60")
-    until(60, lambda: store_lake().count("row|fed-h10:daily|price|") >= 115,
+    runner("page", "--level", "admin", "/datasets?tab=currencies", "--until", 'data-code="VES"', "--seconds", "120")
+    runner("page", "--level", "admin", "/?tab=sources", "--until", "Mon 05 Oct", "--seconds", "60")
+    until(60, lambda: store_lake().count("row|fed-board:daily|price|") >= 115,
           "step 2, the release's 115 rates were not recorded")
+    runner("page", "--level", "admin", "/?tab=sources", "--until", "Fri 16 Oct", "--seconds", "90")
+    runner("page", "--level", "admin", "/?tab=sources", "--until", "Wed 21 Oct", "--seconds", "30")
+    held = runner("page", "--level", "admin", "/datasets?tab=records", "--until", "reported missing",
+                  "--seconds", "60")
+    must("frb: feds200628" in held and "nyfed: EFFR" in held,
+         f"step 2, Records lists the records the rates are about: {held[-600:]}")
+    must("row|fed-board:fed_" not in store_lake(),
+         "step 2, no rate recorded against a record the deployment does not hold")
 
     # 3. Parity through the deployment's MCP, and core's view of the catalogue.
     runner("grant", "--level", "admin")
-    runner("mcp", "connect", "--covers", "deployment_admin", "--covers", "fed-h10:admin")
+    runner("mcp", "connect", "--covers", "deployment_admin", "--covers", "fed-board:admin")
     tools = runner("mcp", "list").split()
     read_connection = next((t for t in tools if t.endswith("read_connection")), "")
     read_datasets = next((t for t in tools if t.endswith("read_datasets")), "")
     must(read_connection and read_datasets, f"step 3, the plugin's two tools are listed: {tools}")
     connection = call(read_connection)
+    must([s["latest"] for s in connection["sources"]] == ["2026-10-05", "2026-10-21", "2026-10-16"],
+         f"step 3, read_connection's sources: {connection.get('sources')}")
     must(connection["latest_release"] == "2026-10-05" and connection["first_day"] == "2026-09-28"
          and connection["last_day"] == "2026-10-02" and connection["mode"] == "Sample data"
          and connection["credentials"] == [] and connection["sessions"] is None
@@ -169,13 +198,18 @@ def run():
     ids = {code: instrument for instrument, code in codes.items()}
     must(len(ids) == 24 and datasets["served"][0]["dataset"] == DATASET,
          f"step 3, read_datasets names 24 instruments: {datasets}")
-    shown = page("fed-h10", "admin", "/datasets")
+    shown = page("fed-board", "admin", "/datasets?tab=currencies")
     must(all(instrument in shown for instrument in codes), "step 3, Datasets shows what read_datasets answers")
     listed = {d["dataset"]: d for d in call("dashboard__list_datasets")["datasets"]}
     entry = listed.get(DATASET, {}).get("catalogue_entry", {})
     must(entry.get("modes") == ["push", "pull"] and entry.get("day_time_zone") == "America/New_York"
          and entry.get("day_end_minute") == 720 and entry.get("cadence") == 604800,
          f"step 3, core lists the catalogue as declared: {listed.get(DATASET)}")
+    for rates, cadence in (("fed-board:fed_h15", 86400), ("fed-board:fed_zero", 604800)):
+        entry = listed.get(rates, {}).get("catalogue_entry", {})
+        must(entry.get("cadence") == cadence and entry.get("day_time_zone") == "America/New_York"
+             and "meridian.v1.Rate" in entry.get("data_types", []),
+             f"step 3, core lists {rates} as declared: {listed.get(rates)}")
 
     # 4. Licensed and entitled.
     runner("licence", DATASET, "kept=true", "retention_days=0", "derived_use=true", "display=true",
@@ -212,6 +246,9 @@ def run():
 
     # 7. The lake.
     lines = store_lake()
+    count = misses(lines)
+    must(count >= 4 and count % 4 == 0,
+         f"step 7, the four records the rates are about reported missing, once a process: {count}")
     got = named(lines, codes)
     with open(".e2e/lake", "w", encoding="utf-8") as kept:
         kept.write(got)
@@ -222,15 +259,15 @@ def run():
         raise Failed(f"step 7, the lake is not e2e/expected.lake:\n{diff.stdout[-3000:]}")
 
     # 8. A new container records nothing twice.
-    compose("up", "-d", "--no-deps", "--force-recreate", "fed-h10")
+    compose("up", "-d", "--no-deps", "--force-recreate", "fed-board")
     runner("ready")
-    until(120, lambda: "Mon 05 Oct" in page("fed-h10", "admin", "/"),
+    until(120, lambda: "Mon 05 Oct" in page("fed-board", "admin", "/?tab=sources"),
           "step 8, the new container did not read the release again")
     time.sleep(5)
     again = named(store_lake(), codes)
     must(again == got, "step 8, the new container recorded something twice:\n"
          + subprocess.run(["diff", "-u", "-", ".e2e/lake"], input=again, capture_output=True, text=True).stdout[-2000:])
-    logs = compose("logs", "--no-color", "fed-h10").stdout
+    logs = compose("logs", "--no-color", "fed-board").stdout
     must("0 rates recorded, 0 restated, 115 unchanged" in logs,
          "step 8, the new container's check was answered unchanged: " + logs[-800:])
     until(90, lambda: all(s["licensed"] for s in call(read_datasets)["served"]),
@@ -239,8 +276,9 @@ def run():
     rows = got.count("row|")
     print(f"e2e OK in {int(time.time() - started)}s on the plugin harness: the Board unreachable said on "
           f"Connection, nothing recorded; sample data's release of 5 October 2026 recorded, 24 currencies "
-          f"resolved; read_connection and read_datasets answering what the pages show, and core listing "
-          f"{DATASET} as declared; licensed and entitled; the dollar priced in 19 currencies (francs 0.8293) "
+          f"resolved; H.15's and the zero curve's files read, their records reported missing; "
+          f"read_connection and read_datasets answering what the pages show, and core listing "
+          f"its three datasets as declared; licensed and entitled; the dollar priced in 19 currencies (francs 0.8293) "
           f"and the euro in dollars (1.1259), each a close on its business date with the Board's published "
           f"time; 25 September wanted and recorded from the week before, 8 October declined source silent "
           f"and the franc's own instrument not covered; `store lake` as e2e/expected.lake ({rows} rows); "

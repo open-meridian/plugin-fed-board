@@ -42,3 +42,5 @@ jobs:
           name: e2e-logs
           path: .e2e/*.log
           if-no-files-found: ignore
+          # .e2e/ is hidden, which upload-artifact v4 leaves out unless told.
+          include-hidden-files: true

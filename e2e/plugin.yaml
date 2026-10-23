@@ -5,7 +5,7 @@
 # in the plugin's own image. Paths are absolute, from E2E_DIR, since a later
 # compose file's relative paths resolve against the first file's directory.
 services:
-  fed-h10:
+  fed-board:
     volumes:
       - ${E2E_DIR:?set E2E_DIR to this directory, absolute}/hosts:/etc/hosts:ro
   reader:

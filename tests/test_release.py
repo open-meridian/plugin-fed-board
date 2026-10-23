@@ -8,7 +8,7 @@ from decimal import Decimal
 
 import pytest
 
-from fed_h10.release import NotARelease, last_modified_ns, parse, released_on
+from fed_board.release import NotARelease, last_modified_ns, parse, released_on
 
 from conftest import response
 

@@ -9,8 +9,8 @@ unexport GIT_DIR GIT_WORK_TREE GIT_INDEX_FILE GIT_COMMON_DIR \
 
 DOCKER      := DOCKER_BUILDKIT=1 docker
 PY_VERSION  := 3.12
-CHECK       := meridian-fed-h10-check
-IMAGE       ?= fed-h10:local
+CHECK       := meridian-fed-board-check
+IMAGE       ?= fed-board:local
 # The SDK pyproject.toml pins, and its base image. Where the sibling
 # meridian-python checkout carries exactly that version -- one not yet
 # published, being tried -- it is built from there (SDK_REPO): the tests' and
@@ -20,7 +20,7 @@ SDK_VERSION := $(shell sed -n 's/.*"open-meridian==\([0-9][0-9.]*\)".*/\1/p' pyp
 SDK_REPO    ?= $(if $(shell grep -s '^version = "$(SDK_VERSION)"$$' ../meridian-python/pyproject.toml),../meridian-python,)
 SDK_CONTEXT := $(if $(SDK_REPO),--build-context sdk=$(SDK_REPO),)
 BASE        ?= $(if $(SDK_REPO),plugin-python:$(SDK_VERSION)-local,ghcr.io/open-meridian/plugin-python:$(SDK_VERSION))
-PLUGIN_CHECK := meridian-fed-h10-plugin-check
+PLUGIN_CHECK := meridian-fed-board-plugin-check
 # The meridian check.yaml holds the plugin to, read from there so the two
 # cannot drift.
 MERIDIAN_VERSION := $(shell sed -n 's/^ *MERIDIAN_VERSION: *\([0-9][0-9.]*\).*/\1/p' .github/workflows/check.yaml)
@@ -38,10 +38,10 @@ CLI_CONTEXT := $(if $(MERIDIAN_BIN),--build-context cli=$(MERIDIAN_BIN),)
 # commit, when this plugin chooses. `make e2e RUNTIME_IMAGE=...:latest
 # HARNESS_IMAGE=...:latest` tries a newer core; e2e-latest.yaml does that
 # weekly.
-# Core 17a13a2 (merged as 648e25f), contract v26, as published with chart 0.1.308.
-RUNTIME_IMAGE ?= ghcr.io/open-meridian/meridian-runtime:17a13a2@sha256:09a7daf0b48ed40a047749479513079ee23a9624aa4416f2baacf0460f7b47ac
-HARNESS_IMAGE ?= ghcr.io/open-meridian/meridian-harness:17a13a2@sha256:a4b2ed2ed7d26947d1af5c3a00749f5227811b81eddbd48f0c010443fa057d6b
-# The harness's two plugins: this one, as instance fed-h10, holding data as
+# Core c786b9a (06e988b), contract v27, as published with chart 0.1.309.
+RUNTIME_IMAGE ?= ghcr.io/open-meridian/meridian-runtime:c786b9a@sha256:4f028bbc67509064526a3d863e2825c9c0592873620b01c7cc4e583f9f72943f
+HARNESS_IMAGE ?= ghcr.io/open-meridian/meridian-harness:c786b9a@sha256:64f8f74202f4af1306387d0268a1f33382b6b27111ce1de5fc09407a5195f534
+# The harness's two plugins: this one, as instance fed-board, holding data as
 # pyproject.toml declares; and the reader, a reporting plugin the e2e runs
 # from e2e/reader.py in the same image.
 # The declaration [tool.meridian] names (contract v25): `make e2e` prints it
@@ -50,7 +50,7 @@ HARNESS_IMAGE ?= ghcr.io/open-meridian/meridian-harness:17a13a2@sha256:a4b2ed2ed
 # Each stand-in's the same, its directory mounted as it runs.
 DECLARATION_REF := $(shell sed -n 's/^declaration *= *"\(.*\)"/\1/p' pyproject.toml)
 DECLARE := docker run --rm --network none --entrypoint meridian-declaration
-PLUGINS := [{"instance": "fed-h10", "image": "$(IMAGE)", "roles": ["data"], "declaration": "declaration.json"}, {"instance": "reader", "image": "$(IMAGE)", "roles": ["reporting"], "declaration": "reader.json"}]
+PLUGINS := [{"instance": "fed-board", "image": "$(IMAGE)", "roles": ["data"], "declaration": "declaration.json"}, {"instance": "reader", "image": "$(IMAGE)", "roles": ["reporting"], "declaration": "reader.json"}]
 
 # The kit's built files, where `make preview SHOTS=...` serves them beside
 # the pages for the browser: a meridian-ui checkout's dist/.
@@ -129,7 +129,7 @@ image:
 	@[ "$$(docker inspect -f '{{.Config.User}}' $(IMAGE))" = "65532" ] \
 		|| { echo "image FAILED: it does not run as 65532" >&2; exit 1; }
 	@docker run --rm --entrypoint python $(IMAGE) -c \
-		"import meridian, fed_h10.__main__, fed_h10.page; from fed_h10.board import SyntheticBoard; assert len(SyntheticBoard().paths) == 5" \
+		"import meridian, fed_board.__main__, fed_board.page; from fed_board.board import SyntheticBoard; assert len(SyntheticBoard().paths) == 7" \
 		|| { echo "image FAILED: it does not import the SDK, itself and its recorded responses" >&2; exit 1; }
 	@[ "$$(docker run --rm --entrypoint sh $(IMAGE) -c 'ls -A /plugin')" = "docs" ] \
 		|| { echo "image FAILED: /plugin holds files beyond docs/; only the installed package and its documentation belong" >&2; exit 1; }
@@ -170,8 +170,8 @@ preview:
 	@$(DOCKER) build $(SDK_CONTEXT) -f Dockerfile.check --target test -t $(CHECK) . >/dev/null 2>&1 \
 		|| { echo "preview FAILED to build" >&2; exit 1; }
 	@mkdir -p preview
-	@for page in connection datasets datasets-search connection-first datasets-first; do \
-		docker run --rm $(CHECK) python -m fed_h10.preview $$page >preview/$$page.html || exit 1; \
+	@for page in connection connection-sources datasets datasets-search datasets-currencies datasets-records datasets-lag connection-first datasets-first; do \
+		docker run --rm $(CHECK) python -m fed_board.preview $$page >preview/$$page.html || exit 1; \
 	done
 	@echo "preview: preview/connection.html, preview/datasets.html, preview/datasets-search.html, and the -first pages"
 	@if [ -n "$(SHOTS)" ]; then \

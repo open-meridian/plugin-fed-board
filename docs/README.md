@@ -1,4 +1,4 @@
-# H.10 plugin: its documentation
+# Federal Reserve Board plugin: its documentation
 
 What this plugin's vendor says about it, for the people who set it up and use
 it. Each version ships these sections with its upload, named by digest in its

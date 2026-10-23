@@ -15,10 +15,10 @@ from pathlib import Path
 import pytest
 from meridian.declaration import main
 
-from fed_h10 import declaration as version
+from fed_board import declaration as version
 
 ROOT = Path(__file__).resolve().parents[1]
-NAMED = "fed_h10.declaration:DECLARATION"
+NAMED = "fed_board.declaration:DECLARATION"
 SECTIONS = ["overview", "setup", "troubleshooting", "terms", "pages"]
 
 

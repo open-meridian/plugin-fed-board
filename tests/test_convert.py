@@ -11,13 +11,13 @@ from typing import Any
 from meridian import ObservationMeta, Price
 from meridian.plugin.v1 import operations_pb2 as ops
 
-from fed_h10.convert import Converted, codes, day_bounds, to_prices
-from fed_h10.release import parse
+from fed_board.convert import Converted, codes, day_bounds, to_prices
+from fed_board.release import parse
 
 from conftest import DATASET, response
 
 IDS = {code: f"LCL-{code}" for code in ("USD", "CHF", "EUR", "JPY", "GBP", "AUD", "NZD")}
-RAW = ops.RawRecordRef(instance_id="fed-h10", key="responses/2026-10/x.json.gz")
+RAW = ops.RawRecordRef(instance_id="fed-board", key="responses/2026-10/x.json.gz")
 
 
 def converted(**kwargs: Any) -> Converted:

@@ -3,13 +3,15 @@ resolved or reported, wants recorded against or declined."""
 
 from __future__ import annotations
 
+import asyncio
 from datetime import timedelta
 from pathlib import Path
 
+import pytest
 from meridian.plugin.v1 import operations_pb2 as ops
 from meridian.suites import Recorder
 
-from fed_h10.board import Fetched, release_days
+from fed_board.board import Fetched, release_days
 
 from conftest import AT, feed, want
 
@@ -52,7 +54,7 @@ async def test_a_release_read_again_names_the_response_first_read(tmp_path: Path
 
 
 async def test_a_currency_that_resolves_to_two_records_is_reported(tmp_path: Path) -> None:
-    recorder = Recorder("fed-h10")
+    recorder = Recorder("fed-board")
     count = {"n": 0}
 
     def resolved(params: ops.ResolveIdentifierParams) -> ops.ResolveIdentifierResult:
@@ -66,7 +68,7 @@ async def test_a_currency_that_resolves_to_two_records_is_reported(tmp_path: Pat
     done = await work.check()
     assert done is not None and done.unresolved == ("GBP",) and done.recorded == 110
     [missed] = recorder.on("ReportMissingInstrument")
-    assert missed.reason == ops.MISS_REASON_AMBIGUOUS and missed.source == "fed-h10"
+    assert missed.reason == ops.MISS_REASON_AMBIGUOUS and missed.source == "fed-board"
     assert missed.identifiers[0].scheme == "iso4217" and missed.identifiers[0].value == "GBP"
     assert work.status.currencies["GBP"].miss == "ambiguous"
     prices = recorder.on("RecordPrices")[0].prices
@@ -146,19 +148,19 @@ async def test_a_standing_want_is_kept_until_withdrawn(tmp_path: Path) -> None:
     await work.on_withdrawn(
         Heard(
             row="WantWithdrawn",
-            message=ops.WantWithdrawnEvent(want_id="w-8", dataset="fed-h10:daily"),
+            message=ops.WantWithdrawnEvent(want_id="w-8", dataset="fed-board:daily"),
         )
     )
     assert "w-8" not in work.status.standing
 
 
 async def test_the_board_unreachable_is_said(tmp_path: Path) -> None:
-    from fed_h10.board import BoardUnreachable
+    from fed_board.board import BoardUnreachable
 
     class Offline:
         mode = "live"
 
-        async def get(self, path: str) -> Fetched:
+        async def get(self, path: str, since: str = "") -> Fetched:
             raise BoardUnreachable(f"https://www.federalreserve.gov{path}: ConnectionRefusedError")
 
     work = feed(tmp_path)
@@ -182,7 +184,7 @@ async def test_each_currency_is_resolved_as_of_now(tmp_path: Path) -> None:
     """Said, never left out: an as-of left out is the epoch, which no window
     the deployment keeps from a date covers (2026-10-10, USD minted beside
     the currency's record)."""
-    recorder = Recorder("fed-h10")
+    recorder = Recorder("fed-board")
     asked: list[int] = []
 
     def resolved(params: ops.ResolveIdentifierParams) -> ops.ResolveIdentifierResult:
@@ -199,7 +201,7 @@ async def test_a_currency_comes_from_the_master_through_core(tmp_path: Path) -> 
     alone, as of now, and takes the record core answers -- the platform
     master's, pulled -- never defining one itself; a code core cannot answer
     is reported missing, also as of now, and its rates wait."""
-    recorder = Recorder("fed-h10")
+    recorder = Recorder("fed-board")
     now = int(AT.timestamp() * 1_000_000_000)
 
     def resolved(params: ops.ResolveIdentifierParams) -> ops.ResolveIdentifierResult:
@@ -217,3 +219,54 @@ async def test_a_currency_comes_from_the_master_through_core(tmp_path: Path) -> 
     assert work.status.currencies["USD"].instrument_id == "INS-USD"
     rows = {sent.row for sent in recorder.sent}
     assert rows <= {"ResolveIdentifier", "ReportMissingInstrument", "RecordPrices"}, rows
+
+
+# ── The first run's backfill ────────────────────────────────────────────
+
+
+def test_the_first_run_backfills_dailys_history(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    """Each past week back to the declared history, newest first, noted in
+    storage so a later run never does it again (rulings 348 and 349)."""
+    from fed_board import feed as feed_module
+
+    monkeypatch.setattr(feed_module, "HISTORY", 21)
+    work = feed(tmp_path)
+    recorder = work.plugin
+    assert isinstance(recorder, Recorder)
+    asyncio.run(work.check())
+    before = len(recorder.on("RecordPrices"))
+    sent = asyncio.run(work.backfill())
+    # The week of 21 September, released on the 28th, recorded; the week
+    # before it is past the history.
+    assert sent == 115
+    days = {p.meta.business_date for b in recorder.on("RecordPrices")[before:] for p in b.prices}
+    assert days == {"2026-09-21", "2026-09-22", "2026-09-23", "2026-09-24", "2026-09-25"}
+    assert work.status.backfill_done
+    assert asyncio.run(feed(tmp_path, recorder).backfill()) == 0
+
+
+def test_a_backfill_the_board_stops_answering_carries_on_later(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    from fed_board import feed as feed_module
+    from fed_board.board import BoardUnreachable
+
+    monkeypatch.setattr(feed_module, "HISTORY", 21)
+    work = feed(tmp_path)
+    asyncio.run(work.check())
+    held = work.board
+
+    class Down:
+        mode = "live"
+
+        async def get(self, path: str, since: str = "") -> Fetched:
+            raise BoardUnreachable(f"https://www.federalreserve.gov{path}: URLError")
+
+    work.board = Down()
+    assert asyncio.run(work.backfill()) == 0
+    assert not work.status.backfill_done
+    work.board = held
+    assert asyncio.run(work.backfill()) == 115
+    assert work.status.backfill_done
