@@ -1,0 +1,54 @@
+{
+  "said": "The Board's real responses: H.10's pages recorded 2026-10-10 as received, each body gzipped; H.15's SDMX file and the zero curve's CSV recorded 2026-10-23 and trimmed to keep the repository small -- H.15's file to its 30 business-daily series in force and their observations from 2026-09-01, rezipped holding H15_data.xml alone; the zero curve's file to its notes, its header and the rows from 2026-09-01, gzipped -- every byte kept otherwise as received. The Board's site is public domain (it may be copied and distributed without permission, https://www.federalreserve.gov/disclaimer.htm), and the zero curve is the Board's staff's (Gurkaynak, Sack and Wright, 2006, FEDS 2006-28), so they are committed. Synthetic mode serves them, and the tests read them.",
+  "responses": [
+    {
+      "path": "/releases/h10/current/default.htm",
+      "file": "cur.htm.gz",
+      "status": 200,
+      "date": "Sat, 10 Oct 2026 10:45:12 GMT",
+      "last_modified": "Mon, 05 Oct 2026 20:15:04 GMT"
+    },
+    {
+      "path": "/releases/h10/20261005/default.htm",
+      "file": "20261005.htm.gz",
+      "status": 200,
+      "date": "Sat, 10 Oct 2026 10:45:12 GMT",
+      "last_modified": "Mon, 05 Oct 2026 20:15:04 GMT"
+    },
+    {
+      "path": "/releases/h10/20260928/default.htm",
+      "file": "20260928.htm.gz",
+      "status": 200,
+      "date": "Sat, 10 Oct 2026 10:45:12 GMT",
+      "last_modified": "Mon, 28 Sep 2026 20:15:14 GMT"
+    },
+    {
+      "path": "/releases/h10/20260105/default.htm",
+      "file": "20260105.htm.gz",
+      "status": 200,
+      "date": "Sat, 10 Oct 2026 10:45:12 GMT",
+      "last_modified": "Mon, 05 Jan 2026 21:15:08 GMT"
+    },
+    {
+      "path": "/releases/h10/20260907/default.htm",
+      "file": "20260907.htm.gz",
+      "status": 404,
+      "date": "Sat, 10 Oct 2026 10:45:12 GMT",
+      "last_modified": ""
+    },
+    {
+      "path": "/releases/h15/data/FRB_h15_xml.zip",
+      "file": "FRB_h15_xml.zip",
+      "status": 200,
+      "date": "Fri, 23 Oct 2026 16:35:55 GMT",
+      "last_modified": "Thu, 22 Oct 2026 20:15:14 GMT"
+    },
+    {
+      "path": "/data/yield-curve-tables/feds200628.csv",
+      "file": "feds200628.csv.gz",
+      "status": 200,
+      "date": "Fri, 23 Oct 2026 16:37:40 GMT",
+      "last_modified": "Tue, 20 Oct 2026 19:00:12 GMT"
+    }
+  ]
+}

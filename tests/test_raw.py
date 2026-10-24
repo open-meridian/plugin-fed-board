@@ -6,8 +6,8 @@ from datetime import UTC, datetime, timedelta
 from pathlib import Path
 from typing import Any
 
-from fed_h10.board import Fetched
-from fed_h10.raw import RawStore, page_name
+from fed_board.board import Fetched
+from fed_board.raw import RawStore, page_name
 
 from conftest import AT
 

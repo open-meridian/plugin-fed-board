@@ -1,5 +1,6 @@
-"""H.10 into the lake: each weekly release pushed when it appears, and any
-past week recorded when the lake wants it (W10.4, W10.7).
+"""H.10 into the lake: each weekly release pushed when it appears, any
+past week recorded when the lake wants it (W10.4, W10.7), and on the first
+run the dataset's history backfilled.
 
 **Push.** The current release is read at start and every hour. A release
 not recorded yet in this process -- a new week, or the first read after a
@@ -7,6 +8,16 @@ start -- is recorded whole: every rate of its five days, in batches of at
 most 500. A restart records the same week again, and the lake answers each
 row unchanged, so nothing is kept between starts but the responses in
 storage (decisions/028: a plugin's process holds nothing it cannot lose).
+
+**Backfill** (rulings 348 and 349). `plugin-fed-board` is `plugin-fed-h10`
+renamed, under a new namespace: its `daily` starts empty while the old
+instance's rows stay where they were. So on its first run, once the current
+release is recorded, it reads each past week's release, newest first, back
+to the history the catalogue declares (ten years, about 520 releases at one
+request every two seconds), and records each. What it has done is noted in
+storage (`backfill-daily.json`), so a restart carries on where it stopped and
+a finished backfill is never run again. Only the Board's own site is
+backfilled: sample data serves a handful of weeks, which the wants reach.
 
 **Subjects.** Before anything is recorded, every currency the release names
 is resolved to the deployment's cash instrument by its ISO 4217 code (W3.1);
@@ -37,6 +48,7 @@ weekly push does; it is listed until it is withdrawn (WantWithdrawn).
 from __future__ import annotations
 
 import hashlib
+import json
 import logging
 from collections.abc import Callable, Iterable, Sequence
 from dataclasses import dataclass, field
@@ -53,16 +65,18 @@ from .declared import DAILY, HISTORY
 from .raw import RawStore
 from .release import NotARelease, Release, last_modified_ns, parse
 
-log = logging.getLogger("fed_h10")
+log = logging.getLogger("fed_board")
 
 #: The source this plugin names on what it reports missing.
-SOURCE = "fed-h10"
+SOURCE = "fed-board"
 #: The most rows one RecordPrices carries (the row's bound).
 BATCH = 500
 #: The most days one want is answered for: a quarter.
 MOST_DAYS = 92
 #: How many wants the Datasets page lists.
 RECENT = 12
+#: Where the backfill's progress is noted, at the storage's root.
+BACKFILL = "backfill-daily.json"
 
 
 def _ns(moment: datetime) -> int:
@@ -122,6 +136,13 @@ class Status:
     last_recorded_at: datetime | None = None
     #: The datasets a deployment admin has licensed (contract v20), as read.
     licensed: frozenset[str] = frozenset()
+    #: The backfill: the oldest week's Monday read back, and whether it is
+    #: done (BACKFILL).
+    backfilled_to: str = ""
+    backfill_done: bool = False
+    #: Each rate recorded, the end of its day to its published time, in
+    #: nanoseconds, the latest kept: for the Lag tab.
+    lags: list[int] = field(default_factory=list)
 
 
 @dataclass(frozen=True)
@@ -284,6 +305,11 @@ class Feed:
                 p for p in prices if p.meta is not None and p.meta.subjects[0].entity_id in keep
             ]
         outcome = Outcome(unresolved=converted.unresolved)
+        for price in prices:
+            meta = price.meta
+            if meta is not None and meta.source_times:
+                self.status.lags.append(max(0, meta.source_times[0].at_ns - meta.valid_until_ns))
+        del self.status.lags[:-2000]
         for start in range(0, len(prices), BATCH):
             done = await self.plugin.record_prices(
                 prices=prices[start : start + BATCH], want_id=want_id
@@ -328,6 +354,58 @@ class Feed:
             f"; not resolved: {', '.join(outcome.unresolved)}" if outcome.unresolved else "",
         )
         return outcome
+
+    # ── Backfill ────────────────────────────────────────────────────────
+
+    def _backfill_noted(self) -> dict[str, Any]:
+        try:
+            held: dict[str, Any] = json.loads((self.raw.root / BACKFILL).read_text())
+        except (OSError, ValueError):
+            return {}
+        return held
+
+    def _note_backfill(self) -> None:
+        target = self.raw.root / BACKFILL
+        partial = target.with_suffix(".partial")
+        partial.write_text(
+            json.dumps({"to": self.status.backfilled_to, "done": self.status.backfill_done})
+        )
+        partial.replace(target)
+
+    async def backfill(self) -> int:
+        """Read each past week's release back to the declared history,
+        newest first, from where the last run stopped; how many rates were
+        sent. Nothing where the backfill is done, or the current release has
+        not been read."""
+        noted = self._backfill_noted()
+        self.status.backfilled_to = str(noted.get("to", ""))
+        self.status.backfill_done = noted.get("done") is True
+        release = self.status.release
+        if self.status.backfill_done or release is None:
+            return 0
+        today = self.now().date()
+        oldest = today - timedelta(days=HISTORY)
+        monday = release_days(release.days[0] - timedelta(days=7))[0]
+        if self.status.backfilled_to:
+            monday = min(monday, date.fromisoformat(self.status.backfilled_to) - timedelta(days=7))
+        sent = 0
+        while monday - timedelta(days=7) >= oldest:
+            try:
+                read = await self._release_out_on(monday, today, unreachable_raises=True)
+            except BoardUnreachable as failed:
+                # Carried on from here next time, rather than the week lost.
+                log.warning("the backfill stopped at %s: %s", monday, failed)
+                return sent
+            if read is not None:
+                done = await self.record(*read)
+                sent += done.recorded + done.restated + done.unchanged
+            self.status.backfilled_to = monday.isoformat()
+            self._note_backfill()
+            monday -= timedelta(days=7)
+        self.status.backfill_done = True
+        self._note_backfill()
+        log.info("the backfill is done: %d rates, back to %s", sent, self.status.backfilled_to)
+        return sent
 
     # ── Wants ───────────────────────────────────────────────────────────
 
@@ -413,10 +491,11 @@ class Feed:
         return recorded
 
     async def _release_out_on(
-        self, monday: date, today: date
+        self, monday: date, today: date, *, unreachable_raises: bool = False
     ) -> tuple[Release, Fetched, str] | None:
         """The release that came out on `monday` or the days after it, or
-        None where none has (yet), or it could not be read."""
+        None where none has (yet), or it could not be read; the Board not
+        answering raised where `unreachable_raises`."""
         current = self.status.release
         for day in [monday + timedelta(days=n) for n in range(4)]:
             if day > today:
@@ -435,6 +514,8 @@ class Feed:
             try:
                 read = await self.read_release(dated(day))
             except (BoardUnreachable, NotARelease) as failed:
+                if unreachable_raises and isinstance(failed, BoardUnreachable):
+                    raise
                 log.warning("the release of %s was not read: %s", day, failed)
                 return None
             if read is not None:

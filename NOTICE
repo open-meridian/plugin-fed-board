@@ -1,10 +1,14 @@
-meridian-fed-h10
+meridian-fed-board
 Copyright 2026 Societal Lab Inc.
 
 Licensed under the Apache License, Version 2.0. See LICENSE.
 
-The foreign exchange rates this plugin reads are the Board of Governors of
-the Federal Reserve System's H.10 release, which the Board publishes as
+The data this plugin reads are the Board of Governors of the Federal Reserve
+System's: its H.10 and H.15 releases and its staff's nominal yield curve
+(Gurkaynak, Sack and Wright, FEDS 2006-28), which the Board publishes as
 public domain. This project is not affiliated with or endorsed by the
-Federal Reserve. The responses under src/fed_h10/responses/ are the Board's
-pages as received on 2026-10-10.
+Federal Reserve. The responses under src/fed_board/responses/ are the Board's
+pages as received on 2026-10-10, and its H.15 and zero curve files as
+received on 2026-10-23, trimmed to their last weeks.
+
+This plugin was published as plugin-fed-h10 until 0.6.0.

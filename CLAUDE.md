@@ -1,4 +1,4 @@
-# meridian-fed-h10
+# meridian-fed-board
 
 @AGENTS.md
 
@@ -9,5 +9,6 @@ asked to change the plugin and see it running. `CLAUDE.local.md` and
 `.claude/settings.local.json` are one person's own, and git-ignored.
 
 In the Open Meridian workspace, the workspace's own `CLAUDE.md` and
-meridian-design's plan for this plugin (`plans/the-lake-prices-the-book.md`,
-row 7) come first.
+meridian-design's plans for this plugin (`plans/the-lake-prices-the-book.md`,
+row 7, and `spec/a-public-rates-and-filings-data-plugin.md`,
+`plugin-fed-board`) come first.

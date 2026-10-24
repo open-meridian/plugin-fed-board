@@ -1,0 +1,86 @@
+{#- Datasets, at admin: the data role's (meridian/roles/data/datasets.html),
+    in tabs to fit one screen. "Served" is the role's own -- "Served",
+    "Wants" and "Subjects" -- with the Board's notices; "Currencies" each
+    currency H.10 publishes, with the deployment's instrument for it,
+    searched and paged; "Records" each record the rates are recorded
+    against, and its instrument or why none; "Lag" each
+    dataset's time from a day to its publication, and the Board's citation
+    (spec/a-public-rates-and-filings-data-plugin, section 5). The tab row
+    follows the page's own, so it stays when the dashboard frames the page.
+    No rate: prices are the reading roles'. -#}
+{% extends "meridian/roles/data/datasets.html" %}
+{% import "meridian/kit.html" as kit %}
+{% block status %}{{ kit.status({"state": state[0], "label": state[1], "detail": state[2], "at": checked_at, "at_label": "Last checked"}) }}{% endblock %}
+{% block content %}
+<nav class="tabs" aria-label="Datasets sections">
+{% for name, title in tabs.items() %}
+<a class="tab{% if name == tab %} on{% endif %}" href="?tab={{ name }}"{% if name == tab %} aria-current="page"{% endif %}>{{ title }}</a>
+{% endfor %}
+</nav>
+{% if tab == "served" %}
+{{ super() }}
+{% elif tab == "currencies" %}
+{% if data.unconverted %}<div class="notice warn" role="status">The Board printed a currency the plugin cannot name, not recorded: {{ data.unconverted|join("; ") }}</div>{% endif %}
+<section class="panel">
+<h2>Currencies</h2>
+{% if data.currencies %}
+<form class="filters" method="get" role="search">
+<input type="hidden" name="tab" value="currencies">
+<input type="search" name="q" value="{{ query }}" placeholder="Search currencies" aria-label="Search currencies by code or name">
+<button>Search</button>{% if query %} <a href="?tab=currencies">Clear</a>{% endif %}
+<span class="muted">{{ shown|length }} of {{ data.currencies|length }}</span></form>
+{% if shown %}
+<om-pager>
+<table class="one-line">
+<thead><tr><th>Code</th><th class="wide-only">The Board's name</th><th class="wide-only">Quoted</th><th>Price of</th><th>Instrument</th><th class="more"><span class="visually-hidden">Details</span></th></tr></thead>
+<tbody>
+{% for c in shown %}
+<tr data-code="{{ c.code }}"><td><code>{{ c.code }}</code></td><td class="wide-only">{{ c.board_name }}</td><td class="wide-only">{{ c.quoted }}</td><td>{{ c.price_of }}</td><td>{% if c.instrument_id %}<code>{{ c.instrument_id }}</code>{% else %}<span class="badge warn">{{ c.miss or "not yet resolved" }}</span>{% endif %}</td><td class="more"><details class="row-detail" name="currencies"><summary aria-label="Details of {{ c.code }}">…</summary><div class="row-detail-pop"><h3>{{ c.code }}</h3><dl><dt>The Board's name</dt><dd>{{ c.board_name }}</dd><dt>Quoted</dt><dd>{{ c.quoted }}</dd><dt>Each rate is the price of</dt><dd>{{ c.price_of }}</dd><dt>The deployment's instrument</dt><dd>{% if c.instrument_id %}<code>{{ c.instrument_id }}</code>, its cash instrument by ISO 4217 {{ c.code }}{% else %}None: {{ c.miss or "not yet resolved" }}, reported missing; its rates wait until it resolves{% endif %}</dd></dl></div></details></td></tr>
+{% endfor %}
+</tbody>
+</table>
+</om-pager>
+{% else %}
+<div class="empty-state"><strong>No currency matches "{{ query }}"</strong><p>Search by its ISO code or the Board's name for it.</p></div>
+{% endif %}
+{% else %}
+<p class="muted"><strong>No release read yet:</strong> each currency appears once the plugin has read the Board's current H.10 release.</p>
+{% endif %}
+</section>
+{% elif tab == "records" %}
+<section class="panel">
+<h2>Records</h2>
+<om-pager>
+<table class="one-line">
+<thead><tr><th>Record</th><th class="wide-only">Dataset</th><th class="wide-only">Rows</th><th>Instrument</th><th class="more"><span class="visually-hidden">Details</span></th></tr></thead>
+<tbody>
+{% for r in data.records %}
+<tr data-record="{{ r.record }}"><td>{{ r.record }}</td><td class="wide-only"><code>{{ r.dataset }}</code></td><td class="wide-only">{{ r.rows }}</td><td>{% if r.instrument_id %}<code>{{ r.instrument_id }}</code>{% else %}<span class="badge warn">none</span>{% endif %}</td><td class="more"><details class="row-detail" name="records"><summary aria-label="Details of {{ r.record }}">…</summary><div class="row-detail-pop"><h3>{{ r.record }}</h3><dl><dt>Dataset</dt><dd><code>{{ r.dataset }}</code></dd><dt>The Board's series</dt><dd>{{ r.series }}</dd><dt>Each row</dt><dd>{{ r.rows }}</dd><dt>The deployment's instrument</dt><dd>{% if r.instrument_id %}<code>{{ r.instrument_id }}</code>{% else %}None: {{ r.why_none }}{% endif %}</dd></dl></div></details></td></tr>
+{% endfor %}
+</tbody>
+</table>
+</om-pager>
+</section>
+{% else %}
+<section class="panel">
+<h2>Lag</h2>
+<table class="one-line">
+<thead><tr><th>Dataset</th><th class="num">Rows</th><th>Median</th><th>Longest</th></tr></thead>
+<tbody>
+{% for l in data.lag %}
+<tr><td><code>{{ l.dataset }}</code></td><td class="num">{{ l.rows }}</td><td>{{ l.median or "None yet" }}</td><td>{{ l.longest or "None yet" }}</td></tr>
+{% endfor %}
+</tbody>
+</table>
+<p class="hint">From the end of a row's day to when the Board published it, of the rows recorded since the plugin started.</p>
+</section>
+<section class="panel">
+<h2>Citation</h2>
+<p>{{ data.attribution }}. US government work; the Board's site is in the public domain unless marked.</p>
+</section>
+{% endif %}
+{% endblock %}
+{% block vendor_notices %}
+{% if data.unconverted %}<div class="notice warn" role="status">The Board printed a currency the plugin cannot name, not recorded: {{ data.unconverted|join("; ") }}</div>{% endif %}
+{% if wants > data.wants|length %}<p class="muted">The latest {{ data.wants|length }} of {{ wants }} wants are shown.</p>{% endif %}
+{% endblock %}
