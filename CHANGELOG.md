@@ -29,7 +29,11 @@ installs it beside `fed-h10` and moves to it (docs/setup.md).
   the Board's records (ruling 541) -- the bills' secondary-market rates and
   AA nonfinancial and financial commercial paper, discount rates by tenor;
   the bank prime loan rate and the discount window's primary credit rate,
-  fixings; the inflation-indexed long-term average, an average. H.15 states
+  fixings, actual/360 simple (H.15 states no convention for primary credit,
+  read as the money-market convention of a Fed-set overnight rate, like the
+  federal funds rate); the inflation-indexed long-term average, an average,
+  bond-equivalent. Every rate carries a convention, which the lake requires,
+  and a test holds every recorded rate to it. H.15 states
   no FOMC target range; FRED supplies it (ruling 540).
 - **`fed_zero`**, the Board's zero curve (`frb: feds200628`): zero-coupon
   yields, continuously compounded, 1 to 30 years, from

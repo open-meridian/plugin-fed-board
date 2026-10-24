@@ -33,9 +33,16 @@ administrator's code as a source-scoped symbol:
   curves of discount rates, actual/360 ("On a discount basis", footnotes 3
   and 4), kept off Treasury's own bill record, a different series; the bank
   prime loan rate, a fixing, actual/360 (footnote 3); the discount window's
-  primary credit rate, a fixing, its convention not stated; and the
-  inflation-indexed long-term average, the average yield of every TIPS with
-  more than ten years to run (footnote 11), an average, bond-equivalent.
+  primary credit rate, a fixing, actual/360 simple: H.15 states no
+  convention for it, and it is read as what it is, a Fed-set overnight rate
+  quoted on the money-market convention, like the federal funds rate; and
+  the inflation-indexed long-term average, the average yield of every TIPS
+  with more than ten years to run (footnote 11), an average, bond-equivalent
+  (no kind is closer: it averages across securities, not over a period).
+
+Every rate carries a convention: the contract's `Rate.convention` is never
+unset, and the lake refuses a rate without one, so `Series.convention` is
+required.
 
 The FOMC's target range is not in H.15: FRED supplies its bounds (ruling
 540).
@@ -90,7 +97,7 @@ class Series:
     kind: str
     subject: tuple[str, str, str]
     instrument_type: str
-    convention: RateConvention | None = None
+    convention: RateConvention
     tenor: str = ""
 
 
@@ -169,7 +176,12 @@ SERIES: tuple[Series, ...] = (
         "RIFSPBLP_N.B", "Bank prime loan rate", "fixing", PRIME, "interest_rate", rates.MONEY_MARKET
     ),
     Series(
-        "RIFSRP_F02_N.B", "Discount window primary credit rate", "fixing", PRIMARY, "interest_rate"
+        "RIFSRP_F02_N.B",
+        "Discount window primary credit rate",
+        "fixing",
+        PRIMARY,
+        "interest_rate",
+        rates.MONEY_MARKET,
     ),
     _bill("W04", "4W", "4-week"),
     _bill("M03", "3M", "3-month"),

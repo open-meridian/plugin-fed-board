@@ -39,9 +39,11 @@ rates plugins (`plans/the-v27-build.md`, B).
     by tenor), so each sits under the deployment's source priority beside
     the publisher's own plugin. H.15's own series against the Board's
     records (ruling 541): Treasury bills in the secondary market and AA
-    commercial paper (discount rates by tenor), the bank prime rate, the
-    discount window's primary credit rate and the inflation-indexed
-    long-term average. H.15 does not state the FOMC's target range: FRED
+    commercial paper (discount rates by tenor), the bank prime rate and the
+    discount window's primary credit rate (fixings, actual/360; primary
+    credit read as the money-market convention, H.15 stating none) and the
+    inflation-indexed long-term average (an average, bond-equivalent). Every
+    rate carries a convention. H.15 does not state the FOMC's target range: FRED
     supplies its bounds (ruling 540).
   - **`<instance>:fed_zero`**, the zero curve: rates against `frb:
     feds200628`, zero-coupon yields continuously compounded, 1 to 30 years;

@@ -308,7 +308,7 @@ def _rows_text(series: h15.Series) -> str:
     if held is not None:
         periods = f"/{held.periods_per_year}" if held.periods_per_year else ""
         said = _CONVENTIONS.get(f"{held.day_count}:{held.compounding}{periods}", "")
-    return f"{kind}, {said or 'convention not stated'}" + (", by tenor" if series.tenor else "")
+    return f"{kind}, {said}" + (", by tenor" if series.tenor else "")
 
 
 def _record(identifiers: tuple[str, str, str]) -> str:

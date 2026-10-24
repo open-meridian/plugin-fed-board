@@ -57,9 +57,12 @@ platform keeps for the rate or the curve:
 - **H.15's own series**, about the Board's records: Treasury bills in the
   secondary market (4 weeks to 1 year) and AA nonfinancial and financial
   commercial paper (1 to 3 months), discount rates, actual/360, by tenor;
-  the bank prime loan rate, a fixing; the discount window's primary credit
-  rate, a fixing; and the inflation-indexed long-term average, the average
-  yield of every TIPS with more than ten years to run.
+  the bank prime loan rate, a fixing, actual/360; the discount window's
+  primary credit rate, a fixing, actual/360 simple (H.15 states no
+  convention for it: read as a Fed-set overnight rate, quoted like the
+  federal funds rate); and the inflation-indexed long-term average, the
+  average yield of every TIPS with more than ten years to run,
+  bond-equivalent.
 - **The zero curve**'s points are zero-coupon yields, continuously
   compounded, 1 to 30 years, about the Board's `feds200628` record.
 

@@ -151,13 +151,43 @@ def test_a_push_records_each_files_last_month(tmp_path: Path) -> None:
     prime = next(r for r in h15_rows if r.meta.subjects[0].entity_id == "INS-PRIME")
     assert prime.kind == ops.RATE_KIND_FIXING and str(as_decimal(prime.value.value)) == "7.00"
     primary = next(r for r in h15_rows if r.meta.subjects[0].entity_id == "INS-PRIMARY")
-    assert not primary.HasField("convention")
+    assert primary.kind == ops.RATE_KIND_FIXING
+    assert primary.convention.day_count == ops.DAY_COUNT_ACT_360
+    assert primary.convention.compounding == ops.COMPOUNDING_SIMPLE
     long = next(r for r in h15_rows if r.meta.subjects[0].entity_id == "INS-LONG")
     assert long.kind == ops.RATE_KIND_AVERAGE
     assert {r.meta.subjects[0].entity_id for r in h15_rows} == {
         "INS-EFFR", "INS-PAR", "INS-REAL", "INS-BILLS", "INS-NONFIN", "INS-FIN",
         "INS-PRIME", "INS-PRIMARY", "INS-LONG",
     }  # fmt: skip
+
+
+def test_every_rate_recorded_carries_a_convention(tmp_path: Path) -> None:
+    """The contract's `Rate.convention` is never unset, and the lake refuses
+    a rate without one: every rate either file yields, of every series, on
+    a push and on a want, states its day count and compounding."""
+    recorder = Recorder(INSTANCE)
+    seeded(recorder)
+    board = rates(tmp_path, recorder)
+
+    async def run() -> None:
+        await board.check()
+        subjects = sorted({r.meta.subjects[0].entity_id for r in _sent(recorder)})
+        for dataset in (H15_DATASET, ZERO_DATASET):
+            await board.wants.hear(_want("w-all", subjects, dataset, "2026-09-15"), board.answer)
+
+    asyncio.run(run())
+    sent = _sent(recorder)
+    assert {r.meta.row_key.split(":")[0] for r in sent} >= {s.key for s in h15.SERIES}
+    missing = [
+        r.meta.row_key
+        for r in sent
+        if not r.HasField("convention")
+        or r.convention.day_count == ops.DAY_COUNT_UNSPECIFIED
+        or r.convention.compounding == ops.COMPOUNDING_UNSPECIFIED
+    ]
+    assert not missing, missing
+    assert all(s.convention is not None for s in h15.SERIES)
 
 
 def test_a_file_pushed_is_not_pushed_again(tmp_path: Path) -> None:
