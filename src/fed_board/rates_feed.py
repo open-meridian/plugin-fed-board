@@ -82,8 +82,14 @@ class Subject:
 SUBJECTS: dict[str, tuple[Subject, ...]] = {
     H15: (
         Subject(h15.EFFR, "interest_rate", "Federal funds effective rate"),
+        Subject(h15.NONFINANCIAL, "rate_curve", "AA nonfinancial commercial paper"),
+        Subject(h15.FINANCIAL, "rate_curve", "AA financial commercial paper"),
+        Subject(h15.PRIME, "interest_rate", "Bank prime loan rate"),
+        Subject(h15.PRIMARY, "interest_rate", "Discount window primary credit rate"),
+        Subject(h15.BILLS, "rate_curve", "Treasury bills, secondary market"),
         Subject(h15.PAR, "rate_curve", "Treasury constant maturities, nominal"),
         Subject(h15.REAL, "rate_curve", "Treasury constant maturities, inflation-indexed"),
+        Subject(h15.LONG, "interest_rate", "Treasury inflation-indexed long-term average"),
     ),
     ZERO: (Subject(zero.CURVE, "rate_curve", "Treasury zero-coupon yield curve"),),
 }
@@ -115,7 +121,7 @@ class Source:
 def latest_day(key: str, body: bytes) -> date | None:
     """The latest day the dataset's file states a value it records on."""
     if key == H15:
-        days = (o.day for o in h15.observations(body) if h15.BY_KEY[o.series].recorded)
+        days = (o.day for o in h15.observations(body))
     else:
         days = (p.day for p in zero.points(body))
     return max(days, default=None)
@@ -252,8 +258,6 @@ class Rates:
             if key == H15:
                 for seen in h15.observations(body, wanted):
                     series = h15.BY_KEY[seen.series]
-                    if series.subject is None:
-                        continue
                     keep(
                         found.get(series.subject, ""),
                         series.key,

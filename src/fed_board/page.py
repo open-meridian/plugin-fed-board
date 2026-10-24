@@ -294,7 +294,11 @@ def _lag(dataset: str, lags: list[int]) -> records.LagRead:
     return records.LagRead(dataset, len(held), _span(held[len(held) // 2]), _span(held[-1]))
 
 
-_CONVENTIONS = {"act_360:simple": "actual/360, simple", "act_act:compounded/2": "bond-equivalent"}
+_CONVENTIONS = {
+    "act_360:simple": "actual/360, simple",
+    "act_act:compounded/2": "bond-equivalent",
+    "act_360:discount": "discount basis, actual/360",
+}
 
 
 def _rows_text(series: h15.Series) -> str:
@@ -304,7 +308,7 @@ def _rows_text(series: h15.Series) -> str:
     if held is not None:
         periods = f"/{held.periods_per_year}" if held.periods_per_year else ""
         said = _CONVENTIONS.get(f"{held.day_count}:{held.compounding}{periods}", "")
-    return f"{kind}, {said}" + (", by tenor" if series.tenor else "")
+    return f"{kind}, {said or 'convention not stated'}" + (", by tenor" if series.tenor else "")
 
 
 def _record(identifiers: tuple[str, str, str]) -> str:
@@ -313,8 +317,8 @@ def _record(identifiers: tuple[str, str, str]) -> str:
 
 
 def records_of(rates: Rates | None, instance: str) -> list[records.RecordRead]:
-    """ "Records": each record the rates are recorded against, and each one
-    only proposed, with the Board's series for it."""
+    """ "Records": each record the rates are recorded against, with the
+    Board's series for it."""
     out: list[records.RecordRead] = []
     resolved = rates.feed.subjects if rates is not None else {}
     missed = rates.feed.missed if rates is not None else {}
@@ -339,21 +343,6 @@ def records_of(rates: Rates | None, instance: str) -> list[records.RecordRead]:
                 rows=_rows_text(series[0]),
                 instrument_id=resolved.get(named, ""),
                 why_none=why(named),
-            )
-        )
-    proposed: dict[str, list[h15.Series]] = {}
-    for held in h15.SERIES:
-        if held.proposed:
-            proposed.setdefault(held.proposed, []).append(held)
-    for record, series in proposed.items():
-        out.append(
-            records.RecordRead(
-                dataset=f"{instance}:{H15}",
-                series=", ".join(s.key for s in series),
-                record=record,
-                rows=f"a {series[0].proposed_type} proposed; read and kept, not recorded",
-                instrument_id="",
-                why_none="No record yet: proposed, recorded once approved and seeded",
             )
         )
     for subject in SUBJECTS[ZERO]:
@@ -593,7 +582,7 @@ async def connection(request: meridian.Request) -> meridian.Response:
         "and declined; the standing wants it keeps current and the wants it answered. Then "
         "the Board's own: each currency H.10 publishes, how the Board quotes it and the "
         "deployment's instrument for it or why there is none; each record the rates are "
-        "recorded against, or proposed, and its instrument or why none; each dataset's lag "
+        "recorded against and its instrument or why none; each dataset's lag "
         "from a day to its publication; and the citation the Board's terms ask for. No rate."
     ),
 )

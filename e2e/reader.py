@@ -10,6 +10,11 @@ It answers its page as JSON, so the harness's runner can read it
       one read by business date: each price's dataset, row key, version,
       business date, kind, amount as text and the instrument it is in; and
       what the lake left unanswered, with why;
+  /rates?subject=ID&date=D&dataset=D
+      a rate or a curve for a business date (W10.6, the SDK's read_curve,
+      every page, in tenor order): each rate's dataset, row key, version,
+      business date, subject, kind, value as text and its unit, tenor and
+      convention;
   /datasets
       the datasets it may read.
 
@@ -23,8 +28,9 @@ import urllib.parse
 
 import meridian
 from meridian import Interface, Page, SourceChoice
-from meridian.operations import as_money
+from meridian.operations import as_decimal, as_money
 from meridian.plugin.v1 import operations_pb2 as ops
+from meridian.roles.data import rates
 
 PORT = 8088
 LOOP = asyncio.new_event_loop()
@@ -44,6 +50,23 @@ def price_json(price):
         "instrument_id": money.instrument_id,
         "valid_until_ns": meta.valid_until_ns,
         "published": [t.at_ns for t in meta.source_times if t.kind == ops.SOURCE_TIME_KIND_PUBLISHED],
+    }
+
+
+def rate_json(rate):
+    meta = rate.meta
+    convention = rate.convention
+    return {
+        "dataset": meta.source.dataset,
+        "row_key": meta.row_key,
+        "version": meta.version,
+        "business_date": meta.business_date,
+        "subject": meta.subjects[0].entity_id if meta.subjects else "",
+        "kind": ops.RateKind.Name(rate.kind),
+        "value": str(as_decimal(rate.value.value)),
+        "unit": ops.ValueUnit.Name(rate.value.unit),
+        "tenor": rates.tenor_label(rate.tenor) if rate.HasField("tenor") else "",
+        "compounding": ops.Compounding.Name(convention.compounding) if rate.HasField("convention") else "",
     }
 
 
@@ -70,9 +93,17 @@ class Reader:
             ],
         }
 
+    async def rates(self, query):
+        one = lambda name: query.get(name, [""])[0]  # noqa: E731
+        read = await rates.read_curve(self.plugin, one("subject"), one("date"),
+                                      sources=SourceChoice(named=[one("dataset")]))
+        return {"rates": [rate_json(r) for r in read]}
+
     async def answer(self, path, query):
         if path == "/prices":
             return await self.prices(query)
+        if path == "/rates":
+            return await self.rates(query)
         if path == "/datasets":
             listed = await self.plugin.list_datasets()
             return {"datasets": [d.dataset for d in listed.datasets]}

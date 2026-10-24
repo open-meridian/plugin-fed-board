@@ -1,7 +1,7 @@
 # meridian-fed-board
 
 The Federal Reserve Board as an Open Meridian data plugin, titled "Federal
-Reserve Board", in Python on the open-meridian SDK (0.32.1, contract v27):
+Reserve Board", in Python on the open-meridian SDK (0.32.2, contract v27):
 `plugin-fed-h10` renamed (rulings 348, 349 and 504). It runs beside a
 sidecar in a Meridian deployment and puts each week's H.10 noon buying rates
 into the deployment's lake, each rate the price of one currency's cash
@@ -22,8 +22,8 @@ and `spec/a-public-rates-and-filings-data-plugin.md`, `plugin-fed-board`.
   `src/fed_board/responses/` instead.
 - `src/fed_board/h15.py` reads H.15's file as a stream and names each series
   in force: the record it is recorded against (the platform's seeded
-  `nyfed: EFFR` and Treasury's two par curves), its kind, convention and
-  tenor; or the record proposed for it, not recorded until it exists.
+  `nyfed: EFFR`, Treasury's two par curves and the Board's own six), its
+  kind, convention and tenor.
 - `src/fed_board/zero.py` reads the zero curve's zero-coupon yields, 1 to 30
   years, `NA` as no point.
 - `src/fed_board/rates_feed.py` records both as rates through the SDK's
@@ -74,7 +74,8 @@ and `spec/a-public-rates-and-filings-data-plugin.md`, `plugin-fed-board`.
   miss reported with its reason; never a record defined here: core answers
   with the platform master's, pulled; a subject that does not resolve is
   left out until it does, and the next check tries again. A series with no
-  seeded record is proposed, never recorded against a guess.
+  seeded record is never recorded against a guess: its record is proposed,
+  and recorded once the platform seeds it.
 - **Every row names its raw record,** kept before anything is read from it.
 - **Stateless.** The process holds nothing it cannot lose: a restart reads
   the Board again and the lake answers what it recorded before unchanged.

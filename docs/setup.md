@@ -50,7 +50,7 @@ records H.10 again, back ten years, under its own.
   or why there is none (not found, or two records match). A currency without
   one waits: its rates are recorded once it resolves, at the next check.
 - **H.15 and the zero curve:** each rate is about a record the platform
-  seeds -- `nyfed: EFFR`, Treasury's par and par real yield curves,
-  `frb: feds200628` -- found by its code. Datasets' Records tab shows each,
+  seeds -- `nyfed: EFFR`, Treasury's par and par real yield curves, the
+  Board's six H.15 records, `frb: feds200628` -- found by its code. Datasets' Records tab shows each,
   or that the deployment does not hold it; a record not held is reported
   missing once a day, and its rates wait.

@@ -5,21 +5,20 @@ for looking at them without a deployment.
     python -m fed_board.preview datasets > preview/datasets.html
 
 The plugin's work runs on the SDK's suite recorder in place of a sidecar --
-every currency resolved to an instrument the recorder names, the federal
-funds rate and the zero curve to their records and Treasury's curves not
-held, every batch recorded -- against the responses committed under
-responses/: H.10 at 11:00 UTC on 10 October 2026, the release of 5 October
-read, a want for 25 September answered from the week before's, one for 8
-October declined (not published yet), and a standing want kept current;
-H.15's and the zero curve's files as recorded on 23 October.
-`connection-sources` is Connection's other tab; `datasets-currencies`,
-`datasets-records` and `datasets-lag` are Datasets'. Each page links the kit where the
-dashboard serves it, /.meridian/ui/<version>/: served beside the kit it is
-styled (meridian-ui's `make serve`, or `make preview SHOTS=...`, which checks
-each in a browser); opened on its own it is the page without the kit,
-unstyled, which works too. `connection-first` and `datasets-first` are the
-pages before the first check, with no want yet: the role's "not set up yet"
-states.
+every currency resolved to an instrument the recorder names, every record
+the rates are about but Treasury's par real curve, every batch recorded --
+against the responses committed under responses/: H.10 at 11:00 UTC on 10
+October 2026, the release of 5 October read, a want for 25 September
+answered from the week before's, one for 8 October declined (not published
+yet), and a standing want kept current; H.15's and the zero curve's files
+as recorded on 23 October. `connection-sources` is Connection's other tab;
+`datasets-currencies`, `datasets-records` and `datasets-lag` are Datasets'.
+Each page links the kit where the dashboard serves it,
+/.meridian/ui/<version>/: served beside the kit it is styled (meridian-ui's
+`make serve`, or `make preview SHOTS=...`, which checks each in a browser);
+opened on its own it is the page without the kit, unstyled, which works too.
+`connection-first` and `datasets-first` are the pages before the first
+check, with no want yet: the role's "not set up yet" states.
 """
 
 from __future__ import annotations
@@ -38,7 +37,7 @@ from .board import SyntheticBoard
 from .declared import CATALOGUE
 from .feed import Feed
 from .page import CONNECTION, DATASETS, hold, pages
-from .rates_feed import Rates
+from .rates_feed import SUBJECTS, Rates
 from .raw import RawStore
 
 AT = datetime(2026, 10, 10, 11, 0, tzinfo=UTC)
@@ -54,9 +53,11 @@ PAGES = {
     "connection-first": CONNECTION,
     "datasets-first": DATASETS,
 }
-#: The records the preview's deployment holds, by their seeded codes; the
-#: others are not held.
-HELD = {"EFFR", "feds200628"}
+#: The records the preview's deployment holds, by their seeded codes: all
+#: but Treasury's par real curve, to show a record not held.
+HELD = {s.identifiers[1] for subjects in SUBJECTS.values() for s in subjects} - {
+    "Daily Treasury Par Real Yield Curve Rates"
+}
 #: What the Datasets tab's search is shown with, as `datasets-search`.
 SEARCHED = "dollar"
 

@@ -42,9 +42,11 @@ Board updates the file and pulled for any past date; weekly, as the spec's
 catalogue has it, since the Board updates it in batches; history from 14
 June 1961; New York's day; no calendar, as `fed_h15`; the same terms.
 
-The SDK's licence has no attribution field (the data terms'
-`attribution_text` is the platform's, contract v27), so the Board's citation
-is stated in docs/terms.md and on the Datasets page.
+The Board's citation ("Source: Board of Governors of the Federal Reserve
+System") is on the Datasets page and in docs/terms.md. The data terms'
+attribution fields (SDK 0.32.2: `redistribution`, `attribution_required`,
+`attribution_text`, `copyright_class`) are held until a core accepts them at
+registration, and declared in the next version.
 
 **Storage:** the Board's responses (raw.py), archivable, ten years by
 default.
@@ -80,6 +82,16 @@ RATES_ZONE = "America/New_York"
 #: What the Board's citation says, on the Datasets page and in docs/terms.md.
 ATTRIBUTION = "Source: Board of Governors of the Federal Reserve System"
 
+#: US government work (spec/a-public-rates-and-filings-data-plugin, section
+#: 7): kept, no limit on retention, derived use not restricted, displayed,
+#: not one person's terms. The data terms' attribution fields (SDK 0.32.2)
+#: wait for a core that accepts them at registration (core v27 refuses a
+#: catalogue carrying them), so the Board's citation is on the Datasets page
+#: and in docs/terms.md.
+GOVERNMENT_WORK = DatasetLicence(
+    kept=True, derived_use=True, derived_use_terms="not_restricted", display=True
+)
+
 DAILY_DATASET = DatasetDeclaration(
     key=DAILY,
     vendor=VENDOR,
@@ -87,17 +99,9 @@ DAILY_DATASET = DatasetDeclaration(
     modes=["push", "pull"],
     cadence=CADENCE,
     history=HISTORY,
-    licence_default=DatasetLicence(
-        kept=True, derived_use=True, derived_use_terms="not_restricted", display=True
-    ),
+    licence_default=GOVERNMENT_WORK,
     day_time_zone=DAY_TIME_ZONE,
     day_end_minute=DAY_END_MINUTE,
-)
-
-#: US government work: kept, derived use not restricted, displayed, not one
-#: person's terms (spec/a-public-rates-and-filings-data-plugin, section 7).
-GOVERNMENT_WORK = DatasetLicence(
-    kept=True, derived_use=True, derived_use_terms="not_restricted", display=True
 )
 
 H15_DATASET = DatasetDeclaration(

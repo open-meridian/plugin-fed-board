@@ -18,7 +18,7 @@ moves unchanged as its `daily` dataset, backfilled on the first run, and
 H.15 and the zero curve join it from the same publisher. GitHub redirects
 the old repository's address here.
 
-It is built on the SDK it pins, `open-meridian==0.32.1`, which declares
+It is built on the SDK it pins, `open-meridian==0.32.2`, which declares
 contract v27 (its rates slice: the `Rate` row, recorded through
 `meridian.roles.data.rates`); its work is the lake prices the book
 (meridian-design `plans/the-lake-prices-the-book.md`, row 7) and the public
@@ -37,14 +37,19 @@ rates plugins (`plans/the-v27-build.md`, B).
     (a fixing, actual/360), and the Treasury constant maturities against
     Treasury's par and par real yield curves (par yields, bond-equivalent,
     by tenor), so each sits under the deployment's source priority beside
-    the publisher's own plugin. H.15's other series are read and kept, and
-    recorded once the platform holds a record for them (proposed in
-    `src/fed_board/h15.py`); H.15 does not state the FOMC's target range.
+    the publisher's own plugin. H.15's own series against the Board's
+    records (ruling 541): Treasury bills in the secondary market and AA
+    commercial paper (discount rates by tenor), the bank prime rate, the
+    discount window's primary credit rate and the inflation-indexed
+    long-term average. H.15 does not state the FOMC's target range: FRED
+    supplies its bounds (ruling 540).
   - **`<instance>:fed_zero`**, the zero curve: rates against `frb:
     feds200628`, zero-coupon yields continuously compounded, 1 to 30 years;
     weekly, as the Board updates it in batches; history from June 1961.
 - **US government work**: each dataset's default licence is kept, derived
-  use not restricted, displayed; the Board cited.
+  use not restricted, displayed; the Board cited on the Datasets page and in
+  docs/terms.md. The data terms' attribution fields wait for a core that
+  accepts them at registration.
 
 For H.10:
 
@@ -86,12 +91,18 @@ Summary. It does not stream, so it has no restart's gap to backfill.
     make ci-local                                  # lint, tests, plugin check, image, e2e: the pre-push gate
     make preview SHOTS=<dir>                       # each page in a browser with the kit, at 1440x900 and 390x844
 
-`make e2e` runs it on core's plugin harness (core v27, c786b9a) beside a
-reading plugin: the Board unreachable at first, then sample data reading the committed release of 5 October 2026, the rates read back in
-the right instruments, a past week wanted and recorded, a week not yet
-published and a currency it never prices declined, both tools answering what
-the pages show, and a new container recording nothing twice and reading
-its licence on start.
+`make e2e` runs it on core's plugin harness (core v27, a5da59a) beside a
+reading plugin: the Board unreachable at first, then sample data reading the
+committed release of 5 October 2026, the rates read back in the right
+instruments, a past week wanted and recorded, a week not yet published and a
+currency it never prices declined; H.15's and the zero curve's files read,
+each referential record resolved by its administrator's code and its rows
+read back by business date (the federal funds rate, Treasury's two par
+curves from H.15, the zero curve's thirty points); both tools answering what
+the pages show; and a new container recording nothing twice and reading its
+licence on start. The harness at a5da59a predates H.15's six own records
+(ruling 541), so the e2e asserts them reported missing there; the platform
+holds them, and core's next harness carries them.
 
 **The data suite.** `tests/test_suite.py` runs the SDK's suite on the
 plugin's own conversion, and it passes: thirteen cases are presented, its
@@ -105,7 +116,7 @@ index level -- and is not presented, with why, as the suite lets it. So are
 contract v22's calendar cases, and the feed delay, which core receives from
 contract v28 (rulings 515 and 518).
 
-**open-meridian 0.32.1 is on PyPI** and its base image on ghcr.io: the
+**open-meridian 0.32.2 is on PyPI** and its base image on ghcr.io: the
 runners install the pin from there. Locally the Makefile builds
 both from the sibling meridian-python checkout.
 

@@ -57,15 +57,26 @@ def test_h15_reads_each_business_daily_series_in_force() -> None:
     assert not [o for o in seen if o.series == "RIFSPPNAAD90_N.B" and o.day == date(2026, 10, 21)]
 
 
-def test_h15_records_only_series_with_a_seeded_record() -> None:
-    recorded = [s for s in h15.SERIES if s.recorded]
-    assert {s.subject for s in recorded} == {h15.EFFR, h15.PAR, h15.REAL}
-    assert [s.tenor for s in recorded if s.subject == h15.PAR] == [
+def test_h15_records_each_series_against_a_seeded_record() -> None:
+    subjects = {s.subject for s in h15.SERIES}
+    assert subjects == {
+        h15.EFFR, h15.PAR, h15.REAL, h15.BILLS, h15.NONFINANCIAL, h15.FINANCIAL,
+        h15.PRIME, h15.PRIMARY, h15.LONG,
+    }  # fmt: skip
+    assert [s.tenor for s in h15.SERIES if s.subject == h15.PAR] == [
         "1M", "3M", "6M", "1Y", "2Y", "3Y", "5Y", "7Y", "10Y", "20Y", "30Y",
     ]  # fmt: skip
-    assert [s.tenor for s in recorded if s.subject == h15.REAL] == ["5Y", "7Y", "10Y", "20Y", "30Y"]
-    proposed = {s.proposed for s in h15.SERIES if not s.recorded}
-    assert len(proposed) == 6 and all(p.startswith("frb: ") for p in proposed)
+    assert [s.tenor for s in h15.SERIES if s.subject == h15.REAL] == [
+        "5Y",
+        "7Y",
+        "10Y",
+        "20Y",
+        "30Y",
+    ]
+    assert [s.tenor for s in h15.SERIES if s.subject == h15.BILLS] == ["4W", "3M", "6M", "1Y"]
+    assert [s.tenor for s in h15.SERIES if s.subject == h15.FINANCIAL] == ["1M", "2M", "3M"]
+    # The Board's own records are the ones its seed names (ruling 541).
+    assert {s.subject[2] for s in h15.SERIES} == {"nyfed", "ustreasury", "frb"}
 
 
 def test_a_response_that_is_not_the_h15_file_is_refused() -> None:
@@ -128,8 +139,25 @@ def test_a_push_records_each_files_last_month(tmp_path: Path) -> None:
     curve = [r for r in zero_rows if r.meta.business_date == "2026-10-16"]
     assert len(curve) == 30 and {r.kind for r in curve} == {ops.RATE_KIND_ZERO}
     assert {r.convention.compounding for r in curve} == {ops.COMPOUNDING_CONTINUOUS}
-    # Nothing of a series with no seeded record.
-    assert not [r for r in h15_rows if "RIFSPBLP" in r.meta.row_key]
+    # H.15's own series, against the Board's records.
+    bill = next(
+        r
+        for r in h15_rows
+        if r.meta.row_key.startswith("RIFSGFSM03_N.B") and r.meta.business_date == "2026-10-21"
+    )
+    assert bill.meta.subjects[0].entity_id == "INS-BILLS" and bill.kind == ops.RATE_KIND_DISCOUNT
+    assert bill.convention.compounding == ops.COMPOUNDING_DISCOUNT and bill.tenor.count == 3
+    assert str(as_decimal(bill.value.value)) == "4.07"
+    prime = next(r for r in h15_rows if r.meta.subjects[0].entity_id == "INS-PRIME")
+    assert prime.kind == ops.RATE_KIND_FIXING and str(as_decimal(prime.value.value)) == "7.00"
+    primary = next(r for r in h15_rows if r.meta.subjects[0].entity_id == "INS-PRIMARY")
+    assert not primary.HasField("convention")
+    long = next(r for r in h15_rows if r.meta.subjects[0].entity_id == "INS-LONG")
+    assert long.kind == ops.RATE_KIND_AVERAGE
+    assert {r.meta.subjects[0].entity_id for r in h15_rows} == {
+        "INS-EFFR", "INS-PAR", "INS-REAL", "INS-BILLS", "INS-NONFIN", "INS-FIN",
+        "INS-PRIME", "INS-PRIMARY", "INS-LONG",
+    }  # fmt: skip
 
 
 def test_a_file_pushed_is_not_pushed_again(tmp_path: Path) -> None:
@@ -176,10 +204,12 @@ def test_a_record_not_held_is_reported_missing_and_left_out(tmp_path: Path) -> N
     asyncio.run(rates(tmp_path, recorder).check())
     assert {r.meta.subjects[0].entity_id for r in _sent(recorder)} == {"INS-EFFR"}
     missing = recorder.on("ReportMissingInstrument")
-    assert {m.identifiers[0].value for m in missing} == {
+    assert len(missing) == 9
+    assert {m.identifiers[0].value for m in missing} >= {
         "Daily Treasury Par Yield Curve Rates",
         "Daily Treasury Par Real Yield Curve Rates",
         "feds200628",
+        "Bank prime loan rate",
     }
 
 

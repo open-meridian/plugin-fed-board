@@ -35,6 +35,12 @@ SEEDED = {
     "Daily Treasury Par Yield Curve Rates": "INS-PAR",
     "Daily Treasury Par Real Yield Curve Rates": "INS-REAL",
     "feds200628": "INS-ZERO",
+    "Treasury bills secondary market": "INS-BILLS",
+    "AA nonfinancial commercial paper": "INS-NONFIN",
+    "AA financial commercial paper": "INS-FIN",
+    "Bank prime loan rate": "INS-PRIME",
+    "Discount window primary credit rate": "INS-PRIMARY",
+    "Treasury inflation-indexed long-term average": "INS-LONG",
 }
 
 

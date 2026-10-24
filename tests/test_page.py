@@ -84,7 +84,7 @@ def test_datasets_lists_the_datasets_in_tabs(client: PageClient) -> None:
     assert currencies.count("<tr data-code=") == 24 and "<om-pager>" in currencies
     held = client.get(DATASETS, "admin", tab="records").text
     assert "<h2>Records</h2>" in held and "INS-EFFR" in held and "INS-ZERO" in held
-    assert "reported missing" in held and "proposed" in held
+    assert "reported missing" in held and "frb: Bank prime loan rate" in held
     lag = client.get(DATASETS, "admin", tab="lag").text
     assert "<h2>Lag</h2>" in lag and "Board of Governors of the Federal Reserve System" in lag
     # No rate: prices and rates are the reading roles' to show.
@@ -126,7 +126,10 @@ def test_the_tools_answer_what_the_pages_show(client: PageClient) -> None:
     assert held["frb: feds200628"]["instrument_id"] == "INS-ZERO"
     par = held["ustreasury: Daily Treasury Par Yield Curve Rates"]
     assert par["instrument_id"] == "" and "reported missing" in par["why_none"]
-    assert sum(1 for r in data["records"] if r["why_none"].startswith("No record")) == 6
+    assert len(data["records"]) == 10
+    assert held["frb: Treasury bills secondary market"]["rows"].startswith(
+        "discount, discount basis"
+    )
     assert [lag["dataset"] for lag in data["lag"]][1:] == [
         "fed-board:fed_h15",
         "fed-board:fed_zero",

@@ -14,8 +14,7 @@
 |---|---|---|
 | **N currencies not resolved** | A currency's ISO 4217 code found no cash instrument, or two | Complete or merge the instrument at the Instruments page; the next check records its rates |
 | A currency the plugin cannot name | The Board printed a currency this version has no code for | Its rates are not recorded; a new version adds it |
-| Records: **none** | The deployment does not hold a record the platform seeds | Pull it from the platform at the Instruments page; the next new file records its rates |
-| Records: **proposed** | H.15 publishes the series; the platform has no record for it yet | Nothing: its file is kept, and a later version records it |
+| Records: **none** | The deployment does not hold a record the platform seeds | Pull it from the platform at the Instruments page; the next day's check, or a restart, records its rates |
 
 ## Wants and licences
 

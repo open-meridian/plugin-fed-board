@@ -9,33 +9,36 @@ with it the release's data in the Data Download Program's SDMX format: one
 `ND` no data, `NA` not available, each with the value `-9999`, which is no
 rate at all, never a zero).
 
-**What is recorded:** the business-daily series in force whose subject the
-platform holds (`SERIES`), each as the rates slice says a rate is
-(spec/a-public-rates-and-filings-data-plugin, sections 1 and 2):
+**What is recorded:** every business-daily series in force (`SERIES`), each
+as the rates slice says a rate is (spec/a-public-rates-and-filings-data-
+plugin, sections 1 and 2), about a record the platform seeds, by the
+administrator's code as a source-scoped symbol:
 
 - the federal funds effective rate, which H.15 reprints from the New York
-  Fed, against the New York Fed's own record for it (`nyfed:EFFR`): a
+  Fed, against the New York Fed's own record for it (`nyfed: EFFR`): a
   fixing, actual/360 simple, as `plugin-ny-fed` records it, so the two sit
   under the deployment's source priority;
 - the nominal Treasury constant maturities, 1 month to 30 years, against
-  Treasury's par yield curve (`ustreasury:Daily Treasury Par Yield Curve
+  Treasury's par yield curve (`ustreasury: Daily Treasury Par Yield Curve
   Rates`), each a point with its tenor; and the inflation-indexed ones, 5 to
   30 years, against Treasury's par real yield curve: par yields,
   bond-equivalent, as `plugin-us-treasury` records them. H.15's constant
   maturities are Treasury's yields ("Source: U.S. Treasury"), and section 2
   records a single-point series that is a curve's point against the curve's
-  record with its tenor (FRED's DGS10 is H.15's 10-year).
+  record with its tenor (FRED's DGS10 is H.15's 10-year);
+- H.15's own series, against the Board's records (ruling 541, seeded
+  2026-10-23): the Treasury bills' secondary-market rates (4 weeks to 1
+  year) and AA nonfinancial and financial commercial paper (1 to 3 months:
+  the release's 1-, 2- and 3-month rates are the 30-, 60- and 90-day ones),
+  curves of discount rates, actual/360 ("On a discount basis", footnotes 3
+  and 4), kept off Treasury's own bill record, a different series; the bank
+  prime loan rate, a fixing, actual/360 (footnote 3); the discount window's
+  primary credit rate, a fixing, its convention not stated; and the
+  inflation-indexed long-term average, the average yield of every TIPS with
+  more than ten years to run (footnote 11), an average, bond-equivalent.
 
-**What is read but not recorded yet:** the series whose record the platform
-does not seed -- the Treasury bills' secondary-market rates, commercial
-paper, the bank prime loan rate, the discount window's primary credit rate
-and the inflation-indexed long-term average. Each carries the record it is
-proposed under (`proposed`), shown on the Datasets page; nothing of it is
-recorded until the record is approved and seeded, and the plugin never mints.
-The H.15 file is kept, so recording them then needs no refetch.
-
-The FOMC's target range is not in H.15, so the seeded `frb:` bounds get no
-row from it.
+The FOMC's target range is not in H.15: FRED supplies its bounds (ruling
+540).
 
 Every number is kept as the text the Board wrote and made a Decimal from it,
 never a float. The file is about 70 MB unzipped: it is read as a stream,
@@ -69,65 +72,82 @@ _OBS = "{http://www.federalreserve.gov/structure/compact/common}Obs"
 EFFR = ("symbol", "EFFR", "nyfed")
 PAR = ("symbol", "Daily Treasury Par Yield Curve Rates", "ustreasury")
 REAL = ("symbol", "Daily Treasury Par Real Yield Curve Rates", "ustreasury")
+BILLS = ("symbol", "Treasury bills secondary market", "frb")
+NONFINANCIAL = ("symbol", "AA nonfinancial commercial paper", "frb")
+FINANCIAL = ("symbol", "AA financial commercial paper", "frb")
+PRIME = ("symbol", "Bank prime loan rate", "frb")
+PRIMARY = ("symbol", "Discount window primary credit rate", "frb")
+LONG = ("symbol", "Treasury inflation-indexed long-term average", "frb")
 
 
 @dataclass(frozen=True)
 class Series:
     """One H.15 series: its key, what it is, and how it is recorded -- its
-    subject's identifiers and type, its kind, convention and tenor -- or,
-    where the platform holds no record for it, the record proposed."""
+    subject's identifiers and type, its kind, convention and tenor."""
 
     key: str
     name: str
-    kind: str = ""
-    subject: tuple[str, str, str] | None = None
-    instrument_type: str = ""
+    kind: str
+    subject: tuple[str, str, str]
+    instrument_type: str
     convention: RateConvention | None = None
     tenor: str = ""
-    #: Where no record is held: the record proposed, as the platform's seed
-    #: would name it (`frb: <code>`), and its type.
-    proposed: str = ""
-    proposed_type: str = ""
 
-    @property
-    def recorded(self) -> bool:
-        return self.subject is not None
+
+def _curve(
+    key: str,
+    name: str,
+    kind: str,
+    subject: tuple[str, str, str],
+    convention: RateConvention,
+    tenor: str,
+) -> Series:
+    return Series(key, name, kind, subject, "rate_curve", convention, tenor)
 
 
 def _tcm(code: str, tenor: str, label: str) -> Series:
-    return Series(
+    return _curve(
         f"RIFLGFC{code}_N.B",
         f"Treasury constant maturity, nominal, {label}",
         "par_yield",
         PAR,
-        "rate_curve",
         rates.BOND_EQUIVALENT,
         tenor,
     )
 
 
 def _tips(years: int) -> Series:
-    return Series(
+    return _curve(
         f"RIFLGFCY{years:02d}_XII_N.B",
         f"Treasury constant maturity, inflation-indexed, {years}-year",
         "par_yield",
         REAL,
-        "rate_curve",
         rates.BOND_EQUIVALENT,
         f"{years}Y",
     )
 
 
-def _proposed(key: str, name: str, record: tuple[str, str]) -> Series:
-    return Series(key, name, proposed=record[0], proposed_type=record[1])
+def _paper(code: str, subject: tuple[str, str, str], label: str, days: int) -> Series:
+    return _curve(
+        f"RIFSPP{code}AD{days}_N.B",
+        f"AA {label} commercial paper, {days}-day",
+        "discount",
+        subject,
+        rates.DISCOUNT,
+        f"{days // 30}M",
+    )
 
 
-_BILLS = ("frb: Treasury bills secondary market", "rate_curve")
-_NONFIN = ("frb: AA nonfinancial commercial paper", "rate_curve")
-_FIN = ("frb: AA financial commercial paper", "rate_curve")
-_PRIME = ("frb: Bank prime loan rate", "interest_rate")
-_PRIMARY = ("frb: Discount window primary credit rate", "interest_rate")
-_LONG = ("frb: Treasury inflation-indexed long-term average", "interest_rate")
+def _bill(code: str, tenor: str, label: str) -> Series:
+    return _curve(
+        f"RIFSGFS{code}_N.B",
+        f"Treasury bill, secondary market, {label}",
+        "discount",
+        BILLS,
+        rates.DISCOUNT,
+        tenor,
+    )
+
 
 #: The business-daily series in force, in the release's order.
 SERIES: tuple[Series, ...] = (
@@ -139,18 +159,22 @@ SERIES: tuple[Series, ...] = (
         "interest_rate",
         rates.MONEY_MARKET,
     ),
-    _proposed("RIFSPPNAAD30_N.B", "AA nonfinancial commercial paper, 30-day", _NONFIN),
-    _proposed("RIFSPPNAAD60_N.B", "AA nonfinancial commercial paper, 60-day", _NONFIN),
-    _proposed("RIFSPPNAAD90_N.B", "AA nonfinancial commercial paper, 90-day", _NONFIN),
-    _proposed("RIFSPPFAAD30_N.B", "AA financial commercial paper, 30-day", _FIN),
-    _proposed("RIFSPPFAAD60_N.B", "AA financial commercial paper, 60-day", _FIN),
-    _proposed("RIFSPPFAAD90_N.B", "AA financial commercial paper, 90-day", _FIN),
-    _proposed("RIFSPBLP_N.B", "Bank prime loan rate", _PRIME),
-    _proposed("RIFSRP_F02_N.B", "Discount window primary credit rate", _PRIMARY),
-    _proposed("RIFSGFSW04_N.B", "Treasury bill, secondary market, 4-week", _BILLS),
-    _proposed("RIFSGFSM03_N.B", "Treasury bill, secondary market, 3-month", _BILLS),
-    _proposed("RIFSGFSM06_N.B", "Treasury bill, secondary market, 6-month", _BILLS),
-    _proposed("RIFSGFSY01_N.B", "Treasury bill, secondary market, 1-year", _BILLS),
+    _paper("NA", NONFINANCIAL, "nonfinancial", 30),
+    _paper("NA", NONFINANCIAL, "nonfinancial", 60),
+    _paper("NA", NONFINANCIAL, "nonfinancial", 90),
+    _paper("FA", FINANCIAL, "financial", 30),
+    _paper("FA", FINANCIAL, "financial", 60),
+    _paper("FA", FINANCIAL, "financial", 90),
+    Series(
+        "RIFSPBLP_N.B", "Bank prime loan rate", "fixing", PRIME, "interest_rate", rates.MONEY_MARKET
+    ),
+    Series(
+        "RIFSRP_F02_N.B", "Discount window primary credit rate", "fixing", PRIMARY, "interest_rate"
+    ),
+    _bill("W04", "4W", "4-week"),
+    _bill("M03", "3M", "3-month"),
+    _bill("M06", "6M", "6-month"),
+    _bill("Y01", "1Y", "1-year"),
     _tcm("M01", "1M", "1-month"),
     _tcm("M03", "3M", "3-month"),
     _tcm("M06", "6M", "6-month"),
@@ -167,8 +191,13 @@ SERIES: tuple[Series, ...] = (
     _tips(10),
     _tips(20),
     _tips(30),
-    _proposed(
-        "RIFLGFL_XII_N.B", "Treasury inflation-indexed long-term average (over 10 years)", _LONG
+    Series(
+        "RIFLGFL_XII_N.B",
+        "Treasury inflation-indexed long-term average (over 10 years)",
+        "average",
+        LONG,
+        "interest_rate",
+        rates.BOND_EQUIVALENT,
     ),
 )
 

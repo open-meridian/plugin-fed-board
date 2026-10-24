@@ -132,6 +132,1040 @@ row|fed-board:daily|price|97|TWD:2026-09-29|1|USD|1||2026-09-29|96|false
 row|fed-board:daily|price|98|TWD:2026-09-30|1|USD|1||2026-09-30|97|false
 row|fed-board:daily|price|99|TWD:2026-10-01|1|USD|1||2026-10-01|98|false
 row|fed-board:daily|price|9|BRL:2026-10-01|1|USD|1||2026-10-01|8|false
+row|fed-board:fed_h15|rate|100|RIFLGFCY01_N.B:par_yield:1Y:act_act:compounded/2:2026-10-06@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-06|99|false
+row|fed-board:fed_h15|rate|101|RIFLGFCY01_N.B:par_yield:1Y:act_act:compounded/2:2026-10-07@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-07|100|false
+row|fed-board:fed_h15|rate|102|RIFLGFCY01_N.B:par_yield:1Y:act_act:compounded/2:2026-10-08@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-08|101|false
+row|fed-board:fed_h15|rate|103|RIFLGFCY01_N.B:par_yield:1Y:act_act:compounded/2:2026-10-09@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-09|102|false
+row|fed-board:fed_h15|rate|104|RIFLGFCY01_N.B:par_yield:1Y:act_act:compounded/2:2026-10-13@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-13|103|false
+row|fed-board:fed_h15|rate|105|RIFLGFCY01_N.B:par_yield:1Y:act_act:compounded/2:2026-10-14@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-14|104|false
+row|fed-board:fed_h15|rate|106|RIFLGFCY01_N.B:par_yield:1Y:act_act:compounded/2:2026-10-15@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-15|105|false
+row|fed-board:fed_h15|rate|107|RIFLGFCY01_N.B:par_yield:1Y:act_act:compounded/2:2026-10-16@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-16|106|false
+row|fed-board:fed_h15|rate|108|RIFLGFCY01_N.B:par_yield:1Y:act_act:compounded/2:2026-10-19@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-19|107|false
+row|fed-board:fed_h15|rate|109|RIFLGFCY01_N.B:par_yield:1Y:act_act:compounded/2:2026-10-20@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-20|108|false
+row|fed-board:fed_h15|rate|10|RIFSPFF_N.B:fixing:-:act_360:simple:2026-10-02@INS-01JREF00000000000000000002|1|nyfed: EFFR|1||2026-10-02|9|false
+row|fed-board:fed_h15|rate|110|RIFLGFCY01_N.B:par_yield:1Y:act_act:compounded/2:2026-10-21@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-21|109|false
+row|fed-board:fed_h15|rate|111|RIFLGFCY02_N.B:par_yield:2Y:act_act:compounded/2:2026-09-21@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-21|110|false
+row|fed-board:fed_h15|rate|112|RIFLGFCY02_N.B:par_yield:2Y:act_act:compounded/2:2026-09-22@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-22|111|false
+row|fed-board:fed_h15|rate|113|RIFLGFCY02_N.B:par_yield:2Y:act_act:compounded/2:2026-09-23@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-23|112|false
+row|fed-board:fed_h15|rate|114|RIFLGFCY02_N.B:par_yield:2Y:act_act:compounded/2:2026-09-24@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-24|113|false
+row|fed-board:fed_h15|rate|115|RIFLGFCY02_N.B:par_yield:2Y:act_act:compounded/2:2026-09-25@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-25|114|false
+row|fed-board:fed_h15|rate|116|RIFLGFCY02_N.B:par_yield:2Y:act_act:compounded/2:2026-09-28@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-28|115|false
+row|fed-board:fed_h15|rate|117|RIFLGFCY02_N.B:par_yield:2Y:act_act:compounded/2:2026-09-29@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-29|116|false
+row|fed-board:fed_h15|rate|118|RIFLGFCY02_N.B:par_yield:2Y:act_act:compounded/2:2026-09-30@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-30|117|false
+row|fed-board:fed_h15|rate|119|RIFLGFCY02_N.B:par_yield:2Y:act_act:compounded/2:2026-10-01@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-01|118|false
+row|fed-board:fed_h15|rate|11|RIFSPFF_N.B:fixing:-:act_360:simple:2026-10-05@INS-01JREF00000000000000000002|1|nyfed: EFFR|1||2026-10-05|10|false
+row|fed-board:fed_h15|rate|120|RIFLGFCY02_N.B:par_yield:2Y:act_act:compounded/2:2026-10-02@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-02|119|false
+row|fed-board:fed_h15|rate|121|RIFLGFCY02_N.B:par_yield:2Y:act_act:compounded/2:2026-10-05@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-05|120|false
+row|fed-board:fed_h15|rate|122|RIFLGFCY02_N.B:par_yield:2Y:act_act:compounded/2:2026-10-06@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-06|121|false
+row|fed-board:fed_h15|rate|123|RIFLGFCY02_N.B:par_yield:2Y:act_act:compounded/2:2026-10-07@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-07|122|false
+row|fed-board:fed_h15|rate|124|RIFLGFCY02_N.B:par_yield:2Y:act_act:compounded/2:2026-10-08@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-08|123|false
+row|fed-board:fed_h15|rate|125|RIFLGFCY02_N.B:par_yield:2Y:act_act:compounded/2:2026-10-09@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-09|124|false
+row|fed-board:fed_h15|rate|126|RIFLGFCY02_N.B:par_yield:2Y:act_act:compounded/2:2026-10-13@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-13|125|false
+row|fed-board:fed_h15|rate|127|RIFLGFCY02_N.B:par_yield:2Y:act_act:compounded/2:2026-10-14@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-14|126|false
+row|fed-board:fed_h15|rate|128|RIFLGFCY02_N.B:par_yield:2Y:act_act:compounded/2:2026-10-15@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-15|127|false
+row|fed-board:fed_h15|rate|129|RIFLGFCY02_N.B:par_yield:2Y:act_act:compounded/2:2026-10-16@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-16|128|false
+row|fed-board:fed_h15|rate|12|RIFSPFF_N.B:fixing:-:act_360:simple:2026-10-06@INS-01JREF00000000000000000002|1|nyfed: EFFR|1||2026-10-06|11|false
+row|fed-board:fed_h15|rate|130|RIFLGFCY02_N.B:par_yield:2Y:act_act:compounded/2:2026-10-19@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-19|129|false
+row|fed-board:fed_h15|rate|131|RIFLGFCY02_N.B:par_yield:2Y:act_act:compounded/2:2026-10-20@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-20|130|false
+row|fed-board:fed_h15|rate|132|RIFLGFCY02_N.B:par_yield:2Y:act_act:compounded/2:2026-10-21@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-21|131|false
+row|fed-board:fed_h15|rate|133|RIFLGFCY03_N.B:par_yield:3Y:act_act:compounded/2:2026-09-21@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-21|132|false
+row|fed-board:fed_h15|rate|134|RIFLGFCY03_N.B:par_yield:3Y:act_act:compounded/2:2026-09-22@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-22|133|false
+row|fed-board:fed_h15|rate|135|RIFLGFCY03_N.B:par_yield:3Y:act_act:compounded/2:2026-09-23@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-23|134|false
+row|fed-board:fed_h15|rate|136|RIFLGFCY03_N.B:par_yield:3Y:act_act:compounded/2:2026-09-24@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-24|135|false
+row|fed-board:fed_h15|rate|137|RIFLGFCY03_N.B:par_yield:3Y:act_act:compounded/2:2026-09-25@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-25|136|false
+row|fed-board:fed_h15|rate|138|RIFLGFCY03_N.B:par_yield:3Y:act_act:compounded/2:2026-09-28@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-28|137|false
+row|fed-board:fed_h15|rate|139|RIFLGFCY03_N.B:par_yield:3Y:act_act:compounded/2:2026-09-29@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-29|138|false
+row|fed-board:fed_h15|rate|13|RIFSPFF_N.B:fixing:-:act_360:simple:2026-10-07@INS-01JREF00000000000000000002|1|nyfed: EFFR|1||2026-10-07|12|false
+row|fed-board:fed_h15|rate|140|RIFLGFCY03_N.B:par_yield:3Y:act_act:compounded/2:2026-09-30@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-30|139|false
+row|fed-board:fed_h15|rate|141|RIFLGFCY03_N.B:par_yield:3Y:act_act:compounded/2:2026-10-01@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-01|140|false
+row|fed-board:fed_h15|rate|142|RIFLGFCY03_N.B:par_yield:3Y:act_act:compounded/2:2026-10-02@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-02|141|false
+row|fed-board:fed_h15|rate|143|RIFLGFCY03_N.B:par_yield:3Y:act_act:compounded/2:2026-10-05@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-05|142|false
+row|fed-board:fed_h15|rate|144|RIFLGFCY03_N.B:par_yield:3Y:act_act:compounded/2:2026-10-06@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-06|143|false
+row|fed-board:fed_h15|rate|145|RIFLGFCY03_N.B:par_yield:3Y:act_act:compounded/2:2026-10-07@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-07|144|false
+row|fed-board:fed_h15|rate|146|RIFLGFCY03_N.B:par_yield:3Y:act_act:compounded/2:2026-10-08@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-08|145|false
+row|fed-board:fed_h15|rate|147|RIFLGFCY03_N.B:par_yield:3Y:act_act:compounded/2:2026-10-09@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-09|146|false
+row|fed-board:fed_h15|rate|148|RIFLGFCY03_N.B:par_yield:3Y:act_act:compounded/2:2026-10-13@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-13|147|false
+row|fed-board:fed_h15|rate|149|RIFLGFCY03_N.B:par_yield:3Y:act_act:compounded/2:2026-10-14@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-14|148|false
+row|fed-board:fed_h15|rate|14|RIFSPFF_N.B:fixing:-:act_360:simple:2026-10-08@INS-01JREF00000000000000000002|1|nyfed: EFFR|1||2026-10-08|13|false
+row|fed-board:fed_h15|rate|150|RIFLGFCY03_N.B:par_yield:3Y:act_act:compounded/2:2026-10-15@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-15|149|false
+row|fed-board:fed_h15|rate|151|RIFLGFCY03_N.B:par_yield:3Y:act_act:compounded/2:2026-10-16@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-16|150|false
+row|fed-board:fed_h15|rate|152|RIFLGFCY03_N.B:par_yield:3Y:act_act:compounded/2:2026-10-19@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-19|151|false
+row|fed-board:fed_h15|rate|153|RIFLGFCY03_N.B:par_yield:3Y:act_act:compounded/2:2026-10-20@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-20|152|false
+row|fed-board:fed_h15|rate|154|RIFLGFCY03_N.B:par_yield:3Y:act_act:compounded/2:2026-10-21@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-21|153|false
+row|fed-board:fed_h15|rate|155|RIFLGFCY05_N.B:par_yield:5Y:act_act:compounded/2:2026-09-21@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-21|154|false
+row|fed-board:fed_h15|rate|156|RIFLGFCY05_N.B:par_yield:5Y:act_act:compounded/2:2026-09-22@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-22|155|false
+row|fed-board:fed_h15|rate|157|RIFLGFCY05_N.B:par_yield:5Y:act_act:compounded/2:2026-09-23@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-23|156|false
+row|fed-board:fed_h15|rate|158|RIFLGFCY05_N.B:par_yield:5Y:act_act:compounded/2:2026-09-24@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-24|157|false
+row|fed-board:fed_h15|rate|159|RIFLGFCY05_N.B:par_yield:5Y:act_act:compounded/2:2026-09-25@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-25|158|false
+row|fed-board:fed_h15|rate|15|RIFSPFF_N.B:fixing:-:act_360:simple:2026-10-09@INS-01JREF00000000000000000002|1|nyfed: EFFR|1||2026-10-09|14|false
+row|fed-board:fed_h15|rate|160|RIFLGFCY05_N.B:par_yield:5Y:act_act:compounded/2:2026-09-28@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-28|159|false
+row|fed-board:fed_h15|rate|161|RIFLGFCY05_N.B:par_yield:5Y:act_act:compounded/2:2026-09-29@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-29|160|false
+row|fed-board:fed_h15|rate|162|RIFLGFCY05_N.B:par_yield:5Y:act_act:compounded/2:2026-09-30@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-30|161|false
+row|fed-board:fed_h15|rate|163|RIFLGFCY05_N.B:par_yield:5Y:act_act:compounded/2:2026-10-01@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-01|162|false
+row|fed-board:fed_h15|rate|164|RIFLGFCY05_N.B:par_yield:5Y:act_act:compounded/2:2026-10-02@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-02|163|false
+row|fed-board:fed_h15|rate|165|RIFLGFCY05_N.B:par_yield:5Y:act_act:compounded/2:2026-10-05@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-05|164|false
+row|fed-board:fed_h15|rate|166|RIFLGFCY05_N.B:par_yield:5Y:act_act:compounded/2:2026-10-06@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-06|165|false
+row|fed-board:fed_h15|rate|167|RIFLGFCY05_N.B:par_yield:5Y:act_act:compounded/2:2026-10-07@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-07|166|false
+row|fed-board:fed_h15|rate|168|RIFLGFCY05_N.B:par_yield:5Y:act_act:compounded/2:2026-10-08@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-08|167|false
+row|fed-board:fed_h15|rate|169|RIFLGFCY05_N.B:par_yield:5Y:act_act:compounded/2:2026-10-09@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-09|168|false
+row|fed-board:fed_h15|rate|16|RIFSPFF_N.B:fixing:-:act_360:simple:2026-10-13@INS-01JREF00000000000000000002|1|nyfed: EFFR|1||2026-10-13|15|false
+row|fed-board:fed_h15|rate|170|RIFLGFCY05_N.B:par_yield:5Y:act_act:compounded/2:2026-10-13@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-13|169|false
+row|fed-board:fed_h15|rate|171|RIFLGFCY05_N.B:par_yield:5Y:act_act:compounded/2:2026-10-14@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-14|170|false
+row|fed-board:fed_h15|rate|172|RIFLGFCY05_N.B:par_yield:5Y:act_act:compounded/2:2026-10-15@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-15|171|false
+row|fed-board:fed_h15|rate|173|RIFLGFCY05_N.B:par_yield:5Y:act_act:compounded/2:2026-10-16@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-16|172|false
+row|fed-board:fed_h15|rate|174|RIFLGFCY05_N.B:par_yield:5Y:act_act:compounded/2:2026-10-19@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-19|173|false
+row|fed-board:fed_h15|rate|175|RIFLGFCY05_N.B:par_yield:5Y:act_act:compounded/2:2026-10-20@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-20|174|false
+row|fed-board:fed_h15|rate|176|RIFLGFCY05_N.B:par_yield:5Y:act_act:compounded/2:2026-10-21@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-21|175|false
+row|fed-board:fed_h15|rate|177|RIFLGFCY07_N.B:par_yield:7Y:act_act:compounded/2:2026-09-21@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-21|176|false
+row|fed-board:fed_h15|rate|178|RIFLGFCY07_N.B:par_yield:7Y:act_act:compounded/2:2026-09-22@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-22|177|false
+row|fed-board:fed_h15|rate|179|RIFLGFCY07_N.B:par_yield:7Y:act_act:compounded/2:2026-09-23@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-23|178|false
+row|fed-board:fed_h15|rate|17|RIFSPFF_N.B:fixing:-:act_360:simple:2026-10-14@INS-01JREF00000000000000000002|1|nyfed: EFFR|1||2026-10-14|16|false
+row|fed-board:fed_h15|rate|180|RIFLGFCY07_N.B:par_yield:7Y:act_act:compounded/2:2026-09-24@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-24|179|false
+row|fed-board:fed_h15|rate|181|RIFLGFCY07_N.B:par_yield:7Y:act_act:compounded/2:2026-09-25@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-25|180|false
+row|fed-board:fed_h15|rate|182|RIFLGFCY07_N.B:par_yield:7Y:act_act:compounded/2:2026-09-28@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-28|181|false
+row|fed-board:fed_h15|rate|183|RIFLGFCY07_N.B:par_yield:7Y:act_act:compounded/2:2026-09-29@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-29|182|false
+row|fed-board:fed_h15|rate|184|RIFLGFCY07_N.B:par_yield:7Y:act_act:compounded/2:2026-09-30@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-30|183|false
+row|fed-board:fed_h15|rate|185|RIFLGFCY07_N.B:par_yield:7Y:act_act:compounded/2:2026-10-01@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-01|184|false
+row|fed-board:fed_h15|rate|186|RIFLGFCY07_N.B:par_yield:7Y:act_act:compounded/2:2026-10-02@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-02|185|false
+row|fed-board:fed_h15|rate|187|RIFLGFCY07_N.B:par_yield:7Y:act_act:compounded/2:2026-10-05@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-05|186|false
+row|fed-board:fed_h15|rate|188|RIFLGFCY07_N.B:par_yield:7Y:act_act:compounded/2:2026-10-06@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-06|187|false
+row|fed-board:fed_h15|rate|189|RIFLGFCY07_N.B:par_yield:7Y:act_act:compounded/2:2026-10-07@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-07|188|false
+row|fed-board:fed_h15|rate|18|RIFSPFF_N.B:fixing:-:act_360:simple:2026-10-15@INS-01JREF00000000000000000002|1|nyfed: EFFR|1||2026-10-15|17|false
+row|fed-board:fed_h15|rate|190|RIFLGFCY07_N.B:par_yield:7Y:act_act:compounded/2:2026-10-08@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-08|189|false
+row|fed-board:fed_h15|rate|191|RIFLGFCY07_N.B:par_yield:7Y:act_act:compounded/2:2026-10-09@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-09|190|false
+row|fed-board:fed_h15|rate|192|RIFLGFCY07_N.B:par_yield:7Y:act_act:compounded/2:2026-10-13@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-13|191|false
+row|fed-board:fed_h15|rate|193|RIFLGFCY07_N.B:par_yield:7Y:act_act:compounded/2:2026-10-14@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-14|192|false
+row|fed-board:fed_h15|rate|194|RIFLGFCY07_N.B:par_yield:7Y:act_act:compounded/2:2026-10-15@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-15|193|false
+row|fed-board:fed_h15|rate|195|RIFLGFCY07_N.B:par_yield:7Y:act_act:compounded/2:2026-10-16@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-16|194|false
+row|fed-board:fed_h15|rate|196|RIFLGFCY07_N.B:par_yield:7Y:act_act:compounded/2:2026-10-19@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-19|195|false
+row|fed-board:fed_h15|rate|197|RIFLGFCY07_N.B:par_yield:7Y:act_act:compounded/2:2026-10-20@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-20|196|false
+row|fed-board:fed_h15|rate|198|RIFLGFCY07_N.B:par_yield:7Y:act_act:compounded/2:2026-10-21@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-21|197|false
+row|fed-board:fed_h15|rate|199|RIFLGFCY10_N.B:par_yield:10Y:act_act:compounded/2:2026-09-21@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-21|198|false
+row|fed-board:fed_h15|rate|19|RIFSPFF_N.B:fixing:-:act_360:simple:2026-10-16@INS-01JREF00000000000000000002|1|nyfed: EFFR|1||2026-10-16|18|false
+row|fed-board:fed_h15|rate|1|RIFSPFF_N.B:fixing:-:act_360:simple:2026-09-21@INS-01JREF00000000000000000002|1|nyfed: EFFR|1||2026-09-21|0|false
+row|fed-board:fed_h15|rate|200|RIFLGFCY10_N.B:par_yield:10Y:act_act:compounded/2:2026-09-22@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-22|199|false
+row|fed-board:fed_h15|rate|201|RIFLGFCY10_N.B:par_yield:10Y:act_act:compounded/2:2026-09-23@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-23|200|false
+row|fed-board:fed_h15|rate|202|RIFLGFCY10_N.B:par_yield:10Y:act_act:compounded/2:2026-09-24@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-24|201|false
+row|fed-board:fed_h15|rate|203|RIFLGFCY10_N.B:par_yield:10Y:act_act:compounded/2:2026-09-25@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-25|202|false
+row|fed-board:fed_h15|rate|204|RIFLGFCY10_N.B:par_yield:10Y:act_act:compounded/2:2026-09-28@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-28|203|false
+row|fed-board:fed_h15|rate|205|RIFLGFCY10_N.B:par_yield:10Y:act_act:compounded/2:2026-09-29@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-29|204|false
+row|fed-board:fed_h15|rate|206|RIFLGFCY10_N.B:par_yield:10Y:act_act:compounded/2:2026-09-30@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-30|205|false
+row|fed-board:fed_h15|rate|207|RIFLGFCY10_N.B:par_yield:10Y:act_act:compounded/2:2026-10-01@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-01|206|false
+row|fed-board:fed_h15|rate|208|RIFLGFCY10_N.B:par_yield:10Y:act_act:compounded/2:2026-10-02@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-02|207|false
+row|fed-board:fed_h15|rate|209|RIFLGFCY10_N.B:par_yield:10Y:act_act:compounded/2:2026-10-05@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-05|208|false
+row|fed-board:fed_h15|rate|20|RIFSPFF_N.B:fixing:-:act_360:simple:2026-10-19@INS-01JREF00000000000000000002|1|nyfed: EFFR|1||2026-10-19|19|false
+row|fed-board:fed_h15|rate|210|RIFLGFCY10_N.B:par_yield:10Y:act_act:compounded/2:2026-10-06@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-06|209|false
+row|fed-board:fed_h15|rate|211|RIFLGFCY10_N.B:par_yield:10Y:act_act:compounded/2:2026-10-07@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-07|210|false
+row|fed-board:fed_h15|rate|212|RIFLGFCY10_N.B:par_yield:10Y:act_act:compounded/2:2026-10-08@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-08|211|false
+row|fed-board:fed_h15|rate|213|RIFLGFCY10_N.B:par_yield:10Y:act_act:compounded/2:2026-10-09@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-09|212|false
+row|fed-board:fed_h15|rate|214|RIFLGFCY10_N.B:par_yield:10Y:act_act:compounded/2:2026-10-13@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-13|213|false
+row|fed-board:fed_h15|rate|215|RIFLGFCY10_N.B:par_yield:10Y:act_act:compounded/2:2026-10-14@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-14|214|false
+row|fed-board:fed_h15|rate|216|RIFLGFCY10_N.B:par_yield:10Y:act_act:compounded/2:2026-10-15@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-15|215|false
+row|fed-board:fed_h15|rate|217|RIFLGFCY10_N.B:par_yield:10Y:act_act:compounded/2:2026-10-16@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-16|216|false
+row|fed-board:fed_h15|rate|218|RIFLGFCY10_N.B:par_yield:10Y:act_act:compounded/2:2026-10-19@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-19|217|false
+row|fed-board:fed_h15|rate|219|RIFLGFCY10_N.B:par_yield:10Y:act_act:compounded/2:2026-10-20@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-20|218|false
+row|fed-board:fed_h15|rate|21|RIFSPFF_N.B:fixing:-:act_360:simple:2026-10-20@INS-01JREF00000000000000000002|1|nyfed: EFFR|1||2026-10-20|20|false
+row|fed-board:fed_h15|rate|220|RIFLGFCY10_N.B:par_yield:10Y:act_act:compounded/2:2026-10-21@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-21|219|false
+row|fed-board:fed_h15|rate|221|RIFLGFCY20_N.B:par_yield:20Y:act_act:compounded/2:2026-09-21@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-21|220|false
+row|fed-board:fed_h15|rate|222|RIFLGFCY20_N.B:par_yield:20Y:act_act:compounded/2:2026-09-22@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-22|221|false
+row|fed-board:fed_h15|rate|223|RIFLGFCY20_N.B:par_yield:20Y:act_act:compounded/2:2026-09-23@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-23|222|false
+row|fed-board:fed_h15|rate|224|RIFLGFCY20_N.B:par_yield:20Y:act_act:compounded/2:2026-09-24@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-24|223|false
+row|fed-board:fed_h15|rate|225|RIFLGFCY20_N.B:par_yield:20Y:act_act:compounded/2:2026-09-25@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-25|224|false
+row|fed-board:fed_h15|rate|226|RIFLGFCY20_N.B:par_yield:20Y:act_act:compounded/2:2026-09-28@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-28|225|false
+row|fed-board:fed_h15|rate|227|RIFLGFCY20_N.B:par_yield:20Y:act_act:compounded/2:2026-09-29@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-29|226|false
+row|fed-board:fed_h15|rate|228|RIFLGFCY20_N.B:par_yield:20Y:act_act:compounded/2:2026-09-30@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-30|227|false
+row|fed-board:fed_h15|rate|229|RIFLGFCY20_N.B:par_yield:20Y:act_act:compounded/2:2026-10-01@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-01|228|false
+row|fed-board:fed_h15|rate|22|RIFSPFF_N.B:fixing:-:act_360:simple:2026-10-21@INS-01JREF00000000000000000002|1|nyfed: EFFR|1||2026-10-21|21|false
+row|fed-board:fed_h15|rate|230|RIFLGFCY20_N.B:par_yield:20Y:act_act:compounded/2:2026-10-02@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-02|229|false
+row|fed-board:fed_h15|rate|231|RIFLGFCY20_N.B:par_yield:20Y:act_act:compounded/2:2026-10-05@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-05|230|false
+row|fed-board:fed_h15|rate|232|RIFLGFCY20_N.B:par_yield:20Y:act_act:compounded/2:2026-10-06@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-06|231|false
+row|fed-board:fed_h15|rate|233|RIFLGFCY20_N.B:par_yield:20Y:act_act:compounded/2:2026-10-07@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-07|232|false
+row|fed-board:fed_h15|rate|234|RIFLGFCY20_N.B:par_yield:20Y:act_act:compounded/2:2026-10-08@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-08|233|false
+row|fed-board:fed_h15|rate|235|RIFLGFCY20_N.B:par_yield:20Y:act_act:compounded/2:2026-10-09@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-09|234|false
+row|fed-board:fed_h15|rate|236|RIFLGFCY20_N.B:par_yield:20Y:act_act:compounded/2:2026-10-13@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-13|235|false
+row|fed-board:fed_h15|rate|237|RIFLGFCY20_N.B:par_yield:20Y:act_act:compounded/2:2026-10-14@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-14|236|false
+row|fed-board:fed_h15|rate|238|RIFLGFCY20_N.B:par_yield:20Y:act_act:compounded/2:2026-10-15@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-15|237|false
+row|fed-board:fed_h15|rate|239|RIFLGFCY20_N.B:par_yield:20Y:act_act:compounded/2:2026-10-16@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-16|238|false
+row|fed-board:fed_h15|rate|23|RIFLGFCM01_N.B:par_yield:1M:act_act:compounded/2:2026-09-21@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-21|0|false
+row|fed-board:fed_h15|rate|240|RIFLGFCY20_N.B:par_yield:20Y:act_act:compounded/2:2026-10-19@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-19|239|false
+row|fed-board:fed_h15|rate|241|RIFLGFCY20_N.B:par_yield:20Y:act_act:compounded/2:2026-10-20@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-20|240|false
+row|fed-board:fed_h15|rate|242|RIFLGFCY20_N.B:par_yield:20Y:act_act:compounded/2:2026-10-21@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-21|241|false
+row|fed-board:fed_h15|rate|243|RIFLGFCY30_N.B:par_yield:30Y:act_act:compounded/2:2026-09-21@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-21|242|false
+row|fed-board:fed_h15|rate|244|RIFLGFCY30_N.B:par_yield:30Y:act_act:compounded/2:2026-09-22@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-22|243|false
+row|fed-board:fed_h15|rate|245|RIFLGFCY30_N.B:par_yield:30Y:act_act:compounded/2:2026-09-23@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-23|244|false
+row|fed-board:fed_h15|rate|246|RIFLGFCY30_N.B:par_yield:30Y:act_act:compounded/2:2026-09-24@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-24|245|false
+row|fed-board:fed_h15|rate|247|RIFLGFCY30_N.B:par_yield:30Y:act_act:compounded/2:2026-09-25@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-25|246|false
+row|fed-board:fed_h15|rate|248|RIFLGFCY30_N.B:par_yield:30Y:act_act:compounded/2:2026-09-28@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-28|247|false
+row|fed-board:fed_h15|rate|249|RIFLGFCY30_N.B:par_yield:30Y:act_act:compounded/2:2026-09-29@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-29|248|false
+row|fed-board:fed_h15|rate|24|RIFLGFCM01_N.B:par_yield:1M:act_act:compounded/2:2026-09-22@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-22|23|false
+row|fed-board:fed_h15|rate|250|RIFLGFCY30_N.B:par_yield:30Y:act_act:compounded/2:2026-09-30@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-30|249|false
+row|fed-board:fed_h15|rate|251|RIFLGFCY30_N.B:par_yield:30Y:act_act:compounded/2:2026-10-01@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-01|250|false
+row|fed-board:fed_h15|rate|252|RIFLGFCY30_N.B:par_yield:30Y:act_act:compounded/2:2026-10-02@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-02|251|false
+row|fed-board:fed_h15|rate|253|RIFLGFCY30_N.B:par_yield:30Y:act_act:compounded/2:2026-10-05@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-05|252|false
+row|fed-board:fed_h15|rate|254|RIFLGFCY30_N.B:par_yield:30Y:act_act:compounded/2:2026-10-06@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-06|253|false
+row|fed-board:fed_h15|rate|255|RIFLGFCY30_N.B:par_yield:30Y:act_act:compounded/2:2026-10-07@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-07|254|false
+row|fed-board:fed_h15|rate|256|RIFLGFCY30_N.B:par_yield:30Y:act_act:compounded/2:2026-10-08@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-08|255|false
+row|fed-board:fed_h15|rate|257|RIFLGFCY30_N.B:par_yield:30Y:act_act:compounded/2:2026-10-09@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-09|256|false
+row|fed-board:fed_h15|rate|258|RIFLGFCY30_N.B:par_yield:30Y:act_act:compounded/2:2026-10-13@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-13|257|false
+row|fed-board:fed_h15|rate|259|RIFLGFCY30_N.B:par_yield:30Y:act_act:compounded/2:2026-10-14@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-14|258|false
+row|fed-board:fed_h15|rate|25|RIFLGFCM01_N.B:par_yield:1M:act_act:compounded/2:2026-09-23@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-23|24|false
+row|fed-board:fed_h15|rate|260|RIFLGFCY30_N.B:par_yield:30Y:act_act:compounded/2:2026-10-15@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-15|259|false
+row|fed-board:fed_h15|rate|261|RIFLGFCY30_N.B:par_yield:30Y:act_act:compounded/2:2026-10-16@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-16|260|false
+row|fed-board:fed_h15|rate|262|RIFLGFCY30_N.B:par_yield:30Y:act_act:compounded/2:2026-10-19@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-19|261|false
+row|fed-board:fed_h15|rate|263|RIFLGFCY30_N.B:par_yield:30Y:act_act:compounded/2:2026-10-20@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-20|262|false
+row|fed-board:fed_h15|rate|264|RIFLGFCY30_N.B:par_yield:30Y:act_act:compounded/2:2026-10-21@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-21|263|false
+row|fed-board:fed_h15|rate|265|RIFLGFCY05_XII_N.B:par_yield:5Y:act_act:compounded/2:2026-09-21@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-21|0|false
+row|fed-board:fed_h15|rate|266|RIFLGFCY05_XII_N.B:par_yield:5Y:act_act:compounded/2:2026-09-22@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-22|265|false
+row|fed-board:fed_h15|rate|267|RIFLGFCY05_XII_N.B:par_yield:5Y:act_act:compounded/2:2026-09-23@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-23|266|false
+row|fed-board:fed_h15|rate|268|RIFLGFCY05_XII_N.B:par_yield:5Y:act_act:compounded/2:2026-09-24@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-24|267|false
+row|fed-board:fed_h15|rate|269|RIFLGFCY05_XII_N.B:par_yield:5Y:act_act:compounded/2:2026-09-25@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-25|268|false
+row|fed-board:fed_h15|rate|26|RIFLGFCM01_N.B:par_yield:1M:act_act:compounded/2:2026-09-24@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-24|25|false
+row|fed-board:fed_h15|rate|270|RIFLGFCY05_XII_N.B:par_yield:5Y:act_act:compounded/2:2026-09-28@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-28|269|false
+row|fed-board:fed_h15|rate|271|RIFLGFCY05_XII_N.B:par_yield:5Y:act_act:compounded/2:2026-09-29@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-29|270|false
+row|fed-board:fed_h15|rate|272|RIFLGFCY05_XII_N.B:par_yield:5Y:act_act:compounded/2:2026-09-30@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-30|271|false
+row|fed-board:fed_h15|rate|273|RIFLGFCY05_XII_N.B:par_yield:5Y:act_act:compounded/2:2026-10-01@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-01|272|false
+row|fed-board:fed_h15|rate|274|RIFLGFCY05_XII_N.B:par_yield:5Y:act_act:compounded/2:2026-10-02@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-02|273|false
+row|fed-board:fed_h15|rate|275|RIFLGFCY05_XII_N.B:par_yield:5Y:act_act:compounded/2:2026-10-05@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-05|274|false
+row|fed-board:fed_h15|rate|276|RIFLGFCY05_XII_N.B:par_yield:5Y:act_act:compounded/2:2026-10-06@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-06|275|false
+row|fed-board:fed_h15|rate|277|RIFLGFCY05_XII_N.B:par_yield:5Y:act_act:compounded/2:2026-10-07@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-07|276|false
+row|fed-board:fed_h15|rate|278|RIFLGFCY05_XII_N.B:par_yield:5Y:act_act:compounded/2:2026-10-08@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-08|277|false
+row|fed-board:fed_h15|rate|279|RIFLGFCY05_XII_N.B:par_yield:5Y:act_act:compounded/2:2026-10-09@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-09|278|false
+row|fed-board:fed_h15|rate|27|RIFLGFCM01_N.B:par_yield:1M:act_act:compounded/2:2026-09-25@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-25|26|false
+row|fed-board:fed_h15|rate|280|RIFLGFCY05_XII_N.B:par_yield:5Y:act_act:compounded/2:2026-10-13@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-13|279|false
+row|fed-board:fed_h15|rate|281|RIFLGFCY05_XII_N.B:par_yield:5Y:act_act:compounded/2:2026-10-14@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-14|280|false
+row|fed-board:fed_h15|rate|282|RIFLGFCY05_XII_N.B:par_yield:5Y:act_act:compounded/2:2026-10-15@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-15|281|false
+row|fed-board:fed_h15|rate|283|RIFLGFCY05_XII_N.B:par_yield:5Y:act_act:compounded/2:2026-10-16@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-16|282|false
+row|fed-board:fed_h15|rate|284|RIFLGFCY05_XII_N.B:par_yield:5Y:act_act:compounded/2:2026-10-19@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-19|283|false
+row|fed-board:fed_h15|rate|285|RIFLGFCY05_XII_N.B:par_yield:5Y:act_act:compounded/2:2026-10-20@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-20|284|false
+row|fed-board:fed_h15|rate|286|RIFLGFCY05_XII_N.B:par_yield:5Y:act_act:compounded/2:2026-10-21@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-21|285|false
+row|fed-board:fed_h15|rate|287|RIFLGFCY07_XII_N.B:par_yield:7Y:act_act:compounded/2:2026-09-21@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-21|286|false
+row|fed-board:fed_h15|rate|288|RIFLGFCY07_XII_N.B:par_yield:7Y:act_act:compounded/2:2026-09-22@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-22|287|false
+row|fed-board:fed_h15|rate|289|RIFLGFCY07_XII_N.B:par_yield:7Y:act_act:compounded/2:2026-09-23@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-23|288|false
+row|fed-board:fed_h15|rate|28|RIFLGFCM01_N.B:par_yield:1M:act_act:compounded/2:2026-09-28@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-28|27|false
+row|fed-board:fed_h15|rate|290|RIFLGFCY07_XII_N.B:par_yield:7Y:act_act:compounded/2:2026-09-24@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-24|289|false
+row|fed-board:fed_h15|rate|291|RIFLGFCY07_XII_N.B:par_yield:7Y:act_act:compounded/2:2026-09-25@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-25|290|false
+row|fed-board:fed_h15|rate|292|RIFLGFCY07_XII_N.B:par_yield:7Y:act_act:compounded/2:2026-09-28@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-28|291|false
+row|fed-board:fed_h15|rate|293|RIFLGFCY07_XII_N.B:par_yield:7Y:act_act:compounded/2:2026-09-29@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-29|292|false
+row|fed-board:fed_h15|rate|294|RIFLGFCY07_XII_N.B:par_yield:7Y:act_act:compounded/2:2026-09-30@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-30|293|false
+row|fed-board:fed_h15|rate|295|RIFLGFCY07_XII_N.B:par_yield:7Y:act_act:compounded/2:2026-10-01@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-01|294|false
+row|fed-board:fed_h15|rate|296|RIFLGFCY07_XII_N.B:par_yield:7Y:act_act:compounded/2:2026-10-02@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-02|295|false
+row|fed-board:fed_h15|rate|297|RIFLGFCY07_XII_N.B:par_yield:7Y:act_act:compounded/2:2026-10-05@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-05|296|false
+row|fed-board:fed_h15|rate|298|RIFLGFCY07_XII_N.B:par_yield:7Y:act_act:compounded/2:2026-10-06@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-06|297|false
+row|fed-board:fed_h15|rate|299|RIFLGFCY07_XII_N.B:par_yield:7Y:act_act:compounded/2:2026-10-07@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-07|298|false
+row|fed-board:fed_h15|rate|29|RIFLGFCM01_N.B:par_yield:1M:act_act:compounded/2:2026-09-29@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-29|28|false
+row|fed-board:fed_h15|rate|2|RIFSPFF_N.B:fixing:-:act_360:simple:2026-09-22@INS-01JREF00000000000000000002|1|nyfed: EFFR|1||2026-09-22|1|false
+row|fed-board:fed_h15|rate|300|RIFLGFCY07_XII_N.B:par_yield:7Y:act_act:compounded/2:2026-10-08@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-08|299|false
+row|fed-board:fed_h15|rate|301|RIFLGFCY07_XII_N.B:par_yield:7Y:act_act:compounded/2:2026-10-09@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-09|300|false
+row|fed-board:fed_h15|rate|302|RIFLGFCY07_XII_N.B:par_yield:7Y:act_act:compounded/2:2026-10-13@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-13|301|false
+row|fed-board:fed_h15|rate|303|RIFLGFCY07_XII_N.B:par_yield:7Y:act_act:compounded/2:2026-10-14@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-14|302|false
+row|fed-board:fed_h15|rate|304|RIFLGFCY07_XII_N.B:par_yield:7Y:act_act:compounded/2:2026-10-15@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-15|303|false
+row|fed-board:fed_h15|rate|305|RIFLGFCY07_XII_N.B:par_yield:7Y:act_act:compounded/2:2026-10-16@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-16|304|false
+row|fed-board:fed_h15|rate|306|RIFLGFCY07_XII_N.B:par_yield:7Y:act_act:compounded/2:2026-10-19@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-19|305|false
+row|fed-board:fed_h15|rate|307|RIFLGFCY07_XII_N.B:par_yield:7Y:act_act:compounded/2:2026-10-20@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-20|306|false
+row|fed-board:fed_h15|rate|308|RIFLGFCY07_XII_N.B:par_yield:7Y:act_act:compounded/2:2026-10-21@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-21|307|false
+row|fed-board:fed_h15|rate|309|RIFLGFCY10_XII_N.B:par_yield:10Y:act_act:compounded/2:2026-09-21@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-21|308|false
+row|fed-board:fed_h15|rate|30|RIFLGFCM01_N.B:par_yield:1M:act_act:compounded/2:2026-09-30@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-30|29|false
+row|fed-board:fed_h15|rate|310|RIFLGFCY10_XII_N.B:par_yield:10Y:act_act:compounded/2:2026-09-22@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-22|309|false
+row|fed-board:fed_h15|rate|311|RIFLGFCY10_XII_N.B:par_yield:10Y:act_act:compounded/2:2026-09-23@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-23|310|false
+row|fed-board:fed_h15|rate|312|RIFLGFCY10_XII_N.B:par_yield:10Y:act_act:compounded/2:2026-09-24@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-24|311|false
+row|fed-board:fed_h15|rate|313|RIFLGFCY10_XII_N.B:par_yield:10Y:act_act:compounded/2:2026-09-25@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-25|312|false
+row|fed-board:fed_h15|rate|314|RIFLGFCY10_XII_N.B:par_yield:10Y:act_act:compounded/2:2026-09-28@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-28|313|false
+row|fed-board:fed_h15|rate|315|RIFLGFCY10_XII_N.B:par_yield:10Y:act_act:compounded/2:2026-09-29@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-29|314|false
+row|fed-board:fed_h15|rate|316|RIFLGFCY10_XII_N.B:par_yield:10Y:act_act:compounded/2:2026-09-30@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-30|315|false
+row|fed-board:fed_h15|rate|317|RIFLGFCY10_XII_N.B:par_yield:10Y:act_act:compounded/2:2026-10-01@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-01|316|false
+row|fed-board:fed_h15|rate|318|RIFLGFCY10_XII_N.B:par_yield:10Y:act_act:compounded/2:2026-10-02@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-02|317|false
+row|fed-board:fed_h15|rate|319|RIFLGFCY10_XII_N.B:par_yield:10Y:act_act:compounded/2:2026-10-05@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-05|318|false
+row|fed-board:fed_h15|rate|31|RIFLGFCM01_N.B:par_yield:1M:act_act:compounded/2:2026-10-01@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-01|30|false
+row|fed-board:fed_h15|rate|320|RIFLGFCY10_XII_N.B:par_yield:10Y:act_act:compounded/2:2026-10-06@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-06|319|false
+row|fed-board:fed_h15|rate|321|RIFLGFCY10_XII_N.B:par_yield:10Y:act_act:compounded/2:2026-10-07@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-07|320|false
+row|fed-board:fed_h15|rate|322|RIFLGFCY10_XII_N.B:par_yield:10Y:act_act:compounded/2:2026-10-08@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-08|321|false
+row|fed-board:fed_h15|rate|323|RIFLGFCY10_XII_N.B:par_yield:10Y:act_act:compounded/2:2026-10-09@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-09|322|false
+row|fed-board:fed_h15|rate|324|RIFLGFCY10_XII_N.B:par_yield:10Y:act_act:compounded/2:2026-10-13@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-13|323|false
+row|fed-board:fed_h15|rate|325|RIFLGFCY10_XII_N.B:par_yield:10Y:act_act:compounded/2:2026-10-14@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-14|324|false
+row|fed-board:fed_h15|rate|326|RIFLGFCY10_XII_N.B:par_yield:10Y:act_act:compounded/2:2026-10-15@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-15|325|false
+row|fed-board:fed_h15|rate|327|RIFLGFCY10_XII_N.B:par_yield:10Y:act_act:compounded/2:2026-10-16@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-16|326|false
+row|fed-board:fed_h15|rate|328|RIFLGFCY10_XII_N.B:par_yield:10Y:act_act:compounded/2:2026-10-19@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-19|327|false
+row|fed-board:fed_h15|rate|329|RIFLGFCY10_XII_N.B:par_yield:10Y:act_act:compounded/2:2026-10-20@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-20|328|false
+row|fed-board:fed_h15|rate|32|RIFLGFCM01_N.B:par_yield:1M:act_act:compounded/2:2026-10-02@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-02|31|false
+row|fed-board:fed_h15|rate|330|RIFLGFCY10_XII_N.B:par_yield:10Y:act_act:compounded/2:2026-10-21@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-21|329|false
+row|fed-board:fed_h15|rate|331|RIFLGFCY20_XII_N.B:par_yield:20Y:act_act:compounded/2:2026-09-21@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-21|330|false
+row|fed-board:fed_h15|rate|332|RIFLGFCY20_XII_N.B:par_yield:20Y:act_act:compounded/2:2026-09-22@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-22|331|false
+row|fed-board:fed_h15|rate|333|RIFLGFCY20_XII_N.B:par_yield:20Y:act_act:compounded/2:2026-09-23@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-23|332|false
+row|fed-board:fed_h15|rate|334|RIFLGFCY20_XII_N.B:par_yield:20Y:act_act:compounded/2:2026-09-24@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-24|333|false
+row|fed-board:fed_h15|rate|335|RIFLGFCY20_XII_N.B:par_yield:20Y:act_act:compounded/2:2026-09-25@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-25|334|false
+row|fed-board:fed_h15|rate|336|RIFLGFCY20_XII_N.B:par_yield:20Y:act_act:compounded/2:2026-09-28@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-28|335|false
+row|fed-board:fed_h15|rate|337|RIFLGFCY20_XII_N.B:par_yield:20Y:act_act:compounded/2:2026-09-29@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-29|336|false
+row|fed-board:fed_h15|rate|338|RIFLGFCY20_XII_N.B:par_yield:20Y:act_act:compounded/2:2026-09-30@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-30|337|false
+row|fed-board:fed_h15|rate|339|RIFLGFCY20_XII_N.B:par_yield:20Y:act_act:compounded/2:2026-10-01@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-01|338|false
+row|fed-board:fed_h15|rate|33|RIFLGFCM01_N.B:par_yield:1M:act_act:compounded/2:2026-10-05@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-05|32|false
+row|fed-board:fed_h15|rate|340|RIFLGFCY20_XII_N.B:par_yield:20Y:act_act:compounded/2:2026-10-02@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-02|339|false
+row|fed-board:fed_h15|rate|341|RIFLGFCY20_XII_N.B:par_yield:20Y:act_act:compounded/2:2026-10-05@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-05|340|false
+row|fed-board:fed_h15|rate|342|RIFLGFCY20_XII_N.B:par_yield:20Y:act_act:compounded/2:2026-10-06@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-06|341|false
+row|fed-board:fed_h15|rate|343|RIFLGFCY20_XII_N.B:par_yield:20Y:act_act:compounded/2:2026-10-07@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-07|342|false
+row|fed-board:fed_h15|rate|344|RIFLGFCY20_XII_N.B:par_yield:20Y:act_act:compounded/2:2026-10-08@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-08|343|false
+row|fed-board:fed_h15|rate|345|RIFLGFCY20_XII_N.B:par_yield:20Y:act_act:compounded/2:2026-10-09@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-09|344|false
+row|fed-board:fed_h15|rate|346|RIFLGFCY20_XII_N.B:par_yield:20Y:act_act:compounded/2:2026-10-13@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-13|345|false
+row|fed-board:fed_h15|rate|347|RIFLGFCY20_XII_N.B:par_yield:20Y:act_act:compounded/2:2026-10-14@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-14|346|false
+row|fed-board:fed_h15|rate|348|RIFLGFCY20_XII_N.B:par_yield:20Y:act_act:compounded/2:2026-10-15@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-15|347|false
+row|fed-board:fed_h15|rate|349|RIFLGFCY20_XII_N.B:par_yield:20Y:act_act:compounded/2:2026-10-16@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-16|348|false
+row|fed-board:fed_h15|rate|34|RIFLGFCM01_N.B:par_yield:1M:act_act:compounded/2:2026-10-06@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-06|33|false
+row|fed-board:fed_h15|rate|350|RIFLGFCY20_XII_N.B:par_yield:20Y:act_act:compounded/2:2026-10-19@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-19|349|false
+row|fed-board:fed_h15|rate|351|RIFLGFCY20_XII_N.B:par_yield:20Y:act_act:compounded/2:2026-10-20@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-20|350|false
+row|fed-board:fed_h15|rate|352|RIFLGFCY20_XII_N.B:par_yield:20Y:act_act:compounded/2:2026-10-21@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-21|351|false
+row|fed-board:fed_h15|rate|353|RIFLGFCY30_XII_N.B:par_yield:30Y:act_act:compounded/2:2026-09-21@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-21|352|false
+row|fed-board:fed_h15|rate|354|RIFLGFCY30_XII_N.B:par_yield:30Y:act_act:compounded/2:2026-09-22@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-22|353|false
+row|fed-board:fed_h15|rate|355|RIFLGFCY30_XII_N.B:par_yield:30Y:act_act:compounded/2:2026-09-23@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-23|354|false
+row|fed-board:fed_h15|rate|356|RIFLGFCY30_XII_N.B:par_yield:30Y:act_act:compounded/2:2026-09-24@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-24|355|false
+row|fed-board:fed_h15|rate|357|RIFLGFCY30_XII_N.B:par_yield:30Y:act_act:compounded/2:2026-09-25@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-25|356|false
+row|fed-board:fed_h15|rate|358|RIFLGFCY30_XII_N.B:par_yield:30Y:act_act:compounded/2:2026-09-28@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-28|357|false
+row|fed-board:fed_h15|rate|359|RIFLGFCY30_XII_N.B:par_yield:30Y:act_act:compounded/2:2026-09-29@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-29|358|false
+row|fed-board:fed_h15|rate|35|RIFLGFCM01_N.B:par_yield:1M:act_act:compounded/2:2026-10-07@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-07|34|false
+row|fed-board:fed_h15|rate|360|RIFLGFCY30_XII_N.B:par_yield:30Y:act_act:compounded/2:2026-09-30@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-30|359|false
+row|fed-board:fed_h15|rate|361|RIFLGFCY30_XII_N.B:par_yield:30Y:act_act:compounded/2:2026-10-01@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-01|360|false
+row|fed-board:fed_h15|rate|362|RIFLGFCY30_XII_N.B:par_yield:30Y:act_act:compounded/2:2026-10-02@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-02|361|false
+row|fed-board:fed_h15|rate|363|RIFLGFCY30_XII_N.B:par_yield:30Y:act_act:compounded/2:2026-10-05@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-05|362|false
+row|fed-board:fed_h15|rate|364|RIFLGFCY30_XII_N.B:par_yield:30Y:act_act:compounded/2:2026-10-06@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-06|363|false
+row|fed-board:fed_h15|rate|365|RIFLGFCY30_XII_N.B:par_yield:30Y:act_act:compounded/2:2026-10-07@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-07|364|false
+row|fed-board:fed_h15|rate|366|RIFLGFCY30_XII_N.B:par_yield:30Y:act_act:compounded/2:2026-10-08@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-08|365|false
+row|fed-board:fed_h15|rate|367|RIFLGFCY30_XII_N.B:par_yield:30Y:act_act:compounded/2:2026-10-09@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-09|366|false
+row|fed-board:fed_h15|rate|368|RIFLGFCY30_XII_N.B:par_yield:30Y:act_act:compounded/2:2026-10-13@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-13|367|false
+row|fed-board:fed_h15|rate|369|RIFLGFCY30_XII_N.B:par_yield:30Y:act_act:compounded/2:2026-10-14@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-14|368|false
+row|fed-board:fed_h15|rate|36|RIFLGFCM01_N.B:par_yield:1M:act_act:compounded/2:2026-10-08@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-08|35|false
+row|fed-board:fed_h15|rate|370|RIFLGFCY30_XII_N.B:par_yield:30Y:act_act:compounded/2:2026-10-15@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-15|369|false
+row|fed-board:fed_h15|rate|371|RIFLGFCY30_XII_N.B:par_yield:30Y:act_act:compounded/2:2026-10-16@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-16|370|false
+row|fed-board:fed_h15|rate|372|RIFLGFCY30_XII_N.B:par_yield:30Y:act_act:compounded/2:2026-10-19@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-19|371|false
+row|fed-board:fed_h15|rate|373|RIFLGFCY30_XII_N.B:par_yield:30Y:act_act:compounded/2:2026-10-20@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-20|372|false
+row|fed-board:fed_h15|rate|374|RIFLGFCY30_XII_N.B:par_yield:30Y:act_act:compounded/2:2026-10-21@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-21|373|false
+row|fed-board:fed_h15|rate|37|RIFLGFCM01_N.B:par_yield:1M:act_act:compounded/2:2026-10-09@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-09|36|false
+row|fed-board:fed_h15|rate|38|RIFLGFCM01_N.B:par_yield:1M:act_act:compounded/2:2026-10-13@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-13|37|false
+row|fed-board:fed_h15|rate|39|RIFLGFCM01_N.B:par_yield:1M:act_act:compounded/2:2026-10-14@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-14|38|false
+row|fed-board:fed_h15|rate|3|RIFSPFF_N.B:fixing:-:act_360:simple:2026-09-23@INS-01JREF00000000000000000002|1|nyfed: EFFR|1||2026-09-23|2|false
+row|fed-board:fed_h15|rate|40|RIFLGFCM01_N.B:par_yield:1M:act_act:compounded/2:2026-10-15@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-15|39|false
+row|fed-board:fed_h15|rate|41|RIFLGFCM01_N.B:par_yield:1M:act_act:compounded/2:2026-10-16@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-16|40|false
+row|fed-board:fed_h15|rate|42|RIFLGFCM01_N.B:par_yield:1M:act_act:compounded/2:2026-10-19@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-19|41|false
+row|fed-board:fed_h15|rate|43|RIFLGFCM01_N.B:par_yield:1M:act_act:compounded/2:2026-10-20@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-20|42|false
+row|fed-board:fed_h15|rate|44|RIFLGFCM01_N.B:par_yield:1M:act_act:compounded/2:2026-10-21@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-21|43|false
+row|fed-board:fed_h15|rate|45|RIFLGFCM03_N.B:par_yield:3M:act_act:compounded/2:2026-09-21@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-21|44|false
+row|fed-board:fed_h15|rate|46|RIFLGFCM03_N.B:par_yield:3M:act_act:compounded/2:2026-09-22@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-22|45|false
+row|fed-board:fed_h15|rate|47|RIFLGFCM03_N.B:par_yield:3M:act_act:compounded/2:2026-09-23@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-23|46|false
+row|fed-board:fed_h15|rate|48|RIFLGFCM03_N.B:par_yield:3M:act_act:compounded/2:2026-09-24@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-24|47|false
+row|fed-board:fed_h15|rate|49|RIFLGFCM03_N.B:par_yield:3M:act_act:compounded/2:2026-09-25@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-25|48|false
+row|fed-board:fed_h15|rate|4|RIFSPFF_N.B:fixing:-:act_360:simple:2026-09-24@INS-01JREF00000000000000000002|1|nyfed: EFFR|1||2026-09-24|3|false
+row|fed-board:fed_h15|rate|50|RIFLGFCM03_N.B:par_yield:3M:act_act:compounded/2:2026-09-28@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-28|49|false
+row|fed-board:fed_h15|rate|51|RIFLGFCM03_N.B:par_yield:3M:act_act:compounded/2:2026-09-29@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-29|50|false
+row|fed-board:fed_h15|rate|52|RIFLGFCM03_N.B:par_yield:3M:act_act:compounded/2:2026-09-30@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-30|51|false
+row|fed-board:fed_h15|rate|53|RIFLGFCM03_N.B:par_yield:3M:act_act:compounded/2:2026-10-01@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-01|52|false
+row|fed-board:fed_h15|rate|54|RIFLGFCM03_N.B:par_yield:3M:act_act:compounded/2:2026-10-02@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-02|53|false
+row|fed-board:fed_h15|rate|55|RIFLGFCM03_N.B:par_yield:3M:act_act:compounded/2:2026-10-05@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-05|54|false
+row|fed-board:fed_h15|rate|56|RIFLGFCM03_N.B:par_yield:3M:act_act:compounded/2:2026-10-06@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-06|55|false
+row|fed-board:fed_h15|rate|57|RIFLGFCM03_N.B:par_yield:3M:act_act:compounded/2:2026-10-07@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-07|56|false
+row|fed-board:fed_h15|rate|58|RIFLGFCM03_N.B:par_yield:3M:act_act:compounded/2:2026-10-08@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-08|57|false
+row|fed-board:fed_h15|rate|59|RIFLGFCM03_N.B:par_yield:3M:act_act:compounded/2:2026-10-09@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-09|58|false
+row|fed-board:fed_h15|rate|5|RIFSPFF_N.B:fixing:-:act_360:simple:2026-09-25@INS-01JREF00000000000000000002|1|nyfed: EFFR|1||2026-09-25|4|false
+row|fed-board:fed_h15|rate|60|RIFLGFCM03_N.B:par_yield:3M:act_act:compounded/2:2026-10-13@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-13|59|false
+row|fed-board:fed_h15|rate|61|RIFLGFCM03_N.B:par_yield:3M:act_act:compounded/2:2026-10-14@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-14|60|false
+row|fed-board:fed_h15|rate|62|RIFLGFCM03_N.B:par_yield:3M:act_act:compounded/2:2026-10-15@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-15|61|false
+row|fed-board:fed_h15|rate|63|RIFLGFCM03_N.B:par_yield:3M:act_act:compounded/2:2026-10-16@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-16|62|false
+row|fed-board:fed_h15|rate|64|RIFLGFCM03_N.B:par_yield:3M:act_act:compounded/2:2026-10-19@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-19|63|false
+row|fed-board:fed_h15|rate|65|RIFLGFCM03_N.B:par_yield:3M:act_act:compounded/2:2026-10-20@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-20|64|false
+row|fed-board:fed_h15|rate|66|RIFLGFCM03_N.B:par_yield:3M:act_act:compounded/2:2026-10-21@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-21|65|false
+row|fed-board:fed_h15|rate|67|RIFLGFCM06_N.B:par_yield:6M:act_act:compounded/2:2026-09-21@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-21|66|false
+row|fed-board:fed_h15|rate|68|RIFLGFCM06_N.B:par_yield:6M:act_act:compounded/2:2026-09-22@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-22|67|false
+row|fed-board:fed_h15|rate|69|RIFLGFCM06_N.B:par_yield:6M:act_act:compounded/2:2026-09-23@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-23|68|false
+row|fed-board:fed_h15|rate|6|RIFSPFF_N.B:fixing:-:act_360:simple:2026-09-28@INS-01JREF00000000000000000002|1|nyfed: EFFR|1||2026-09-28|5|false
+row|fed-board:fed_h15|rate|70|RIFLGFCM06_N.B:par_yield:6M:act_act:compounded/2:2026-09-24@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-24|69|false
+row|fed-board:fed_h15|rate|71|RIFLGFCM06_N.B:par_yield:6M:act_act:compounded/2:2026-09-25@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-25|70|false
+row|fed-board:fed_h15|rate|72|RIFLGFCM06_N.B:par_yield:6M:act_act:compounded/2:2026-09-28@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-28|71|false
+row|fed-board:fed_h15|rate|73|RIFLGFCM06_N.B:par_yield:6M:act_act:compounded/2:2026-09-29@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-29|72|false
+row|fed-board:fed_h15|rate|74|RIFLGFCM06_N.B:par_yield:6M:act_act:compounded/2:2026-09-30@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-30|73|false
+row|fed-board:fed_h15|rate|75|RIFLGFCM06_N.B:par_yield:6M:act_act:compounded/2:2026-10-01@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-01|74|false
+row|fed-board:fed_h15|rate|76|RIFLGFCM06_N.B:par_yield:6M:act_act:compounded/2:2026-10-02@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-02|75|false
+row|fed-board:fed_h15|rate|77|RIFLGFCM06_N.B:par_yield:6M:act_act:compounded/2:2026-10-05@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-05|76|false
+row|fed-board:fed_h15|rate|78|RIFLGFCM06_N.B:par_yield:6M:act_act:compounded/2:2026-10-06@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-06|77|false
+row|fed-board:fed_h15|rate|79|RIFLGFCM06_N.B:par_yield:6M:act_act:compounded/2:2026-10-07@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-07|78|false
+row|fed-board:fed_h15|rate|7|RIFSPFF_N.B:fixing:-:act_360:simple:2026-09-29@INS-01JREF00000000000000000002|1|nyfed: EFFR|1||2026-09-29|6|false
+row|fed-board:fed_h15|rate|80|RIFLGFCM06_N.B:par_yield:6M:act_act:compounded/2:2026-10-08@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-08|79|false
+row|fed-board:fed_h15|rate|81|RIFLGFCM06_N.B:par_yield:6M:act_act:compounded/2:2026-10-09@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-09|80|false
+row|fed-board:fed_h15|rate|82|RIFLGFCM06_N.B:par_yield:6M:act_act:compounded/2:2026-10-13@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-13|81|false
+row|fed-board:fed_h15|rate|83|RIFLGFCM06_N.B:par_yield:6M:act_act:compounded/2:2026-10-14@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-14|82|false
+row|fed-board:fed_h15|rate|84|RIFLGFCM06_N.B:par_yield:6M:act_act:compounded/2:2026-10-15@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-15|83|false
+row|fed-board:fed_h15|rate|85|RIFLGFCM06_N.B:par_yield:6M:act_act:compounded/2:2026-10-16@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-16|84|false
+row|fed-board:fed_h15|rate|86|RIFLGFCM06_N.B:par_yield:6M:act_act:compounded/2:2026-10-19@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-19|85|false
+row|fed-board:fed_h15|rate|87|RIFLGFCM06_N.B:par_yield:6M:act_act:compounded/2:2026-10-20@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-20|86|false
+row|fed-board:fed_h15|rate|88|RIFLGFCM06_N.B:par_yield:6M:act_act:compounded/2:2026-10-21@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-21|87|false
+row|fed-board:fed_h15|rate|89|RIFLGFCY01_N.B:par_yield:1Y:act_act:compounded/2:2026-09-21@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-21|88|false
+row|fed-board:fed_h15|rate|8|RIFSPFF_N.B:fixing:-:act_360:simple:2026-09-30@INS-01JREF00000000000000000002|1|nyfed: EFFR|1||2026-09-30|7|false
+row|fed-board:fed_h15|rate|90|RIFLGFCY01_N.B:par_yield:1Y:act_act:compounded/2:2026-09-22@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-22|89|false
+row|fed-board:fed_h15|rate|91|RIFLGFCY01_N.B:par_yield:1Y:act_act:compounded/2:2026-09-23@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-23|90|false
+row|fed-board:fed_h15|rate|92|RIFLGFCY01_N.B:par_yield:1Y:act_act:compounded/2:2026-09-24@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-24|91|false
+row|fed-board:fed_h15|rate|93|RIFLGFCY01_N.B:par_yield:1Y:act_act:compounded/2:2026-09-25@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-25|92|false
+row|fed-board:fed_h15|rate|94|RIFLGFCY01_N.B:par_yield:1Y:act_act:compounded/2:2026-09-28@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-28|93|false
+row|fed-board:fed_h15|rate|95|RIFLGFCY01_N.B:par_yield:1Y:act_act:compounded/2:2026-09-29@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-29|94|false
+row|fed-board:fed_h15|rate|96|RIFLGFCY01_N.B:par_yield:1Y:act_act:compounded/2:2026-09-30@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-30|95|false
+row|fed-board:fed_h15|rate|97|RIFLGFCY01_N.B:par_yield:1Y:act_act:compounded/2:2026-10-01@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-01|96|false
+row|fed-board:fed_h15|rate|98|RIFLGFCY01_N.B:par_yield:1Y:act_act:compounded/2:2026-10-02@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-02|97|false
+row|fed-board:fed_h15|rate|99|RIFLGFCY01_N.B:par_yield:1Y:act_act:compounded/2:2026-10-05@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-05|98|false
+row|fed-board:fed_h15|rate|9|RIFSPFF_N.B:fixing:-:act_360:simple:2026-10-01@INS-01JREF00000000000000000002|1|nyfed: EFFR|1||2026-10-01|8|false
+row|fed-board:fed_zero|rate|100|SVENY10:zero:10Y:act_365_fixed:continuous:2026-09-21@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-21|99|false
+row|fed-board:fed_zero|rate|101|SVENY11:zero:11Y:act_365_fixed:continuous:2026-09-21@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-21|100|false
+row|fed-board:fed_zero|rate|102|SVENY12:zero:12Y:act_365_fixed:continuous:2026-09-21@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-21|101|false
+row|fed-board:fed_zero|rate|103|SVENY13:zero:13Y:act_365_fixed:continuous:2026-09-21@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-21|102|false
+row|fed-board:fed_zero|rate|104|SVENY14:zero:14Y:act_365_fixed:continuous:2026-09-21@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-21|103|false
+row|fed-board:fed_zero|rate|105|SVENY15:zero:15Y:act_365_fixed:continuous:2026-09-21@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-21|104|false
+row|fed-board:fed_zero|rate|106|SVENY16:zero:16Y:act_365_fixed:continuous:2026-09-21@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-21|105|false
+row|fed-board:fed_zero|rate|107|SVENY17:zero:17Y:act_365_fixed:continuous:2026-09-21@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-21|106|false
+row|fed-board:fed_zero|rate|108|SVENY18:zero:18Y:act_365_fixed:continuous:2026-09-21@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-21|107|false
+row|fed-board:fed_zero|rate|109|SVENY19:zero:19Y:act_365_fixed:continuous:2026-09-21@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-21|108|false
+row|fed-board:fed_zero|rate|10|SVENY10:zero:10Y:act_365_fixed:continuous:2026-09-16@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-16|9|false
+row|fed-board:fed_zero|rate|110|SVENY20:zero:20Y:act_365_fixed:continuous:2026-09-21@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-21|109|false
+row|fed-board:fed_zero|rate|111|SVENY21:zero:21Y:act_365_fixed:continuous:2026-09-21@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-21|110|false
+row|fed-board:fed_zero|rate|112|SVENY22:zero:22Y:act_365_fixed:continuous:2026-09-21@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-21|111|false
+row|fed-board:fed_zero|rate|113|SVENY23:zero:23Y:act_365_fixed:continuous:2026-09-21@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-21|112|false
+row|fed-board:fed_zero|rate|114|SVENY24:zero:24Y:act_365_fixed:continuous:2026-09-21@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-21|113|false
+row|fed-board:fed_zero|rate|115|SVENY25:zero:25Y:act_365_fixed:continuous:2026-09-21@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-21|114|false
+row|fed-board:fed_zero|rate|116|SVENY26:zero:26Y:act_365_fixed:continuous:2026-09-21@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-21|115|false
+row|fed-board:fed_zero|rate|117|SVENY27:zero:27Y:act_365_fixed:continuous:2026-09-21@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-21|116|false
+row|fed-board:fed_zero|rate|118|SVENY28:zero:28Y:act_365_fixed:continuous:2026-09-21@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-21|117|false
+row|fed-board:fed_zero|rate|119|SVENY29:zero:29Y:act_365_fixed:continuous:2026-09-21@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-21|118|false
+row|fed-board:fed_zero|rate|11|SVENY11:zero:11Y:act_365_fixed:continuous:2026-09-16@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-16|10|false
+row|fed-board:fed_zero|rate|120|SVENY30:zero:30Y:act_365_fixed:continuous:2026-09-21@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-21|119|false
+row|fed-board:fed_zero|rate|121|SVENY01:zero:1Y:act_365_fixed:continuous:2026-09-22@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-22|120|false
+row|fed-board:fed_zero|rate|122|SVENY02:zero:2Y:act_365_fixed:continuous:2026-09-22@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-22|121|false
+row|fed-board:fed_zero|rate|123|SVENY03:zero:3Y:act_365_fixed:continuous:2026-09-22@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-22|122|false
+row|fed-board:fed_zero|rate|124|SVENY04:zero:4Y:act_365_fixed:continuous:2026-09-22@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-22|123|false
+row|fed-board:fed_zero|rate|125|SVENY05:zero:5Y:act_365_fixed:continuous:2026-09-22@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-22|124|false
+row|fed-board:fed_zero|rate|126|SVENY06:zero:6Y:act_365_fixed:continuous:2026-09-22@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-22|125|false
+row|fed-board:fed_zero|rate|127|SVENY07:zero:7Y:act_365_fixed:continuous:2026-09-22@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-22|126|false
+row|fed-board:fed_zero|rate|128|SVENY08:zero:8Y:act_365_fixed:continuous:2026-09-22@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-22|127|false
+row|fed-board:fed_zero|rate|129|SVENY09:zero:9Y:act_365_fixed:continuous:2026-09-22@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-22|128|false
+row|fed-board:fed_zero|rate|12|SVENY12:zero:12Y:act_365_fixed:continuous:2026-09-16@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-16|11|false
+row|fed-board:fed_zero|rate|130|SVENY10:zero:10Y:act_365_fixed:continuous:2026-09-22@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-22|129|false
+row|fed-board:fed_zero|rate|131|SVENY11:zero:11Y:act_365_fixed:continuous:2026-09-22@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-22|130|false
+row|fed-board:fed_zero|rate|132|SVENY12:zero:12Y:act_365_fixed:continuous:2026-09-22@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-22|131|false
+row|fed-board:fed_zero|rate|133|SVENY13:zero:13Y:act_365_fixed:continuous:2026-09-22@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-22|132|false
+row|fed-board:fed_zero|rate|134|SVENY14:zero:14Y:act_365_fixed:continuous:2026-09-22@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-22|133|false
+row|fed-board:fed_zero|rate|135|SVENY15:zero:15Y:act_365_fixed:continuous:2026-09-22@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-22|134|false
+row|fed-board:fed_zero|rate|136|SVENY16:zero:16Y:act_365_fixed:continuous:2026-09-22@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-22|135|false
+row|fed-board:fed_zero|rate|137|SVENY17:zero:17Y:act_365_fixed:continuous:2026-09-22@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-22|136|false
+row|fed-board:fed_zero|rate|138|SVENY18:zero:18Y:act_365_fixed:continuous:2026-09-22@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-22|137|false
+row|fed-board:fed_zero|rate|139|SVENY19:zero:19Y:act_365_fixed:continuous:2026-09-22@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-22|138|false
+row|fed-board:fed_zero|rate|13|SVENY13:zero:13Y:act_365_fixed:continuous:2026-09-16@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-16|12|false
+row|fed-board:fed_zero|rate|140|SVENY20:zero:20Y:act_365_fixed:continuous:2026-09-22@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-22|139|false
+row|fed-board:fed_zero|rate|141|SVENY21:zero:21Y:act_365_fixed:continuous:2026-09-22@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-22|140|false
+row|fed-board:fed_zero|rate|142|SVENY22:zero:22Y:act_365_fixed:continuous:2026-09-22@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-22|141|false
+row|fed-board:fed_zero|rate|143|SVENY23:zero:23Y:act_365_fixed:continuous:2026-09-22@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-22|142|false
+row|fed-board:fed_zero|rate|144|SVENY24:zero:24Y:act_365_fixed:continuous:2026-09-22@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-22|143|false
+row|fed-board:fed_zero|rate|145|SVENY25:zero:25Y:act_365_fixed:continuous:2026-09-22@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-22|144|false
+row|fed-board:fed_zero|rate|146|SVENY26:zero:26Y:act_365_fixed:continuous:2026-09-22@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-22|145|false
+row|fed-board:fed_zero|rate|147|SVENY27:zero:27Y:act_365_fixed:continuous:2026-09-22@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-22|146|false
+row|fed-board:fed_zero|rate|148|SVENY28:zero:28Y:act_365_fixed:continuous:2026-09-22@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-22|147|false
+row|fed-board:fed_zero|rate|149|SVENY29:zero:29Y:act_365_fixed:continuous:2026-09-22@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-22|148|false
+row|fed-board:fed_zero|rate|14|SVENY14:zero:14Y:act_365_fixed:continuous:2026-09-16@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-16|13|false
+row|fed-board:fed_zero|rate|150|SVENY30:zero:30Y:act_365_fixed:continuous:2026-09-22@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-22|149|false
+row|fed-board:fed_zero|rate|151|SVENY01:zero:1Y:act_365_fixed:continuous:2026-09-23@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-23|150|false
+row|fed-board:fed_zero|rate|152|SVENY02:zero:2Y:act_365_fixed:continuous:2026-09-23@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-23|151|false
+row|fed-board:fed_zero|rate|153|SVENY03:zero:3Y:act_365_fixed:continuous:2026-09-23@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-23|152|false
+row|fed-board:fed_zero|rate|154|SVENY04:zero:4Y:act_365_fixed:continuous:2026-09-23@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-23|153|false
+row|fed-board:fed_zero|rate|155|SVENY05:zero:5Y:act_365_fixed:continuous:2026-09-23@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-23|154|false
+row|fed-board:fed_zero|rate|156|SVENY06:zero:6Y:act_365_fixed:continuous:2026-09-23@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-23|155|false
+row|fed-board:fed_zero|rate|157|SVENY07:zero:7Y:act_365_fixed:continuous:2026-09-23@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-23|156|false
+row|fed-board:fed_zero|rate|158|SVENY08:zero:8Y:act_365_fixed:continuous:2026-09-23@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-23|157|false
+row|fed-board:fed_zero|rate|159|SVENY09:zero:9Y:act_365_fixed:continuous:2026-09-23@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-23|158|false
+row|fed-board:fed_zero|rate|15|SVENY15:zero:15Y:act_365_fixed:continuous:2026-09-16@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-16|14|false
+row|fed-board:fed_zero|rate|160|SVENY10:zero:10Y:act_365_fixed:continuous:2026-09-23@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-23|159|false
+row|fed-board:fed_zero|rate|161|SVENY11:zero:11Y:act_365_fixed:continuous:2026-09-23@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-23|160|false
+row|fed-board:fed_zero|rate|162|SVENY12:zero:12Y:act_365_fixed:continuous:2026-09-23@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-23|161|false
+row|fed-board:fed_zero|rate|163|SVENY13:zero:13Y:act_365_fixed:continuous:2026-09-23@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-23|162|false
+row|fed-board:fed_zero|rate|164|SVENY14:zero:14Y:act_365_fixed:continuous:2026-09-23@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-23|163|false
+row|fed-board:fed_zero|rate|165|SVENY15:zero:15Y:act_365_fixed:continuous:2026-09-23@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-23|164|false
+row|fed-board:fed_zero|rate|166|SVENY16:zero:16Y:act_365_fixed:continuous:2026-09-23@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-23|165|false
+row|fed-board:fed_zero|rate|167|SVENY17:zero:17Y:act_365_fixed:continuous:2026-09-23@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-23|166|false
+row|fed-board:fed_zero|rate|168|SVENY18:zero:18Y:act_365_fixed:continuous:2026-09-23@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-23|167|false
+row|fed-board:fed_zero|rate|169|SVENY19:zero:19Y:act_365_fixed:continuous:2026-09-23@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-23|168|false
+row|fed-board:fed_zero|rate|16|SVENY16:zero:16Y:act_365_fixed:continuous:2026-09-16@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-16|15|false
+row|fed-board:fed_zero|rate|170|SVENY20:zero:20Y:act_365_fixed:continuous:2026-09-23@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-23|169|false
+row|fed-board:fed_zero|rate|171|SVENY21:zero:21Y:act_365_fixed:continuous:2026-09-23@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-23|170|false
+row|fed-board:fed_zero|rate|172|SVENY22:zero:22Y:act_365_fixed:continuous:2026-09-23@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-23|171|false
+row|fed-board:fed_zero|rate|173|SVENY23:zero:23Y:act_365_fixed:continuous:2026-09-23@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-23|172|false
+row|fed-board:fed_zero|rate|174|SVENY24:zero:24Y:act_365_fixed:continuous:2026-09-23@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-23|173|false
+row|fed-board:fed_zero|rate|175|SVENY25:zero:25Y:act_365_fixed:continuous:2026-09-23@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-23|174|false
+row|fed-board:fed_zero|rate|176|SVENY26:zero:26Y:act_365_fixed:continuous:2026-09-23@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-23|175|false
+row|fed-board:fed_zero|rate|177|SVENY27:zero:27Y:act_365_fixed:continuous:2026-09-23@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-23|176|false
+row|fed-board:fed_zero|rate|178|SVENY28:zero:28Y:act_365_fixed:continuous:2026-09-23@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-23|177|false
+row|fed-board:fed_zero|rate|179|SVENY29:zero:29Y:act_365_fixed:continuous:2026-09-23@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-23|178|false
+row|fed-board:fed_zero|rate|17|SVENY17:zero:17Y:act_365_fixed:continuous:2026-09-16@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-16|16|false
+row|fed-board:fed_zero|rate|180|SVENY30:zero:30Y:act_365_fixed:continuous:2026-09-23@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-23|179|false
+row|fed-board:fed_zero|rate|181|SVENY01:zero:1Y:act_365_fixed:continuous:2026-09-24@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-24|180|false
+row|fed-board:fed_zero|rate|182|SVENY02:zero:2Y:act_365_fixed:continuous:2026-09-24@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-24|181|false
+row|fed-board:fed_zero|rate|183|SVENY03:zero:3Y:act_365_fixed:continuous:2026-09-24@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-24|182|false
+row|fed-board:fed_zero|rate|184|SVENY04:zero:4Y:act_365_fixed:continuous:2026-09-24@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-24|183|false
+row|fed-board:fed_zero|rate|185|SVENY05:zero:5Y:act_365_fixed:continuous:2026-09-24@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-24|184|false
+row|fed-board:fed_zero|rate|186|SVENY06:zero:6Y:act_365_fixed:continuous:2026-09-24@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-24|185|false
+row|fed-board:fed_zero|rate|187|SVENY07:zero:7Y:act_365_fixed:continuous:2026-09-24@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-24|186|false
+row|fed-board:fed_zero|rate|188|SVENY08:zero:8Y:act_365_fixed:continuous:2026-09-24@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-24|187|false
+row|fed-board:fed_zero|rate|189|SVENY09:zero:9Y:act_365_fixed:continuous:2026-09-24@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-24|188|false
+row|fed-board:fed_zero|rate|18|SVENY18:zero:18Y:act_365_fixed:continuous:2026-09-16@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-16|17|false
+row|fed-board:fed_zero|rate|190|SVENY10:zero:10Y:act_365_fixed:continuous:2026-09-24@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-24|189|false
+row|fed-board:fed_zero|rate|191|SVENY11:zero:11Y:act_365_fixed:continuous:2026-09-24@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-24|190|false
+row|fed-board:fed_zero|rate|192|SVENY12:zero:12Y:act_365_fixed:continuous:2026-09-24@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-24|191|false
+row|fed-board:fed_zero|rate|193|SVENY13:zero:13Y:act_365_fixed:continuous:2026-09-24@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-24|192|false
+row|fed-board:fed_zero|rate|194|SVENY14:zero:14Y:act_365_fixed:continuous:2026-09-24@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-24|193|false
+row|fed-board:fed_zero|rate|195|SVENY15:zero:15Y:act_365_fixed:continuous:2026-09-24@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-24|194|false
+row|fed-board:fed_zero|rate|196|SVENY16:zero:16Y:act_365_fixed:continuous:2026-09-24@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-24|195|false
+row|fed-board:fed_zero|rate|197|SVENY17:zero:17Y:act_365_fixed:continuous:2026-09-24@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-24|196|false
+row|fed-board:fed_zero|rate|198|SVENY18:zero:18Y:act_365_fixed:continuous:2026-09-24@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-24|197|false
+row|fed-board:fed_zero|rate|199|SVENY19:zero:19Y:act_365_fixed:continuous:2026-09-24@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-24|198|false
+row|fed-board:fed_zero|rate|19|SVENY19:zero:19Y:act_365_fixed:continuous:2026-09-16@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-16|18|false
+row|fed-board:fed_zero|rate|1|SVENY01:zero:1Y:act_365_fixed:continuous:2026-09-16@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-16|0|false
+row|fed-board:fed_zero|rate|200|SVENY20:zero:20Y:act_365_fixed:continuous:2026-09-24@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-24|199|false
+row|fed-board:fed_zero|rate|201|SVENY21:zero:21Y:act_365_fixed:continuous:2026-09-24@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-24|200|false
+row|fed-board:fed_zero|rate|202|SVENY22:zero:22Y:act_365_fixed:continuous:2026-09-24@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-24|201|false
+row|fed-board:fed_zero|rate|203|SVENY23:zero:23Y:act_365_fixed:continuous:2026-09-24@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-24|202|false
+row|fed-board:fed_zero|rate|204|SVENY24:zero:24Y:act_365_fixed:continuous:2026-09-24@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-24|203|false
+row|fed-board:fed_zero|rate|205|SVENY25:zero:25Y:act_365_fixed:continuous:2026-09-24@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-24|204|false
+row|fed-board:fed_zero|rate|206|SVENY26:zero:26Y:act_365_fixed:continuous:2026-09-24@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-24|205|false
+row|fed-board:fed_zero|rate|207|SVENY27:zero:27Y:act_365_fixed:continuous:2026-09-24@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-24|206|false
+row|fed-board:fed_zero|rate|208|SVENY28:zero:28Y:act_365_fixed:continuous:2026-09-24@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-24|207|false
+row|fed-board:fed_zero|rate|209|SVENY29:zero:29Y:act_365_fixed:continuous:2026-09-24@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-24|208|false
+row|fed-board:fed_zero|rate|20|SVENY20:zero:20Y:act_365_fixed:continuous:2026-09-16@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-16|19|false
+row|fed-board:fed_zero|rate|210|SVENY30:zero:30Y:act_365_fixed:continuous:2026-09-24@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-24|209|false
+row|fed-board:fed_zero|rate|211|SVENY01:zero:1Y:act_365_fixed:continuous:2026-09-25@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-25|210|false
+row|fed-board:fed_zero|rate|212|SVENY02:zero:2Y:act_365_fixed:continuous:2026-09-25@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-25|211|false
+row|fed-board:fed_zero|rate|213|SVENY03:zero:3Y:act_365_fixed:continuous:2026-09-25@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-25|212|false
+row|fed-board:fed_zero|rate|214|SVENY04:zero:4Y:act_365_fixed:continuous:2026-09-25@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-25|213|false
+row|fed-board:fed_zero|rate|215|SVENY05:zero:5Y:act_365_fixed:continuous:2026-09-25@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-25|214|false
+row|fed-board:fed_zero|rate|216|SVENY06:zero:6Y:act_365_fixed:continuous:2026-09-25@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-25|215|false
+row|fed-board:fed_zero|rate|217|SVENY07:zero:7Y:act_365_fixed:continuous:2026-09-25@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-25|216|false
+row|fed-board:fed_zero|rate|218|SVENY08:zero:8Y:act_365_fixed:continuous:2026-09-25@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-25|217|false
+row|fed-board:fed_zero|rate|219|SVENY09:zero:9Y:act_365_fixed:continuous:2026-09-25@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-25|218|false
+row|fed-board:fed_zero|rate|21|SVENY21:zero:21Y:act_365_fixed:continuous:2026-09-16@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-16|20|false
+row|fed-board:fed_zero|rate|220|SVENY10:zero:10Y:act_365_fixed:continuous:2026-09-25@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-25|219|false
+row|fed-board:fed_zero|rate|221|SVENY11:zero:11Y:act_365_fixed:continuous:2026-09-25@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-25|220|false
+row|fed-board:fed_zero|rate|222|SVENY12:zero:12Y:act_365_fixed:continuous:2026-09-25@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-25|221|false
+row|fed-board:fed_zero|rate|223|SVENY13:zero:13Y:act_365_fixed:continuous:2026-09-25@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-25|222|false
+row|fed-board:fed_zero|rate|224|SVENY14:zero:14Y:act_365_fixed:continuous:2026-09-25@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-25|223|false
+row|fed-board:fed_zero|rate|225|SVENY15:zero:15Y:act_365_fixed:continuous:2026-09-25@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-25|224|false
+row|fed-board:fed_zero|rate|226|SVENY16:zero:16Y:act_365_fixed:continuous:2026-09-25@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-25|225|false
+row|fed-board:fed_zero|rate|227|SVENY17:zero:17Y:act_365_fixed:continuous:2026-09-25@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-25|226|false
+row|fed-board:fed_zero|rate|228|SVENY18:zero:18Y:act_365_fixed:continuous:2026-09-25@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-25|227|false
+row|fed-board:fed_zero|rate|229|SVENY19:zero:19Y:act_365_fixed:continuous:2026-09-25@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-25|228|false
+row|fed-board:fed_zero|rate|22|SVENY22:zero:22Y:act_365_fixed:continuous:2026-09-16@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-16|21|false
+row|fed-board:fed_zero|rate|230|SVENY20:zero:20Y:act_365_fixed:continuous:2026-09-25@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-25|229|false
+row|fed-board:fed_zero|rate|231|SVENY21:zero:21Y:act_365_fixed:continuous:2026-09-25@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-25|230|false
+row|fed-board:fed_zero|rate|232|SVENY22:zero:22Y:act_365_fixed:continuous:2026-09-25@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-25|231|false
+row|fed-board:fed_zero|rate|233|SVENY23:zero:23Y:act_365_fixed:continuous:2026-09-25@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-25|232|false
+row|fed-board:fed_zero|rate|234|SVENY24:zero:24Y:act_365_fixed:continuous:2026-09-25@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-25|233|false
+row|fed-board:fed_zero|rate|235|SVENY25:zero:25Y:act_365_fixed:continuous:2026-09-25@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-25|234|false
+row|fed-board:fed_zero|rate|236|SVENY26:zero:26Y:act_365_fixed:continuous:2026-09-25@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-25|235|false
+row|fed-board:fed_zero|rate|237|SVENY27:zero:27Y:act_365_fixed:continuous:2026-09-25@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-25|236|false
+row|fed-board:fed_zero|rate|238|SVENY28:zero:28Y:act_365_fixed:continuous:2026-09-25@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-25|237|false
+row|fed-board:fed_zero|rate|239|SVENY29:zero:29Y:act_365_fixed:continuous:2026-09-25@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-25|238|false
+row|fed-board:fed_zero|rate|23|SVENY23:zero:23Y:act_365_fixed:continuous:2026-09-16@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-16|22|false
+row|fed-board:fed_zero|rate|240|SVENY30:zero:30Y:act_365_fixed:continuous:2026-09-25@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-25|239|false
+row|fed-board:fed_zero|rate|241|SVENY01:zero:1Y:act_365_fixed:continuous:2026-09-28@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-28|240|false
+row|fed-board:fed_zero|rate|242|SVENY02:zero:2Y:act_365_fixed:continuous:2026-09-28@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-28|241|false
+row|fed-board:fed_zero|rate|243|SVENY03:zero:3Y:act_365_fixed:continuous:2026-09-28@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-28|242|false
+row|fed-board:fed_zero|rate|244|SVENY04:zero:4Y:act_365_fixed:continuous:2026-09-28@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-28|243|false
+row|fed-board:fed_zero|rate|245|SVENY05:zero:5Y:act_365_fixed:continuous:2026-09-28@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-28|244|false
+row|fed-board:fed_zero|rate|246|SVENY06:zero:6Y:act_365_fixed:continuous:2026-09-28@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-28|245|false
+row|fed-board:fed_zero|rate|247|SVENY07:zero:7Y:act_365_fixed:continuous:2026-09-28@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-28|246|false
+row|fed-board:fed_zero|rate|248|SVENY08:zero:8Y:act_365_fixed:continuous:2026-09-28@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-28|247|false
+row|fed-board:fed_zero|rate|249|SVENY09:zero:9Y:act_365_fixed:continuous:2026-09-28@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-28|248|false
+row|fed-board:fed_zero|rate|24|SVENY24:zero:24Y:act_365_fixed:continuous:2026-09-16@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-16|23|false
+row|fed-board:fed_zero|rate|250|SVENY10:zero:10Y:act_365_fixed:continuous:2026-09-28@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-28|249|false
+row|fed-board:fed_zero|rate|251|SVENY11:zero:11Y:act_365_fixed:continuous:2026-09-28@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-28|250|false
+row|fed-board:fed_zero|rate|252|SVENY12:zero:12Y:act_365_fixed:continuous:2026-09-28@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-28|251|false
+row|fed-board:fed_zero|rate|253|SVENY13:zero:13Y:act_365_fixed:continuous:2026-09-28@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-28|252|false
+row|fed-board:fed_zero|rate|254|SVENY14:zero:14Y:act_365_fixed:continuous:2026-09-28@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-28|253|false
+row|fed-board:fed_zero|rate|255|SVENY15:zero:15Y:act_365_fixed:continuous:2026-09-28@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-28|254|false
+row|fed-board:fed_zero|rate|256|SVENY16:zero:16Y:act_365_fixed:continuous:2026-09-28@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-28|255|false
+row|fed-board:fed_zero|rate|257|SVENY17:zero:17Y:act_365_fixed:continuous:2026-09-28@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-28|256|false
+row|fed-board:fed_zero|rate|258|SVENY18:zero:18Y:act_365_fixed:continuous:2026-09-28@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-28|257|false
+row|fed-board:fed_zero|rate|259|SVENY19:zero:19Y:act_365_fixed:continuous:2026-09-28@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-28|258|false
+row|fed-board:fed_zero|rate|25|SVENY25:zero:25Y:act_365_fixed:continuous:2026-09-16@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-16|24|false
+row|fed-board:fed_zero|rate|260|SVENY20:zero:20Y:act_365_fixed:continuous:2026-09-28@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-28|259|false
+row|fed-board:fed_zero|rate|261|SVENY21:zero:21Y:act_365_fixed:continuous:2026-09-28@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-28|260|false
+row|fed-board:fed_zero|rate|262|SVENY22:zero:22Y:act_365_fixed:continuous:2026-09-28@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-28|261|false
+row|fed-board:fed_zero|rate|263|SVENY23:zero:23Y:act_365_fixed:continuous:2026-09-28@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-28|262|false
+row|fed-board:fed_zero|rate|264|SVENY24:zero:24Y:act_365_fixed:continuous:2026-09-28@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-28|263|false
+row|fed-board:fed_zero|rate|265|SVENY25:zero:25Y:act_365_fixed:continuous:2026-09-28@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-28|264|false
+row|fed-board:fed_zero|rate|266|SVENY26:zero:26Y:act_365_fixed:continuous:2026-09-28@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-28|265|false
+row|fed-board:fed_zero|rate|267|SVENY27:zero:27Y:act_365_fixed:continuous:2026-09-28@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-28|266|false
+row|fed-board:fed_zero|rate|268|SVENY28:zero:28Y:act_365_fixed:continuous:2026-09-28@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-28|267|false
+row|fed-board:fed_zero|rate|269|SVENY29:zero:29Y:act_365_fixed:continuous:2026-09-28@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-28|268|false
+row|fed-board:fed_zero|rate|26|SVENY26:zero:26Y:act_365_fixed:continuous:2026-09-16@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-16|25|false
+row|fed-board:fed_zero|rate|270|SVENY30:zero:30Y:act_365_fixed:continuous:2026-09-28@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-28|269|false
+row|fed-board:fed_zero|rate|271|SVENY01:zero:1Y:act_365_fixed:continuous:2026-09-29@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-29|270|false
+row|fed-board:fed_zero|rate|272|SVENY02:zero:2Y:act_365_fixed:continuous:2026-09-29@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-29|271|false
+row|fed-board:fed_zero|rate|273|SVENY03:zero:3Y:act_365_fixed:continuous:2026-09-29@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-29|272|false
+row|fed-board:fed_zero|rate|274|SVENY04:zero:4Y:act_365_fixed:continuous:2026-09-29@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-29|273|false
+row|fed-board:fed_zero|rate|275|SVENY05:zero:5Y:act_365_fixed:continuous:2026-09-29@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-29|274|false
+row|fed-board:fed_zero|rate|276|SVENY06:zero:6Y:act_365_fixed:continuous:2026-09-29@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-29|275|false
+row|fed-board:fed_zero|rate|277|SVENY07:zero:7Y:act_365_fixed:continuous:2026-09-29@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-29|276|false
+row|fed-board:fed_zero|rate|278|SVENY08:zero:8Y:act_365_fixed:continuous:2026-09-29@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-29|277|false
+row|fed-board:fed_zero|rate|279|SVENY09:zero:9Y:act_365_fixed:continuous:2026-09-29@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-29|278|false
+row|fed-board:fed_zero|rate|27|SVENY27:zero:27Y:act_365_fixed:continuous:2026-09-16@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-16|26|false
+row|fed-board:fed_zero|rate|280|SVENY10:zero:10Y:act_365_fixed:continuous:2026-09-29@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-29|279|false
+row|fed-board:fed_zero|rate|281|SVENY11:zero:11Y:act_365_fixed:continuous:2026-09-29@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-29|280|false
+row|fed-board:fed_zero|rate|282|SVENY12:zero:12Y:act_365_fixed:continuous:2026-09-29@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-29|281|false
+row|fed-board:fed_zero|rate|283|SVENY13:zero:13Y:act_365_fixed:continuous:2026-09-29@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-29|282|false
+row|fed-board:fed_zero|rate|284|SVENY14:zero:14Y:act_365_fixed:continuous:2026-09-29@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-29|283|false
+row|fed-board:fed_zero|rate|285|SVENY15:zero:15Y:act_365_fixed:continuous:2026-09-29@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-29|284|false
+row|fed-board:fed_zero|rate|286|SVENY16:zero:16Y:act_365_fixed:continuous:2026-09-29@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-29|285|false
+row|fed-board:fed_zero|rate|287|SVENY17:zero:17Y:act_365_fixed:continuous:2026-09-29@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-29|286|false
+row|fed-board:fed_zero|rate|288|SVENY18:zero:18Y:act_365_fixed:continuous:2026-09-29@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-29|287|false
+row|fed-board:fed_zero|rate|289|SVENY19:zero:19Y:act_365_fixed:continuous:2026-09-29@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-29|288|false
+row|fed-board:fed_zero|rate|28|SVENY28:zero:28Y:act_365_fixed:continuous:2026-09-16@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-16|27|false
+row|fed-board:fed_zero|rate|290|SVENY20:zero:20Y:act_365_fixed:continuous:2026-09-29@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-29|289|false
+row|fed-board:fed_zero|rate|291|SVENY21:zero:21Y:act_365_fixed:continuous:2026-09-29@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-29|290|false
+row|fed-board:fed_zero|rate|292|SVENY22:zero:22Y:act_365_fixed:continuous:2026-09-29@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-29|291|false
+row|fed-board:fed_zero|rate|293|SVENY23:zero:23Y:act_365_fixed:continuous:2026-09-29@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-29|292|false
+row|fed-board:fed_zero|rate|294|SVENY24:zero:24Y:act_365_fixed:continuous:2026-09-29@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-29|293|false
+row|fed-board:fed_zero|rate|295|SVENY25:zero:25Y:act_365_fixed:continuous:2026-09-29@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-29|294|false
+row|fed-board:fed_zero|rate|296|SVENY26:zero:26Y:act_365_fixed:continuous:2026-09-29@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-29|295|false
+row|fed-board:fed_zero|rate|297|SVENY27:zero:27Y:act_365_fixed:continuous:2026-09-29@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-29|296|false
+row|fed-board:fed_zero|rate|298|SVENY28:zero:28Y:act_365_fixed:continuous:2026-09-29@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-29|297|false
+row|fed-board:fed_zero|rate|299|SVENY29:zero:29Y:act_365_fixed:continuous:2026-09-29@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-29|298|false
+row|fed-board:fed_zero|rate|29|SVENY29:zero:29Y:act_365_fixed:continuous:2026-09-16@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-16|28|false
+row|fed-board:fed_zero|rate|2|SVENY02:zero:2Y:act_365_fixed:continuous:2026-09-16@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-16|1|false
+row|fed-board:fed_zero|rate|300|SVENY30:zero:30Y:act_365_fixed:continuous:2026-09-29@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-29|299|false
+row|fed-board:fed_zero|rate|301|SVENY01:zero:1Y:act_365_fixed:continuous:2026-09-30@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-30|300|false
+row|fed-board:fed_zero|rate|302|SVENY02:zero:2Y:act_365_fixed:continuous:2026-09-30@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-30|301|false
+row|fed-board:fed_zero|rate|303|SVENY03:zero:3Y:act_365_fixed:continuous:2026-09-30@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-30|302|false
+row|fed-board:fed_zero|rate|304|SVENY04:zero:4Y:act_365_fixed:continuous:2026-09-30@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-30|303|false
+row|fed-board:fed_zero|rate|305|SVENY05:zero:5Y:act_365_fixed:continuous:2026-09-30@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-30|304|false
+row|fed-board:fed_zero|rate|306|SVENY06:zero:6Y:act_365_fixed:continuous:2026-09-30@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-30|305|false
+row|fed-board:fed_zero|rate|307|SVENY07:zero:7Y:act_365_fixed:continuous:2026-09-30@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-30|306|false
+row|fed-board:fed_zero|rate|308|SVENY08:zero:8Y:act_365_fixed:continuous:2026-09-30@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-30|307|false
+row|fed-board:fed_zero|rate|309|SVENY09:zero:9Y:act_365_fixed:continuous:2026-09-30@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-30|308|false
+row|fed-board:fed_zero|rate|30|SVENY30:zero:30Y:act_365_fixed:continuous:2026-09-16@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-16|29|false
+row|fed-board:fed_zero|rate|310|SVENY10:zero:10Y:act_365_fixed:continuous:2026-09-30@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-30|309|false
+row|fed-board:fed_zero|rate|311|SVENY11:zero:11Y:act_365_fixed:continuous:2026-09-30@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-30|310|false
+row|fed-board:fed_zero|rate|312|SVENY12:zero:12Y:act_365_fixed:continuous:2026-09-30@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-30|311|false
+row|fed-board:fed_zero|rate|313|SVENY13:zero:13Y:act_365_fixed:continuous:2026-09-30@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-30|312|false
+row|fed-board:fed_zero|rate|314|SVENY14:zero:14Y:act_365_fixed:continuous:2026-09-30@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-30|313|false
+row|fed-board:fed_zero|rate|315|SVENY15:zero:15Y:act_365_fixed:continuous:2026-09-30@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-30|314|false
+row|fed-board:fed_zero|rate|316|SVENY16:zero:16Y:act_365_fixed:continuous:2026-09-30@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-30|315|false
+row|fed-board:fed_zero|rate|317|SVENY17:zero:17Y:act_365_fixed:continuous:2026-09-30@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-30|316|false
+row|fed-board:fed_zero|rate|318|SVENY18:zero:18Y:act_365_fixed:continuous:2026-09-30@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-30|317|false
+row|fed-board:fed_zero|rate|319|SVENY19:zero:19Y:act_365_fixed:continuous:2026-09-30@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-30|318|false
+row|fed-board:fed_zero|rate|31|SVENY01:zero:1Y:act_365_fixed:continuous:2026-09-17@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-17|30|false
+row|fed-board:fed_zero|rate|320|SVENY20:zero:20Y:act_365_fixed:continuous:2026-09-30@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-30|319|false
+row|fed-board:fed_zero|rate|321|SVENY21:zero:21Y:act_365_fixed:continuous:2026-09-30@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-30|320|false
+row|fed-board:fed_zero|rate|322|SVENY22:zero:22Y:act_365_fixed:continuous:2026-09-30@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-30|321|false
+row|fed-board:fed_zero|rate|323|SVENY23:zero:23Y:act_365_fixed:continuous:2026-09-30@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-30|322|false
+row|fed-board:fed_zero|rate|324|SVENY24:zero:24Y:act_365_fixed:continuous:2026-09-30@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-30|323|false
+row|fed-board:fed_zero|rate|325|SVENY25:zero:25Y:act_365_fixed:continuous:2026-09-30@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-30|324|false
+row|fed-board:fed_zero|rate|326|SVENY26:zero:26Y:act_365_fixed:continuous:2026-09-30@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-30|325|false
+row|fed-board:fed_zero|rate|327|SVENY27:zero:27Y:act_365_fixed:continuous:2026-09-30@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-30|326|false
+row|fed-board:fed_zero|rate|328|SVENY28:zero:28Y:act_365_fixed:continuous:2026-09-30@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-30|327|false
+row|fed-board:fed_zero|rate|329|SVENY29:zero:29Y:act_365_fixed:continuous:2026-09-30@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-30|328|false
+row|fed-board:fed_zero|rate|32|SVENY02:zero:2Y:act_365_fixed:continuous:2026-09-17@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-17|31|false
+row|fed-board:fed_zero|rate|330|SVENY30:zero:30Y:act_365_fixed:continuous:2026-09-30@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-30|329|false
+row|fed-board:fed_zero|rate|331|SVENY01:zero:1Y:act_365_fixed:continuous:2026-10-01@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-01|330|false
+row|fed-board:fed_zero|rate|332|SVENY02:zero:2Y:act_365_fixed:continuous:2026-10-01@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-01|331|false
+row|fed-board:fed_zero|rate|333|SVENY03:zero:3Y:act_365_fixed:continuous:2026-10-01@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-01|332|false
+row|fed-board:fed_zero|rate|334|SVENY04:zero:4Y:act_365_fixed:continuous:2026-10-01@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-01|333|false
+row|fed-board:fed_zero|rate|335|SVENY05:zero:5Y:act_365_fixed:continuous:2026-10-01@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-01|334|false
+row|fed-board:fed_zero|rate|336|SVENY06:zero:6Y:act_365_fixed:continuous:2026-10-01@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-01|335|false
+row|fed-board:fed_zero|rate|337|SVENY07:zero:7Y:act_365_fixed:continuous:2026-10-01@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-01|336|false
+row|fed-board:fed_zero|rate|338|SVENY08:zero:8Y:act_365_fixed:continuous:2026-10-01@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-01|337|false
+row|fed-board:fed_zero|rate|339|SVENY09:zero:9Y:act_365_fixed:continuous:2026-10-01@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-01|338|false
+row|fed-board:fed_zero|rate|33|SVENY03:zero:3Y:act_365_fixed:continuous:2026-09-17@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-17|32|false
+row|fed-board:fed_zero|rate|340|SVENY10:zero:10Y:act_365_fixed:continuous:2026-10-01@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-01|339|false
+row|fed-board:fed_zero|rate|341|SVENY11:zero:11Y:act_365_fixed:continuous:2026-10-01@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-01|340|false
+row|fed-board:fed_zero|rate|342|SVENY12:zero:12Y:act_365_fixed:continuous:2026-10-01@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-01|341|false
+row|fed-board:fed_zero|rate|343|SVENY13:zero:13Y:act_365_fixed:continuous:2026-10-01@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-01|342|false
+row|fed-board:fed_zero|rate|344|SVENY14:zero:14Y:act_365_fixed:continuous:2026-10-01@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-01|343|false
+row|fed-board:fed_zero|rate|345|SVENY15:zero:15Y:act_365_fixed:continuous:2026-10-01@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-01|344|false
+row|fed-board:fed_zero|rate|346|SVENY16:zero:16Y:act_365_fixed:continuous:2026-10-01@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-01|345|false
+row|fed-board:fed_zero|rate|347|SVENY17:zero:17Y:act_365_fixed:continuous:2026-10-01@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-01|346|false
+row|fed-board:fed_zero|rate|348|SVENY18:zero:18Y:act_365_fixed:continuous:2026-10-01@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-01|347|false
+row|fed-board:fed_zero|rate|349|SVENY19:zero:19Y:act_365_fixed:continuous:2026-10-01@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-01|348|false
+row|fed-board:fed_zero|rate|34|SVENY04:zero:4Y:act_365_fixed:continuous:2026-09-17@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-17|33|false
+row|fed-board:fed_zero|rate|350|SVENY20:zero:20Y:act_365_fixed:continuous:2026-10-01@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-01|349|false
+row|fed-board:fed_zero|rate|351|SVENY21:zero:21Y:act_365_fixed:continuous:2026-10-01@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-01|350|false
+row|fed-board:fed_zero|rate|352|SVENY22:zero:22Y:act_365_fixed:continuous:2026-10-01@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-01|351|false
+row|fed-board:fed_zero|rate|353|SVENY23:zero:23Y:act_365_fixed:continuous:2026-10-01@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-01|352|false
+row|fed-board:fed_zero|rate|354|SVENY24:zero:24Y:act_365_fixed:continuous:2026-10-01@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-01|353|false
+row|fed-board:fed_zero|rate|355|SVENY25:zero:25Y:act_365_fixed:continuous:2026-10-01@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-01|354|false
+row|fed-board:fed_zero|rate|356|SVENY26:zero:26Y:act_365_fixed:continuous:2026-10-01@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-01|355|false
+row|fed-board:fed_zero|rate|357|SVENY27:zero:27Y:act_365_fixed:continuous:2026-10-01@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-01|356|false
+row|fed-board:fed_zero|rate|358|SVENY28:zero:28Y:act_365_fixed:continuous:2026-10-01@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-01|357|false
+row|fed-board:fed_zero|rate|359|SVENY29:zero:29Y:act_365_fixed:continuous:2026-10-01@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-01|358|false
+row|fed-board:fed_zero|rate|35|SVENY05:zero:5Y:act_365_fixed:continuous:2026-09-17@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-17|34|false
+row|fed-board:fed_zero|rate|360|SVENY30:zero:30Y:act_365_fixed:continuous:2026-10-01@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-01|359|false
+row|fed-board:fed_zero|rate|361|SVENY01:zero:1Y:act_365_fixed:continuous:2026-10-02@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-02|360|false
+row|fed-board:fed_zero|rate|362|SVENY02:zero:2Y:act_365_fixed:continuous:2026-10-02@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-02|361|false
+row|fed-board:fed_zero|rate|363|SVENY03:zero:3Y:act_365_fixed:continuous:2026-10-02@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-02|362|false
+row|fed-board:fed_zero|rate|364|SVENY04:zero:4Y:act_365_fixed:continuous:2026-10-02@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-02|363|false
+row|fed-board:fed_zero|rate|365|SVENY05:zero:5Y:act_365_fixed:continuous:2026-10-02@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-02|364|false
+row|fed-board:fed_zero|rate|366|SVENY06:zero:6Y:act_365_fixed:continuous:2026-10-02@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-02|365|false
+row|fed-board:fed_zero|rate|367|SVENY07:zero:7Y:act_365_fixed:continuous:2026-10-02@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-02|366|false
+row|fed-board:fed_zero|rate|368|SVENY08:zero:8Y:act_365_fixed:continuous:2026-10-02@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-02|367|false
+row|fed-board:fed_zero|rate|369|SVENY09:zero:9Y:act_365_fixed:continuous:2026-10-02@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-02|368|false
+row|fed-board:fed_zero|rate|36|SVENY06:zero:6Y:act_365_fixed:continuous:2026-09-17@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-17|35|false
+row|fed-board:fed_zero|rate|370|SVENY10:zero:10Y:act_365_fixed:continuous:2026-10-02@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-02|369|false
+row|fed-board:fed_zero|rate|371|SVENY11:zero:11Y:act_365_fixed:continuous:2026-10-02@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-02|370|false
+row|fed-board:fed_zero|rate|372|SVENY12:zero:12Y:act_365_fixed:continuous:2026-10-02@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-02|371|false
+row|fed-board:fed_zero|rate|373|SVENY13:zero:13Y:act_365_fixed:continuous:2026-10-02@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-02|372|false
+row|fed-board:fed_zero|rate|374|SVENY14:zero:14Y:act_365_fixed:continuous:2026-10-02@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-02|373|false
+row|fed-board:fed_zero|rate|375|SVENY15:zero:15Y:act_365_fixed:continuous:2026-10-02@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-02|374|false
+row|fed-board:fed_zero|rate|376|SVENY16:zero:16Y:act_365_fixed:continuous:2026-10-02@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-02|375|false
+row|fed-board:fed_zero|rate|377|SVENY17:zero:17Y:act_365_fixed:continuous:2026-10-02@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-02|376|false
+row|fed-board:fed_zero|rate|378|SVENY18:zero:18Y:act_365_fixed:continuous:2026-10-02@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-02|377|false
+row|fed-board:fed_zero|rate|379|SVENY19:zero:19Y:act_365_fixed:continuous:2026-10-02@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-02|378|false
+row|fed-board:fed_zero|rate|37|SVENY07:zero:7Y:act_365_fixed:continuous:2026-09-17@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-17|36|false
+row|fed-board:fed_zero|rate|380|SVENY20:zero:20Y:act_365_fixed:continuous:2026-10-02@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-02|379|false
+row|fed-board:fed_zero|rate|381|SVENY21:zero:21Y:act_365_fixed:continuous:2026-10-02@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-02|380|false
+row|fed-board:fed_zero|rate|382|SVENY22:zero:22Y:act_365_fixed:continuous:2026-10-02@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-02|381|false
+row|fed-board:fed_zero|rate|383|SVENY23:zero:23Y:act_365_fixed:continuous:2026-10-02@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-02|382|false
+row|fed-board:fed_zero|rate|384|SVENY24:zero:24Y:act_365_fixed:continuous:2026-10-02@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-02|383|false
+row|fed-board:fed_zero|rate|385|SVENY25:zero:25Y:act_365_fixed:continuous:2026-10-02@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-02|384|false
+row|fed-board:fed_zero|rate|386|SVENY26:zero:26Y:act_365_fixed:continuous:2026-10-02@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-02|385|false
+row|fed-board:fed_zero|rate|387|SVENY27:zero:27Y:act_365_fixed:continuous:2026-10-02@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-02|386|false
+row|fed-board:fed_zero|rate|388|SVENY28:zero:28Y:act_365_fixed:continuous:2026-10-02@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-02|387|false
+row|fed-board:fed_zero|rate|389|SVENY29:zero:29Y:act_365_fixed:continuous:2026-10-02@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-02|388|false
+row|fed-board:fed_zero|rate|38|SVENY08:zero:8Y:act_365_fixed:continuous:2026-09-17@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-17|37|false
+row|fed-board:fed_zero|rate|390|SVENY30:zero:30Y:act_365_fixed:continuous:2026-10-02@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-02|389|false
+row|fed-board:fed_zero|rate|391|SVENY01:zero:1Y:act_365_fixed:continuous:2026-10-05@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-05|390|false
+row|fed-board:fed_zero|rate|392|SVENY02:zero:2Y:act_365_fixed:continuous:2026-10-05@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-05|391|false
+row|fed-board:fed_zero|rate|393|SVENY03:zero:3Y:act_365_fixed:continuous:2026-10-05@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-05|392|false
+row|fed-board:fed_zero|rate|394|SVENY04:zero:4Y:act_365_fixed:continuous:2026-10-05@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-05|393|false
+row|fed-board:fed_zero|rate|395|SVENY05:zero:5Y:act_365_fixed:continuous:2026-10-05@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-05|394|false
+row|fed-board:fed_zero|rate|396|SVENY06:zero:6Y:act_365_fixed:continuous:2026-10-05@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-05|395|false
+row|fed-board:fed_zero|rate|397|SVENY07:zero:7Y:act_365_fixed:continuous:2026-10-05@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-05|396|false
+row|fed-board:fed_zero|rate|398|SVENY08:zero:8Y:act_365_fixed:continuous:2026-10-05@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-05|397|false
+row|fed-board:fed_zero|rate|399|SVENY09:zero:9Y:act_365_fixed:continuous:2026-10-05@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-05|398|false
+row|fed-board:fed_zero|rate|39|SVENY09:zero:9Y:act_365_fixed:continuous:2026-09-17@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-17|38|false
+row|fed-board:fed_zero|rate|3|SVENY03:zero:3Y:act_365_fixed:continuous:2026-09-16@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-16|2|false
+row|fed-board:fed_zero|rate|400|SVENY10:zero:10Y:act_365_fixed:continuous:2026-10-05@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-05|399|false
+row|fed-board:fed_zero|rate|401|SVENY11:zero:11Y:act_365_fixed:continuous:2026-10-05@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-05|400|false
+row|fed-board:fed_zero|rate|402|SVENY12:zero:12Y:act_365_fixed:continuous:2026-10-05@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-05|401|false
+row|fed-board:fed_zero|rate|403|SVENY13:zero:13Y:act_365_fixed:continuous:2026-10-05@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-05|402|false
+row|fed-board:fed_zero|rate|404|SVENY14:zero:14Y:act_365_fixed:continuous:2026-10-05@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-05|403|false
+row|fed-board:fed_zero|rate|405|SVENY15:zero:15Y:act_365_fixed:continuous:2026-10-05@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-05|404|false
+row|fed-board:fed_zero|rate|406|SVENY16:zero:16Y:act_365_fixed:continuous:2026-10-05@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-05|405|false
+row|fed-board:fed_zero|rate|407|SVENY17:zero:17Y:act_365_fixed:continuous:2026-10-05@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-05|406|false
+row|fed-board:fed_zero|rate|408|SVENY18:zero:18Y:act_365_fixed:continuous:2026-10-05@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-05|407|false
+row|fed-board:fed_zero|rate|409|SVENY19:zero:19Y:act_365_fixed:continuous:2026-10-05@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-05|408|false
+row|fed-board:fed_zero|rate|40|SVENY10:zero:10Y:act_365_fixed:continuous:2026-09-17@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-17|39|false
+row|fed-board:fed_zero|rate|410|SVENY20:zero:20Y:act_365_fixed:continuous:2026-10-05@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-05|409|false
+row|fed-board:fed_zero|rate|411|SVENY21:zero:21Y:act_365_fixed:continuous:2026-10-05@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-05|410|false
+row|fed-board:fed_zero|rate|412|SVENY22:zero:22Y:act_365_fixed:continuous:2026-10-05@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-05|411|false
+row|fed-board:fed_zero|rate|413|SVENY23:zero:23Y:act_365_fixed:continuous:2026-10-05@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-05|412|false
+row|fed-board:fed_zero|rate|414|SVENY24:zero:24Y:act_365_fixed:continuous:2026-10-05@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-05|413|false
+row|fed-board:fed_zero|rate|415|SVENY25:zero:25Y:act_365_fixed:continuous:2026-10-05@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-05|414|false
+row|fed-board:fed_zero|rate|416|SVENY26:zero:26Y:act_365_fixed:continuous:2026-10-05@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-05|415|false
+row|fed-board:fed_zero|rate|417|SVENY27:zero:27Y:act_365_fixed:continuous:2026-10-05@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-05|416|false
+row|fed-board:fed_zero|rate|418|SVENY28:zero:28Y:act_365_fixed:continuous:2026-10-05@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-05|417|false
+row|fed-board:fed_zero|rate|419|SVENY29:zero:29Y:act_365_fixed:continuous:2026-10-05@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-05|418|false
+row|fed-board:fed_zero|rate|41|SVENY11:zero:11Y:act_365_fixed:continuous:2026-09-17@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-17|40|false
+row|fed-board:fed_zero|rate|420|SVENY30:zero:30Y:act_365_fixed:continuous:2026-10-05@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-05|419|false
+row|fed-board:fed_zero|rate|421|SVENY01:zero:1Y:act_365_fixed:continuous:2026-10-06@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-06|420|false
+row|fed-board:fed_zero|rate|422|SVENY02:zero:2Y:act_365_fixed:continuous:2026-10-06@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-06|421|false
+row|fed-board:fed_zero|rate|423|SVENY03:zero:3Y:act_365_fixed:continuous:2026-10-06@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-06|422|false
+row|fed-board:fed_zero|rate|424|SVENY04:zero:4Y:act_365_fixed:continuous:2026-10-06@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-06|423|false
+row|fed-board:fed_zero|rate|425|SVENY05:zero:5Y:act_365_fixed:continuous:2026-10-06@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-06|424|false
+row|fed-board:fed_zero|rate|426|SVENY06:zero:6Y:act_365_fixed:continuous:2026-10-06@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-06|425|false
+row|fed-board:fed_zero|rate|427|SVENY07:zero:7Y:act_365_fixed:continuous:2026-10-06@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-06|426|false
+row|fed-board:fed_zero|rate|428|SVENY08:zero:8Y:act_365_fixed:continuous:2026-10-06@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-06|427|false
+row|fed-board:fed_zero|rate|429|SVENY09:zero:9Y:act_365_fixed:continuous:2026-10-06@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-06|428|false
+row|fed-board:fed_zero|rate|42|SVENY12:zero:12Y:act_365_fixed:continuous:2026-09-17@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-17|41|false
+row|fed-board:fed_zero|rate|430|SVENY10:zero:10Y:act_365_fixed:continuous:2026-10-06@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-06|429|false
+row|fed-board:fed_zero|rate|431|SVENY11:zero:11Y:act_365_fixed:continuous:2026-10-06@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-06|430|false
+row|fed-board:fed_zero|rate|432|SVENY12:zero:12Y:act_365_fixed:continuous:2026-10-06@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-06|431|false
+row|fed-board:fed_zero|rate|433|SVENY13:zero:13Y:act_365_fixed:continuous:2026-10-06@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-06|432|false
+row|fed-board:fed_zero|rate|434|SVENY14:zero:14Y:act_365_fixed:continuous:2026-10-06@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-06|433|false
+row|fed-board:fed_zero|rate|435|SVENY15:zero:15Y:act_365_fixed:continuous:2026-10-06@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-06|434|false
+row|fed-board:fed_zero|rate|436|SVENY16:zero:16Y:act_365_fixed:continuous:2026-10-06@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-06|435|false
+row|fed-board:fed_zero|rate|437|SVENY17:zero:17Y:act_365_fixed:continuous:2026-10-06@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-06|436|false
+row|fed-board:fed_zero|rate|438|SVENY18:zero:18Y:act_365_fixed:continuous:2026-10-06@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-06|437|false
+row|fed-board:fed_zero|rate|439|SVENY19:zero:19Y:act_365_fixed:continuous:2026-10-06@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-06|438|false
+row|fed-board:fed_zero|rate|43|SVENY13:zero:13Y:act_365_fixed:continuous:2026-09-17@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-17|42|false
+row|fed-board:fed_zero|rate|440|SVENY20:zero:20Y:act_365_fixed:continuous:2026-10-06@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-06|439|false
+row|fed-board:fed_zero|rate|441|SVENY21:zero:21Y:act_365_fixed:continuous:2026-10-06@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-06|440|false
+row|fed-board:fed_zero|rate|442|SVENY22:zero:22Y:act_365_fixed:continuous:2026-10-06@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-06|441|false
+row|fed-board:fed_zero|rate|443|SVENY23:zero:23Y:act_365_fixed:continuous:2026-10-06@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-06|442|false
+row|fed-board:fed_zero|rate|444|SVENY24:zero:24Y:act_365_fixed:continuous:2026-10-06@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-06|443|false
+row|fed-board:fed_zero|rate|445|SVENY25:zero:25Y:act_365_fixed:continuous:2026-10-06@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-06|444|false
+row|fed-board:fed_zero|rate|446|SVENY26:zero:26Y:act_365_fixed:continuous:2026-10-06@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-06|445|false
+row|fed-board:fed_zero|rate|447|SVENY27:zero:27Y:act_365_fixed:continuous:2026-10-06@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-06|446|false
+row|fed-board:fed_zero|rate|448|SVENY28:zero:28Y:act_365_fixed:continuous:2026-10-06@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-06|447|false
+row|fed-board:fed_zero|rate|449|SVENY29:zero:29Y:act_365_fixed:continuous:2026-10-06@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-06|448|false
+row|fed-board:fed_zero|rate|44|SVENY14:zero:14Y:act_365_fixed:continuous:2026-09-17@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-17|43|false
+row|fed-board:fed_zero|rate|450|SVENY30:zero:30Y:act_365_fixed:continuous:2026-10-06@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-06|449|false
+row|fed-board:fed_zero|rate|451|SVENY01:zero:1Y:act_365_fixed:continuous:2026-10-07@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-07|450|false
+row|fed-board:fed_zero|rate|452|SVENY02:zero:2Y:act_365_fixed:continuous:2026-10-07@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-07|451|false
+row|fed-board:fed_zero|rate|453|SVENY03:zero:3Y:act_365_fixed:continuous:2026-10-07@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-07|452|false
+row|fed-board:fed_zero|rate|454|SVENY04:zero:4Y:act_365_fixed:continuous:2026-10-07@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-07|453|false
+row|fed-board:fed_zero|rate|455|SVENY05:zero:5Y:act_365_fixed:continuous:2026-10-07@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-07|454|false
+row|fed-board:fed_zero|rate|456|SVENY06:zero:6Y:act_365_fixed:continuous:2026-10-07@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-07|455|false
+row|fed-board:fed_zero|rate|457|SVENY07:zero:7Y:act_365_fixed:continuous:2026-10-07@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-07|456|false
+row|fed-board:fed_zero|rate|458|SVENY08:zero:8Y:act_365_fixed:continuous:2026-10-07@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-07|457|false
+row|fed-board:fed_zero|rate|459|SVENY09:zero:9Y:act_365_fixed:continuous:2026-10-07@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-07|458|false
+row|fed-board:fed_zero|rate|45|SVENY15:zero:15Y:act_365_fixed:continuous:2026-09-17@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-17|44|false
+row|fed-board:fed_zero|rate|460|SVENY10:zero:10Y:act_365_fixed:continuous:2026-10-07@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-07|459|false
+row|fed-board:fed_zero|rate|461|SVENY11:zero:11Y:act_365_fixed:continuous:2026-10-07@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-07|460|false
+row|fed-board:fed_zero|rate|462|SVENY12:zero:12Y:act_365_fixed:continuous:2026-10-07@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-07|461|false
+row|fed-board:fed_zero|rate|463|SVENY13:zero:13Y:act_365_fixed:continuous:2026-10-07@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-07|462|false
+row|fed-board:fed_zero|rate|464|SVENY14:zero:14Y:act_365_fixed:continuous:2026-10-07@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-07|463|false
+row|fed-board:fed_zero|rate|465|SVENY15:zero:15Y:act_365_fixed:continuous:2026-10-07@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-07|464|false
+row|fed-board:fed_zero|rate|466|SVENY16:zero:16Y:act_365_fixed:continuous:2026-10-07@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-07|465|false
+row|fed-board:fed_zero|rate|467|SVENY17:zero:17Y:act_365_fixed:continuous:2026-10-07@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-07|466|false
+row|fed-board:fed_zero|rate|468|SVENY18:zero:18Y:act_365_fixed:continuous:2026-10-07@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-07|467|false
+row|fed-board:fed_zero|rate|469|SVENY19:zero:19Y:act_365_fixed:continuous:2026-10-07@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-07|468|false
+row|fed-board:fed_zero|rate|46|SVENY16:zero:16Y:act_365_fixed:continuous:2026-09-17@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-17|45|false
+row|fed-board:fed_zero|rate|470|SVENY20:zero:20Y:act_365_fixed:continuous:2026-10-07@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-07|469|false
+row|fed-board:fed_zero|rate|471|SVENY21:zero:21Y:act_365_fixed:continuous:2026-10-07@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-07|470|false
+row|fed-board:fed_zero|rate|472|SVENY22:zero:22Y:act_365_fixed:continuous:2026-10-07@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-07|471|false
+row|fed-board:fed_zero|rate|473|SVENY23:zero:23Y:act_365_fixed:continuous:2026-10-07@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-07|472|false
+row|fed-board:fed_zero|rate|474|SVENY24:zero:24Y:act_365_fixed:continuous:2026-10-07@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-07|473|false
+row|fed-board:fed_zero|rate|475|SVENY25:zero:25Y:act_365_fixed:continuous:2026-10-07@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-07|474|false
+row|fed-board:fed_zero|rate|476|SVENY26:zero:26Y:act_365_fixed:continuous:2026-10-07@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-07|475|false
+row|fed-board:fed_zero|rate|477|SVENY27:zero:27Y:act_365_fixed:continuous:2026-10-07@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-07|476|false
+row|fed-board:fed_zero|rate|478|SVENY28:zero:28Y:act_365_fixed:continuous:2026-10-07@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-07|477|false
+row|fed-board:fed_zero|rate|479|SVENY29:zero:29Y:act_365_fixed:continuous:2026-10-07@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-07|478|false
+row|fed-board:fed_zero|rate|47|SVENY17:zero:17Y:act_365_fixed:continuous:2026-09-17@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-17|46|false
+row|fed-board:fed_zero|rate|480|SVENY30:zero:30Y:act_365_fixed:continuous:2026-10-07@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-07|479|false
+row|fed-board:fed_zero|rate|481|SVENY01:zero:1Y:act_365_fixed:continuous:2026-10-08@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-08|480|false
+row|fed-board:fed_zero|rate|482|SVENY02:zero:2Y:act_365_fixed:continuous:2026-10-08@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-08|481|false
+row|fed-board:fed_zero|rate|483|SVENY03:zero:3Y:act_365_fixed:continuous:2026-10-08@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-08|482|false
+row|fed-board:fed_zero|rate|484|SVENY04:zero:4Y:act_365_fixed:continuous:2026-10-08@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-08|483|false
+row|fed-board:fed_zero|rate|485|SVENY05:zero:5Y:act_365_fixed:continuous:2026-10-08@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-08|484|false
+row|fed-board:fed_zero|rate|486|SVENY06:zero:6Y:act_365_fixed:continuous:2026-10-08@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-08|485|false
+row|fed-board:fed_zero|rate|487|SVENY07:zero:7Y:act_365_fixed:continuous:2026-10-08@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-08|486|false
+row|fed-board:fed_zero|rate|488|SVENY08:zero:8Y:act_365_fixed:continuous:2026-10-08@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-08|487|false
+row|fed-board:fed_zero|rate|489|SVENY09:zero:9Y:act_365_fixed:continuous:2026-10-08@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-08|488|false
+row|fed-board:fed_zero|rate|48|SVENY18:zero:18Y:act_365_fixed:continuous:2026-09-17@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-17|47|false
+row|fed-board:fed_zero|rate|490|SVENY10:zero:10Y:act_365_fixed:continuous:2026-10-08@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-08|489|false
+row|fed-board:fed_zero|rate|491|SVENY11:zero:11Y:act_365_fixed:continuous:2026-10-08@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-08|490|false
+row|fed-board:fed_zero|rate|492|SVENY12:zero:12Y:act_365_fixed:continuous:2026-10-08@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-08|491|false
+row|fed-board:fed_zero|rate|493|SVENY13:zero:13Y:act_365_fixed:continuous:2026-10-08@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-08|492|false
+row|fed-board:fed_zero|rate|494|SVENY14:zero:14Y:act_365_fixed:continuous:2026-10-08@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-08|493|false
+row|fed-board:fed_zero|rate|495|SVENY15:zero:15Y:act_365_fixed:continuous:2026-10-08@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-08|494|false
+row|fed-board:fed_zero|rate|496|SVENY16:zero:16Y:act_365_fixed:continuous:2026-10-08@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-08|495|false
+row|fed-board:fed_zero|rate|497|SVENY17:zero:17Y:act_365_fixed:continuous:2026-10-08@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-08|496|false
+row|fed-board:fed_zero|rate|498|SVENY18:zero:18Y:act_365_fixed:continuous:2026-10-08@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-08|497|false
+row|fed-board:fed_zero|rate|499|SVENY19:zero:19Y:act_365_fixed:continuous:2026-10-08@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-08|498|false
+row|fed-board:fed_zero|rate|49|SVENY19:zero:19Y:act_365_fixed:continuous:2026-09-17@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-17|48|false
+row|fed-board:fed_zero|rate|4|SVENY04:zero:4Y:act_365_fixed:continuous:2026-09-16@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-16|3|false
+row|fed-board:fed_zero|rate|500|SVENY20:zero:20Y:act_365_fixed:continuous:2026-10-08@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-08|499|false
+row|fed-board:fed_zero|rate|501|SVENY21:zero:21Y:act_365_fixed:continuous:2026-10-08@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-08|500|false
+row|fed-board:fed_zero|rate|502|SVENY22:zero:22Y:act_365_fixed:continuous:2026-10-08@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-08|501|false
+row|fed-board:fed_zero|rate|503|SVENY23:zero:23Y:act_365_fixed:continuous:2026-10-08@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-08|502|false
+row|fed-board:fed_zero|rate|504|SVENY24:zero:24Y:act_365_fixed:continuous:2026-10-08@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-08|503|false
+row|fed-board:fed_zero|rate|505|SVENY25:zero:25Y:act_365_fixed:continuous:2026-10-08@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-08|504|false
+row|fed-board:fed_zero|rate|506|SVENY26:zero:26Y:act_365_fixed:continuous:2026-10-08@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-08|505|false
+row|fed-board:fed_zero|rate|507|SVENY27:zero:27Y:act_365_fixed:continuous:2026-10-08@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-08|506|false
+row|fed-board:fed_zero|rate|508|SVENY28:zero:28Y:act_365_fixed:continuous:2026-10-08@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-08|507|false
+row|fed-board:fed_zero|rate|509|SVENY29:zero:29Y:act_365_fixed:continuous:2026-10-08@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-08|508|false
+row|fed-board:fed_zero|rate|50|SVENY20:zero:20Y:act_365_fixed:continuous:2026-09-17@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-17|49|false
+row|fed-board:fed_zero|rate|510|SVENY30:zero:30Y:act_365_fixed:continuous:2026-10-08@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-08|509|false
+row|fed-board:fed_zero|rate|511|SVENY01:zero:1Y:act_365_fixed:continuous:2026-10-09@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-09|510|false
+row|fed-board:fed_zero|rate|512|SVENY02:zero:2Y:act_365_fixed:continuous:2026-10-09@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-09|511|false
+row|fed-board:fed_zero|rate|513|SVENY03:zero:3Y:act_365_fixed:continuous:2026-10-09@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-09|512|false
+row|fed-board:fed_zero|rate|514|SVENY04:zero:4Y:act_365_fixed:continuous:2026-10-09@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-09|513|false
+row|fed-board:fed_zero|rate|515|SVENY05:zero:5Y:act_365_fixed:continuous:2026-10-09@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-09|514|false
+row|fed-board:fed_zero|rate|516|SVENY06:zero:6Y:act_365_fixed:continuous:2026-10-09@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-09|515|false
+row|fed-board:fed_zero|rate|517|SVENY07:zero:7Y:act_365_fixed:continuous:2026-10-09@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-09|516|false
+row|fed-board:fed_zero|rate|518|SVENY08:zero:8Y:act_365_fixed:continuous:2026-10-09@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-09|517|false
+row|fed-board:fed_zero|rate|519|SVENY09:zero:9Y:act_365_fixed:continuous:2026-10-09@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-09|518|false
+row|fed-board:fed_zero|rate|51|SVENY21:zero:21Y:act_365_fixed:continuous:2026-09-17@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-17|50|false
+row|fed-board:fed_zero|rate|520|SVENY10:zero:10Y:act_365_fixed:continuous:2026-10-09@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-09|519|false
+row|fed-board:fed_zero|rate|521|SVENY11:zero:11Y:act_365_fixed:continuous:2026-10-09@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-09|520|false
+row|fed-board:fed_zero|rate|522|SVENY12:zero:12Y:act_365_fixed:continuous:2026-10-09@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-09|521|false
+row|fed-board:fed_zero|rate|523|SVENY13:zero:13Y:act_365_fixed:continuous:2026-10-09@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-09|522|false
+row|fed-board:fed_zero|rate|524|SVENY14:zero:14Y:act_365_fixed:continuous:2026-10-09@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-09|523|false
+row|fed-board:fed_zero|rate|525|SVENY15:zero:15Y:act_365_fixed:continuous:2026-10-09@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-09|524|false
+row|fed-board:fed_zero|rate|526|SVENY16:zero:16Y:act_365_fixed:continuous:2026-10-09@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-09|525|false
+row|fed-board:fed_zero|rate|527|SVENY17:zero:17Y:act_365_fixed:continuous:2026-10-09@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-09|526|false
+row|fed-board:fed_zero|rate|528|SVENY18:zero:18Y:act_365_fixed:continuous:2026-10-09@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-09|527|false
+row|fed-board:fed_zero|rate|529|SVENY19:zero:19Y:act_365_fixed:continuous:2026-10-09@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-09|528|false
+row|fed-board:fed_zero|rate|52|SVENY22:zero:22Y:act_365_fixed:continuous:2026-09-17@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-17|51|false
+row|fed-board:fed_zero|rate|530|SVENY20:zero:20Y:act_365_fixed:continuous:2026-10-09@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-09|529|false
+row|fed-board:fed_zero|rate|531|SVENY21:zero:21Y:act_365_fixed:continuous:2026-10-09@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-09|530|false
+row|fed-board:fed_zero|rate|532|SVENY22:zero:22Y:act_365_fixed:continuous:2026-10-09@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-09|531|false
+row|fed-board:fed_zero|rate|533|SVENY23:zero:23Y:act_365_fixed:continuous:2026-10-09@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-09|532|false
+row|fed-board:fed_zero|rate|534|SVENY24:zero:24Y:act_365_fixed:continuous:2026-10-09@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-09|533|false
+row|fed-board:fed_zero|rate|535|SVENY25:zero:25Y:act_365_fixed:continuous:2026-10-09@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-09|534|false
+row|fed-board:fed_zero|rate|536|SVENY26:zero:26Y:act_365_fixed:continuous:2026-10-09@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-09|535|false
+row|fed-board:fed_zero|rate|537|SVENY27:zero:27Y:act_365_fixed:continuous:2026-10-09@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-09|536|false
+row|fed-board:fed_zero|rate|538|SVENY28:zero:28Y:act_365_fixed:continuous:2026-10-09@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-09|537|false
+row|fed-board:fed_zero|rate|539|SVENY29:zero:29Y:act_365_fixed:continuous:2026-10-09@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-09|538|false
+row|fed-board:fed_zero|rate|53|SVENY23:zero:23Y:act_365_fixed:continuous:2026-09-17@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-17|52|false
+row|fed-board:fed_zero|rate|540|SVENY30:zero:30Y:act_365_fixed:continuous:2026-10-09@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-09|539|false
+row|fed-board:fed_zero|rate|541|SVENY01:zero:1Y:act_365_fixed:continuous:2026-10-13@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-13|540|false
+row|fed-board:fed_zero|rate|542|SVENY02:zero:2Y:act_365_fixed:continuous:2026-10-13@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-13|541|false
+row|fed-board:fed_zero|rate|543|SVENY03:zero:3Y:act_365_fixed:continuous:2026-10-13@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-13|542|false
+row|fed-board:fed_zero|rate|544|SVENY04:zero:4Y:act_365_fixed:continuous:2026-10-13@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-13|543|false
+row|fed-board:fed_zero|rate|545|SVENY05:zero:5Y:act_365_fixed:continuous:2026-10-13@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-13|544|false
+row|fed-board:fed_zero|rate|546|SVENY06:zero:6Y:act_365_fixed:continuous:2026-10-13@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-13|545|false
+row|fed-board:fed_zero|rate|547|SVENY07:zero:7Y:act_365_fixed:continuous:2026-10-13@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-13|546|false
+row|fed-board:fed_zero|rate|548|SVENY08:zero:8Y:act_365_fixed:continuous:2026-10-13@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-13|547|false
+row|fed-board:fed_zero|rate|549|SVENY09:zero:9Y:act_365_fixed:continuous:2026-10-13@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-13|548|false
+row|fed-board:fed_zero|rate|54|SVENY24:zero:24Y:act_365_fixed:continuous:2026-09-17@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-17|53|false
+row|fed-board:fed_zero|rate|550|SVENY10:zero:10Y:act_365_fixed:continuous:2026-10-13@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-13|549|false
+row|fed-board:fed_zero|rate|551|SVENY11:zero:11Y:act_365_fixed:continuous:2026-10-13@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-13|550|false
+row|fed-board:fed_zero|rate|552|SVENY12:zero:12Y:act_365_fixed:continuous:2026-10-13@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-13|551|false
+row|fed-board:fed_zero|rate|553|SVENY13:zero:13Y:act_365_fixed:continuous:2026-10-13@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-13|552|false
+row|fed-board:fed_zero|rate|554|SVENY14:zero:14Y:act_365_fixed:continuous:2026-10-13@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-13|553|false
+row|fed-board:fed_zero|rate|555|SVENY15:zero:15Y:act_365_fixed:continuous:2026-10-13@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-13|554|false
+row|fed-board:fed_zero|rate|556|SVENY16:zero:16Y:act_365_fixed:continuous:2026-10-13@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-13|555|false
+row|fed-board:fed_zero|rate|557|SVENY17:zero:17Y:act_365_fixed:continuous:2026-10-13@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-13|556|false
+row|fed-board:fed_zero|rate|558|SVENY18:zero:18Y:act_365_fixed:continuous:2026-10-13@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-13|557|false
+row|fed-board:fed_zero|rate|559|SVENY19:zero:19Y:act_365_fixed:continuous:2026-10-13@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-13|558|false
+row|fed-board:fed_zero|rate|55|SVENY25:zero:25Y:act_365_fixed:continuous:2026-09-17@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-17|54|false
+row|fed-board:fed_zero|rate|560|SVENY20:zero:20Y:act_365_fixed:continuous:2026-10-13@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-13|559|false
+row|fed-board:fed_zero|rate|561|SVENY21:zero:21Y:act_365_fixed:continuous:2026-10-13@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-13|560|false
+row|fed-board:fed_zero|rate|562|SVENY22:zero:22Y:act_365_fixed:continuous:2026-10-13@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-13|561|false
+row|fed-board:fed_zero|rate|563|SVENY23:zero:23Y:act_365_fixed:continuous:2026-10-13@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-13|562|false
+row|fed-board:fed_zero|rate|564|SVENY24:zero:24Y:act_365_fixed:continuous:2026-10-13@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-13|563|false
+row|fed-board:fed_zero|rate|565|SVENY25:zero:25Y:act_365_fixed:continuous:2026-10-13@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-13|564|false
+row|fed-board:fed_zero|rate|566|SVENY26:zero:26Y:act_365_fixed:continuous:2026-10-13@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-13|565|false
+row|fed-board:fed_zero|rate|567|SVENY27:zero:27Y:act_365_fixed:continuous:2026-10-13@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-13|566|false
+row|fed-board:fed_zero|rate|568|SVENY28:zero:28Y:act_365_fixed:continuous:2026-10-13@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-13|567|false
+row|fed-board:fed_zero|rate|569|SVENY29:zero:29Y:act_365_fixed:continuous:2026-10-13@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-13|568|false
+row|fed-board:fed_zero|rate|56|SVENY26:zero:26Y:act_365_fixed:continuous:2026-09-17@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-17|55|false
+row|fed-board:fed_zero|rate|570|SVENY30:zero:30Y:act_365_fixed:continuous:2026-10-13@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-13|569|false
+row|fed-board:fed_zero|rate|571|SVENY01:zero:1Y:act_365_fixed:continuous:2026-10-14@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-14|570|false
+row|fed-board:fed_zero|rate|572|SVENY02:zero:2Y:act_365_fixed:continuous:2026-10-14@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-14|571|false
+row|fed-board:fed_zero|rate|573|SVENY03:zero:3Y:act_365_fixed:continuous:2026-10-14@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-14|572|false
+row|fed-board:fed_zero|rate|574|SVENY04:zero:4Y:act_365_fixed:continuous:2026-10-14@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-14|573|false
+row|fed-board:fed_zero|rate|575|SVENY05:zero:5Y:act_365_fixed:continuous:2026-10-14@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-14|574|false
+row|fed-board:fed_zero|rate|576|SVENY06:zero:6Y:act_365_fixed:continuous:2026-10-14@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-14|575|false
+row|fed-board:fed_zero|rate|577|SVENY07:zero:7Y:act_365_fixed:continuous:2026-10-14@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-14|576|false
+row|fed-board:fed_zero|rate|578|SVENY08:zero:8Y:act_365_fixed:continuous:2026-10-14@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-14|577|false
+row|fed-board:fed_zero|rate|579|SVENY09:zero:9Y:act_365_fixed:continuous:2026-10-14@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-14|578|false
+row|fed-board:fed_zero|rate|57|SVENY27:zero:27Y:act_365_fixed:continuous:2026-09-17@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-17|56|false
+row|fed-board:fed_zero|rate|580|SVENY10:zero:10Y:act_365_fixed:continuous:2026-10-14@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-14|579|false
+row|fed-board:fed_zero|rate|581|SVENY11:zero:11Y:act_365_fixed:continuous:2026-10-14@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-14|580|false
+row|fed-board:fed_zero|rate|582|SVENY12:zero:12Y:act_365_fixed:continuous:2026-10-14@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-14|581|false
+row|fed-board:fed_zero|rate|583|SVENY13:zero:13Y:act_365_fixed:continuous:2026-10-14@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-14|582|false
+row|fed-board:fed_zero|rate|584|SVENY14:zero:14Y:act_365_fixed:continuous:2026-10-14@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-14|583|false
+row|fed-board:fed_zero|rate|585|SVENY15:zero:15Y:act_365_fixed:continuous:2026-10-14@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-14|584|false
+row|fed-board:fed_zero|rate|586|SVENY16:zero:16Y:act_365_fixed:continuous:2026-10-14@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-14|585|false
+row|fed-board:fed_zero|rate|587|SVENY17:zero:17Y:act_365_fixed:continuous:2026-10-14@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-14|586|false
+row|fed-board:fed_zero|rate|588|SVENY18:zero:18Y:act_365_fixed:continuous:2026-10-14@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-14|587|false
+row|fed-board:fed_zero|rate|589|SVENY19:zero:19Y:act_365_fixed:continuous:2026-10-14@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-14|588|false
+row|fed-board:fed_zero|rate|58|SVENY28:zero:28Y:act_365_fixed:continuous:2026-09-17@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-17|57|false
+row|fed-board:fed_zero|rate|590|SVENY20:zero:20Y:act_365_fixed:continuous:2026-10-14@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-14|589|false
+row|fed-board:fed_zero|rate|591|SVENY21:zero:21Y:act_365_fixed:continuous:2026-10-14@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-14|590|false
+row|fed-board:fed_zero|rate|592|SVENY22:zero:22Y:act_365_fixed:continuous:2026-10-14@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-14|591|false
+row|fed-board:fed_zero|rate|593|SVENY23:zero:23Y:act_365_fixed:continuous:2026-10-14@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-14|592|false
+row|fed-board:fed_zero|rate|594|SVENY24:zero:24Y:act_365_fixed:continuous:2026-10-14@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-14|593|false
+row|fed-board:fed_zero|rate|595|SVENY25:zero:25Y:act_365_fixed:continuous:2026-10-14@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-14|594|false
+row|fed-board:fed_zero|rate|596|SVENY26:zero:26Y:act_365_fixed:continuous:2026-10-14@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-14|595|false
+row|fed-board:fed_zero|rate|597|SVENY27:zero:27Y:act_365_fixed:continuous:2026-10-14@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-14|596|false
+row|fed-board:fed_zero|rate|598|SVENY28:zero:28Y:act_365_fixed:continuous:2026-10-14@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-14|597|false
+row|fed-board:fed_zero|rate|599|SVENY29:zero:29Y:act_365_fixed:continuous:2026-10-14@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-14|598|false
+row|fed-board:fed_zero|rate|59|SVENY29:zero:29Y:act_365_fixed:continuous:2026-09-17@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-17|58|false
+row|fed-board:fed_zero|rate|5|SVENY05:zero:5Y:act_365_fixed:continuous:2026-09-16@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-16|4|false
+row|fed-board:fed_zero|rate|600|SVENY30:zero:30Y:act_365_fixed:continuous:2026-10-14@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-14|599|false
+row|fed-board:fed_zero|rate|601|SVENY01:zero:1Y:act_365_fixed:continuous:2026-10-15@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-15|600|false
+row|fed-board:fed_zero|rate|602|SVENY02:zero:2Y:act_365_fixed:continuous:2026-10-15@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-15|601|false
+row|fed-board:fed_zero|rate|603|SVENY03:zero:3Y:act_365_fixed:continuous:2026-10-15@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-15|602|false
+row|fed-board:fed_zero|rate|604|SVENY04:zero:4Y:act_365_fixed:continuous:2026-10-15@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-15|603|false
+row|fed-board:fed_zero|rate|605|SVENY05:zero:5Y:act_365_fixed:continuous:2026-10-15@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-15|604|false
+row|fed-board:fed_zero|rate|606|SVENY06:zero:6Y:act_365_fixed:continuous:2026-10-15@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-15|605|false
+row|fed-board:fed_zero|rate|607|SVENY07:zero:7Y:act_365_fixed:continuous:2026-10-15@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-15|606|false
+row|fed-board:fed_zero|rate|608|SVENY08:zero:8Y:act_365_fixed:continuous:2026-10-15@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-15|607|false
+row|fed-board:fed_zero|rate|609|SVENY09:zero:9Y:act_365_fixed:continuous:2026-10-15@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-15|608|false
+row|fed-board:fed_zero|rate|60|SVENY30:zero:30Y:act_365_fixed:continuous:2026-09-17@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-17|59|false
+row|fed-board:fed_zero|rate|610|SVENY10:zero:10Y:act_365_fixed:continuous:2026-10-15@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-15|609|false
+row|fed-board:fed_zero|rate|611|SVENY11:zero:11Y:act_365_fixed:continuous:2026-10-15@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-15|610|false
+row|fed-board:fed_zero|rate|612|SVENY12:zero:12Y:act_365_fixed:continuous:2026-10-15@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-15|611|false
+row|fed-board:fed_zero|rate|613|SVENY13:zero:13Y:act_365_fixed:continuous:2026-10-15@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-15|612|false
+row|fed-board:fed_zero|rate|614|SVENY14:zero:14Y:act_365_fixed:continuous:2026-10-15@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-15|613|false
+row|fed-board:fed_zero|rate|615|SVENY15:zero:15Y:act_365_fixed:continuous:2026-10-15@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-15|614|false
+row|fed-board:fed_zero|rate|616|SVENY16:zero:16Y:act_365_fixed:continuous:2026-10-15@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-15|615|false
+row|fed-board:fed_zero|rate|617|SVENY17:zero:17Y:act_365_fixed:continuous:2026-10-15@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-15|616|false
+row|fed-board:fed_zero|rate|618|SVENY18:zero:18Y:act_365_fixed:continuous:2026-10-15@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-15|617|false
+row|fed-board:fed_zero|rate|619|SVENY19:zero:19Y:act_365_fixed:continuous:2026-10-15@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-15|618|false
+row|fed-board:fed_zero|rate|61|SVENY01:zero:1Y:act_365_fixed:continuous:2026-09-18@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-18|60|false
+row|fed-board:fed_zero|rate|620|SVENY20:zero:20Y:act_365_fixed:continuous:2026-10-15@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-15|619|false
+row|fed-board:fed_zero|rate|621|SVENY21:zero:21Y:act_365_fixed:continuous:2026-10-15@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-15|620|false
+row|fed-board:fed_zero|rate|622|SVENY22:zero:22Y:act_365_fixed:continuous:2026-10-15@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-15|621|false
+row|fed-board:fed_zero|rate|623|SVENY23:zero:23Y:act_365_fixed:continuous:2026-10-15@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-15|622|false
+row|fed-board:fed_zero|rate|624|SVENY24:zero:24Y:act_365_fixed:continuous:2026-10-15@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-15|623|false
+row|fed-board:fed_zero|rate|625|SVENY25:zero:25Y:act_365_fixed:continuous:2026-10-15@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-15|624|false
+row|fed-board:fed_zero|rate|626|SVENY26:zero:26Y:act_365_fixed:continuous:2026-10-15@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-15|625|false
+row|fed-board:fed_zero|rate|627|SVENY27:zero:27Y:act_365_fixed:continuous:2026-10-15@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-15|626|false
+row|fed-board:fed_zero|rate|628|SVENY28:zero:28Y:act_365_fixed:continuous:2026-10-15@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-15|627|false
+row|fed-board:fed_zero|rate|629|SVENY29:zero:29Y:act_365_fixed:continuous:2026-10-15@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-15|628|false
+row|fed-board:fed_zero|rate|62|SVENY02:zero:2Y:act_365_fixed:continuous:2026-09-18@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-18|61|false
+row|fed-board:fed_zero|rate|630|SVENY30:zero:30Y:act_365_fixed:continuous:2026-10-15@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-15|629|false
+row|fed-board:fed_zero|rate|631|SVENY01:zero:1Y:act_365_fixed:continuous:2026-10-16@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-16|630|false
+row|fed-board:fed_zero|rate|632|SVENY02:zero:2Y:act_365_fixed:continuous:2026-10-16@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-16|631|false
+row|fed-board:fed_zero|rate|633|SVENY03:zero:3Y:act_365_fixed:continuous:2026-10-16@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-16|632|false
+row|fed-board:fed_zero|rate|634|SVENY04:zero:4Y:act_365_fixed:continuous:2026-10-16@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-16|633|false
+row|fed-board:fed_zero|rate|635|SVENY05:zero:5Y:act_365_fixed:continuous:2026-10-16@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-16|634|false
+row|fed-board:fed_zero|rate|636|SVENY06:zero:6Y:act_365_fixed:continuous:2026-10-16@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-16|635|false
+row|fed-board:fed_zero|rate|637|SVENY07:zero:7Y:act_365_fixed:continuous:2026-10-16@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-16|636|false
+row|fed-board:fed_zero|rate|638|SVENY08:zero:8Y:act_365_fixed:continuous:2026-10-16@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-16|637|false
+row|fed-board:fed_zero|rate|639|SVENY09:zero:9Y:act_365_fixed:continuous:2026-10-16@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-16|638|false
+row|fed-board:fed_zero|rate|63|SVENY03:zero:3Y:act_365_fixed:continuous:2026-09-18@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-18|62|false
+row|fed-board:fed_zero|rate|640|SVENY10:zero:10Y:act_365_fixed:continuous:2026-10-16@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-16|639|false
+row|fed-board:fed_zero|rate|641|SVENY11:zero:11Y:act_365_fixed:continuous:2026-10-16@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-16|640|false
+row|fed-board:fed_zero|rate|642|SVENY12:zero:12Y:act_365_fixed:continuous:2026-10-16@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-16|641|false
+row|fed-board:fed_zero|rate|643|SVENY13:zero:13Y:act_365_fixed:continuous:2026-10-16@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-16|642|false
+row|fed-board:fed_zero|rate|644|SVENY14:zero:14Y:act_365_fixed:continuous:2026-10-16@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-16|643|false
+row|fed-board:fed_zero|rate|645|SVENY15:zero:15Y:act_365_fixed:continuous:2026-10-16@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-16|644|false
+row|fed-board:fed_zero|rate|646|SVENY16:zero:16Y:act_365_fixed:continuous:2026-10-16@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-16|645|false
+row|fed-board:fed_zero|rate|647|SVENY17:zero:17Y:act_365_fixed:continuous:2026-10-16@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-16|646|false
+row|fed-board:fed_zero|rate|648|SVENY18:zero:18Y:act_365_fixed:continuous:2026-10-16@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-16|647|false
+row|fed-board:fed_zero|rate|649|SVENY19:zero:19Y:act_365_fixed:continuous:2026-10-16@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-16|648|false
+row|fed-board:fed_zero|rate|64|SVENY04:zero:4Y:act_365_fixed:continuous:2026-09-18@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-18|63|false
+row|fed-board:fed_zero|rate|650|SVENY20:zero:20Y:act_365_fixed:continuous:2026-10-16@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-16|649|false
+row|fed-board:fed_zero|rate|651|SVENY21:zero:21Y:act_365_fixed:continuous:2026-10-16@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-16|650|false
+row|fed-board:fed_zero|rate|652|SVENY22:zero:22Y:act_365_fixed:continuous:2026-10-16@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-16|651|false
+row|fed-board:fed_zero|rate|653|SVENY23:zero:23Y:act_365_fixed:continuous:2026-10-16@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-16|652|false
+row|fed-board:fed_zero|rate|654|SVENY24:zero:24Y:act_365_fixed:continuous:2026-10-16@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-16|653|false
+row|fed-board:fed_zero|rate|655|SVENY25:zero:25Y:act_365_fixed:continuous:2026-10-16@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-16|654|false
+row|fed-board:fed_zero|rate|656|SVENY26:zero:26Y:act_365_fixed:continuous:2026-10-16@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-16|655|false
+row|fed-board:fed_zero|rate|657|SVENY27:zero:27Y:act_365_fixed:continuous:2026-10-16@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-16|656|false
+row|fed-board:fed_zero|rate|658|SVENY28:zero:28Y:act_365_fixed:continuous:2026-10-16@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-16|657|false
+row|fed-board:fed_zero|rate|659|SVENY29:zero:29Y:act_365_fixed:continuous:2026-10-16@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-16|658|false
+row|fed-board:fed_zero|rate|65|SVENY05:zero:5Y:act_365_fixed:continuous:2026-09-18@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-18|64|false
+row|fed-board:fed_zero|rate|660|SVENY30:zero:30Y:act_365_fixed:continuous:2026-10-16@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-10-16|659|false
+row|fed-board:fed_zero|rate|66|SVENY06:zero:6Y:act_365_fixed:continuous:2026-09-18@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-18|65|false
+row|fed-board:fed_zero|rate|67|SVENY07:zero:7Y:act_365_fixed:continuous:2026-09-18@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-18|66|false
+row|fed-board:fed_zero|rate|68|SVENY08:zero:8Y:act_365_fixed:continuous:2026-09-18@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-18|67|false
+row|fed-board:fed_zero|rate|69|SVENY09:zero:9Y:act_365_fixed:continuous:2026-09-18@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-18|68|false
+row|fed-board:fed_zero|rate|6|SVENY06:zero:6Y:act_365_fixed:continuous:2026-09-16@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-16|5|false
+row|fed-board:fed_zero|rate|70|SVENY10:zero:10Y:act_365_fixed:continuous:2026-09-18@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-18|69|false
+row|fed-board:fed_zero|rate|71|SVENY11:zero:11Y:act_365_fixed:continuous:2026-09-18@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-18|70|false
+row|fed-board:fed_zero|rate|72|SVENY12:zero:12Y:act_365_fixed:continuous:2026-09-18@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-18|71|false
+row|fed-board:fed_zero|rate|73|SVENY13:zero:13Y:act_365_fixed:continuous:2026-09-18@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-18|72|false
+row|fed-board:fed_zero|rate|74|SVENY14:zero:14Y:act_365_fixed:continuous:2026-09-18@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-18|73|false
+row|fed-board:fed_zero|rate|75|SVENY15:zero:15Y:act_365_fixed:continuous:2026-09-18@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-18|74|false
+row|fed-board:fed_zero|rate|76|SVENY16:zero:16Y:act_365_fixed:continuous:2026-09-18@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-18|75|false
+row|fed-board:fed_zero|rate|77|SVENY17:zero:17Y:act_365_fixed:continuous:2026-09-18@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-18|76|false
+row|fed-board:fed_zero|rate|78|SVENY18:zero:18Y:act_365_fixed:continuous:2026-09-18@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-18|77|false
+row|fed-board:fed_zero|rate|79|SVENY19:zero:19Y:act_365_fixed:continuous:2026-09-18@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-18|78|false
+row|fed-board:fed_zero|rate|7|SVENY07:zero:7Y:act_365_fixed:continuous:2026-09-16@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-16|6|false
+row|fed-board:fed_zero|rate|80|SVENY20:zero:20Y:act_365_fixed:continuous:2026-09-18@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-18|79|false
+row|fed-board:fed_zero|rate|81|SVENY21:zero:21Y:act_365_fixed:continuous:2026-09-18@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-18|80|false
+row|fed-board:fed_zero|rate|82|SVENY22:zero:22Y:act_365_fixed:continuous:2026-09-18@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-18|81|false
+row|fed-board:fed_zero|rate|83|SVENY23:zero:23Y:act_365_fixed:continuous:2026-09-18@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-18|82|false
+row|fed-board:fed_zero|rate|84|SVENY24:zero:24Y:act_365_fixed:continuous:2026-09-18@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-18|83|false
+row|fed-board:fed_zero|rate|85|SVENY25:zero:25Y:act_365_fixed:continuous:2026-09-18@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-18|84|false
+row|fed-board:fed_zero|rate|86|SVENY26:zero:26Y:act_365_fixed:continuous:2026-09-18@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-18|85|false
+row|fed-board:fed_zero|rate|87|SVENY27:zero:27Y:act_365_fixed:continuous:2026-09-18@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-18|86|false
+row|fed-board:fed_zero|rate|88|SVENY28:zero:28Y:act_365_fixed:continuous:2026-09-18@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-18|87|false
+row|fed-board:fed_zero|rate|89|SVENY29:zero:29Y:act_365_fixed:continuous:2026-09-18@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-18|88|false
+row|fed-board:fed_zero|rate|8|SVENY08:zero:8Y:act_365_fixed:continuous:2026-09-16@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-16|7|false
+row|fed-board:fed_zero|rate|90|SVENY30:zero:30Y:act_365_fixed:continuous:2026-09-18@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-18|89|false
+row|fed-board:fed_zero|rate|91|SVENY01:zero:1Y:act_365_fixed:continuous:2026-09-21@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-21|90|false
+row|fed-board:fed_zero|rate|92|SVENY02:zero:2Y:act_365_fixed:continuous:2026-09-21@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-21|91|false
+row|fed-board:fed_zero|rate|93|SVENY03:zero:3Y:act_365_fixed:continuous:2026-09-21@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-21|92|false
+row|fed-board:fed_zero|rate|94|SVENY04:zero:4Y:act_365_fixed:continuous:2026-09-21@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-21|93|false
+row|fed-board:fed_zero|rate|95|SVENY05:zero:5Y:act_365_fixed:continuous:2026-09-21@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-21|94|false
+row|fed-board:fed_zero|rate|96|SVENY06:zero:6Y:act_365_fixed:continuous:2026-09-21@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-21|95|false
+row|fed-board:fed_zero|rate|97|SVENY07:zero:7Y:act_365_fixed:continuous:2026-09-21@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-21|96|false
+row|fed-board:fed_zero|rate|98|SVENY08:zero:8Y:act_365_fixed:continuous:2026-09-21@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-21|97|false
+row|fed-board:fed_zero|rate|99|SVENY09:zero:9Y:act_365_fixed:continuous:2026-09-21@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-21|98|false
+row|fed-board:fed_zero|rate|9|SVENY09:zero:9Y:act_365_fixed:continuous:2026-09-16@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-16|8|false
 want|fed-board:daily|answered|USD,USD,USD,USD,USD,USD,USD,USD,USD,USD,USD,USD,USD,USD,USD,USD,USD,USD,USD|0
 want|fed-board:daily|asked|CHF|0
 want|fed-board:daily|asked|EUR|0

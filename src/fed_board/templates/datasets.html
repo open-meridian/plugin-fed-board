@@ -3,7 +3,7 @@
     "Wants" and "Subjects" -- with the Board's notices; "Currencies" each
     currency H.10 publishes, with the deployment's instrument for it,
     searched and paged; "Records" each record the rates are recorded
-    against, or proposed, and its instrument or why none; "Lag" each
+    against, and its instrument or why none; "Lag" each
     dataset's time from a day to its publication, and the Board's citation
     (spec/a-public-rates-and-filings-data-plugin, section 5). The tab row
     follows the page's own, so it stays when the dashboard frames the page.
@@ -55,7 +55,7 @@
 <thead><tr><th>Record</th><th class="wide-only">Dataset</th><th class="wide-only">Rows</th><th>Instrument</th><th class="more"><span class="visually-hidden">Details</span></th></tr></thead>
 <tbody>
 {% for r in data.records %}
-<tr data-record="{{ r.record }}"><td>{{ r.record }}</td><td class="wide-only"><code>{{ r.dataset }}</code></td><td class="wide-only">{{ r.rows }}</td><td>{% if r.instrument_id %}<code>{{ r.instrument_id }}</code>{% else %}<span class="badge warn">{{ "proposed" if r.why_none.startswith("No record") else "none" }}</span>{% endif %}</td><td class="more"><details class="row-detail" name="records"><summary aria-label="Details of {{ r.record }}">…</summary><div class="row-detail-pop"><h3>{{ r.record }}</h3><dl><dt>Dataset</dt><dd><code>{{ r.dataset }}</code></dd><dt>The Board's series</dt><dd>{{ r.series }}</dd><dt>Each row</dt><dd>{{ r.rows }}</dd><dt>The deployment's instrument</dt><dd>{% if r.instrument_id %}<code>{{ r.instrument_id }}</code>{% else %}None: {{ r.why_none }}{% endif %}</dd></dl></div></details></td></tr>
+<tr data-record="{{ r.record }}"><td>{{ r.record }}</td><td class="wide-only"><code>{{ r.dataset }}</code></td><td class="wide-only">{{ r.rows }}</td><td>{% if r.instrument_id %}<code>{{ r.instrument_id }}</code>{% else %}<span class="badge warn">none</span>{% endif %}</td><td class="more"><details class="row-detail" name="records"><summary aria-label="Details of {{ r.record }}">…</summary><div class="row-detail-pop"><h3>{{ r.record }}</h3><dl><dt>Dataset</dt><dd><code>{{ r.dataset }}</code></dd><dt>The Board's series</dt><dd>{{ r.series }}</dd><dt>Each row</dt><dd>{{ r.rows }}</dd><dt>The deployment's instrument</dt><dd>{% if r.instrument_id %}<code>{{ r.instrument_id }}</code>{% else %}None: {{ r.why_none }}{% endif %}</dd></dl></div></details></td></tr>
 {% endfor %}
 </tbody>
 </table>

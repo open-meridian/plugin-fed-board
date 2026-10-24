@@ -34,9 +34,9 @@ What the plugin serves.
   the Board quotes it, what its rate is the price of, and the deployment's
   instrument for it, or why there is none. Searched by code or name.
 - **Records:** each record the rates are recorded against -- the federal
-  funds rate, Treasury's two par curves, the zero curve -- with the
-  deployment's instrument for it, or why there is none; and each record
-  proposed for H.15's other series, not recorded until it exists.
+  funds rate, Treasury's two par curves, H.15's own six, the zero curve --
+  with the Board's series for it and the deployment's instrument for it,
+  or why there is none.
 - **Lag:** for each dataset, the median and the longest time from the end
   of a row's day to when the Board published it; and the citation the
   Board's terms ask for.

@@ -113,7 +113,7 @@ class RecordRead:
     """One record the rates are recorded against, as "Records" lists it: the
     dataset, the Board's series, the record by its identifiers, what each row
     is, and the deployment's instrument for it, or why there is none -- a
-    record the deployment does not hold, or one only proposed."""
+    record the deployment does not hold."""
 
     dataset: str
     series: str

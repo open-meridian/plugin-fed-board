@@ -39,3 +39,13 @@ def test_public_domain_is_not_one_persons_terms() -> None:
 def test_the_responses_are_kept_in_storage() -> None:
     assert DECLARATION.storage is not None
     assert [k.name for k in DECLARATION.storage.kinds] == ["responses"]
+
+
+def test_no_attribution_field_until_core_accepts_it() -> None:
+    """Core v27 refuses a catalogue carrying SDK 0.32.2's data-terms fields
+    at registration, so none is set yet; the citation is on the page."""
+    for entry in DECLARATION.catalogue:
+        licence = entry.licence_default
+        assert licence is not None
+        assert not licence.redistribution and not licence.copyright_class
+        assert not licence.attribution_required and not licence.attribution_text

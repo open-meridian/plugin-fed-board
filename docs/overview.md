@@ -51,14 +51,20 @@ platform keeps for the rate or the curve:
   Treasury's par yield curve, and the inflation-indexed ones (5 to 30
   years) of its par real yield curve: par yields, bond-equivalent, each with
   its tenor, about the same records Treasury's plugin uses.
+
+## H.15's own series and the zero curve
+
+- **H.15's own series**, about the Board's records: Treasury bills in the
+  secondary market (4 weeks to 1 year) and AA nonfinancial and financial
+  commercial paper (1 to 3 months), discount rates, actual/360, by tenor;
+  the bank prime loan rate, a fixing; the discount window's primary credit
+  rate, a fixing; and the inflation-indexed long-term average, the average
+  yield of every TIPS with more than ten years to run.
 - **The zero curve**'s points are zero-coupon yields, continuously
   compounded, 1 to 30 years, about the Board's `feds200628` record.
 
-H.15's other series -- Treasury bills in the secondary market, commercial
-paper, the bank prime rate, the discount window's primary credit rate and
-the inflation-indexed long-term average -- are read and kept, not recorded:
-the platform holds no record for them yet. The Datasets page lists each.
-H.15 does not publish the FOMC's target range.
+H.15 does not publish the FOMC's target range; the FRED plugin supplies its
+bounds.
 
 ## When they arrive
 

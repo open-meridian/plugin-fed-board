@@ -1,5 +1,5 @@
 """`make e2e`: the plugin on the plugin harness of the runtime it pins
-(contract v20), beside `reader`, a reporting plugin (e2e/reader.py) entitled
+(contract v27), beside `reader`, a reporting plugin (e2e/reader.py) entitled
 to its dataset, and the harness's admin. Run from the repository's root by
 the Makefile, which builds the image and writes the harness's plugins first;
 standard library only.
@@ -11,10 +11,15 @@ standard library only.
    plugin reads the committed release of 5 October 2026, resolves the
    dollar and the 23 currencies to cash instruments, and records 115 rates;
    Datasets lists each currency with its instrument. It reads H.15's and the
-   zero curve's committed files too (Connection's Sources tab), and, the
-   harness's master holding none of the referential records the platform
-   seeds (only two by test FIGIs), reports each record missing and records
-   no rate: what a deployment without them sees (Datasets' Records tab).
+   zero curve's committed files too (Connection's Sources tab), resolves
+   each referential record by its administrator's code (a symbol scoped to
+   nyfed, ustreasury or frb) to the platform's `INS-` record, and records
+   their last month: the federal funds rate, Treasury's two par curves and
+   the zero curve. The harness at a5da59a holds the platform's 22 records
+   seeded before ruling 541, so H.15's six own records (the bills, the two
+   commercial papers, prime, primary credit, the long-term average) are
+   reported missing and their rows wait: the platform holds them (seeded
+   2026-10-23), and core's next harness carries them.
 3. Parity: through the deployment's MCP, `read_connection` and
    `read_datasets` answer what the pages show, under the data role's names
    (contract v20) -- the release, its days, its
@@ -23,21 +28,26 @@ standard library only.
    it: push and pull, weekly, New York's day ending at noon, public domain;
    and `fed-board:fed_h15` and `fed-board:fed_zero` as rates, daily and
    weekly, New York's day.
-4. Licensed and entitled at the Data sources page: the reader is entitled.
+4. Licensed and entitled at the Data sources page, all three datasets: the
+   reader is entitled.
 5. Read back: the dollar's cash instrument on 2 October 2026 is priced in 19
    currencies, francs at 0.8293 in the franc's instrument; the euro's at
    1.1259 in the dollar's; each a close, version 1, the published time the
-   Board's.
+   Board's. And the rates, by business date from their datasets: the
+   federal funds rate on 21 October, 3.88 per cent, a fixing; Treasury's par
+   curve that day from H.15, eleven points in tenor order, the 10-year at
+   5.13, par yields; its par real curve, five points; and the zero curve on
+   16 October, thirty points, zero rates continuously compounded.
 6. Wanted: a day not recorded, 25 September, is asked of the plugin, which
    reads the week before's release and records it against the want; the
    reader then reads it. A day not published yet, 8 October, is declined
    `source_silent`; the franc's own instrument, which H.10 never prices
    (the Board quotes francs per dollar, and nothing inverts it), `not_covered`.
-7. `store lake` is e2e/expected.lake, each subject named by its ISO code;
-   its `miss` line, the records the rates are about reported missing, is
-   held apart: four a process, once a day each, and the harness restarts the
-   plugin when it rewrites its configuration (`entitle`), so the count is
-   four or a multiple of it.
+7. `store lake` is e2e/expected.lake, each subject named by its ISO code or
+   its record's code; its `miss` line, the six records the harness does not
+   hold, is held apart: six a process, once a day each, and the harness
+   restarts the plugin when it rewrites its configuration (`entitle`), so
+   the count is six or a multiple of it.
 8. A new container: it reads the release again and records nothing twice;
    the lake is unchanged.
 """
@@ -54,6 +64,25 @@ COMPONENTS = ".e2e/components.log"
 COMPOSE = ["docker", "compose", "-p", PROJECT, "-f", ".e2e/harness/compose.yaml",
            "-f", ".e2e/harness/plugins.yaml", "-f", "e2e/plugin.yaml"]
 DATASET = "fed-board:daily"
+#: Seconds after start by which the conductor has handed the platform's
+#: licence list on twice: the instrument store holds it.
+LIST_HANDED_ON = 75
+H15 = "fed-board:fed_h15"
+ZERO = "fed-board:fed_zero"
+PAR = "ustreasury: Daily Treasury Par Yield Curve Rates"
+REAL = "ustreasury: Daily Treasury Par Real Yield Curve Rates"
+#: The records the harness at a5da59a holds, as Datasets' Records names them.
+HELD = ("nyfed: EFFR", PAR, REAL, "frb: feds200628")
+#: H.15's own records, seeded on the platform 2026-10-23 (ruling 541), which
+#: core's next harness carries.
+NOT_IN_HARNESS = (
+    "frb: Treasury bills secondary market",
+    "frb: AA nonfinancial commercial paper",
+    "frb: AA financial commercial paper",
+    "frb: Bank prime loan rate",
+    "frb: Discount window primary credit rate",
+    "frb: Treasury inflation-indexed long-term average",
+)
 
 
 class Failed(Exception):
@@ -112,6 +141,12 @@ def prices(subject, day):
     return json.loads(body)
 
 
+def rates_of(subject, day, dataset):
+    """The reader's read of a rate or curve for a business date, from one
+    dataset, in tenor order."""
+    return json.loads(page("reader", "read", f"/rates?subject={subject}&date={day}&dataset={dataset}"))["rates"]
+
+
 def call(tool, arguments=None):
     done = runner("mcp", "call", tool, json.dumps(arguments or {}), check=False)
     try:
@@ -152,6 +187,7 @@ def run():
     started = time.time()
     compose("--profile", "runner", "down", "-v", "--remove-orphans", check=False)
     compose("up", "-d")
+    up = time.monotonic()
     runner("ready")
     runner("ready", "--instance", "reader")
 
@@ -163,7 +199,12 @@ def run():
     lake = store_lake()
     must("row|" not in lake, f"step 1, nothing recorded with the Board unreachable: {lake}")
 
-    # 2. Sample data: the release of 5 October 2026 recorded.
+    # 2. Sample data: the release of 5 October 2026 recorded. The conductor
+    # pulls the platform's licence list on start and hands it on again a
+    # minute later, for a store that started after it (reference.rs): the
+    # instrument store sends an administrator's code only once it holds the
+    # list (ruling 545), so the rates are first resolved after that.
+    time.sleep(max(0, LIST_HANDED_ON - (time.monotonic() - up)))
     runner("settings", "sample_data=true")
     runner("page", "--level", "admin", "/datasets?tab=currencies", "--until", 'data-code="VES"', "--seconds", "120")
     runner("page", "--level", "admin", "/?tab=sources", "--until", "Mon 05 Oct", "--seconds", "60")
@@ -171,12 +212,9 @@ def run():
           "step 2, the release's 115 rates were not recorded")
     runner("page", "--level", "admin", "/?tab=sources", "--until", "Fri 16 Oct", "--seconds", "90")
     runner("page", "--level", "admin", "/?tab=sources", "--until", "Wed 21 Oct", "--seconds", "30")
-    held = runner("page", "--level", "admin", "/datasets?tab=records", "--until", "reported missing",
-                  "--seconds", "60")
-    must("frb: feds200628" in held and "nyfed: EFFR" in held,
-         f"step 2, Records lists the records the rates are about: {held[-600:]}")
-    must("row|fed-board:fed_" not in store_lake(),
-         "step 2, no rate recorded against a record the deployment does not hold")
+    until(90, lambda: store_lake().count("row|fed-board:fed_zero|") >= 600
+          and store_lake().count("row|fed-board:fed_h15|") >= 300,
+          "step 2, the rates' last month was not recorded")
 
     # 3. Parity through the deployment's MCP, and core's view of the catalogue.
     runner("grant", "--level", "admin")
@@ -205,16 +243,30 @@ def run():
     must(entry.get("modes") == ["push", "pull"] and entry.get("day_time_zone") == "America/New_York"
          and entry.get("day_end_minute") == 720 and entry.get("cadence") == 604800,
          f"step 3, core lists the catalogue as declared: {listed.get(DATASET)}")
-    for rates, cadence in (("fed-board:fed_h15", 86400), ("fed-board:fed_zero", 604800)):
+    for rates, cadence in ((H15, 86400), (ZERO, 604800)):
         entry = listed.get(rates, {}).get("catalogue_entry", {})
         must(entry.get("cadence") == cadence and entry.get("day_time_zone") == "America/New_York"
              and "meridian.v1.Rate" in entry.get("data_types", []),
              f"step 3, core lists {rates} as declared: {listed.get(rates)}")
+    records = {r["record"]: r for r in datasets["records"]}
+    held = {name: r["instrument_id"] for name, r in records.items() if r["instrument_id"]}
+    must(sorted(held) == sorted(HELD) and all(i.startswith("INS-") for i in held.values()),
+         f"step 3, each record the harness holds resolves to its INS- record: {records}")
+    must(all("reported missing" in records[name]["why_none"] for name in NOT_IN_HARNESS),
+         f"step 3, H.15's six own records, not in this harness, reported missing: {records}")
+    shown = page("fed-board", "admin", "/datasets?tab=records")
+    must(all(i in shown for i in held.values()), "step 3, Records shows what read_datasets answers")
+    for instrument, name in ((i, n) for n, i in held.items()):
+        codes[instrument] = name
 
     # 4. Licensed and entitled.
     runner("licence", DATASET, "kept=true", "retention_days=0", "derived_use=true", "display=true",
            "personal_use=false", "note=Public domain: the Board's H.10.")
     runner("entitle", "--instance", "reader", DATASET, "note=The e2e's reader reads the rates.")
+    for rates in (H15, ZERO):
+        runner("licence", rates, "kept=true", "retention_days=0", "derived_use=true", "display=true",
+               "personal_use=false", "note=US government work: the Board's.")
+        runner("entitle", "--instance", "reader", rates, "note=The e2e's reader reads the rates.")
     runner("grant", "--instance", "reader", "--level", "read")
 
     # 5. Read back, in the right instruments.
@@ -229,6 +281,24 @@ def run():
     euro = prices(ids["EUR"], "2026-10-02")["prices"]
     must(len(euro) == 1 and euro[0]["amount"] == "1.1259" and euro[0]["instrument_id"] == ids["USD"],
          f"step 5, the euro priced in dollars as the Board quotes it: {euro}")
+    effr = until(60, lambda: rates_of(held["nyfed: EFFR"], "2026-10-21", H15) or None,
+                 "step 5, the federal funds rate on 21 October was not read")
+    must(len(effr) == 1 and effr[0]["value"] == "3.88" and effr[0]["kind"] == "RATE_KIND_FIXING"
+         and effr[0]["unit"] == "VALUE_UNIT_PERCENT" and effr[0]["tenor"] == "",
+         f"step 5, the federal funds rate as H.15 states it: {effr}")
+    par = rates_of(held[PAR], "2026-10-21", H15)
+    must([r["tenor"] for r in par] == ["1M", "3M", "6M", "1Y", "2Y", "3Y", "5Y", "7Y", "10Y", "20Y", "30Y"]
+         and next(r["value"] for r in par if r["tenor"] == "10Y") == "5.13"
+         and {r["kind"] for r in par} == {"RATE_KIND_PAR_YIELD"},
+         f"step 5, Treasury's par curve from H.15, in tenor order: {par}")
+    real = rates_of(held[REAL], "2026-10-21", H15)
+    must([r["tenor"] for r in real] == ["5Y", "7Y", "10Y", "20Y", "30Y"],
+         f"step 5, Treasury's par real curve from H.15: {real}")
+    curve = rates_of(held["frb: feds200628"], "2026-10-16", ZERO)
+    must(len(curve) == 30 and curve[0]["tenor"] == "1Y" and curve[-1]["tenor"] == "30Y"
+         and {r["kind"] for r in curve} == {"RATE_KIND_ZERO"}
+         and {r["compounding"] for r in curve} == {"COMPOUNDING_CONTINUOUS"},
+         f"step 5, the zero curve on 16 October: {curve}")
 
     # 6. Wants: a past week recorded against one; a week not published and a
     # subject not covered declined.
@@ -247,8 +317,8 @@ def run():
     # 7. The lake.
     lines = store_lake()
     count = misses(lines)
-    must(count >= 4 and count % 4 == 0,
-         f"step 7, the four records the rates are about reported missing, once a process: {count}")
+    must(count >= 6 and count % 6 == 0,
+         f"step 7, the six records the harness does not hold reported missing, once a process: {count}")
     got = named(lines, codes)
     with open(".e2e/lake", "w", encoding="utf-8") as kept:
         kept.write(got)
@@ -276,7 +346,9 @@ def run():
     rows = got.count("row|")
     print(f"e2e OK in {int(time.time() - started)}s on the plugin harness: the Board unreachable said on "
           f"Connection, nothing recorded; sample data's release of 5 October 2026 recorded, 24 currencies "
-          f"resolved; H.15's and the zero curve's files read, their records reported missing; "
+          f"resolved; H.15's and the zero curve's files read, four records resolved and read back "
+          f"(EFFR 3.88, the par curve's 10-year 5.13, the real curve, the zero curve's 30 points), "
+          f"six not in this harness reported missing; "
           f"read_connection and read_datasets answering what the pages show, and core listing "
           f"its three datasets as declared; licensed and entitled; the dollar priced in 19 currencies (francs 0.8293) "
           f"and the euro in dollars (1.1259), each a close on its business date with the Board's published "
