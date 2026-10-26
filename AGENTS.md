@@ -1,7 +1,7 @@
 # meridian-fed-board
 
 The Federal Reserve Board as an Open Meridian data plugin, titled "Federal
-Reserve Board", in Python on the open-meridian SDK (0.32.2, contract v27):
+Reserve Board", in Python on the open-meridian SDK (0.33.1, contract v28):
 `plugin-fed-h10` renamed (rulings 348, 349 and 504). It runs beside a
 sidecar in a Meridian deployment and puts each week's H.10 noon buying rates
 into the deployment's lake, each rate the price of one currency's cash
@@ -89,7 +89,7 @@ and `spec/a-public-rates-and-filings-data-plugin.md`, `plugin-fed-board`.
   the Board never states (a bar, a crypto asset, a venue, a security another
   source named, trades, quotes, a stream, a fixing's percentiles, two
   conventions for one point, an index level) is named in `not_presented`
-  with why, and the feed delay with ruling 518's reason. Never write a
+  with why; the feed delay is presented (ruling 518). Never write a
   producer that invents what the Board does not state.
 
 ## Checking it locally

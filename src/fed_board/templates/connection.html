@@ -19,11 +19,11 @@
 {% endblock %}
 {% block content %}
 <nav class="tabs" aria-label="Connection sections">
-{% for name, title in tabs.items() %}
-<a class="tab{% if name == tab %} on{% endif %}" href="?tab={{ name }}"{% if name == tab %} aria-current="page"{% endif %}>{{ title }}</a>
+{% for name, title in views.items() %}
+<a class="tab{% if name == view %} on{% endif %}" href="?tab={{ name }}"{% if name == view %} aria-current="page"{% endif %}>{{ title }}</a>
 {% endfor %}
 </nav>
-{% if tab == "sources" %}
+{% if view == "sources" %}
 {% if data.last_error %}<div class="notice bad" role="alert">{{ data.last_error }}</div>{% endif %}
 <section class="panel">
 <h2>Sources</h2>

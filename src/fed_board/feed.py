@@ -428,7 +428,7 @@ class Feed:
             return
         await self.plugin.decline_want(
             want_id=want_id,
-            subjects=[ops.SubjectRef(entity_id=s) for s in subjects],
+            subjects=[meridian.SubjectRef(entity_id=s) for s in subjects],
             reason=reason,
         )
         declined[reason] = declined.get(reason, 0) + len(subjects)
