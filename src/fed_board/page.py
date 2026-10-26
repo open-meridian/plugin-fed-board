@@ -563,8 +563,10 @@ async def connection(request: meridian.Request) -> meridian.Response:
         "connection.html",
         read,
         detail=_state(status)[2],
-        tab=tab if tab in CONNECTION_TABS else "connection",
-        tabs=CONNECTION_TABS,
+        # Named apart from the SDK's own `tab` and `tabs` (0.32.3), which
+        # would draw the data role's section row in their place.
+        view=tab if tab in CONNECTION_TABS else "connection",
+        views=CONNECTION_TABS,
     )
 
 

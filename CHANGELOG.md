@@ -1,5 +1,28 @@
 # Changelog
 
+## 1.1.0
+
+On open-meridian 0.33.1, contract v28 (plugin-common-v28), on core v28's
+harness.
+
+- **The feed delay, reported** (ruling 518, required again from contract
+  v28): each H.15 and zero-curve rate recorded unasked or for a standing
+  want has its age at the edge recorded from its published time
+  (`roles.Latency` on the SDK's `Wants`), reported every 10 seconds
+  (`ReportLatency`); `reports-its-feed-delay` is presented on H.15's file.
+- **The suite's v28 cases** (ruling 602): option chains, filings, holdings,
+  corporate actions and ratings not presented, kinds the Board never
+  publishes; the quality cases, about quotes, too.
+- **Connection's own tab row** ("Connection", "Sources") names its
+  template values `view` and `views`: the SDK's data template draws its own
+  section row from `tabs` from 0.32.3, which drew an empty page in place of
+  the sections.
+- **`meridian plugin migrate`** (to_0_33_0, to_0_33_1): the SubjectRefs in
+  e2e/reader.py and convert.py are `meridian.SubjectRef` (ruling 599).
+- **The pins:** open-meridian 0.33.1 and plugin-python:0.33.1 by tag and
+  digest; core v28's runtime and harness at `8def82a` (chart 0.1.313) by
+  digest; `meridian` 0.1.52 in check.yaml (was 0.1.51).
+
 ## 1.0.0
 
 `plugin-fed-h10` renamed `plugin-fed-board`, titled "Federal Reserve Board",

@@ -35,8 +35,10 @@ file posted again with a value revised. Three are not presented, with why:
 H.15 states no percentiles or volume for its one fixing (the New York Fed's
 own dataset does), the Board publishes one convention per point and no index
 level. `records-a-datasets-liveness` is about streams, and the plugin
-streams nothing; `reports-its-feed-delay` waits for core's ReportLatency in
-contract v28 (rulings 515 and 518).
+streams nothing. From contract v28 `reports-its-feed-delay` is presented
+(ruling 518) on H.15's rates, each one's age at the edge from its published
+time; the chains, filings, holdings, dividends and ratings cases are about
+kinds the Board never publishes, and the quality cases about quotes.
 """
 
 from __future__ import annotations
@@ -48,6 +50,7 @@ from pathlib import Path
 from typing import Any
 
 from meridian.plugin.v1 import operations_pb2 as ops
+from meridian.roles.data.testing import feed_delay
 from meridian.suites import ANSWERED_BY_SDK, Recorder, run, suite
 
 from fed_board.board import CURRENT, H15_FILE, ZERO_FILE, Fetched, SyntheticBoard
@@ -72,7 +75,12 @@ NEVER = {
     "outcomes": "H.10 rates currencies: no event contract, so no outcome",
     "disputed outcomes": "H.10 rates currencies: no event contract, so no outcome disputed",
     "streams": "does not stream: H.10, H.15 and the zero curve are pages and files, read hourly",
-    "latency": "core receives ReportLatency from contract v28, ruling 515",
+    # Contract v28 (ruling 602).
+    "option chains": "the Board publishes rates: no option chain",
+    "filings": "the Board publishes rates: no company's filings",
+    "holdings": "the Board publishes rates: no holdings report",
+    "corporate actions": "the Board publishes rates: no declared dividend",
+    "ratings": "the Board publishes rates: no rating",
 }
 
 #: The rates cases the Board's datasets never present, with why.
@@ -241,6 +249,14 @@ def producers(tmp: Path) -> dict[str, Callable[[Recorder], Awaitable[None]]]:
             held.board = site
         return held
 
+    async def delayed(recorder: Recorder, latency: Any) -> None:
+        # Contract v28 (ruling 518): H.15's file read unasked, each rate's age
+        # at the edge recorded from its published time, then reported.
+        seeded(recorder)
+        held = board(recorder)
+        held.wants.latency = latency
+        await held.check()
+
     async def the_rates_read(recorder: Recorder) -> None:
         seeded(recorder)
         await board(recorder).check()
@@ -289,6 +305,7 @@ def producers(tmp: Path) -> dict[str, Callable[[Recorder], Awaitable[None]]]:
         "a-curve-for-a-date": the_rates_read,
         "a-tenor-not-published": a_tenor_left_out,
         "a-curve-point-from-another-source": a_curve_point,
+        "reports-its-feed-delay": feed_delay(delayed),
     }
 
 
@@ -297,9 +314,9 @@ def test_the_data_suite_passes(tmp_path: Path) -> None:
     assert report.passed, report.failures
     assert sorted(report.not_presented) == sorted(NOT_PRESENTED)
     # The cases every suite holds, which the SDK answers (contract v24's two,
-    # v26's event group), beside the plugin's own: H.10's nine and the
-    # rates' four.
-    assert len(report.passed_cases) == 16
+    # v26's event group), beside the plugin's own: H.10's nine, the rates'
+    # four and, from contract v28, the feed delay.
+    assert len(report.passed_cases) == 17
     assert report.answered_by_sdk == list(ANSWERED_BY_SDK)
 
 

@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "fed-board"
-version = "1.0.0"
+version = "1.1.0"
 description = "The Federal Reserve Board: H.10 foreign exchange rates, H.15 selected interest rates and the zero curve, into an Open Meridian deployment's lake"
 license = { text = "Apache-2.0" }
 requires-python = ">=3.11"
@@ -14,7 +14,7 @@ requires-python = ">=3.11"
 # pages and files are read with the standard library: no third-party
 # dependency.
 dependencies = [
-  "open-meridian==0.32.2",
+  "open-meridian==0.33.1",
 ]
 
 [project.urls]

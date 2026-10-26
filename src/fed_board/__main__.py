@@ -34,7 +34,7 @@ import signal
 from typing import Any
 
 import meridian
-from meridian.roles import data
+from meridian.roles import Latency, data
 
 from .board import board
 from .declaration import DECLARATION, PORT
@@ -194,6 +194,11 @@ async def run() -> None:
         raw = RawStore()
         feed = Feed(plugin, board(False), raw)
         wants = data.Wants(plugin, keys=tuple(entry.key for entry in CATALOGUE))
+        # Contract v28 (ruling 518): each H.15 and zero-curve rate recorded
+        # unasked or for a standing want has its age at the edge recorded from
+        # its published time, reported every 10 seconds.
+        latency = Latency(plugin)
+        wants.latency = latency
         rates = Rates(plugin, board(False), raw, wants)
         hold(feed, rates)
         held = [Config()]
@@ -213,6 +218,7 @@ async def run() -> None:
             asyncio.create_task(backfill(feed, checked)),
             asyncio.create_task(tend(plugin, feed, held)),
             asyncio.create_task(licences(plugin, feed, rates)),
+            asyncio.create_task(latency.run()),
         ]
         for task in tasks:
             task.add_done_callback(_said)

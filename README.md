@@ -7,7 +7,7 @@ weekly foreign exchange rates, as prices; [H.15](https://www.federalreserve.gov/
 selected interest rates; and the Board's
 [zero curve](https://www.federalreserve.gov/data/nominal-yield-curve.htm)
 (`feds200628`), as rates. It holds the `data` role, a data plugin. This is
-release 1.0.0. How to set it up and use it is in [docs/](docs/README.md);
+release 1.1.0. How to set it up and use it is in [docs/](docs/README.md);
 how a plugin like it is built is documented at
 [open-meridian.dev](https://open-meridian.dev).
 
@@ -18,8 +18,8 @@ moves unchanged as its `daily` dataset, backfilled on the first run, and
 H.15 and the zero curve join it from the same publisher. GitHub redirects
 the old repository's address here.
 
-It is built on the SDK it pins, `open-meridian==0.32.2`, which declares
-contract v27 (its rates slice: the `Rate` row, recorded through
+It is built on the SDK it pins, `open-meridian==0.33.1`, which declares
+contract v28 (from v27 its rates slice: the `Rate` row, recorded through
 `meridian.roles.data.rates`); its work is the lake prices the book
 (meridian-design `plans/the-lake-prices-the-book.md`, row 7) and the public
 rates plugins (`plans/the-v27-build.md`, B).
@@ -115,10 +115,11 @@ about a kind of data the Board never states -- a day's open, high, low and
 volume, a crypto asset, a venue, a security another source named, trades,
 quotes, a stream, a fixing's percentiles, two conventions for one point, an
 index level -- and is not presented, with why, as the suite lets it. So are
-contract v22's calendar cases, and the feed delay, which core receives from
-contract v28 (rulings 515 and 518).
+contract v22's calendar cases, and contract v28's option chains, filings,
+holdings, dividends and ratings. The feed delay is presented (ruling 518):
+each H.15 and zero-curve rate's age at the edge from its published time.
 
-**open-meridian 0.32.2 is on PyPI** and its base image on ghcr.io: the
+**open-meridian 0.33.1 is on PyPI** and its base image on ghcr.io: the
 runners install the pin from there. Locally the Makefile builds
 both from the sibling meridian-python checkout.
 

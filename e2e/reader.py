@@ -76,7 +76,7 @@ class Reader:
 
     async def prices(self, query):
         one = lambda name: query.get(name, [""])[0]  # noqa: E731
-        asked = {"subjects": [ops.SubjectRef(entity_id=s) for s in query.get("subject", [])]}
+        asked = {"subjects": [meridian.SubjectRef(entity_id=s) for s in query.get("subject", [])]}
         if query.get("dataset"):
             asked["sources"] = SourceChoice(named=query["dataset"])
         if one("kind"):
