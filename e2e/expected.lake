@@ -132,379 +132,600 @@ row|fed-board:daily|price|97|TWD:2026-09-29|1|USD|1||2026-09-29|96|false
 row|fed-board:daily|price|98|TWD:2026-09-30|1|USD|1||2026-09-30|97|false
 row|fed-board:daily|price|99|TWD:2026-10-01|1|USD|1||2026-10-01|98|false
 row|fed-board:daily|price|9|BRL:2026-10-01|1|USD|1||2026-10-01|8|false
-row|fed-board:fed_h15|rate|100|RIFLGFCY01_N.B:par_yield:1Y:act_act:compounded/2:2026-10-06@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-06|99|false
-row|fed-board:fed_h15|rate|101|RIFLGFCY01_N.B:par_yield:1Y:act_act:compounded/2:2026-10-07@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-07|100|false
-row|fed-board:fed_h15|rate|102|RIFLGFCY01_N.B:par_yield:1Y:act_act:compounded/2:2026-10-08@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-08|101|false
-row|fed-board:fed_h15|rate|103|RIFLGFCY01_N.B:par_yield:1Y:act_act:compounded/2:2026-10-09@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-09|102|false
-row|fed-board:fed_h15|rate|104|RIFLGFCY01_N.B:par_yield:1Y:act_act:compounded/2:2026-10-13@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-13|103|false
-row|fed-board:fed_h15|rate|105|RIFLGFCY01_N.B:par_yield:1Y:act_act:compounded/2:2026-10-14@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-14|104|false
-row|fed-board:fed_h15|rate|106|RIFLGFCY01_N.B:par_yield:1Y:act_act:compounded/2:2026-10-15@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-15|105|false
-row|fed-board:fed_h15|rate|107|RIFLGFCY01_N.B:par_yield:1Y:act_act:compounded/2:2026-10-16@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-16|106|false
-row|fed-board:fed_h15|rate|108|RIFLGFCY01_N.B:par_yield:1Y:act_act:compounded/2:2026-10-19@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-19|107|false
-row|fed-board:fed_h15|rate|109|RIFLGFCY01_N.B:par_yield:1Y:act_act:compounded/2:2026-10-20@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-20|108|false
+row|fed-board:fed_h15|rate|100|RIFSPBLP_N.B:fixing:-:act_360:simple:2026-10-07@INS-01JREF00000000000000000026|1|frb: Bank prime loan rate|1||2026-10-07|99|false
+row|fed-board:fed_h15|rate|101|RIFSPBLP_N.B:fixing:-:act_360:simple:2026-10-08@INS-01JREF00000000000000000026|1|frb: Bank prime loan rate|1||2026-10-08|100|false
+row|fed-board:fed_h15|rate|102|RIFSPBLP_N.B:fixing:-:act_360:simple:2026-10-09@INS-01JREF00000000000000000026|1|frb: Bank prime loan rate|1||2026-10-09|101|false
+row|fed-board:fed_h15|rate|103|RIFSPBLP_N.B:fixing:-:act_360:simple:2026-10-12@INS-01JREF00000000000000000026|1|frb: Bank prime loan rate|1||2026-10-12|102|false
+row|fed-board:fed_h15|rate|104|RIFSPBLP_N.B:fixing:-:act_360:simple:2026-10-13@INS-01JREF00000000000000000026|1|frb: Bank prime loan rate|1||2026-10-13|103|false
+row|fed-board:fed_h15|rate|105|RIFSPBLP_N.B:fixing:-:act_360:simple:2026-10-14@INS-01JREF00000000000000000026|1|frb: Bank prime loan rate|1||2026-10-14|104|false
+row|fed-board:fed_h15|rate|106|RIFSPBLP_N.B:fixing:-:act_360:simple:2026-10-15@INS-01JREF00000000000000000026|1|frb: Bank prime loan rate|1||2026-10-15|105|false
+row|fed-board:fed_h15|rate|107|RIFSPBLP_N.B:fixing:-:act_360:simple:2026-10-16@INS-01JREF00000000000000000026|1|frb: Bank prime loan rate|1||2026-10-16|106|false
+row|fed-board:fed_h15|rate|108|RIFSPBLP_N.B:fixing:-:act_360:simple:2026-10-19@INS-01JREF00000000000000000026|1|frb: Bank prime loan rate|1||2026-10-19|107|false
+row|fed-board:fed_h15|rate|109|RIFSPBLP_N.B:fixing:-:act_360:simple:2026-10-20@INS-01JREF00000000000000000026|1|frb: Bank prime loan rate|1||2026-10-20|108|false
 row|fed-board:fed_h15|rate|10|RIFSPFF_N.B:fixing:-:act_360:simple:2026-10-02@INS-01JREF00000000000000000002|1|nyfed: EFFR|1||2026-10-02|9|false
-row|fed-board:fed_h15|rate|110|RIFLGFCY01_N.B:par_yield:1Y:act_act:compounded/2:2026-10-21@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-21|109|false
-row|fed-board:fed_h15|rate|111|RIFLGFCY02_N.B:par_yield:2Y:act_act:compounded/2:2026-09-21@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-21|110|false
-row|fed-board:fed_h15|rate|112|RIFLGFCY02_N.B:par_yield:2Y:act_act:compounded/2:2026-09-22@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-22|111|false
-row|fed-board:fed_h15|rate|113|RIFLGFCY02_N.B:par_yield:2Y:act_act:compounded/2:2026-09-23@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-23|112|false
-row|fed-board:fed_h15|rate|114|RIFLGFCY02_N.B:par_yield:2Y:act_act:compounded/2:2026-09-24@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-24|113|false
-row|fed-board:fed_h15|rate|115|RIFLGFCY02_N.B:par_yield:2Y:act_act:compounded/2:2026-09-25@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-25|114|false
-row|fed-board:fed_h15|rate|116|RIFLGFCY02_N.B:par_yield:2Y:act_act:compounded/2:2026-09-28@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-28|115|false
-row|fed-board:fed_h15|rate|117|RIFLGFCY02_N.B:par_yield:2Y:act_act:compounded/2:2026-09-29@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-29|116|false
-row|fed-board:fed_h15|rate|118|RIFLGFCY02_N.B:par_yield:2Y:act_act:compounded/2:2026-09-30@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-30|117|false
-row|fed-board:fed_h15|rate|119|RIFLGFCY02_N.B:par_yield:2Y:act_act:compounded/2:2026-10-01@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-01|118|false
+row|fed-board:fed_h15|rate|110|RIFSPBLP_N.B:fixing:-:act_360:simple:2026-10-21@INS-01JREF00000000000000000026|1|frb: Bank prime loan rate|1||2026-10-21|109|false
+row|fed-board:fed_h15|rate|111|RIFSRP_F02_N.B:fixing:-:act_360:simple:2026-09-21@INS-01JREF00000000000000000027|1|frb: Discount window primary credit rate|1||2026-09-21|0|false
+row|fed-board:fed_h15|rate|112|RIFSRP_F02_N.B:fixing:-:act_360:simple:2026-09-22@INS-01JREF00000000000000000027|1|frb: Discount window primary credit rate|1||2026-09-22|111|false
+row|fed-board:fed_h15|rate|113|RIFSRP_F02_N.B:fixing:-:act_360:simple:2026-09-23@INS-01JREF00000000000000000027|1|frb: Discount window primary credit rate|1||2026-09-23|112|false
+row|fed-board:fed_h15|rate|114|RIFSRP_F02_N.B:fixing:-:act_360:simple:2026-09-24@INS-01JREF00000000000000000027|1|frb: Discount window primary credit rate|1||2026-09-24|113|false
+row|fed-board:fed_h15|rate|115|RIFSRP_F02_N.B:fixing:-:act_360:simple:2026-09-25@INS-01JREF00000000000000000027|1|frb: Discount window primary credit rate|1||2026-09-25|114|false
+row|fed-board:fed_h15|rate|116|RIFSRP_F02_N.B:fixing:-:act_360:simple:2026-09-28@INS-01JREF00000000000000000027|1|frb: Discount window primary credit rate|1||2026-09-28|115|false
+row|fed-board:fed_h15|rate|117|RIFSRP_F02_N.B:fixing:-:act_360:simple:2026-09-29@INS-01JREF00000000000000000027|1|frb: Discount window primary credit rate|1||2026-09-29|116|false
+row|fed-board:fed_h15|rate|118|RIFSRP_F02_N.B:fixing:-:act_360:simple:2026-09-30@INS-01JREF00000000000000000027|1|frb: Discount window primary credit rate|1||2026-09-30|117|false
+row|fed-board:fed_h15|rate|119|RIFSRP_F02_N.B:fixing:-:act_360:simple:2026-10-01@INS-01JREF00000000000000000027|1|frb: Discount window primary credit rate|1||2026-10-01|118|false
 row|fed-board:fed_h15|rate|11|RIFSPFF_N.B:fixing:-:act_360:simple:2026-10-05@INS-01JREF00000000000000000002|1|nyfed: EFFR|1||2026-10-05|10|false
-row|fed-board:fed_h15|rate|120|RIFLGFCY02_N.B:par_yield:2Y:act_act:compounded/2:2026-10-02@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-02|119|false
-row|fed-board:fed_h15|rate|121|RIFLGFCY02_N.B:par_yield:2Y:act_act:compounded/2:2026-10-05@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-05|120|false
-row|fed-board:fed_h15|rate|122|RIFLGFCY02_N.B:par_yield:2Y:act_act:compounded/2:2026-10-06@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-06|121|false
-row|fed-board:fed_h15|rate|123|RIFLGFCY02_N.B:par_yield:2Y:act_act:compounded/2:2026-10-07@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-07|122|false
-row|fed-board:fed_h15|rate|124|RIFLGFCY02_N.B:par_yield:2Y:act_act:compounded/2:2026-10-08@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-08|123|false
-row|fed-board:fed_h15|rate|125|RIFLGFCY02_N.B:par_yield:2Y:act_act:compounded/2:2026-10-09@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-09|124|false
-row|fed-board:fed_h15|rate|126|RIFLGFCY02_N.B:par_yield:2Y:act_act:compounded/2:2026-10-13@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-13|125|false
-row|fed-board:fed_h15|rate|127|RIFLGFCY02_N.B:par_yield:2Y:act_act:compounded/2:2026-10-14@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-14|126|false
-row|fed-board:fed_h15|rate|128|RIFLGFCY02_N.B:par_yield:2Y:act_act:compounded/2:2026-10-15@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-15|127|false
-row|fed-board:fed_h15|rate|129|RIFLGFCY02_N.B:par_yield:2Y:act_act:compounded/2:2026-10-16@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-16|128|false
+row|fed-board:fed_h15|rate|120|RIFSRP_F02_N.B:fixing:-:act_360:simple:2026-10-02@INS-01JREF00000000000000000027|1|frb: Discount window primary credit rate|1||2026-10-02|119|false
+row|fed-board:fed_h15|rate|121|RIFSRP_F02_N.B:fixing:-:act_360:simple:2026-10-05@INS-01JREF00000000000000000027|1|frb: Discount window primary credit rate|1||2026-10-05|120|false
+row|fed-board:fed_h15|rate|122|RIFSRP_F02_N.B:fixing:-:act_360:simple:2026-10-06@INS-01JREF00000000000000000027|1|frb: Discount window primary credit rate|1||2026-10-06|121|false
+row|fed-board:fed_h15|rate|123|RIFSRP_F02_N.B:fixing:-:act_360:simple:2026-10-07@INS-01JREF00000000000000000027|1|frb: Discount window primary credit rate|1||2026-10-07|122|false
+row|fed-board:fed_h15|rate|124|RIFSRP_F02_N.B:fixing:-:act_360:simple:2026-10-08@INS-01JREF00000000000000000027|1|frb: Discount window primary credit rate|1||2026-10-08|123|false
+row|fed-board:fed_h15|rate|125|RIFSRP_F02_N.B:fixing:-:act_360:simple:2026-10-09@INS-01JREF00000000000000000027|1|frb: Discount window primary credit rate|1||2026-10-09|124|false
+row|fed-board:fed_h15|rate|126|RIFSRP_F02_N.B:fixing:-:act_360:simple:2026-10-12@INS-01JREF00000000000000000027|1|frb: Discount window primary credit rate|1||2026-10-12|125|false
+row|fed-board:fed_h15|rate|127|RIFSRP_F02_N.B:fixing:-:act_360:simple:2026-10-13@INS-01JREF00000000000000000027|1|frb: Discount window primary credit rate|1||2026-10-13|126|false
+row|fed-board:fed_h15|rate|128|RIFSRP_F02_N.B:fixing:-:act_360:simple:2026-10-14@INS-01JREF00000000000000000027|1|frb: Discount window primary credit rate|1||2026-10-14|127|false
+row|fed-board:fed_h15|rate|129|RIFSRP_F02_N.B:fixing:-:act_360:simple:2026-10-15@INS-01JREF00000000000000000027|1|frb: Discount window primary credit rate|1||2026-10-15|128|false
 row|fed-board:fed_h15|rate|12|RIFSPFF_N.B:fixing:-:act_360:simple:2026-10-06@INS-01JREF00000000000000000002|1|nyfed: EFFR|1||2026-10-06|11|false
-row|fed-board:fed_h15|rate|130|RIFLGFCY02_N.B:par_yield:2Y:act_act:compounded/2:2026-10-19@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-19|129|false
-row|fed-board:fed_h15|rate|131|RIFLGFCY02_N.B:par_yield:2Y:act_act:compounded/2:2026-10-20@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-20|130|false
-row|fed-board:fed_h15|rate|132|RIFLGFCY02_N.B:par_yield:2Y:act_act:compounded/2:2026-10-21@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-21|131|false
-row|fed-board:fed_h15|rate|133|RIFLGFCY03_N.B:par_yield:3Y:act_act:compounded/2:2026-09-21@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-21|132|false
-row|fed-board:fed_h15|rate|134|RIFLGFCY03_N.B:par_yield:3Y:act_act:compounded/2:2026-09-22@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-22|133|false
-row|fed-board:fed_h15|rate|135|RIFLGFCY03_N.B:par_yield:3Y:act_act:compounded/2:2026-09-23@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-23|134|false
-row|fed-board:fed_h15|rate|136|RIFLGFCY03_N.B:par_yield:3Y:act_act:compounded/2:2026-09-24@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-24|135|false
-row|fed-board:fed_h15|rate|137|RIFLGFCY03_N.B:par_yield:3Y:act_act:compounded/2:2026-09-25@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-25|136|false
-row|fed-board:fed_h15|rate|138|RIFLGFCY03_N.B:par_yield:3Y:act_act:compounded/2:2026-09-28@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-28|137|false
-row|fed-board:fed_h15|rate|139|RIFLGFCY03_N.B:par_yield:3Y:act_act:compounded/2:2026-09-29@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-29|138|false
+row|fed-board:fed_h15|rate|130|RIFSRP_F02_N.B:fixing:-:act_360:simple:2026-10-16@INS-01JREF00000000000000000027|1|frb: Discount window primary credit rate|1||2026-10-16|129|false
+row|fed-board:fed_h15|rate|131|RIFSRP_F02_N.B:fixing:-:act_360:simple:2026-10-19@INS-01JREF00000000000000000027|1|frb: Discount window primary credit rate|1||2026-10-19|130|false
+row|fed-board:fed_h15|rate|132|RIFSRP_F02_N.B:fixing:-:act_360:simple:2026-10-20@INS-01JREF00000000000000000027|1|frb: Discount window primary credit rate|1||2026-10-20|131|false
+row|fed-board:fed_h15|rate|133|RIFSRP_F02_N.B:fixing:-:act_360:simple:2026-10-21@INS-01JREF00000000000000000027|1|frb: Discount window primary credit rate|1||2026-10-21|132|false
+row|fed-board:fed_h15|rate|134|RIFSGFSW04_N.B:discount:4W:act_360:discount:2026-09-21@INS-01JREF00000000000000000023|1|frb: Treasury bills secondary market|6||2026-09-21|0|false
+row|fed-board:fed_h15|rate|135|RIFSGFSW04_N.B:discount:4W:act_360:discount:2026-09-22@INS-01JREF00000000000000000023|1|frb: Treasury bills secondary market|6||2026-09-22|134|false
+row|fed-board:fed_h15|rate|136|RIFSGFSW04_N.B:discount:4W:act_360:discount:2026-09-23@INS-01JREF00000000000000000023|1|frb: Treasury bills secondary market|6||2026-09-23|135|false
+row|fed-board:fed_h15|rate|137|RIFSGFSW04_N.B:discount:4W:act_360:discount:2026-09-24@INS-01JREF00000000000000000023|1|frb: Treasury bills secondary market|6||2026-09-24|136|false
+row|fed-board:fed_h15|rate|138|RIFSGFSW04_N.B:discount:4W:act_360:discount:2026-09-25@INS-01JREF00000000000000000023|1|frb: Treasury bills secondary market|6||2026-09-25|137|false
+row|fed-board:fed_h15|rate|139|RIFSGFSW04_N.B:discount:4W:act_360:discount:2026-09-28@INS-01JREF00000000000000000023|1|frb: Treasury bills secondary market|6||2026-09-28|138|false
 row|fed-board:fed_h15|rate|13|RIFSPFF_N.B:fixing:-:act_360:simple:2026-10-07@INS-01JREF00000000000000000002|1|nyfed: EFFR|1||2026-10-07|12|false
-row|fed-board:fed_h15|rate|140|RIFLGFCY03_N.B:par_yield:3Y:act_act:compounded/2:2026-09-30@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-30|139|false
-row|fed-board:fed_h15|rate|141|RIFLGFCY03_N.B:par_yield:3Y:act_act:compounded/2:2026-10-01@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-01|140|false
-row|fed-board:fed_h15|rate|142|RIFLGFCY03_N.B:par_yield:3Y:act_act:compounded/2:2026-10-02@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-02|141|false
-row|fed-board:fed_h15|rate|143|RIFLGFCY03_N.B:par_yield:3Y:act_act:compounded/2:2026-10-05@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-05|142|false
-row|fed-board:fed_h15|rate|144|RIFLGFCY03_N.B:par_yield:3Y:act_act:compounded/2:2026-10-06@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-06|143|false
-row|fed-board:fed_h15|rate|145|RIFLGFCY03_N.B:par_yield:3Y:act_act:compounded/2:2026-10-07@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-07|144|false
-row|fed-board:fed_h15|rate|146|RIFLGFCY03_N.B:par_yield:3Y:act_act:compounded/2:2026-10-08@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-08|145|false
-row|fed-board:fed_h15|rate|147|RIFLGFCY03_N.B:par_yield:3Y:act_act:compounded/2:2026-10-09@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-09|146|false
-row|fed-board:fed_h15|rate|148|RIFLGFCY03_N.B:par_yield:3Y:act_act:compounded/2:2026-10-13@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-13|147|false
-row|fed-board:fed_h15|rate|149|RIFLGFCY03_N.B:par_yield:3Y:act_act:compounded/2:2026-10-14@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-14|148|false
+row|fed-board:fed_h15|rate|140|RIFSGFSW04_N.B:discount:4W:act_360:discount:2026-09-29@INS-01JREF00000000000000000023|1|frb: Treasury bills secondary market|6||2026-09-29|139|false
+row|fed-board:fed_h15|rate|141|RIFSGFSW04_N.B:discount:4W:act_360:discount:2026-09-30@INS-01JREF00000000000000000023|1|frb: Treasury bills secondary market|6||2026-09-30|140|false
+row|fed-board:fed_h15|rate|142|RIFSGFSW04_N.B:discount:4W:act_360:discount:2026-10-01@INS-01JREF00000000000000000023|1|frb: Treasury bills secondary market|6||2026-10-01|141|false
+row|fed-board:fed_h15|rate|143|RIFSGFSW04_N.B:discount:4W:act_360:discount:2026-10-02@INS-01JREF00000000000000000023|1|frb: Treasury bills secondary market|6||2026-10-02|142|false
+row|fed-board:fed_h15|rate|144|RIFSGFSW04_N.B:discount:4W:act_360:discount:2026-10-05@INS-01JREF00000000000000000023|1|frb: Treasury bills secondary market|6||2026-10-05|143|false
+row|fed-board:fed_h15|rate|145|RIFSGFSW04_N.B:discount:4W:act_360:discount:2026-10-06@INS-01JREF00000000000000000023|1|frb: Treasury bills secondary market|6||2026-10-06|144|false
+row|fed-board:fed_h15|rate|146|RIFSGFSW04_N.B:discount:4W:act_360:discount:2026-10-07@INS-01JREF00000000000000000023|1|frb: Treasury bills secondary market|6||2026-10-07|145|false
+row|fed-board:fed_h15|rate|147|RIFSGFSW04_N.B:discount:4W:act_360:discount:2026-10-08@INS-01JREF00000000000000000023|1|frb: Treasury bills secondary market|6||2026-10-08|146|false
+row|fed-board:fed_h15|rate|148|RIFSGFSW04_N.B:discount:4W:act_360:discount:2026-10-09@INS-01JREF00000000000000000023|1|frb: Treasury bills secondary market|6||2026-10-09|147|false
+row|fed-board:fed_h15|rate|149|RIFSGFSW04_N.B:discount:4W:act_360:discount:2026-10-13@INS-01JREF00000000000000000023|1|frb: Treasury bills secondary market|6||2026-10-13|148|false
 row|fed-board:fed_h15|rate|14|RIFSPFF_N.B:fixing:-:act_360:simple:2026-10-08@INS-01JREF00000000000000000002|1|nyfed: EFFR|1||2026-10-08|13|false
-row|fed-board:fed_h15|rate|150|RIFLGFCY03_N.B:par_yield:3Y:act_act:compounded/2:2026-10-15@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-15|149|false
-row|fed-board:fed_h15|rate|151|RIFLGFCY03_N.B:par_yield:3Y:act_act:compounded/2:2026-10-16@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-16|150|false
-row|fed-board:fed_h15|rate|152|RIFLGFCY03_N.B:par_yield:3Y:act_act:compounded/2:2026-10-19@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-19|151|false
-row|fed-board:fed_h15|rate|153|RIFLGFCY03_N.B:par_yield:3Y:act_act:compounded/2:2026-10-20@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-20|152|false
-row|fed-board:fed_h15|rate|154|RIFLGFCY03_N.B:par_yield:3Y:act_act:compounded/2:2026-10-21@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-21|153|false
-row|fed-board:fed_h15|rate|155|RIFLGFCY05_N.B:par_yield:5Y:act_act:compounded/2:2026-09-21@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-21|154|false
-row|fed-board:fed_h15|rate|156|RIFLGFCY05_N.B:par_yield:5Y:act_act:compounded/2:2026-09-22@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-22|155|false
-row|fed-board:fed_h15|rate|157|RIFLGFCY05_N.B:par_yield:5Y:act_act:compounded/2:2026-09-23@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-23|156|false
-row|fed-board:fed_h15|rate|158|RIFLGFCY05_N.B:par_yield:5Y:act_act:compounded/2:2026-09-24@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-24|157|false
-row|fed-board:fed_h15|rate|159|RIFLGFCY05_N.B:par_yield:5Y:act_act:compounded/2:2026-09-25@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-25|158|false
+row|fed-board:fed_h15|rate|150|RIFSGFSW04_N.B:discount:4W:act_360:discount:2026-10-14@INS-01JREF00000000000000000023|1|frb: Treasury bills secondary market|6||2026-10-14|149|false
+row|fed-board:fed_h15|rate|151|RIFSGFSW04_N.B:discount:4W:act_360:discount:2026-10-15@INS-01JREF00000000000000000023|1|frb: Treasury bills secondary market|6||2026-10-15|150|false
+row|fed-board:fed_h15|rate|152|RIFSGFSW04_N.B:discount:4W:act_360:discount:2026-10-16@INS-01JREF00000000000000000023|1|frb: Treasury bills secondary market|6||2026-10-16|151|false
+row|fed-board:fed_h15|rate|153|RIFSGFSW04_N.B:discount:4W:act_360:discount:2026-10-19@INS-01JREF00000000000000000023|1|frb: Treasury bills secondary market|6||2026-10-19|152|false
+row|fed-board:fed_h15|rate|154|RIFSGFSW04_N.B:discount:4W:act_360:discount:2026-10-20@INS-01JREF00000000000000000023|1|frb: Treasury bills secondary market|6||2026-10-20|153|false
+row|fed-board:fed_h15|rate|155|RIFSGFSW04_N.B:discount:4W:act_360:discount:2026-10-21@INS-01JREF00000000000000000023|1|frb: Treasury bills secondary market|6||2026-10-21|154|false
+row|fed-board:fed_h15|rate|156|RIFSGFSM03_N.B:discount:3M:act_360:discount:2026-09-21@INS-01JREF00000000000000000023|1|frb: Treasury bills secondary market|6||2026-09-21|155|false
+row|fed-board:fed_h15|rate|157|RIFSGFSM03_N.B:discount:3M:act_360:discount:2026-09-22@INS-01JREF00000000000000000023|1|frb: Treasury bills secondary market|6||2026-09-22|156|false
+row|fed-board:fed_h15|rate|158|RIFSGFSM03_N.B:discount:3M:act_360:discount:2026-09-23@INS-01JREF00000000000000000023|1|frb: Treasury bills secondary market|6||2026-09-23|157|false
+row|fed-board:fed_h15|rate|159|RIFSGFSM03_N.B:discount:3M:act_360:discount:2026-09-24@INS-01JREF00000000000000000023|1|frb: Treasury bills secondary market|6||2026-09-24|158|false
 row|fed-board:fed_h15|rate|15|RIFSPFF_N.B:fixing:-:act_360:simple:2026-10-09@INS-01JREF00000000000000000002|1|nyfed: EFFR|1||2026-10-09|14|false
-row|fed-board:fed_h15|rate|160|RIFLGFCY05_N.B:par_yield:5Y:act_act:compounded/2:2026-09-28@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-28|159|false
-row|fed-board:fed_h15|rate|161|RIFLGFCY05_N.B:par_yield:5Y:act_act:compounded/2:2026-09-29@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-29|160|false
-row|fed-board:fed_h15|rate|162|RIFLGFCY05_N.B:par_yield:5Y:act_act:compounded/2:2026-09-30@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-30|161|false
-row|fed-board:fed_h15|rate|163|RIFLGFCY05_N.B:par_yield:5Y:act_act:compounded/2:2026-10-01@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-01|162|false
-row|fed-board:fed_h15|rate|164|RIFLGFCY05_N.B:par_yield:5Y:act_act:compounded/2:2026-10-02@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-02|163|false
-row|fed-board:fed_h15|rate|165|RIFLGFCY05_N.B:par_yield:5Y:act_act:compounded/2:2026-10-05@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-05|164|false
-row|fed-board:fed_h15|rate|166|RIFLGFCY05_N.B:par_yield:5Y:act_act:compounded/2:2026-10-06@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-06|165|false
-row|fed-board:fed_h15|rate|167|RIFLGFCY05_N.B:par_yield:5Y:act_act:compounded/2:2026-10-07@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-07|166|false
-row|fed-board:fed_h15|rate|168|RIFLGFCY05_N.B:par_yield:5Y:act_act:compounded/2:2026-10-08@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-08|167|false
-row|fed-board:fed_h15|rate|169|RIFLGFCY05_N.B:par_yield:5Y:act_act:compounded/2:2026-10-09@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-09|168|false
+row|fed-board:fed_h15|rate|160|RIFSGFSM03_N.B:discount:3M:act_360:discount:2026-09-25@INS-01JREF00000000000000000023|1|frb: Treasury bills secondary market|6||2026-09-25|159|false
+row|fed-board:fed_h15|rate|161|RIFSGFSM03_N.B:discount:3M:act_360:discount:2026-09-28@INS-01JREF00000000000000000023|1|frb: Treasury bills secondary market|6||2026-09-28|160|false
+row|fed-board:fed_h15|rate|162|RIFSGFSM03_N.B:discount:3M:act_360:discount:2026-09-29@INS-01JREF00000000000000000023|1|frb: Treasury bills secondary market|6||2026-09-29|161|false
+row|fed-board:fed_h15|rate|163|RIFSGFSM03_N.B:discount:3M:act_360:discount:2026-09-30@INS-01JREF00000000000000000023|1|frb: Treasury bills secondary market|6||2026-09-30|162|false
+row|fed-board:fed_h15|rate|164|RIFSGFSM03_N.B:discount:3M:act_360:discount:2026-10-01@INS-01JREF00000000000000000023|1|frb: Treasury bills secondary market|6||2026-10-01|163|false
+row|fed-board:fed_h15|rate|165|RIFSGFSM03_N.B:discount:3M:act_360:discount:2026-10-02@INS-01JREF00000000000000000023|1|frb: Treasury bills secondary market|6||2026-10-02|164|false
+row|fed-board:fed_h15|rate|166|RIFSGFSM03_N.B:discount:3M:act_360:discount:2026-10-05@INS-01JREF00000000000000000023|1|frb: Treasury bills secondary market|6||2026-10-05|165|false
+row|fed-board:fed_h15|rate|167|RIFSGFSM03_N.B:discount:3M:act_360:discount:2026-10-06@INS-01JREF00000000000000000023|1|frb: Treasury bills secondary market|6||2026-10-06|166|false
+row|fed-board:fed_h15|rate|168|RIFSGFSM03_N.B:discount:3M:act_360:discount:2026-10-07@INS-01JREF00000000000000000023|1|frb: Treasury bills secondary market|6||2026-10-07|167|false
+row|fed-board:fed_h15|rate|169|RIFSGFSM03_N.B:discount:3M:act_360:discount:2026-10-08@INS-01JREF00000000000000000023|1|frb: Treasury bills secondary market|6||2026-10-08|168|false
 row|fed-board:fed_h15|rate|16|RIFSPFF_N.B:fixing:-:act_360:simple:2026-10-13@INS-01JREF00000000000000000002|1|nyfed: EFFR|1||2026-10-13|15|false
-row|fed-board:fed_h15|rate|170|RIFLGFCY05_N.B:par_yield:5Y:act_act:compounded/2:2026-10-13@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-13|169|false
-row|fed-board:fed_h15|rate|171|RIFLGFCY05_N.B:par_yield:5Y:act_act:compounded/2:2026-10-14@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-14|170|false
-row|fed-board:fed_h15|rate|172|RIFLGFCY05_N.B:par_yield:5Y:act_act:compounded/2:2026-10-15@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-15|171|false
-row|fed-board:fed_h15|rate|173|RIFLGFCY05_N.B:par_yield:5Y:act_act:compounded/2:2026-10-16@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-16|172|false
-row|fed-board:fed_h15|rate|174|RIFLGFCY05_N.B:par_yield:5Y:act_act:compounded/2:2026-10-19@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-19|173|false
-row|fed-board:fed_h15|rate|175|RIFLGFCY05_N.B:par_yield:5Y:act_act:compounded/2:2026-10-20@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-20|174|false
-row|fed-board:fed_h15|rate|176|RIFLGFCY05_N.B:par_yield:5Y:act_act:compounded/2:2026-10-21@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-21|175|false
-row|fed-board:fed_h15|rate|177|RIFLGFCY07_N.B:par_yield:7Y:act_act:compounded/2:2026-09-21@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-21|176|false
-row|fed-board:fed_h15|rate|178|RIFLGFCY07_N.B:par_yield:7Y:act_act:compounded/2:2026-09-22@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-22|177|false
-row|fed-board:fed_h15|rate|179|RIFLGFCY07_N.B:par_yield:7Y:act_act:compounded/2:2026-09-23@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-23|178|false
+row|fed-board:fed_h15|rate|170|RIFSGFSM03_N.B:discount:3M:act_360:discount:2026-10-09@INS-01JREF00000000000000000023|1|frb: Treasury bills secondary market|6||2026-10-09|169|false
+row|fed-board:fed_h15|rate|171|RIFSGFSM03_N.B:discount:3M:act_360:discount:2026-10-13@INS-01JREF00000000000000000023|1|frb: Treasury bills secondary market|6||2026-10-13|170|false
+row|fed-board:fed_h15|rate|172|RIFSGFSM03_N.B:discount:3M:act_360:discount:2026-10-14@INS-01JREF00000000000000000023|1|frb: Treasury bills secondary market|6||2026-10-14|171|false
+row|fed-board:fed_h15|rate|173|RIFSGFSM03_N.B:discount:3M:act_360:discount:2026-10-15@INS-01JREF00000000000000000023|1|frb: Treasury bills secondary market|6||2026-10-15|172|false
+row|fed-board:fed_h15|rate|174|RIFSGFSM03_N.B:discount:3M:act_360:discount:2026-10-16@INS-01JREF00000000000000000023|1|frb: Treasury bills secondary market|6||2026-10-16|173|false
+row|fed-board:fed_h15|rate|175|RIFSGFSM03_N.B:discount:3M:act_360:discount:2026-10-19@INS-01JREF00000000000000000023|1|frb: Treasury bills secondary market|6||2026-10-19|174|false
+row|fed-board:fed_h15|rate|176|RIFSGFSM03_N.B:discount:3M:act_360:discount:2026-10-20@INS-01JREF00000000000000000023|1|frb: Treasury bills secondary market|6||2026-10-20|175|false
+row|fed-board:fed_h15|rate|177|RIFSGFSM03_N.B:discount:3M:act_360:discount:2026-10-21@INS-01JREF00000000000000000023|1|frb: Treasury bills secondary market|6||2026-10-21|176|false
+row|fed-board:fed_h15|rate|178|RIFSGFSM06_N.B:discount:6M:act_360:discount:2026-09-21@INS-01JREF00000000000000000023|1|frb: Treasury bills secondary market|6||2026-09-21|177|false
+row|fed-board:fed_h15|rate|179|RIFSGFSM06_N.B:discount:6M:act_360:discount:2026-09-22@INS-01JREF00000000000000000023|1|frb: Treasury bills secondary market|6||2026-09-22|178|false
 row|fed-board:fed_h15|rate|17|RIFSPFF_N.B:fixing:-:act_360:simple:2026-10-14@INS-01JREF00000000000000000002|1|nyfed: EFFR|1||2026-10-14|16|false
-row|fed-board:fed_h15|rate|180|RIFLGFCY07_N.B:par_yield:7Y:act_act:compounded/2:2026-09-24@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-24|179|false
-row|fed-board:fed_h15|rate|181|RIFLGFCY07_N.B:par_yield:7Y:act_act:compounded/2:2026-09-25@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-25|180|false
-row|fed-board:fed_h15|rate|182|RIFLGFCY07_N.B:par_yield:7Y:act_act:compounded/2:2026-09-28@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-28|181|false
-row|fed-board:fed_h15|rate|183|RIFLGFCY07_N.B:par_yield:7Y:act_act:compounded/2:2026-09-29@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-29|182|false
-row|fed-board:fed_h15|rate|184|RIFLGFCY07_N.B:par_yield:7Y:act_act:compounded/2:2026-09-30@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-30|183|false
-row|fed-board:fed_h15|rate|185|RIFLGFCY07_N.B:par_yield:7Y:act_act:compounded/2:2026-10-01@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-01|184|false
-row|fed-board:fed_h15|rate|186|RIFLGFCY07_N.B:par_yield:7Y:act_act:compounded/2:2026-10-02@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-02|185|false
-row|fed-board:fed_h15|rate|187|RIFLGFCY07_N.B:par_yield:7Y:act_act:compounded/2:2026-10-05@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-05|186|false
-row|fed-board:fed_h15|rate|188|RIFLGFCY07_N.B:par_yield:7Y:act_act:compounded/2:2026-10-06@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-06|187|false
-row|fed-board:fed_h15|rate|189|RIFLGFCY07_N.B:par_yield:7Y:act_act:compounded/2:2026-10-07@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-07|188|false
+row|fed-board:fed_h15|rate|180|RIFSGFSM06_N.B:discount:6M:act_360:discount:2026-09-23@INS-01JREF00000000000000000023|1|frb: Treasury bills secondary market|6||2026-09-23|179|false
+row|fed-board:fed_h15|rate|181|RIFSGFSM06_N.B:discount:6M:act_360:discount:2026-09-24@INS-01JREF00000000000000000023|1|frb: Treasury bills secondary market|6||2026-09-24|180|false
+row|fed-board:fed_h15|rate|182|RIFSGFSM06_N.B:discount:6M:act_360:discount:2026-09-25@INS-01JREF00000000000000000023|1|frb: Treasury bills secondary market|6||2026-09-25|181|false
+row|fed-board:fed_h15|rate|183|RIFSGFSM06_N.B:discount:6M:act_360:discount:2026-09-28@INS-01JREF00000000000000000023|1|frb: Treasury bills secondary market|6||2026-09-28|182|false
+row|fed-board:fed_h15|rate|184|RIFSGFSM06_N.B:discount:6M:act_360:discount:2026-09-29@INS-01JREF00000000000000000023|1|frb: Treasury bills secondary market|6||2026-09-29|183|false
+row|fed-board:fed_h15|rate|185|RIFSGFSM06_N.B:discount:6M:act_360:discount:2026-09-30@INS-01JREF00000000000000000023|1|frb: Treasury bills secondary market|6||2026-09-30|184|false
+row|fed-board:fed_h15|rate|186|RIFSGFSM06_N.B:discount:6M:act_360:discount:2026-10-01@INS-01JREF00000000000000000023|1|frb: Treasury bills secondary market|6||2026-10-01|185|false
+row|fed-board:fed_h15|rate|187|RIFSGFSM06_N.B:discount:6M:act_360:discount:2026-10-02@INS-01JREF00000000000000000023|1|frb: Treasury bills secondary market|6||2026-10-02|186|false
+row|fed-board:fed_h15|rate|188|RIFSGFSM06_N.B:discount:6M:act_360:discount:2026-10-05@INS-01JREF00000000000000000023|1|frb: Treasury bills secondary market|6||2026-10-05|187|false
+row|fed-board:fed_h15|rate|189|RIFSGFSM06_N.B:discount:6M:act_360:discount:2026-10-06@INS-01JREF00000000000000000023|1|frb: Treasury bills secondary market|6||2026-10-06|188|false
 row|fed-board:fed_h15|rate|18|RIFSPFF_N.B:fixing:-:act_360:simple:2026-10-15@INS-01JREF00000000000000000002|1|nyfed: EFFR|1||2026-10-15|17|false
-row|fed-board:fed_h15|rate|190|RIFLGFCY07_N.B:par_yield:7Y:act_act:compounded/2:2026-10-08@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-08|189|false
-row|fed-board:fed_h15|rate|191|RIFLGFCY07_N.B:par_yield:7Y:act_act:compounded/2:2026-10-09@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-09|190|false
-row|fed-board:fed_h15|rate|192|RIFLGFCY07_N.B:par_yield:7Y:act_act:compounded/2:2026-10-13@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-13|191|false
-row|fed-board:fed_h15|rate|193|RIFLGFCY07_N.B:par_yield:7Y:act_act:compounded/2:2026-10-14@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-14|192|false
-row|fed-board:fed_h15|rate|194|RIFLGFCY07_N.B:par_yield:7Y:act_act:compounded/2:2026-10-15@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-15|193|false
-row|fed-board:fed_h15|rate|195|RIFLGFCY07_N.B:par_yield:7Y:act_act:compounded/2:2026-10-16@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-16|194|false
-row|fed-board:fed_h15|rate|196|RIFLGFCY07_N.B:par_yield:7Y:act_act:compounded/2:2026-10-19@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-19|195|false
-row|fed-board:fed_h15|rate|197|RIFLGFCY07_N.B:par_yield:7Y:act_act:compounded/2:2026-10-20@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-20|196|false
-row|fed-board:fed_h15|rate|198|RIFLGFCY07_N.B:par_yield:7Y:act_act:compounded/2:2026-10-21@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-21|197|false
-row|fed-board:fed_h15|rate|199|RIFLGFCY10_N.B:par_yield:10Y:act_act:compounded/2:2026-09-21@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-21|198|false
+row|fed-board:fed_h15|rate|190|RIFSGFSM06_N.B:discount:6M:act_360:discount:2026-10-07@INS-01JREF00000000000000000023|1|frb: Treasury bills secondary market|6||2026-10-07|189|false
+row|fed-board:fed_h15|rate|191|RIFSGFSM06_N.B:discount:6M:act_360:discount:2026-10-08@INS-01JREF00000000000000000023|1|frb: Treasury bills secondary market|6||2026-10-08|190|false
+row|fed-board:fed_h15|rate|192|RIFSGFSM06_N.B:discount:6M:act_360:discount:2026-10-09@INS-01JREF00000000000000000023|1|frb: Treasury bills secondary market|6||2026-10-09|191|false
+row|fed-board:fed_h15|rate|193|RIFSGFSM06_N.B:discount:6M:act_360:discount:2026-10-13@INS-01JREF00000000000000000023|1|frb: Treasury bills secondary market|6||2026-10-13|192|false
+row|fed-board:fed_h15|rate|194|RIFSGFSM06_N.B:discount:6M:act_360:discount:2026-10-14@INS-01JREF00000000000000000023|1|frb: Treasury bills secondary market|6||2026-10-14|193|false
+row|fed-board:fed_h15|rate|195|RIFSGFSM06_N.B:discount:6M:act_360:discount:2026-10-15@INS-01JREF00000000000000000023|1|frb: Treasury bills secondary market|6||2026-10-15|194|false
+row|fed-board:fed_h15|rate|196|RIFSGFSM06_N.B:discount:6M:act_360:discount:2026-10-16@INS-01JREF00000000000000000023|1|frb: Treasury bills secondary market|6||2026-10-16|195|false
+row|fed-board:fed_h15|rate|197|RIFSGFSM06_N.B:discount:6M:act_360:discount:2026-10-19@INS-01JREF00000000000000000023|1|frb: Treasury bills secondary market|6||2026-10-19|196|false
+row|fed-board:fed_h15|rate|198|RIFSGFSM06_N.B:discount:6M:act_360:discount:2026-10-20@INS-01JREF00000000000000000023|1|frb: Treasury bills secondary market|6||2026-10-20|197|false
+row|fed-board:fed_h15|rate|199|RIFSGFSM06_N.B:discount:6M:act_360:discount:2026-10-21@INS-01JREF00000000000000000023|1|frb: Treasury bills secondary market|6||2026-10-21|198|false
 row|fed-board:fed_h15|rate|19|RIFSPFF_N.B:fixing:-:act_360:simple:2026-10-16@INS-01JREF00000000000000000002|1|nyfed: EFFR|1||2026-10-16|18|false
 row|fed-board:fed_h15|rate|1|RIFSPFF_N.B:fixing:-:act_360:simple:2026-09-21@INS-01JREF00000000000000000002|1|nyfed: EFFR|1||2026-09-21|0|false
-row|fed-board:fed_h15|rate|200|RIFLGFCY10_N.B:par_yield:10Y:act_act:compounded/2:2026-09-22@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-22|199|false
-row|fed-board:fed_h15|rate|201|RIFLGFCY10_N.B:par_yield:10Y:act_act:compounded/2:2026-09-23@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-23|200|false
-row|fed-board:fed_h15|rate|202|RIFLGFCY10_N.B:par_yield:10Y:act_act:compounded/2:2026-09-24@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-24|201|false
-row|fed-board:fed_h15|rate|203|RIFLGFCY10_N.B:par_yield:10Y:act_act:compounded/2:2026-09-25@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-25|202|false
-row|fed-board:fed_h15|rate|204|RIFLGFCY10_N.B:par_yield:10Y:act_act:compounded/2:2026-09-28@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-28|203|false
-row|fed-board:fed_h15|rate|205|RIFLGFCY10_N.B:par_yield:10Y:act_act:compounded/2:2026-09-29@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-29|204|false
-row|fed-board:fed_h15|rate|206|RIFLGFCY10_N.B:par_yield:10Y:act_act:compounded/2:2026-09-30@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-30|205|false
-row|fed-board:fed_h15|rate|207|RIFLGFCY10_N.B:par_yield:10Y:act_act:compounded/2:2026-10-01@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-01|206|false
-row|fed-board:fed_h15|rate|208|RIFLGFCY10_N.B:par_yield:10Y:act_act:compounded/2:2026-10-02@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-02|207|false
-row|fed-board:fed_h15|rate|209|RIFLGFCY10_N.B:par_yield:10Y:act_act:compounded/2:2026-10-05@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-05|208|false
+row|fed-board:fed_h15|rate|200|RIFSGFSY01_N.B:discount:1Y:act_360:discount:2026-09-21@INS-01JREF00000000000000000023|1|frb: Treasury bills secondary market|6||2026-09-21|199|false
+row|fed-board:fed_h15|rate|201|RIFSGFSY01_N.B:discount:1Y:act_360:discount:2026-09-22@INS-01JREF00000000000000000023|1|frb: Treasury bills secondary market|6||2026-09-22|200|false
+row|fed-board:fed_h15|rate|202|RIFSGFSY01_N.B:discount:1Y:act_360:discount:2026-09-23@INS-01JREF00000000000000000023|1|frb: Treasury bills secondary market|6||2026-09-23|201|false
+row|fed-board:fed_h15|rate|203|RIFSGFSY01_N.B:discount:1Y:act_360:discount:2026-09-24@INS-01JREF00000000000000000023|1|frb: Treasury bills secondary market|6||2026-09-24|202|false
+row|fed-board:fed_h15|rate|204|RIFSGFSY01_N.B:discount:1Y:act_360:discount:2026-09-25@INS-01JREF00000000000000000023|1|frb: Treasury bills secondary market|6||2026-09-25|203|false
+row|fed-board:fed_h15|rate|205|RIFSGFSY01_N.B:discount:1Y:act_360:discount:2026-09-28@INS-01JREF00000000000000000023|1|frb: Treasury bills secondary market|6||2026-09-28|204|false
+row|fed-board:fed_h15|rate|206|RIFSGFSY01_N.B:discount:1Y:act_360:discount:2026-09-29@INS-01JREF00000000000000000023|1|frb: Treasury bills secondary market|6||2026-09-29|205|false
+row|fed-board:fed_h15|rate|207|RIFSGFSY01_N.B:discount:1Y:act_360:discount:2026-09-30@INS-01JREF00000000000000000023|1|frb: Treasury bills secondary market|6||2026-09-30|206|false
+row|fed-board:fed_h15|rate|208|RIFSGFSY01_N.B:discount:1Y:act_360:discount:2026-10-01@INS-01JREF00000000000000000023|1|frb: Treasury bills secondary market|6||2026-10-01|207|false
+row|fed-board:fed_h15|rate|209|RIFSGFSY01_N.B:discount:1Y:act_360:discount:2026-10-02@INS-01JREF00000000000000000023|1|frb: Treasury bills secondary market|6||2026-10-02|208|false
 row|fed-board:fed_h15|rate|20|RIFSPFF_N.B:fixing:-:act_360:simple:2026-10-19@INS-01JREF00000000000000000002|1|nyfed: EFFR|1||2026-10-19|19|false
-row|fed-board:fed_h15|rate|210|RIFLGFCY10_N.B:par_yield:10Y:act_act:compounded/2:2026-10-06@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-06|209|false
-row|fed-board:fed_h15|rate|211|RIFLGFCY10_N.B:par_yield:10Y:act_act:compounded/2:2026-10-07@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-07|210|false
-row|fed-board:fed_h15|rate|212|RIFLGFCY10_N.B:par_yield:10Y:act_act:compounded/2:2026-10-08@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-08|211|false
-row|fed-board:fed_h15|rate|213|RIFLGFCY10_N.B:par_yield:10Y:act_act:compounded/2:2026-10-09@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-09|212|false
-row|fed-board:fed_h15|rate|214|RIFLGFCY10_N.B:par_yield:10Y:act_act:compounded/2:2026-10-13@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-13|213|false
-row|fed-board:fed_h15|rate|215|RIFLGFCY10_N.B:par_yield:10Y:act_act:compounded/2:2026-10-14@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-14|214|false
-row|fed-board:fed_h15|rate|216|RIFLGFCY10_N.B:par_yield:10Y:act_act:compounded/2:2026-10-15@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-15|215|false
-row|fed-board:fed_h15|rate|217|RIFLGFCY10_N.B:par_yield:10Y:act_act:compounded/2:2026-10-16@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-16|216|false
-row|fed-board:fed_h15|rate|218|RIFLGFCY10_N.B:par_yield:10Y:act_act:compounded/2:2026-10-19@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-19|217|false
-row|fed-board:fed_h15|rate|219|RIFLGFCY10_N.B:par_yield:10Y:act_act:compounded/2:2026-10-20@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-20|218|false
+row|fed-board:fed_h15|rate|210|RIFSGFSY01_N.B:discount:1Y:act_360:discount:2026-10-05@INS-01JREF00000000000000000023|1|frb: Treasury bills secondary market|6||2026-10-05|209|false
+row|fed-board:fed_h15|rate|211|RIFSGFSY01_N.B:discount:1Y:act_360:discount:2026-10-06@INS-01JREF00000000000000000023|1|frb: Treasury bills secondary market|6||2026-10-06|210|false
+row|fed-board:fed_h15|rate|212|RIFSGFSY01_N.B:discount:1Y:act_360:discount:2026-10-07@INS-01JREF00000000000000000023|1|frb: Treasury bills secondary market|6||2026-10-07|211|false
+row|fed-board:fed_h15|rate|213|RIFSGFSY01_N.B:discount:1Y:act_360:discount:2026-10-08@INS-01JREF00000000000000000023|1|frb: Treasury bills secondary market|6||2026-10-08|212|false
+row|fed-board:fed_h15|rate|214|RIFSGFSY01_N.B:discount:1Y:act_360:discount:2026-10-09@INS-01JREF00000000000000000023|1|frb: Treasury bills secondary market|6||2026-10-09|213|false
+row|fed-board:fed_h15|rate|215|RIFSGFSY01_N.B:discount:1Y:act_360:discount:2026-10-13@INS-01JREF00000000000000000023|1|frb: Treasury bills secondary market|6||2026-10-13|214|false
+row|fed-board:fed_h15|rate|216|RIFSGFSY01_N.B:discount:1Y:act_360:discount:2026-10-14@INS-01JREF00000000000000000023|1|frb: Treasury bills secondary market|6||2026-10-14|215|false
+row|fed-board:fed_h15|rate|217|RIFSGFSY01_N.B:discount:1Y:act_360:discount:2026-10-15@INS-01JREF00000000000000000023|1|frb: Treasury bills secondary market|6||2026-10-15|216|false
+row|fed-board:fed_h15|rate|218|RIFSGFSY01_N.B:discount:1Y:act_360:discount:2026-10-16@INS-01JREF00000000000000000023|1|frb: Treasury bills secondary market|6||2026-10-16|217|false
+row|fed-board:fed_h15|rate|219|RIFSGFSY01_N.B:discount:1Y:act_360:discount:2026-10-19@INS-01JREF00000000000000000023|1|frb: Treasury bills secondary market|6||2026-10-19|218|false
 row|fed-board:fed_h15|rate|21|RIFSPFF_N.B:fixing:-:act_360:simple:2026-10-20@INS-01JREF00000000000000000002|1|nyfed: EFFR|1||2026-10-20|20|false
-row|fed-board:fed_h15|rate|220|RIFLGFCY10_N.B:par_yield:10Y:act_act:compounded/2:2026-10-21@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-21|219|false
-row|fed-board:fed_h15|rate|221|RIFLGFCY20_N.B:par_yield:20Y:act_act:compounded/2:2026-09-21@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-21|220|false
-row|fed-board:fed_h15|rate|222|RIFLGFCY20_N.B:par_yield:20Y:act_act:compounded/2:2026-09-22@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-22|221|false
-row|fed-board:fed_h15|rate|223|RIFLGFCY20_N.B:par_yield:20Y:act_act:compounded/2:2026-09-23@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-23|222|false
-row|fed-board:fed_h15|rate|224|RIFLGFCY20_N.B:par_yield:20Y:act_act:compounded/2:2026-09-24@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-24|223|false
-row|fed-board:fed_h15|rate|225|RIFLGFCY20_N.B:par_yield:20Y:act_act:compounded/2:2026-09-25@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-25|224|false
-row|fed-board:fed_h15|rate|226|RIFLGFCY20_N.B:par_yield:20Y:act_act:compounded/2:2026-09-28@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-28|225|false
-row|fed-board:fed_h15|rate|227|RIFLGFCY20_N.B:par_yield:20Y:act_act:compounded/2:2026-09-29@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-29|226|false
-row|fed-board:fed_h15|rate|228|RIFLGFCY20_N.B:par_yield:20Y:act_act:compounded/2:2026-09-30@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-30|227|false
-row|fed-board:fed_h15|rate|229|RIFLGFCY20_N.B:par_yield:20Y:act_act:compounded/2:2026-10-01@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-01|228|false
+row|fed-board:fed_h15|rate|220|RIFSGFSY01_N.B:discount:1Y:act_360:discount:2026-10-20@INS-01JREF00000000000000000023|1|frb: Treasury bills secondary market|6||2026-10-20|219|false
+row|fed-board:fed_h15|rate|221|RIFSGFSY01_N.B:discount:1Y:act_360:discount:2026-10-21@INS-01JREF00000000000000000023|1|frb: Treasury bills secondary market|6||2026-10-21|220|false
+row|fed-board:fed_h15|rate|222|RIFLGFCM01_N.B:par_yield:1M:act_act:compounded/2:2026-09-21@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-21|0|false
+row|fed-board:fed_h15|rate|223|RIFLGFCM01_N.B:par_yield:1M:act_act:compounded/2:2026-09-22@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-22|222|false
+row|fed-board:fed_h15|rate|224|RIFLGFCM01_N.B:par_yield:1M:act_act:compounded/2:2026-09-23@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-23|223|false
+row|fed-board:fed_h15|rate|225|RIFLGFCM01_N.B:par_yield:1M:act_act:compounded/2:2026-09-24@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-24|224|false
+row|fed-board:fed_h15|rate|226|RIFLGFCM01_N.B:par_yield:1M:act_act:compounded/2:2026-09-25@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-25|225|false
+row|fed-board:fed_h15|rate|227|RIFLGFCM01_N.B:par_yield:1M:act_act:compounded/2:2026-09-28@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-28|226|false
+row|fed-board:fed_h15|rate|228|RIFLGFCM01_N.B:par_yield:1M:act_act:compounded/2:2026-09-29@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-29|227|false
+row|fed-board:fed_h15|rate|229|RIFLGFCM01_N.B:par_yield:1M:act_act:compounded/2:2026-09-30@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-30|228|false
 row|fed-board:fed_h15|rate|22|RIFSPFF_N.B:fixing:-:act_360:simple:2026-10-21@INS-01JREF00000000000000000002|1|nyfed: EFFR|1||2026-10-21|21|false
-row|fed-board:fed_h15|rate|230|RIFLGFCY20_N.B:par_yield:20Y:act_act:compounded/2:2026-10-02@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-02|229|false
-row|fed-board:fed_h15|rate|231|RIFLGFCY20_N.B:par_yield:20Y:act_act:compounded/2:2026-10-05@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-05|230|false
-row|fed-board:fed_h15|rate|232|RIFLGFCY20_N.B:par_yield:20Y:act_act:compounded/2:2026-10-06@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-06|231|false
-row|fed-board:fed_h15|rate|233|RIFLGFCY20_N.B:par_yield:20Y:act_act:compounded/2:2026-10-07@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-07|232|false
-row|fed-board:fed_h15|rate|234|RIFLGFCY20_N.B:par_yield:20Y:act_act:compounded/2:2026-10-08@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-08|233|false
-row|fed-board:fed_h15|rate|235|RIFLGFCY20_N.B:par_yield:20Y:act_act:compounded/2:2026-10-09@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-09|234|false
-row|fed-board:fed_h15|rate|236|RIFLGFCY20_N.B:par_yield:20Y:act_act:compounded/2:2026-10-13@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-13|235|false
-row|fed-board:fed_h15|rate|237|RIFLGFCY20_N.B:par_yield:20Y:act_act:compounded/2:2026-10-14@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-14|236|false
-row|fed-board:fed_h15|rate|238|RIFLGFCY20_N.B:par_yield:20Y:act_act:compounded/2:2026-10-15@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-15|237|false
-row|fed-board:fed_h15|rate|239|RIFLGFCY20_N.B:par_yield:20Y:act_act:compounded/2:2026-10-16@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-16|238|false
-row|fed-board:fed_h15|rate|23|RIFLGFCM01_N.B:par_yield:1M:act_act:compounded/2:2026-09-21@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-21|0|false
-row|fed-board:fed_h15|rate|240|RIFLGFCY20_N.B:par_yield:20Y:act_act:compounded/2:2026-10-19@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-19|239|false
-row|fed-board:fed_h15|rate|241|RIFLGFCY20_N.B:par_yield:20Y:act_act:compounded/2:2026-10-20@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-20|240|false
-row|fed-board:fed_h15|rate|242|RIFLGFCY20_N.B:par_yield:20Y:act_act:compounded/2:2026-10-21@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-21|241|false
-row|fed-board:fed_h15|rate|243|RIFLGFCY30_N.B:par_yield:30Y:act_act:compounded/2:2026-09-21@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-21|242|false
-row|fed-board:fed_h15|rate|244|RIFLGFCY30_N.B:par_yield:30Y:act_act:compounded/2:2026-09-22@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-22|243|false
-row|fed-board:fed_h15|rate|245|RIFLGFCY30_N.B:par_yield:30Y:act_act:compounded/2:2026-09-23@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-23|244|false
-row|fed-board:fed_h15|rate|246|RIFLGFCY30_N.B:par_yield:30Y:act_act:compounded/2:2026-09-24@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-24|245|false
-row|fed-board:fed_h15|rate|247|RIFLGFCY30_N.B:par_yield:30Y:act_act:compounded/2:2026-09-25@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-25|246|false
-row|fed-board:fed_h15|rate|248|RIFLGFCY30_N.B:par_yield:30Y:act_act:compounded/2:2026-09-28@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-28|247|false
-row|fed-board:fed_h15|rate|249|RIFLGFCY30_N.B:par_yield:30Y:act_act:compounded/2:2026-09-29@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-29|248|false
-row|fed-board:fed_h15|rate|24|RIFLGFCM01_N.B:par_yield:1M:act_act:compounded/2:2026-09-22@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-22|23|false
-row|fed-board:fed_h15|rate|250|RIFLGFCY30_N.B:par_yield:30Y:act_act:compounded/2:2026-09-30@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-30|249|false
-row|fed-board:fed_h15|rate|251|RIFLGFCY30_N.B:par_yield:30Y:act_act:compounded/2:2026-10-01@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-01|250|false
-row|fed-board:fed_h15|rate|252|RIFLGFCY30_N.B:par_yield:30Y:act_act:compounded/2:2026-10-02@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-02|251|false
-row|fed-board:fed_h15|rate|253|RIFLGFCY30_N.B:par_yield:30Y:act_act:compounded/2:2026-10-05@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-05|252|false
-row|fed-board:fed_h15|rate|254|RIFLGFCY30_N.B:par_yield:30Y:act_act:compounded/2:2026-10-06@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-06|253|false
-row|fed-board:fed_h15|rate|255|RIFLGFCY30_N.B:par_yield:30Y:act_act:compounded/2:2026-10-07@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-07|254|false
-row|fed-board:fed_h15|rate|256|RIFLGFCY30_N.B:par_yield:30Y:act_act:compounded/2:2026-10-08@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-08|255|false
-row|fed-board:fed_h15|rate|257|RIFLGFCY30_N.B:par_yield:30Y:act_act:compounded/2:2026-10-09@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-09|256|false
-row|fed-board:fed_h15|rate|258|RIFLGFCY30_N.B:par_yield:30Y:act_act:compounded/2:2026-10-13@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-13|257|false
-row|fed-board:fed_h15|rate|259|RIFLGFCY30_N.B:par_yield:30Y:act_act:compounded/2:2026-10-14@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-14|258|false
-row|fed-board:fed_h15|rate|25|RIFLGFCM01_N.B:par_yield:1M:act_act:compounded/2:2026-09-23@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-23|24|false
-row|fed-board:fed_h15|rate|260|RIFLGFCY30_N.B:par_yield:30Y:act_act:compounded/2:2026-10-15@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-15|259|false
-row|fed-board:fed_h15|rate|261|RIFLGFCY30_N.B:par_yield:30Y:act_act:compounded/2:2026-10-16@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-16|260|false
-row|fed-board:fed_h15|rate|262|RIFLGFCY30_N.B:par_yield:30Y:act_act:compounded/2:2026-10-19@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-19|261|false
-row|fed-board:fed_h15|rate|263|RIFLGFCY30_N.B:par_yield:30Y:act_act:compounded/2:2026-10-20@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-20|262|false
-row|fed-board:fed_h15|rate|264|RIFLGFCY30_N.B:par_yield:30Y:act_act:compounded/2:2026-10-21@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-21|263|false
-row|fed-board:fed_h15|rate|265|RIFLGFCY05_XII_N.B:par_yield:5Y:act_act:compounded/2:2026-09-21@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-21|0|false
-row|fed-board:fed_h15|rate|266|RIFLGFCY05_XII_N.B:par_yield:5Y:act_act:compounded/2:2026-09-22@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-22|265|false
-row|fed-board:fed_h15|rate|267|RIFLGFCY05_XII_N.B:par_yield:5Y:act_act:compounded/2:2026-09-23@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-23|266|false
-row|fed-board:fed_h15|rate|268|RIFLGFCY05_XII_N.B:par_yield:5Y:act_act:compounded/2:2026-09-24@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-24|267|false
-row|fed-board:fed_h15|rate|269|RIFLGFCY05_XII_N.B:par_yield:5Y:act_act:compounded/2:2026-09-25@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-25|268|false
-row|fed-board:fed_h15|rate|26|RIFLGFCM01_N.B:par_yield:1M:act_act:compounded/2:2026-09-24@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-24|25|false
-row|fed-board:fed_h15|rate|270|RIFLGFCY05_XII_N.B:par_yield:5Y:act_act:compounded/2:2026-09-28@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-28|269|false
-row|fed-board:fed_h15|rate|271|RIFLGFCY05_XII_N.B:par_yield:5Y:act_act:compounded/2:2026-09-29@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-29|270|false
-row|fed-board:fed_h15|rate|272|RIFLGFCY05_XII_N.B:par_yield:5Y:act_act:compounded/2:2026-09-30@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-30|271|false
-row|fed-board:fed_h15|rate|273|RIFLGFCY05_XII_N.B:par_yield:5Y:act_act:compounded/2:2026-10-01@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-01|272|false
-row|fed-board:fed_h15|rate|274|RIFLGFCY05_XII_N.B:par_yield:5Y:act_act:compounded/2:2026-10-02@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-02|273|false
-row|fed-board:fed_h15|rate|275|RIFLGFCY05_XII_N.B:par_yield:5Y:act_act:compounded/2:2026-10-05@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-05|274|false
-row|fed-board:fed_h15|rate|276|RIFLGFCY05_XII_N.B:par_yield:5Y:act_act:compounded/2:2026-10-06@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-06|275|false
-row|fed-board:fed_h15|rate|277|RIFLGFCY05_XII_N.B:par_yield:5Y:act_act:compounded/2:2026-10-07@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-07|276|false
-row|fed-board:fed_h15|rate|278|RIFLGFCY05_XII_N.B:par_yield:5Y:act_act:compounded/2:2026-10-08@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-08|277|false
-row|fed-board:fed_h15|rate|279|RIFLGFCY05_XII_N.B:par_yield:5Y:act_act:compounded/2:2026-10-09@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-09|278|false
-row|fed-board:fed_h15|rate|27|RIFLGFCM01_N.B:par_yield:1M:act_act:compounded/2:2026-09-25@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-25|26|false
-row|fed-board:fed_h15|rate|280|RIFLGFCY05_XII_N.B:par_yield:5Y:act_act:compounded/2:2026-10-13@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-13|279|false
-row|fed-board:fed_h15|rate|281|RIFLGFCY05_XII_N.B:par_yield:5Y:act_act:compounded/2:2026-10-14@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-14|280|false
-row|fed-board:fed_h15|rate|282|RIFLGFCY05_XII_N.B:par_yield:5Y:act_act:compounded/2:2026-10-15@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-15|281|false
-row|fed-board:fed_h15|rate|283|RIFLGFCY05_XII_N.B:par_yield:5Y:act_act:compounded/2:2026-10-16@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-16|282|false
-row|fed-board:fed_h15|rate|284|RIFLGFCY05_XII_N.B:par_yield:5Y:act_act:compounded/2:2026-10-19@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-19|283|false
-row|fed-board:fed_h15|rate|285|RIFLGFCY05_XII_N.B:par_yield:5Y:act_act:compounded/2:2026-10-20@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-20|284|false
-row|fed-board:fed_h15|rate|286|RIFLGFCY05_XII_N.B:par_yield:5Y:act_act:compounded/2:2026-10-21@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-21|285|false
-row|fed-board:fed_h15|rate|287|RIFLGFCY07_XII_N.B:par_yield:7Y:act_act:compounded/2:2026-09-21@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-21|286|false
-row|fed-board:fed_h15|rate|288|RIFLGFCY07_XII_N.B:par_yield:7Y:act_act:compounded/2:2026-09-22@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-22|287|false
-row|fed-board:fed_h15|rate|289|RIFLGFCY07_XII_N.B:par_yield:7Y:act_act:compounded/2:2026-09-23@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-23|288|false
-row|fed-board:fed_h15|rate|28|RIFLGFCM01_N.B:par_yield:1M:act_act:compounded/2:2026-09-28@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-28|27|false
-row|fed-board:fed_h15|rate|290|RIFLGFCY07_XII_N.B:par_yield:7Y:act_act:compounded/2:2026-09-24@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-24|289|false
-row|fed-board:fed_h15|rate|291|RIFLGFCY07_XII_N.B:par_yield:7Y:act_act:compounded/2:2026-09-25@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-25|290|false
-row|fed-board:fed_h15|rate|292|RIFLGFCY07_XII_N.B:par_yield:7Y:act_act:compounded/2:2026-09-28@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-28|291|false
-row|fed-board:fed_h15|rate|293|RIFLGFCY07_XII_N.B:par_yield:7Y:act_act:compounded/2:2026-09-29@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-29|292|false
-row|fed-board:fed_h15|rate|294|RIFLGFCY07_XII_N.B:par_yield:7Y:act_act:compounded/2:2026-09-30@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-30|293|false
-row|fed-board:fed_h15|rate|295|RIFLGFCY07_XII_N.B:par_yield:7Y:act_act:compounded/2:2026-10-01@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-01|294|false
-row|fed-board:fed_h15|rate|296|RIFLGFCY07_XII_N.B:par_yield:7Y:act_act:compounded/2:2026-10-02@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-02|295|false
-row|fed-board:fed_h15|rate|297|RIFLGFCY07_XII_N.B:par_yield:7Y:act_act:compounded/2:2026-10-05@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-05|296|false
-row|fed-board:fed_h15|rate|298|RIFLGFCY07_XII_N.B:par_yield:7Y:act_act:compounded/2:2026-10-06@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-06|297|false
-row|fed-board:fed_h15|rate|299|RIFLGFCY07_XII_N.B:par_yield:7Y:act_act:compounded/2:2026-10-07@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-07|298|false
-row|fed-board:fed_h15|rate|29|RIFLGFCM01_N.B:par_yield:1M:act_act:compounded/2:2026-09-29@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-29|28|false
+row|fed-board:fed_h15|rate|230|RIFLGFCM01_N.B:par_yield:1M:act_act:compounded/2:2026-10-01@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-01|229|false
+row|fed-board:fed_h15|rate|231|RIFLGFCM01_N.B:par_yield:1M:act_act:compounded/2:2026-10-02@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-02|230|false
+row|fed-board:fed_h15|rate|232|RIFLGFCM01_N.B:par_yield:1M:act_act:compounded/2:2026-10-05@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-05|231|false
+row|fed-board:fed_h15|rate|233|RIFLGFCM01_N.B:par_yield:1M:act_act:compounded/2:2026-10-06@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-06|232|false
+row|fed-board:fed_h15|rate|234|RIFLGFCM01_N.B:par_yield:1M:act_act:compounded/2:2026-10-07@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-07|233|false
+row|fed-board:fed_h15|rate|235|RIFLGFCM01_N.B:par_yield:1M:act_act:compounded/2:2026-10-08@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-08|234|false
+row|fed-board:fed_h15|rate|236|RIFLGFCM01_N.B:par_yield:1M:act_act:compounded/2:2026-10-09@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-09|235|false
+row|fed-board:fed_h15|rate|237|RIFLGFCM01_N.B:par_yield:1M:act_act:compounded/2:2026-10-13@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-13|236|false
+row|fed-board:fed_h15|rate|238|RIFLGFCM01_N.B:par_yield:1M:act_act:compounded/2:2026-10-14@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-14|237|false
+row|fed-board:fed_h15|rate|239|RIFLGFCM01_N.B:par_yield:1M:act_act:compounded/2:2026-10-15@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-15|238|false
+row|fed-board:fed_h15|rate|23|RIFSPPNAAD30_N.B:discount:1M:act_360:discount:2026-09-21@INS-01JREF00000000000000000024|1|frb: AA nonfinancial commercial paper|6||2026-09-21|0|false
+row|fed-board:fed_h15|rate|240|RIFLGFCM01_N.B:par_yield:1M:act_act:compounded/2:2026-10-16@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-16|239|false
+row|fed-board:fed_h15|rate|241|RIFLGFCM01_N.B:par_yield:1M:act_act:compounded/2:2026-10-19@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-19|240|false
+row|fed-board:fed_h15|rate|242|RIFLGFCM01_N.B:par_yield:1M:act_act:compounded/2:2026-10-20@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-20|241|false
+row|fed-board:fed_h15|rate|243|RIFLGFCM01_N.B:par_yield:1M:act_act:compounded/2:2026-10-21@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-21|242|false
+row|fed-board:fed_h15|rate|244|RIFLGFCM03_N.B:par_yield:3M:act_act:compounded/2:2026-09-21@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-21|243|false
+row|fed-board:fed_h15|rate|245|RIFLGFCM03_N.B:par_yield:3M:act_act:compounded/2:2026-09-22@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-22|244|false
+row|fed-board:fed_h15|rate|246|RIFLGFCM03_N.B:par_yield:3M:act_act:compounded/2:2026-09-23@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-23|245|false
+row|fed-board:fed_h15|rate|247|RIFLGFCM03_N.B:par_yield:3M:act_act:compounded/2:2026-09-24@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-24|246|false
+row|fed-board:fed_h15|rate|248|RIFLGFCM03_N.B:par_yield:3M:act_act:compounded/2:2026-09-25@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-25|247|false
+row|fed-board:fed_h15|rate|249|RIFLGFCM03_N.B:par_yield:3M:act_act:compounded/2:2026-09-28@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-28|248|false
+row|fed-board:fed_h15|rate|24|RIFSPPNAAD30_N.B:discount:1M:act_360:discount:2026-09-22@INS-01JREF00000000000000000024|1|frb: AA nonfinancial commercial paper|6||2026-09-22|23|false
+row|fed-board:fed_h15|rate|250|RIFLGFCM03_N.B:par_yield:3M:act_act:compounded/2:2026-09-29@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-29|249|false
+row|fed-board:fed_h15|rate|251|RIFLGFCM03_N.B:par_yield:3M:act_act:compounded/2:2026-09-30@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-30|250|false
+row|fed-board:fed_h15|rate|252|RIFLGFCM03_N.B:par_yield:3M:act_act:compounded/2:2026-10-01@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-01|251|false
+row|fed-board:fed_h15|rate|253|RIFLGFCM03_N.B:par_yield:3M:act_act:compounded/2:2026-10-02@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-02|252|false
+row|fed-board:fed_h15|rate|254|RIFLGFCM03_N.B:par_yield:3M:act_act:compounded/2:2026-10-05@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-05|253|false
+row|fed-board:fed_h15|rate|255|RIFLGFCM03_N.B:par_yield:3M:act_act:compounded/2:2026-10-06@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-06|254|false
+row|fed-board:fed_h15|rate|256|RIFLGFCM03_N.B:par_yield:3M:act_act:compounded/2:2026-10-07@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-07|255|false
+row|fed-board:fed_h15|rate|257|RIFLGFCM03_N.B:par_yield:3M:act_act:compounded/2:2026-10-08@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-08|256|false
+row|fed-board:fed_h15|rate|258|RIFLGFCM03_N.B:par_yield:3M:act_act:compounded/2:2026-10-09@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-09|257|false
+row|fed-board:fed_h15|rate|259|RIFLGFCM03_N.B:par_yield:3M:act_act:compounded/2:2026-10-13@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-13|258|false
+row|fed-board:fed_h15|rate|25|RIFSPPNAAD30_N.B:discount:1M:act_360:discount:2026-09-23@INS-01JREF00000000000000000024|1|frb: AA nonfinancial commercial paper|6||2026-09-23|24|false
+row|fed-board:fed_h15|rate|260|RIFLGFCM03_N.B:par_yield:3M:act_act:compounded/2:2026-10-14@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-14|259|false
+row|fed-board:fed_h15|rate|261|RIFLGFCM03_N.B:par_yield:3M:act_act:compounded/2:2026-10-15@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-15|260|false
+row|fed-board:fed_h15|rate|262|RIFLGFCM03_N.B:par_yield:3M:act_act:compounded/2:2026-10-16@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-16|261|false
+row|fed-board:fed_h15|rate|263|RIFLGFCM03_N.B:par_yield:3M:act_act:compounded/2:2026-10-19@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-19|262|false
+row|fed-board:fed_h15|rate|264|RIFLGFCM03_N.B:par_yield:3M:act_act:compounded/2:2026-10-20@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-20|263|false
+row|fed-board:fed_h15|rate|265|RIFLGFCM03_N.B:par_yield:3M:act_act:compounded/2:2026-10-21@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-21|264|false
+row|fed-board:fed_h15|rate|266|RIFLGFCM06_N.B:par_yield:6M:act_act:compounded/2:2026-09-21@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-21|265|false
+row|fed-board:fed_h15|rate|267|RIFLGFCM06_N.B:par_yield:6M:act_act:compounded/2:2026-09-22@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-22|266|false
+row|fed-board:fed_h15|rate|268|RIFLGFCM06_N.B:par_yield:6M:act_act:compounded/2:2026-09-23@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-23|267|false
+row|fed-board:fed_h15|rate|269|RIFLGFCM06_N.B:par_yield:6M:act_act:compounded/2:2026-09-24@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-24|268|false
+row|fed-board:fed_h15|rate|26|RIFSPPNAAD30_N.B:discount:1M:act_360:discount:2026-09-24@INS-01JREF00000000000000000024|1|frb: AA nonfinancial commercial paper|6||2026-09-24|25|false
+row|fed-board:fed_h15|rate|270|RIFLGFCM06_N.B:par_yield:6M:act_act:compounded/2:2026-09-25@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-25|269|false
+row|fed-board:fed_h15|rate|271|RIFLGFCM06_N.B:par_yield:6M:act_act:compounded/2:2026-09-28@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-28|270|false
+row|fed-board:fed_h15|rate|272|RIFLGFCM06_N.B:par_yield:6M:act_act:compounded/2:2026-09-29@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-29|271|false
+row|fed-board:fed_h15|rate|273|RIFLGFCM06_N.B:par_yield:6M:act_act:compounded/2:2026-09-30@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-30|272|false
+row|fed-board:fed_h15|rate|274|RIFLGFCM06_N.B:par_yield:6M:act_act:compounded/2:2026-10-01@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-01|273|false
+row|fed-board:fed_h15|rate|275|RIFLGFCM06_N.B:par_yield:6M:act_act:compounded/2:2026-10-02@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-02|274|false
+row|fed-board:fed_h15|rate|276|RIFLGFCM06_N.B:par_yield:6M:act_act:compounded/2:2026-10-05@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-05|275|false
+row|fed-board:fed_h15|rate|277|RIFLGFCM06_N.B:par_yield:6M:act_act:compounded/2:2026-10-06@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-06|276|false
+row|fed-board:fed_h15|rate|278|RIFLGFCM06_N.B:par_yield:6M:act_act:compounded/2:2026-10-07@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-07|277|false
+row|fed-board:fed_h15|rate|279|RIFLGFCM06_N.B:par_yield:6M:act_act:compounded/2:2026-10-08@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-08|278|false
+row|fed-board:fed_h15|rate|27|RIFSPPNAAD30_N.B:discount:1M:act_360:discount:2026-09-25@INS-01JREF00000000000000000024|1|frb: AA nonfinancial commercial paper|6||2026-09-25|26|false
+row|fed-board:fed_h15|rate|280|RIFLGFCM06_N.B:par_yield:6M:act_act:compounded/2:2026-10-09@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-09|279|false
+row|fed-board:fed_h15|rate|281|RIFLGFCM06_N.B:par_yield:6M:act_act:compounded/2:2026-10-13@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-13|280|false
+row|fed-board:fed_h15|rate|282|RIFLGFCM06_N.B:par_yield:6M:act_act:compounded/2:2026-10-14@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-14|281|false
+row|fed-board:fed_h15|rate|283|RIFLGFCM06_N.B:par_yield:6M:act_act:compounded/2:2026-10-15@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-15|282|false
+row|fed-board:fed_h15|rate|284|RIFLGFCM06_N.B:par_yield:6M:act_act:compounded/2:2026-10-16@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-16|283|false
+row|fed-board:fed_h15|rate|285|RIFLGFCM06_N.B:par_yield:6M:act_act:compounded/2:2026-10-19@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-19|284|false
+row|fed-board:fed_h15|rate|286|RIFLGFCM06_N.B:par_yield:6M:act_act:compounded/2:2026-10-20@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-20|285|false
+row|fed-board:fed_h15|rate|287|RIFLGFCM06_N.B:par_yield:6M:act_act:compounded/2:2026-10-21@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-21|286|false
+row|fed-board:fed_h15|rate|288|RIFLGFCY01_N.B:par_yield:1Y:act_act:compounded/2:2026-09-21@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-21|287|false
+row|fed-board:fed_h15|rate|289|RIFLGFCY01_N.B:par_yield:1Y:act_act:compounded/2:2026-09-22@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-22|288|false
+row|fed-board:fed_h15|rate|28|RIFSPPNAAD30_N.B:discount:1M:act_360:discount:2026-09-29@INS-01JREF00000000000000000024|1|frb: AA nonfinancial commercial paper|6||2026-09-29|27|false
+row|fed-board:fed_h15|rate|290|RIFLGFCY01_N.B:par_yield:1Y:act_act:compounded/2:2026-09-23@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-23|289|false
+row|fed-board:fed_h15|rate|291|RIFLGFCY01_N.B:par_yield:1Y:act_act:compounded/2:2026-09-24@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-24|290|false
+row|fed-board:fed_h15|rate|292|RIFLGFCY01_N.B:par_yield:1Y:act_act:compounded/2:2026-09-25@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-25|291|false
+row|fed-board:fed_h15|rate|293|RIFLGFCY01_N.B:par_yield:1Y:act_act:compounded/2:2026-09-28@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-28|292|false
+row|fed-board:fed_h15|rate|294|RIFLGFCY01_N.B:par_yield:1Y:act_act:compounded/2:2026-09-29@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-29|293|false
+row|fed-board:fed_h15|rate|295|RIFLGFCY01_N.B:par_yield:1Y:act_act:compounded/2:2026-09-30@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-30|294|false
+row|fed-board:fed_h15|rate|296|RIFLGFCY01_N.B:par_yield:1Y:act_act:compounded/2:2026-10-01@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-01|295|false
+row|fed-board:fed_h15|rate|297|RIFLGFCY01_N.B:par_yield:1Y:act_act:compounded/2:2026-10-02@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-02|296|false
+row|fed-board:fed_h15|rate|298|RIFLGFCY01_N.B:par_yield:1Y:act_act:compounded/2:2026-10-05@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-05|297|false
+row|fed-board:fed_h15|rate|299|RIFLGFCY01_N.B:par_yield:1Y:act_act:compounded/2:2026-10-06@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-06|298|false
+row|fed-board:fed_h15|rate|29|RIFSPPNAAD30_N.B:discount:1M:act_360:discount:2026-09-30@INS-01JREF00000000000000000024|1|frb: AA nonfinancial commercial paper|6||2026-09-30|28|false
 row|fed-board:fed_h15|rate|2|RIFSPFF_N.B:fixing:-:act_360:simple:2026-09-22@INS-01JREF00000000000000000002|1|nyfed: EFFR|1||2026-09-22|1|false
-row|fed-board:fed_h15|rate|300|RIFLGFCY07_XII_N.B:par_yield:7Y:act_act:compounded/2:2026-10-08@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-08|299|false
-row|fed-board:fed_h15|rate|301|RIFLGFCY07_XII_N.B:par_yield:7Y:act_act:compounded/2:2026-10-09@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-09|300|false
-row|fed-board:fed_h15|rate|302|RIFLGFCY07_XII_N.B:par_yield:7Y:act_act:compounded/2:2026-10-13@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-13|301|false
-row|fed-board:fed_h15|rate|303|RIFLGFCY07_XII_N.B:par_yield:7Y:act_act:compounded/2:2026-10-14@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-14|302|false
-row|fed-board:fed_h15|rate|304|RIFLGFCY07_XII_N.B:par_yield:7Y:act_act:compounded/2:2026-10-15@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-15|303|false
-row|fed-board:fed_h15|rate|305|RIFLGFCY07_XII_N.B:par_yield:7Y:act_act:compounded/2:2026-10-16@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-16|304|false
-row|fed-board:fed_h15|rate|306|RIFLGFCY07_XII_N.B:par_yield:7Y:act_act:compounded/2:2026-10-19@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-19|305|false
-row|fed-board:fed_h15|rate|307|RIFLGFCY07_XII_N.B:par_yield:7Y:act_act:compounded/2:2026-10-20@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-20|306|false
-row|fed-board:fed_h15|rate|308|RIFLGFCY07_XII_N.B:par_yield:7Y:act_act:compounded/2:2026-10-21@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-21|307|false
-row|fed-board:fed_h15|rate|309|RIFLGFCY10_XII_N.B:par_yield:10Y:act_act:compounded/2:2026-09-21@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-21|308|false
-row|fed-board:fed_h15|rate|30|RIFLGFCM01_N.B:par_yield:1M:act_act:compounded/2:2026-09-30@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-30|29|false
-row|fed-board:fed_h15|rate|310|RIFLGFCY10_XII_N.B:par_yield:10Y:act_act:compounded/2:2026-09-22@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-22|309|false
-row|fed-board:fed_h15|rate|311|RIFLGFCY10_XII_N.B:par_yield:10Y:act_act:compounded/2:2026-09-23@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-23|310|false
-row|fed-board:fed_h15|rate|312|RIFLGFCY10_XII_N.B:par_yield:10Y:act_act:compounded/2:2026-09-24@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-24|311|false
-row|fed-board:fed_h15|rate|313|RIFLGFCY10_XII_N.B:par_yield:10Y:act_act:compounded/2:2026-09-25@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-25|312|false
-row|fed-board:fed_h15|rate|314|RIFLGFCY10_XII_N.B:par_yield:10Y:act_act:compounded/2:2026-09-28@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-28|313|false
-row|fed-board:fed_h15|rate|315|RIFLGFCY10_XII_N.B:par_yield:10Y:act_act:compounded/2:2026-09-29@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-29|314|false
-row|fed-board:fed_h15|rate|316|RIFLGFCY10_XII_N.B:par_yield:10Y:act_act:compounded/2:2026-09-30@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-30|315|false
-row|fed-board:fed_h15|rate|317|RIFLGFCY10_XII_N.B:par_yield:10Y:act_act:compounded/2:2026-10-01@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-01|316|false
-row|fed-board:fed_h15|rate|318|RIFLGFCY10_XII_N.B:par_yield:10Y:act_act:compounded/2:2026-10-02@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-02|317|false
-row|fed-board:fed_h15|rate|319|RIFLGFCY10_XII_N.B:par_yield:10Y:act_act:compounded/2:2026-10-05@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-05|318|false
-row|fed-board:fed_h15|rate|31|RIFLGFCM01_N.B:par_yield:1M:act_act:compounded/2:2026-10-01@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-01|30|false
-row|fed-board:fed_h15|rate|320|RIFLGFCY10_XII_N.B:par_yield:10Y:act_act:compounded/2:2026-10-06@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-06|319|false
-row|fed-board:fed_h15|rate|321|RIFLGFCY10_XII_N.B:par_yield:10Y:act_act:compounded/2:2026-10-07@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-07|320|false
-row|fed-board:fed_h15|rate|322|RIFLGFCY10_XII_N.B:par_yield:10Y:act_act:compounded/2:2026-10-08@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-08|321|false
-row|fed-board:fed_h15|rate|323|RIFLGFCY10_XII_N.B:par_yield:10Y:act_act:compounded/2:2026-10-09@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-09|322|false
-row|fed-board:fed_h15|rate|324|RIFLGFCY10_XII_N.B:par_yield:10Y:act_act:compounded/2:2026-10-13@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-13|323|false
-row|fed-board:fed_h15|rate|325|RIFLGFCY10_XII_N.B:par_yield:10Y:act_act:compounded/2:2026-10-14@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-14|324|false
-row|fed-board:fed_h15|rate|326|RIFLGFCY10_XII_N.B:par_yield:10Y:act_act:compounded/2:2026-10-15@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-15|325|false
-row|fed-board:fed_h15|rate|327|RIFLGFCY10_XII_N.B:par_yield:10Y:act_act:compounded/2:2026-10-16@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-16|326|false
-row|fed-board:fed_h15|rate|328|RIFLGFCY10_XII_N.B:par_yield:10Y:act_act:compounded/2:2026-10-19@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-19|327|false
-row|fed-board:fed_h15|rate|329|RIFLGFCY10_XII_N.B:par_yield:10Y:act_act:compounded/2:2026-10-20@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-20|328|false
-row|fed-board:fed_h15|rate|32|RIFLGFCM01_N.B:par_yield:1M:act_act:compounded/2:2026-10-02@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-02|31|false
-row|fed-board:fed_h15|rate|330|RIFLGFCY10_XII_N.B:par_yield:10Y:act_act:compounded/2:2026-10-21@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-21|329|false
-row|fed-board:fed_h15|rate|331|RIFLGFCY20_XII_N.B:par_yield:20Y:act_act:compounded/2:2026-09-21@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-21|330|false
-row|fed-board:fed_h15|rate|332|RIFLGFCY20_XII_N.B:par_yield:20Y:act_act:compounded/2:2026-09-22@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-22|331|false
-row|fed-board:fed_h15|rate|333|RIFLGFCY20_XII_N.B:par_yield:20Y:act_act:compounded/2:2026-09-23@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-23|332|false
-row|fed-board:fed_h15|rate|334|RIFLGFCY20_XII_N.B:par_yield:20Y:act_act:compounded/2:2026-09-24@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-24|333|false
-row|fed-board:fed_h15|rate|335|RIFLGFCY20_XII_N.B:par_yield:20Y:act_act:compounded/2:2026-09-25@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-25|334|false
-row|fed-board:fed_h15|rate|336|RIFLGFCY20_XII_N.B:par_yield:20Y:act_act:compounded/2:2026-09-28@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-28|335|false
-row|fed-board:fed_h15|rate|337|RIFLGFCY20_XII_N.B:par_yield:20Y:act_act:compounded/2:2026-09-29@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-29|336|false
-row|fed-board:fed_h15|rate|338|RIFLGFCY20_XII_N.B:par_yield:20Y:act_act:compounded/2:2026-09-30@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-30|337|false
-row|fed-board:fed_h15|rate|339|RIFLGFCY20_XII_N.B:par_yield:20Y:act_act:compounded/2:2026-10-01@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-01|338|false
-row|fed-board:fed_h15|rate|33|RIFLGFCM01_N.B:par_yield:1M:act_act:compounded/2:2026-10-05@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-05|32|false
-row|fed-board:fed_h15|rate|340|RIFLGFCY20_XII_N.B:par_yield:20Y:act_act:compounded/2:2026-10-02@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-02|339|false
-row|fed-board:fed_h15|rate|341|RIFLGFCY20_XII_N.B:par_yield:20Y:act_act:compounded/2:2026-10-05@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-05|340|false
-row|fed-board:fed_h15|rate|342|RIFLGFCY20_XII_N.B:par_yield:20Y:act_act:compounded/2:2026-10-06@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-06|341|false
-row|fed-board:fed_h15|rate|343|RIFLGFCY20_XII_N.B:par_yield:20Y:act_act:compounded/2:2026-10-07@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-07|342|false
-row|fed-board:fed_h15|rate|344|RIFLGFCY20_XII_N.B:par_yield:20Y:act_act:compounded/2:2026-10-08@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-08|343|false
-row|fed-board:fed_h15|rate|345|RIFLGFCY20_XII_N.B:par_yield:20Y:act_act:compounded/2:2026-10-09@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-09|344|false
-row|fed-board:fed_h15|rate|346|RIFLGFCY20_XII_N.B:par_yield:20Y:act_act:compounded/2:2026-10-13@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-13|345|false
-row|fed-board:fed_h15|rate|347|RIFLGFCY20_XII_N.B:par_yield:20Y:act_act:compounded/2:2026-10-14@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-14|346|false
-row|fed-board:fed_h15|rate|348|RIFLGFCY20_XII_N.B:par_yield:20Y:act_act:compounded/2:2026-10-15@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-15|347|false
-row|fed-board:fed_h15|rate|349|RIFLGFCY20_XII_N.B:par_yield:20Y:act_act:compounded/2:2026-10-16@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-16|348|false
-row|fed-board:fed_h15|rate|34|RIFLGFCM01_N.B:par_yield:1M:act_act:compounded/2:2026-10-06@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-06|33|false
-row|fed-board:fed_h15|rate|350|RIFLGFCY20_XII_N.B:par_yield:20Y:act_act:compounded/2:2026-10-19@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-19|349|false
-row|fed-board:fed_h15|rate|351|RIFLGFCY20_XII_N.B:par_yield:20Y:act_act:compounded/2:2026-10-20@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-20|350|false
-row|fed-board:fed_h15|rate|352|RIFLGFCY20_XII_N.B:par_yield:20Y:act_act:compounded/2:2026-10-21@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-21|351|false
-row|fed-board:fed_h15|rate|353|RIFLGFCY30_XII_N.B:par_yield:30Y:act_act:compounded/2:2026-09-21@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-21|352|false
-row|fed-board:fed_h15|rate|354|RIFLGFCY30_XII_N.B:par_yield:30Y:act_act:compounded/2:2026-09-22@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-22|353|false
-row|fed-board:fed_h15|rate|355|RIFLGFCY30_XII_N.B:par_yield:30Y:act_act:compounded/2:2026-09-23@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-23|354|false
-row|fed-board:fed_h15|rate|356|RIFLGFCY30_XII_N.B:par_yield:30Y:act_act:compounded/2:2026-09-24@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-24|355|false
-row|fed-board:fed_h15|rate|357|RIFLGFCY30_XII_N.B:par_yield:30Y:act_act:compounded/2:2026-09-25@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-25|356|false
-row|fed-board:fed_h15|rate|358|RIFLGFCY30_XII_N.B:par_yield:30Y:act_act:compounded/2:2026-09-28@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-28|357|false
-row|fed-board:fed_h15|rate|359|RIFLGFCY30_XII_N.B:par_yield:30Y:act_act:compounded/2:2026-09-29@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-29|358|false
-row|fed-board:fed_h15|rate|35|RIFLGFCM01_N.B:par_yield:1M:act_act:compounded/2:2026-10-07@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-07|34|false
-row|fed-board:fed_h15|rate|360|RIFLGFCY30_XII_N.B:par_yield:30Y:act_act:compounded/2:2026-09-30@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-30|359|false
-row|fed-board:fed_h15|rate|361|RIFLGFCY30_XII_N.B:par_yield:30Y:act_act:compounded/2:2026-10-01@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-01|360|false
-row|fed-board:fed_h15|rate|362|RIFLGFCY30_XII_N.B:par_yield:30Y:act_act:compounded/2:2026-10-02@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-02|361|false
-row|fed-board:fed_h15|rate|363|RIFLGFCY30_XII_N.B:par_yield:30Y:act_act:compounded/2:2026-10-05@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-05|362|false
-row|fed-board:fed_h15|rate|364|RIFLGFCY30_XII_N.B:par_yield:30Y:act_act:compounded/2:2026-10-06@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-06|363|false
-row|fed-board:fed_h15|rate|365|RIFLGFCY30_XII_N.B:par_yield:30Y:act_act:compounded/2:2026-10-07@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-07|364|false
-row|fed-board:fed_h15|rate|366|RIFLGFCY30_XII_N.B:par_yield:30Y:act_act:compounded/2:2026-10-08@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-08|365|false
-row|fed-board:fed_h15|rate|367|RIFLGFCY30_XII_N.B:par_yield:30Y:act_act:compounded/2:2026-10-09@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-09|366|false
-row|fed-board:fed_h15|rate|368|RIFLGFCY30_XII_N.B:par_yield:30Y:act_act:compounded/2:2026-10-13@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-13|367|false
-row|fed-board:fed_h15|rate|369|RIFLGFCY30_XII_N.B:par_yield:30Y:act_act:compounded/2:2026-10-14@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-14|368|false
-row|fed-board:fed_h15|rate|36|RIFLGFCM01_N.B:par_yield:1M:act_act:compounded/2:2026-10-08@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-08|35|false
-row|fed-board:fed_h15|rate|370|RIFLGFCY30_XII_N.B:par_yield:30Y:act_act:compounded/2:2026-10-15@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-15|369|false
-row|fed-board:fed_h15|rate|371|RIFLGFCY30_XII_N.B:par_yield:30Y:act_act:compounded/2:2026-10-16@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-16|370|false
-row|fed-board:fed_h15|rate|372|RIFLGFCY30_XII_N.B:par_yield:30Y:act_act:compounded/2:2026-10-19@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-19|371|false
-row|fed-board:fed_h15|rate|373|RIFLGFCY30_XII_N.B:par_yield:30Y:act_act:compounded/2:2026-10-20@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-20|372|false
-row|fed-board:fed_h15|rate|374|RIFLGFCY30_XII_N.B:par_yield:30Y:act_act:compounded/2:2026-10-21@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-21|373|false
-row|fed-board:fed_h15|rate|37|RIFLGFCM01_N.B:par_yield:1M:act_act:compounded/2:2026-10-09@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-09|36|false
-row|fed-board:fed_h15|rate|38|RIFLGFCM01_N.B:par_yield:1M:act_act:compounded/2:2026-10-13@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-13|37|false
-row|fed-board:fed_h15|rate|39|RIFLGFCM01_N.B:par_yield:1M:act_act:compounded/2:2026-10-14@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-14|38|false
+row|fed-board:fed_h15|rate|300|RIFLGFCY01_N.B:par_yield:1Y:act_act:compounded/2:2026-10-07@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-07|299|false
+row|fed-board:fed_h15|rate|301|RIFLGFCY01_N.B:par_yield:1Y:act_act:compounded/2:2026-10-08@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-08|300|false
+row|fed-board:fed_h15|rate|302|RIFLGFCY01_N.B:par_yield:1Y:act_act:compounded/2:2026-10-09@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-09|301|false
+row|fed-board:fed_h15|rate|303|RIFLGFCY01_N.B:par_yield:1Y:act_act:compounded/2:2026-10-13@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-13|302|false
+row|fed-board:fed_h15|rate|304|RIFLGFCY01_N.B:par_yield:1Y:act_act:compounded/2:2026-10-14@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-14|303|false
+row|fed-board:fed_h15|rate|305|RIFLGFCY01_N.B:par_yield:1Y:act_act:compounded/2:2026-10-15@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-15|304|false
+row|fed-board:fed_h15|rate|306|RIFLGFCY01_N.B:par_yield:1Y:act_act:compounded/2:2026-10-16@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-16|305|false
+row|fed-board:fed_h15|rate|307|RIFLGFCY01_N.B:par_yield:1Y:act_act:compounded/2:2026-10-19@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-19|306|false
+row|fed-board:fed_h15|rate|308|RIFLGFCY01_N.B:par_yield:1Y:act_act:compounded/2:2026-10-20@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-20|307|false
+row|fed-board:fed_h15|rate|309|RIFLGFCY01_N.B:par_yield:1Y:act_act:compounded/2:2026-10-21@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-21|308|false
+row|fed-board:fed_h15|rate|30|RIFSPPNAAD30_N.B:discount:1M:act_360:discount:2026-10-01@INS-01JREF00000000000000000024|1|frb: AA nonfinancial commercial paper|6||2026-10-01|29|false
+row|fed-board:fed_h15|rate|310|RIFLGFCY02_N.B:par_yield:2Y:act_act:compounded/2:2026-09-21@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-21|309|false
+row|fed-board:fed_h15|rate|311|RIFLGFCY02_N.B:par_yield:2Y:act_act:compounded/2:2026-09-22@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-22|310|false
+row|fed-board:fed_h15|rate|312|RIFLGFCY02_N.B:par_yield:2Y:act_act:compounded/2:2026-09-23@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-23|311|false
+row|fed-board:fed_h15|rate|313|RIFLGFCY02_N.B:par_yield:2Y:act_act:compounded/2:2026-09-24@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-24|312|false
+row|fed-board:fed_h15|rate|314|RIFLGFCY02_N.B:par_yield:2Y:act_act:compounded/2:2026-09-25@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-25|313|false
+row|fed-board:fed_h15|rate|315|RIFLGFCY02_N.B:par_yield:2Y:act_act:compounded/2:2026-09-28@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-28|314|false
+row|fed-board:fed_h15|rate|316|RIFLGFCY02_N.B:par_yield:2Y:act_act:compounded/2:2026-09-29@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-29|315|false
+row|fed-board:fed_h15|rate|317|RIFLGFCY02_N.B:par_yield:2Y:act_act:compounded/2:2026-09-30@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-30|316|false
+row|fed-board:fed_h15|rate|318|RIFLGFCY02_N.B:par_yield:2Y:act_act:compounded/2:2026-10-01@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-01|317|false
+row|fed-board:fed_h15|rate|319|RIFLGFCY02_N.B:par_yield:2Y:act_act:compounded/2:2026-10-02@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-02|318|false
+row|fed-board:fed_h15|rate|31|RIFSPPNAAD30_N.B:discount:1M:act_360:discount:2026-10-02@INS-01JREF00000000000000000024|1|frb: AA nonfinancial commercial paper|6||2026-10-02|30|false
+row|fed-board:fed_h15|rate|320|RIFLGFCY02_N.B:par_yield:2Y:act_act:compounded/2:2026-10-05@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-05|319|false
+row|fed-board:fed_h15|rate|321|RIFLGFCY02_N.B:par_yield:2Y:act_act:compounded/2:2026-10-06@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-06|320|false
+row|fed-board:fed_h15|rate|322|RIFLGFCY02_N.B:par_yield:2Y:act_act:compounded/2:2026-10-07@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-07|321|false
+row|fed-board:fed_h15|rate|323|RIFLGFCY02_N.B:par_yield:2Y:act_act:compounded/2:2026-10-08@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-08|322|false
+row|fed-board:fed_h15|rate|324|RIFLGFCY02_N.B:par_yield:2Y:act_act:compounded/2:2026-10-09@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-09|323|false
+row|fed-board:fed_h15|rate|325|RIFLGFCY02_N.B:par_yield:2Y:act_act:compounded/2:2026-10-13@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-13|324|false
+row|fed-board:fed_h15|rate|326|RIFLGFCY02_N.B:par_yield:2Y:act_act:compounded/2:2026-10-14@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-14|325|false
+row|fed-board:fed_h15|rate|327|RIFLGFCY02_N.B:par_yield:2Y:act_act:compounded/2:2026-10-15@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-15|326|false
+row|fed-board:fed_h15|rate|328|RIFLGFCY02_N.B:par_yield:2Y:act_act:compounded/2:2026-10-16@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-16|327|false
+row|fed-board:fed_h15|rate|329|RIFLGFCY02_N.B:par_yield:2Y:act_act:compounded/2:2026-10-19@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-19|328|false
+row|fed-board:fed_h15|rate|32|RIFSPPNAAD30_N.B:discount:1M:act_360:discount:2026-10-05@INS-01JREF00000000000000000024|1|frb: AA nonfinancial commercial paper|6||2026-10-05|31|false
+row|fed-board:fed_h15|rate|330|RIFLGFCY02_N.B:par_yield:2Y:act_act:compounded/2:2026-10-20@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-20|329|false
+row|fed-board:fed_h15|rate|331|RIFLGFCY02_N.B:par_yield:2Y:act_act:compounded/2:2026-10-21@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-21|330|false
+row|fed-board:fed_h15|rate|332|RIFLGFCY03_N.B:par_yield:3Y:act_act:compounded/2:2026-09-21@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-21|331|false
+row|fed-board:fed_h15|rate|333|RIFLGFCY03_N.B:par_yield:3Y:act_act:compounded/2:2026-09-22@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-22|332|false
+row|fed-board:fed_h15|rate|334|RIFLGFCY03_N.B:par_yield:3Y:act_act:compounded/2:2026-09-23@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-23|333|false
+row|fed-board:fed_h15|rate|335|RIFLGFCY03_N.B:par_yield:3Y:act_act:compounded/2:2026-09-24@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-24|334|false
+row|fed-board:fed_h15|rate|336|RIFLGFCY03_N.B:par_yield:3Y:act_act:compounded/2:2026-09-25@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-25|335|false
+row|fed-board:fed_h15|rate|337|RIFLGFCY03_N.B:par_yield:3Y:act_act:compounded/2:2026-09-28@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-28|336|false
+row|fed-board:fed_h15|rate|338|RIFLGFCY03_N.B:par_yield:3Y:act_act:compounded/2:2026-09-29@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-29|337|false
+row|fed-board:fed_h15|rate|339|RIFLGFCY03_N.B:par_yield:3Y:act_act:compounded/2:2026-09-30@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-30|338|false
+row|fed-board:fed_h15|rate|33|RIFSPPNAAD30_N.B:discount:1M:act_360:discount:2026-10-06@INS-01JREF00000000000000000024|1|frb: AA nonfinancial commercial paper|6||2026-10-06|32|false
+row|fed-board:fed_h15|rate|340|RIFLGFCY03_N.B:par_yield:3Y:act_act:compounded/2:2026-10-01@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-01|339|false
+row|fed-board:fed_h15|rate|341|RIFLGFCY03_N.B:par_yield:3Y:act_act:compounded/2:2026-10-02@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-02|340|false
+row|fed-board:fed_h15|rate|342|RIFLGFCY03_N.B:par_yield:3Y:act_act:compounded/2:2026-10-05@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-05|341|false
+row|fed-board:fed_h15|rate|343|RIFLGFCY03_N.B:par_yield:3Y:act_act:compounded/2:2026-10-06@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-06|342|false
+row|fed-board:fed_h15|rate|344|RIFLGFCY03_N.B:par_yield:3Y:act_act:compounded/2:2026-10-07@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-07|343|false
+row|fed-board:fed_h15|rate|345|RIFLGFCY03_N.B:par_yield:3Y:act_act:compounded/2:2026-10-08@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-08|344|false
+row|fed-board:fed_h15|rate|346|RIFLGFCY03_N.B:par_yield:3Y:act_act:compounded/2:2026-10-09@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-09|345|false
+row|fed-board:fed_h15|rate|347|RIFLGFCY03_N.B:par_yield:3Y:act_act:compounded/2:2026-10-13@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-13|346|false
+row|fed-board:fed_h15|rate|348|RIFLGFCY03_N.B:par_yield:3Y:act_act:compounded/2:2026-10-14@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-14|347|false
+row|fed-board:fed_h15|rate|349|RIFLGFCY03_N.B:par_yield:3Y:act_act:compounded/2:2026-10-15@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-15|348|false
+row|fed-board:fed_h15|rate|34|RIFSPPNAAD30_N.B:discount:1M:act_360:discount:2026-10-07@INS-01JREF00000000000000000024|1|frb: AA nonfinancial commercial paper|6||2026-10-07|33|false
+row|fed-board:fed_h15|rate|350|RIFLGFCY03_N.B:par_yield:3Y:act_act:compounded/2:2026-10-16@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-16|349|false
+row|fed-board:fed_h15|rate|351|RIFLGFCY03_N.B:par_yield:3Y:act_act:compounded/2:2026-10-19@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-19|350|false
+row|fed-board:fed_h15|rate|352|RIFLGFCY03_N.B:par_yield:3Y:act_act:compounded/2:2026-10-20@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-20|351|false
+row|fed-board:fed_h15|rate|353|RIFLGFCY03_N.B:par_yield:3Y:act_act:compounded/2:2026-10-21@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-21|352|false
+row|fed-board:fed_h15|rate|354|RIFLGFCY05_N.B:par_yield:5Y:act_act:compounded/2:2026-09-21@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-21|353|false
+row|fed-board:fed_h15|rate|355|RIFLGFCY05_N.B:par_yield:5Y:act_act:compounded/2:2026-09-22@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-22|354|false
+row|fed-board:fed_h15|rate|356|RIFLGFCY05_N.B:par_yield:5Y:act_act:compounded/2:2026-09-23@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-23|355|false
+row|fed-board:fed_h15|rate|357|RIFLGFCY05_N.B:par_yield:5Y:act_act:compounded/2:2026-09-24@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-24|356|false
+row|fed-board:fed_h15|rate|358|RIFLGFCY05_N.B:par_yield:5Y:act_act:compounded/2:2026-09-25@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-25|357|false
+row|fed-board:fed_h15|rate|359|RIFLGFCY05_N.B:par_yield:5Y:act_act:compounded/2:2026-09-28@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-28|358|false
+row|fed-board:fed_h15|rate|35|RIFSPPNAAD30_N.B:discount:1M:act_360:discount:2026-10-08@INS-01JREF00000000000000000024|1|frb: AA nonfinancial commercial paper|6||2026-10-08|34|false
+row|fed-board:fed_h15|rate|360|RIFLGFCY05_N.B:par_yield:5Y:act_act:compounded/2:2026-09-29@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-29|359|false
+row|fed-board:fed_h15|rate|361|RIFLGFCY05_N.B:par_yield:5Y:act_act:compounded/2:2026-09-30@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-30|360|false
+row|fed-board:fed_h15|rate|362|RIFLGFCY05_N.B:par_yield:5Y:act_act:compounded/2:2026-10-01@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-01|361|false
+row|fed-board:fed_h15|rate|363|RIFLGFCY05_N.B:par_yield:5Y:act_act:compounded/2:2026-10-02@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-02|362|false
+row|fed-board:fed_h15|rate|364|RIFLGFCY05_N.B:par_yield:5Y:act_act:compounded/2:2026-10-05@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-05|363|false
+row|fed-board:fed_h15|rate|365|RIFLGFCY05_N.B:par_yield:5Y:act_act:compounded/2:2026-10-06@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-06|364|false
+row|fed-board:fed_h15|rate|366|RIFLGFCY05_N.B:par_yield:5Y:act_act:compounded/2:2026-10-07@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-07|365|false
+row|fed-board:fed_h15|rate|367|RIFLGFCY05_N.B:par_yield:5Y:act_act:compounded/2:2026-10-08@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-08|366|false
+row|fed-board:fed_h15|rate|368|RIFLGFCY05_N.B:par_yield:5Y:act_act:compounded/2:2026-10-09@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-09|367|false
+row|fed-board:fed_h15|rate|369|RIFLGFCY05_N.B:par_yield:5Y:act_act:compounded/2:2026-10-13@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-13|368|false
+row|fed-board:fed_h15|rate|36|RIFSPPNAAD30_N.B:discount:1M:act_360:discount:2026-10-09@INS-01JREF00000000000000000024|1|frb: AA nonfinancial commercial paper|6||2026-10-09|35|false
+row|fed-board:fed_h15|rate|370|RIFLGFCY05_N.B:par_yield:5Y:act_act:compounded/2:2026-10-14@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-14|369|false
+row|fed-board:fed_h15|rate|371|RIFLGFCY05_N.B:par_yield:5Y:act_act:compounded/2:2026-10-15@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-15|370|false
+row|fed-board:fed_h15|rate|372|RIFLGFCY05_N.B:par_yield:5Y:act_act:compounded/2:2026-10-16@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-16|371|false
+row|fed-board:fed_h15|rate|373|RIFLGFCY05_N.B:par_yield:5Y:act_act:compounded/2:2026-10-19@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-19|372|false
+row|fed-board:fed_h15|rate|374|RIFLGFCY05_N.B:par_yield:5Y:act_act:compounded/2:2026-10-20@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-20|373|false
+row|fed-board:fed_h15|rate|375|RIFLGFCY05_N.B:par_yield:5Y:act_act:compounded/2:2026-10-21@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-21|374|false
+row|fed-board:fed_h15|rate|376|RIFLGFCY07_N.B:par_yield:7Y:act_act:compounded/2:2026-09-21@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-21|375|false
+row|fed-board:fed_h15|rate|377|RIFLGFCY07_N.B:par_yield:7Y:act_act:compounded/2:2026-09-22@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-22|376|false
+row|fed-board:fed_h15|rate|378|RIFLGFCY07_N.B:par_yield:7Y:act_act:compounded/2:2026-09-23@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-23|377|false
+row|fed-board:fed_h15|rate|379|RIFLGFCY07_N.B:par_yield:7Y:act_act:compounded/2:2026-09-24@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-24|378|false
+row|fed-board:fed_h15|rate|37|RIFSPPNAAD30_N.B:discount:1M:act_360:discount:2026-10-13@INS-01JREF00000000000000000024|1|frb: AA nonfinancial commercial paper|6||2026-10-13|36|false
+row|fed-board:fed_h15|rate|380|RIFLGFCY07_N.B:par_yield:7Y:act_act:compounded/2:2026-09-25@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-25|379|false
+row|fed-board:fed_h15|rate|381|RIFLGFCY07_N.B:par_yield:7Y:act_act:compounded/2:2026-09-28@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-28|380|false
+row|fed-board:fed_h15|rate|382|RIFLGFCY07_N.B:par_yield:7Y:act_act:compounded/2:2026-09-29@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-29|381|false
+row|fed-board:fed_h15|rate|383|RIFLGFCY07_N.B:par_yield:7Y:act_act:compounded/2:2026-09-30@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-30|382|false
+row|fed-board:fed_h15|rate|384|RIFLGFCY07_N.B:par_yield:7Y:act_act:compounded/2:2026-10-01@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-01|383|false
+row|fed-board:fed_h15|rate|385|RIFLGFCY07_N.B:par_yield:7Y:act_act:compounded/2:2026-10-02@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-02|384|false
+row|fed-board:fed_h15|rate|386|RIFLGFCY07_N.B:par_yield:7Y:act_act:compounded/2:2026-10-05@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-05|385|false
+row|fed-board:fed_h15|rate|387|RIFLGFCY07_N.B:par_yield:7Y:act_act:compounded/2:2026-10-06@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-06|386|false
+row|fed-board:fed_h15|rate|388|RIFLGFCY07_N.B:par_yield:7Y:act_act:compounded/2:2026-10-07@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-07|387|false
+row|fed-board:fed_h15|rate|389|RIFLGFCY07_N.B:par_yield:7Y:act_act:compounded/2:2026-10-08@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-08|388|false
+row|fed-board:fed_h15|rate|38|RIFSPPNAAD30_N.B:discount:1M:act_360:discount:2026-10-14@INS-01JREF00000000000000000024|1|frb: AA nonfinancial commercial paper|6||2026-10-14|37|false
+row|fed-board:fed_h15|rate|390|RIFLGFCY07_N.B:par_yield:7Y:act_act:compounded/2:2026-10-09@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-09|389|false
+row|fed-board:fed_h15|rate|391|RIFLGFCY07_N.B:par_yield:7Y:act_act:compounded/2:2026-10-13@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-13|390|false
+row|fed-board:fed_h15|rate|392|RIFLGFCY07_N.B:par_yield:7Y:act_act:compounded/2:2026-10-14@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-14|391|false
+row|fed-board:fed_h15|rate|393|RIFLGFCY07_N.B:par_yield:7Y:act_act:compounded/2:2026-10-15@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-15|392|false
+row|fed-board:fed_h15|rate|394|RIFLGFCY07_N.B:par_yield:7Y:act_act:compounded/2:2026-10-16@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-16|393|false
+row|fed-board:fed_h15|rate|395|RIFLGFCY07_N.B:par_yield:7Y:act_act:compounded/2:2026-10-19@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-19|394|false
+row|fed-board:fed_h15|rate|396|RIFLGFCY07_N.B:par_yield:7Y:act_act:compounded/2:2026-10-20@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-20|395|false
+row|fed-board:fed_h15|rate|397|RIFLGFCY07_N.B:par_yield:7Y:act_act:compounded/2:2026-10-21@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-21|396|false
+row|fed-board:fed_h15|rate|398|RIFLGFCY10_N.B:par_yield:10Y:act_act:compounded/2:2026-09-21@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-21|397|false
+row|fed-board:fed_h15|rate|399|RIFLGFCY10_N.B:par_yield:10Y:act_act:compounded/2:2026-09-22@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-22|398|false
+row|fed-board:fed_h15|rate|39|RIFSPPNAAD30_N.B:discount:1M:act_360:discount:2026-10-15@INS-01JREF00000000000000000024|1|frb: AA nonfinancial commercial paper|6||2026-10-15|38|false
 row|fed-board:fed_h15|rate|3|RIFSPFF_N.B:fixing:-:act_360:simple:2026-09-23@INS-01JREF00000000000000000002|1|nyfed: EFFR|1||2026-09-23|2|false
-row|fed-board:fed_h15|rate|40|RIFLGFCM01_N.B:par_yield:1M:act_act:compounded/2:2026-10-15@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-15|39|false
-row|fed-board:fed_h15|rate|41|RIFLGFCM01_N.B:par_yield:1M:act_act:compounded/2:2026-10-16@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-16|40|false
-row|fed-board:fed_h15|rate|42|RIFLGFCM01_N.B:par_yield:1M:act_act:compounded/2:2026-10-19@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-19|41|false
-row|fed-board:fed_h15|rate|43|RIFLGFCM01_N.B:par_yield:1M:act_act:compounded/2:2026-10-20@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-20|42|false
-row|fed-board:fed_h15|rate|44|RIFLGFCM01_N.B:par_yield:1M:act_act:compounded/2:2026-10-21@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-21|43|false
-row|fed-board:fed_h15|rate|45|RIFLGFCM03_N.B:par_yield:3M:act_act:compounded/2:2026-09-21@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-21|44|false
-row|fed-board:fed_h15|rate|46|RIFLGFCM03_N.B:par_yield:3M:act_act:compounded/2:2026-09-22@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-22|45|false
-row|fed-board:fed_h15|rate|47|RIFLGFCM03_N.B:par_yield:3M:act_act:compounded/2:2026-09-23@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-23|46|false
-row|fed-board:fed_h15|rate|48|RIFLGFCM03_N.B:par_yield:3M:act_act:compounded/2:2026-09-24@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-24|47|false
-row|fed-board:fed_h15|rate|49|RIFLGFCM03_N.B:par_yield:3M:act_act:compounded/2:2026-09-25@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-25|48|false
+row|fed-board:fed_h15|rate|400|RIFLGFCY10_N.B:par_yield:10Y:act_act:compounded/2:2026-09-23@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-23|399|false
+row|fed-board:fed_h15|rate|401|RIFLGFCY10_N.B:par_yield:10Y:act_act:compounded/2:2026-09-24@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-24|400|false
+row|fed-board:fed_h15|rate|402|RIFLGFCY10_N.B:par_yield:10Y:act_act:compounded/2:2026-09-25@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-25|401|false
+row|fed-board:fed_h15|rate|403|RIFLGFCY10_N.B:par_yield:10Y:act_act:compounded/2:2026-09-28@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-28|402|false
+row|fed-board:fed_h15|rate|404|RIFLGFCY10_N.B:par_yield:10Y:act_act:compounded/2:2026-09-29@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-29|403|false
+row|fed-board:fed_h15|rate|405|RIFLGFCY10_N.B:par_yield:10Y:act_act:compounded/2:2026-09-30@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-30|404|false
+row|fed-board:fed_h15|rate|406|RIFLGFCY10_N.B:par_yield:10Y:act_act:compounded/2:2026-10-01@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-01|405|false
+row|fed-board:fed_h15|rate|407|RIFLGFCY10_N.B:par_yield:10Y:act_act:compounded/2:2026-10-02@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-02|406|false
+row|fed-board:fed_h15|rate|408|RIFLGFCY10_N.B:par_yield:10Y:act_act:compounded/2:2026-10-05@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-05|407|false
+row|fed-board:fed_h15|rate|409|RIFLGFCY10_N.B:par_yield:10Y:act_act:compounded/2:2026-10-06@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-06|408|false
+row|fed-board:fed_h15|rate|40|RIFSPPNAAD30_N.B:discount:1M:act_360:discount:2026-10-16@INS-01JREF00000000000000000024|1|frb: AA nonfinancial commercial paper|6||2026-10-16|39|false
+row|fed-board:fed_h15|rate|410|RIFLGFCY10_N.B:par_yield:10Y:act_act:compounded/2:2026-10-07@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-07|409|false
+row|fed-board:fed_h15|rate|411|RIFLGFCY10_N.B:par_yield:10Y:act_act:compounded/2:2026-10-08@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-08|410|false
+row|fed-board:fed_h15|rate|412|RIFLGFCY10_N.B:par_yield:10Y:act_act:compounded/2:2026-10-09@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-09|411|false
+row|fed-board:fed_h15|rate|413|RIFLGFCY10_N.B:par_yield:10Y:act_act:compounded/2:2026-10-13@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-13|412|false
+row|fed-board:fed_h15|rate|414|RIFLGFCY10_N.B:par_yield:10Y:act_act:compounded/2:2026-10-14@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-14|413|false
+row|fed-board:fed_h15|rate|415|RIFLGFCY10_N.B:par_yield:10Y:act_act:compounded/2:2026-10-15@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-15|414|false
+row|fed-board:fed_h15|rate|416|RIFLGFCY10_N.B:par_yield:10Y:act_act:compounded/2:2026-10-16@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-16|415|false
+row|fed-board:fed_h15|rate|417|RIFLGFCY10_N.B:par_yield:10Y:act_act:compounded/2:2026-10-19@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-19|416|false
+row|fed-board:fed_h15|rate|418|RIFLGFCY10_N.B:par_yield:10Y:act_act:compounded/2:2026-10-20@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-20|417|false
+row|fed-board:fed_h15|rate|419|RIFLGFCY10_N.B:par_yield:10Y:act_act:compounded/2:2026-10-21@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-21|418|false
+row|fed-board:fed_h15|rate|41|RIFSPPNAAD30_N.B:discount:1M:act_360:discount:2026-10-19@INS-01JREF00000000000000000024|1|frb: AA nonfinancial commercial paper|6||2026-10-19|40|false
+row|fed-board:fed_h15|rate|420|RIFLGFCY20_N.B:par_yield:20Y:act_act:compounded/2:2026-09-21@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-21|419|false
+row|fed-board:fed_h15|rate|421|RIFLGFCY20_N.B:par_yield:20Y:act_act:compounded/2:2026-09-22@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-22|420|false
+row|fed-board:fed_h15|rate|422|RIFLGFCY20_N.B:par_yield:20Y:act_act:compounded/2:2026-09-23@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-23|421|false
+row|fed-board:fed_h15|rate|423|RIFLGFCY20_N.B:par_yield:20Y:act_act:compounded/2:2026-09-24@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-24|422|false
+row|fed-board:fed_h15|rate|424|RIFLGFCY20_N.B:par_yield:20Y:act_act:compounded/2:2026-09-25@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-25|423|false
+row|fed-board:fed_h15|rate|425|RIFLGFCY20_N.B:par_yield:20Y:act_act:compounded/2:2026-09-28@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-28|424|false
+row|fed-board:fed_h15|rate|426|RIFLGFCY20_N.B:par_yield:20Y:act_act:compounded/2:2026-09-29@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-29|425|false
+row|fed-board:fed_h15|rate|427|RIFLGFCY20_N.B:par_yield:20Y:act_act:compounded/2:2026-09-30@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-30|426|false
+row|fed-board:fed_h15|rate|428|RIFLGFCY20_N.B:par_yield:20Y:act_act:compounded/2:2026-10-01@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-01|427|false
+row|fed-board:fed_h15|rate|429|RIFLGFCY20_N.B:par_yield:20Y:act_act:compounded/2:2026-10-02@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-02|428|false
+row|fed-board:fed_h15|rate|42|RIFSPPNAAD30_N.B:discount:1M:act_360:discount:2026-10-20@INS-01JREF00000000000000000024|1|frb: AA nonfinancial commercial paper|6||2026-10-20|41|false
+row|fed-board:fed_h15|rate|430|RIFLGFCY20_N.B:par_yield:20Y:act_act:compounded/2:2026-10-05@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-05|429|false
+row|fed-board:fed_h15|rate|431|RIFLGFCY20_N.B:par_yield:20Y:act_act:compounded/2:2026-10-06@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-06|430|false
+row|fed-board:fed_h15|rate|432|RIFLGFCY20_N.B:par_yield:20Y:act_act:compounded/2:2026-10-07@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-07|431|false
+row|fed-board:fed_h15|rate|433|RIFLGFCY20_N.B:par_yield:20Y:act_act:compounded/2:2026-10-08@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-08|432|false
+row|fed-board:fed_h15|rate|434|RIFLGFCY20_N.B:par_yield:20Y:act_act:compounded/2:2026-10-09@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-09|433|false
+row|fed-board:fed_h15|rate|435|RIFLGFCY20_N.B:par_yield:20Y:act_act:compounded/2:2026-10-13@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-13|434|false
+row|fed-board:fed_h15|rate|436|RIFLGFCY20_N.B:par_yield:20Y:act_act:compounded/2:2026-10-14@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-14|435|false
+row|fed-board:fed_h15|rate|437|RIFLGFCY20_N.B:par_yield:20Y:act_act:compounded/2:2026-10-15@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-15|436|false
+row|fed-board:fed_h15|rate|438|RIFLGFCY20_N.B:par_yield:20Y:act_act:compounded/2:2026-10-16@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-16|437|false
+row|fed-board:fed_h15|rate|439|RIFLGFCY20_N.B:par_yield:20Y:act_act:compounded/2:2026-10-19@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-19|438|false
+row|fed-board:fed_h15|rate|43|RIFSPPNAAD30_N.B:discount:1M:act_360:discount:2026-10-21@INS-01JREF00000000000000000024|1|frb: AA nonfinancial commercial paper|6||2026-10-21|42|false
+row|fed-board:fed_h15|rate|440|RIFLGFCY20_N.B:par_yield:20Y:act_act:compounded/2:2026-10-20@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-20|439|false
+row|fed-board:fed_h15|rate|441|RIFLGFCY20_N.B:par_yield:20Y:act_act:compounded/2:2026-10-21@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-21|440|false
+row|fed-board:fed_h15|rate|442|RIFLGFCY30_N.B:par_yield:30Y:act_act:compounded/2:2026-09-21@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-21|441|false
+row|fed-board:fed_h15|rate|443|RIFLGFCY30_N.B:par_yield:30Y:act_act:compounded/2:2026-09-22@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-22|442|false
+row|fed-board:fed_h15|rate|444|RIFLGFCY30_N.B:par_yield:30Y:act_act:compounded/2:2026-09-23@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-23|443|false
+row|fed-board:fed_h15|rate|445|RIFLGFCY30_N.B:par_yield:30Y:act_act:compounded/2:2026-09-24@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-24|444|false
+row|fed-board:fed_h15|rate|446|RIFLGFCY30_N.B:par_yield:30Y:act_act:compounded/2:2026-09-25@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-25|445|false
+row|fed-board:fed_h15|rate|447|RIFLGFCY30_N.B:par_yield:30Y:act_act:compounded/2:2026-09-28@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-28|446|false
+row|fed-board:fed_h15|rate|448|RIFLGFCY30_N.B:par_yield:30Y:act_act:compounded/2:2026-09-29@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-29|447|false
+row|fed-board:fed_h15|rate|449|RIFLGFCY30_N.B:par_yield:30Y:act_act:compounded/2:2026-09-30@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-30|448|false
+row|fed-board:fed_h15|rate|44|RIFSPPNAAD60_N.B:discount:2M:act_360:discount:2026-09-21@INS-01JREF00000000000000000024|1|frb: AA nonfinancial commercial paper|6||2026-09-21|43|false
+row|fed-board:fed_h15|rate|450|RIFLGFCY30_N.B:par_yield:30Y:act_act:compounded/2:2026-10-01@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-01|449|false
+row|fed-board:fed_h15|rate|451|RIFLGFCY30_N.B:par_yield:30Y:act_act:compounded/2:2026-10-02@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-02|450|false
+row|fed-board:fed_h15|rate|452|RIFLGFCY30_N.B:par_yield:30Y:act_act:compounded/2:2026-10-05@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-05|451|false
+row|fed-board:fed_h15|rate|453|RIFLGFCY30_N.B:par_yield:30Y:act_act:compounded/2:2026-10-06@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-06|452|false
+row|fed-board:fed_h15|rate|454|RIFLGFCY30_N.B:par_yield:30Y:act_act:compounded/2:2026-10-07@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-07|453|false
+row|fed-board:fed_h15|rate|455|RIFLGFCY30_N.B:par_yield:30Y:act_act:compounded/2:2026-10-08@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-08|454|false
+row|fed-board:fed_h15|rate|456|RIFLGFCY30_N.B:par_yield:30Y:act_act:compounded/2:2026-10-09@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-09|455|false
+row|fed-board:fed_h15|rate|457|RIFLGFCY30_N.B:par_yield:30Y:act_act:compounded/2:2026-10-13@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-13|456|false
+row|fed-board:fed_h15|rate|458|RIFLGFCY30_N.B:par_yield:30Y:act_act:compounded/2:2026-10-14@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-14|457|false
+row|fed-board:fed_h15|rate|459|RIFLGFCY30_N.B:par_yield:30Y:act_act:compounded/2:2026-10-15@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-15|458|false
+row|fed-board:fed_h15|rate|45|RIFSPPNAAD60_N.B:discount:2M:act_360:discount:2026-09-22@INS-01JREF00000000000000000024|1|frb: AA nonfinancial commercial paper|6||2026-09-22|44|false
+row|fed-board:fed_h15|rate|460|RIFLGFCY30_N.B:par_yield:30Y:act_act:compounded/2:2026-10-16@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-16|459|false
+row|fed-board:fed_h15|rate|461|RIFLGFCY30_N.B:par_yield:30Y:act_act:compounded/2:2026-10-19@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-19|460|false
+row|fed-board:fed_h15|rate|462|RIFLGFCY30_N.B:par_yield:30Y:act_act:compounded/2:2026-10-20@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-20|461|false
+row|fed-board:fed_h15|rate|463|RIFLGFCY30_N.B:par_yield:30Y:act_act:compounded/2:2026-10-21@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-21|462|false
+row|fed-board:fed_h15|rate|464|RIFLGFCY05_XII_N.B:par_yield:5Y:act_act:compounded/2:2026-09-21@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-21|0|false
+row|fed-board:fed_h15|rate|465|RIFLGFCY05_XII_N.B:par_yield:5Y:act_act:compounded/2:2026-09-22@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-22|464|false
+row|fed-board:fed_h15|rate|466|RIFLGFCY05_XII_N.B:par_yield:5Y:act_act:compounded/2:2026-09-23@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-23|465|false
+row|fed-board:fed_h15|rate|467|RIFLGFCY05_XII_N.B:par_yield:5Y:act_act:compounded/2:2026-09-24@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-24|466|false
+row|fed-board:fed_h15|rate|468|RIFLGFCY05_XII_N.B:par_yield:5Y:act_act:compounded/2:2026-09-25@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-25|467|false
+row|fed-board:fed_h15|rate|469|RIFLGFCY05_XII_N.B:par_yield:5Y:act_act:compounded/2:2026-09-28@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-28|468|false
+row|fed-board:fed_h15|rate|46|RIFSPPNAAD60_N.B:discount:2M:act_360:discount:2026-09-23@INS-01JREF00000000000000000024|1|frb: AA nonfinancial commercial paper|6||2026-09-23|45|false
+row|fed-board:fed_h15|rate|470|RIFLGFCY05_XII_N.B:par_yield:5Y:act_act:compounded/2:2026-09-29@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-29|469|false
+row|fed-board:fed_h15|rate|471|RIFLGFCY05_XII_N.B:par_yield:5Y:act_act:compounded/2:2026-09-30@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-30|470|false
+row|fed-board:fed_h15|rate|472|RIFLGFCY05_XII_N.B:par_yield:5Y:act_act:compounded/2:2026-10-01@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-01|471|false
+row|fed-board:fed_h15|rate|473|RIFLGFCY05_XII_N.B:par_yield:5Y:act_act:compounded/2:2026-10-02@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-02|472|false
+row|fed-board:fed_h15|rate|474|RIFLGFCY05_XII_N.B:par_yield:5Y:act_act:compounded/2:2026-10-05@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-05|473|false
+row|fed-board:fed_h15|rate|475|RIFLGFCY05_XII_N.B:par_yield:5Y:act_act:compounded/2:2026-10-06@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-06|474|false
+row|fed-board:fed_h15|rate|476|RIFLGFCY05_XII_N.B:par_yield:5Y:act_act:compounded/2:2026-10-07@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-07|475|false
+row|fed-board:fed_h15|rate|477|RIFLGFCY05_XII_N.B:par_yield:5Y:act_act:compounded/2:2026-10-08@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-08|476|false
+row|fed-board:fed_h15|rate|478|RIFLGFCY05_XII_N.B:par_yield:5Y:act_act:compounded/2:2026-10-09@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-09|477|false
+row|fed-board:fed_h15|rate|479|RIFLGFCY05_XII_N.B:par_yield:5Y:act_act:compounded/2:2026-10-13@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-13|478|false
+row|fed-board:fed_h15|rate|47|RIFSPPNAAD60_N.B:discount:2M:act_360:discount:2026-09-24@INS-01JREF00000000000000000024|1|frb: AA nonfinancial commercial paper|6||2026-09-24|46|false
+row|fed-board:fed_h15|rate|480|RIFLGFCY05_XII_N.B:par_yield:5Y:act_act:compounded/2:2026-10-14@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-14|479|false
+row|fed-board:fed_h15|rate|481|RIFLGFCY05_XII_N.B:par_yield:5Y:act_act:compounded/2:2026-10-15@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-15|480|false
+row|fed-board:fed_h15|rate|482|RIFLGFCY05_XII_N.B:par_yield:5Y:act_act:compounded/2:2026-10-16@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-16|481|false
+row|fed-board:fed_h15|rate|483|RIFLGFCY05_XII_N.B:par_yield:5Y:act_act:compounded/2:2026-10-19@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-19|482|false
+row|fed-board:fed_h15|rate|484|RIFLGFCY05_XII_N.B:par_yield:5Y:act_act:compounded/2:2026-10-20@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-20|483|false
+row|fed-board:fed_h15|rate|485|RIFLGFCY05_XII_N.B:par_yield:5Y:act_act:compounded/2:2026-10-21@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-21|484|false
+row|fed-board:fed_h15|rate|486|RIFLGFCY07_XII_N.B:par_yield:7Y:act_act:compounded/2:2026-09-21@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-21|485|false
+row|fed-board:fed_h15|rate|487|RIFLGFCY07_XII_N.B:par_yield:7Y:act_act:compounded/2:2026-09-22@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-22|486|false
+row|fed-board:fed_h15|rate|488|RIFLGFCY07_XII_N.B:par_yield:7Y:act_act:compounded/2:2026-09-23@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-23|487|false
+row|fed-board:fed_h15|rate|489|RIFLGFCY07_XII_N.B:par_yield:7Y:act_act:compounded/2:2026-09-24@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-24|488|false
+row|fed-board:fed_h15|rate|48|RIFSPPNAAD60_N.B:discount:2M:act_360:discount:2026-09-25@INS-01JREF00000000000000000024|1|frb: AA nonfinancial commercial paper|6||2026-09-25|47|false
+row|fed-board:fed_h15|rate|490|RIFLGFCY07_XII_N.B:par_yield:7Y:act_act:compounded/2:2026-09-25@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-25|489|false
+row|fed-board:fed_h15|rate|491|RIFLGFCY07_XII_N.B:par_yield:7Y:act_act:compounded/2:2026-09-28@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-28|490|false
+row|fed-board:fed_h15|rate|492|RIFLGFCY07_XII_N.B:par_yield:7Y:act_act:compounded/2:2026-09-29@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-29|491|false
+row|fed-board:fed_h15|rate|493|RIFLGFCY07_XII_N.B:par_yield:7Y:act_act:compounded/2:2026-09-30@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-30|492|false
+row|fed-board:fed_h15|rate|494|RIFLGFCY07_XII_N.B:par_yield:7Y:act_act:compounded/2:2026-10-01@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-01|493|false
+row|fed-board:fed_h15|rate|495|RIFLGFCY07_XII_N.B:par_yield:7Y:act_act:compounded/2:2026-10-02@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-02|494|false
+row|fed-board:fed_h15|rate|496|RIFLGFCY07_XII_N.B:par_yield:7Y:act_act:compounded/2:2026-10-05@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-05|495|false
+row|fed-board:fed_h15|rate|497|RIFLGFCY07_XII_N.B:par_yield:7Y:act_act:compounded/2:2026-10-06@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-06|496|false
+row|fed-board:fed_h15|rate|498|RIFLGFCY07_XII_N.B:par_yield:7Y:act_act:compounded/2:2026-10-07@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-07|497|false
+row|fed-board:fed_h15|rate|499|RIFLGFCY07_XII_N.B:par_yield:7Y:act_act:compounded/2:2026-10-08@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-08|498|false
+row|fed-board:fed_h15|rate|49|RIFSPPNAAD60_N.B:discount:2M:act_360:discount:2026-09-28@INS-01JREF00000000000000000024|1|frb: AA nonfinancial commercial paper|6||2026-09-28|48|false
 row|fed-board:fed_h15|rate|4|RIFSPFF_N.B:fixing:-:act_360:simple:2026-09-24@INS-01JREF00000000000000000002|1|nyfed: EFFR|1||2026-09-24|3|false
-row|fed-board:fed_h15|rate|50|RIFLGFCM03_N.B:par_yield:3M:act_act:compounded/2:2026-09-28@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-28|49|false
-row|fed-board:fed_h15|rate|51|RIFLGFCM03_N.B:par_yield:3M:act_act:compounded/2:2026-09-29@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-29|50|false
-row|fed-board:fed_h15|rate|52|RIFLGFCM03_N.B:par_yield:3M:act_act:compounded/2:2026-09-30@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-30|51|false
-row|fed-board:fed_h15|rate|53|RIFLGFCM03_N.B:par_yield:3M:act_act:compounded/2:2026-10-01@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-01|52|false
-row|fed-board:fed_h15|rate|54|RIFLGFCM03_N.B:par_yield:3M:act_act:compounded/2:2026-10-02@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-02|53|false
-row|fed-board:fed_h15|rate|55|RIFLGFCM03_N.B:par_yield:3M:act_act:compounded/2:2026-10-05@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-05|54|false
-row|fed-board:fed_h15|rate|56|RIFLGFCM03_N.B:par_yield:3M:act_act:compounded/2:2026-10-06@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-06|55|false
-row|fed-board:fed_h15|rate|57|RIFLGFCM03_N.B:par_yield:3M:act_act:compounded/2:2026-10-07@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-07|56|false
-row|fed-board:fed_h15|rate|58|RIFLGFCM03_N.B:par_yield:3M:act_act:compounded/2:2026-10-08@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-08|57|false
-row|fed-board:fed_h15|rate|59|RIFLGFCM03_N.B:par_yield:3M:act_act:compounded/2:2026-10-09@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-09|58|false
+row|fed-board:fed_h15|rate|500|RIFLGFCY07_XII_N.B:par_yield:7Y:act_act:compounded/2:2026-10-09@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-09|499|false
+row|fed-board:fed_h15|rate|501|RIFLGFCY07_XII_N.B:par_yield:7Y:act_act:compounded/2:2026-10-13@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-13|500|false
+row|fed-board:fed_h15|rate|502|RIFLGFCY07_XII_N.B:par_yield:7Y:act_act:compounded/2:2026-10-14@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-14|501|false
+row|fed-board:fed_h15|rate|503|RIFLGFCY07_XII_N.B:par_yield:7Y:act_act:compounded/2:2026-10-15@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-15|502|false
+row|fed-board:fed_h15|rate|504|RIFLGFCY07_XII_N.B:par_yield:7Y:act_act:compounded/2:2026-10-16@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-16|503|false
+row|fed-board:fed_h15|rate|505|RIFLGFCY07_XII_N.B:par_yield:7Y:act_act:compounded/2:2026-10-19@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-19|504|false
+row|fed-board:fed_h15|rate|506|RIFLGFCY07_XII_N.B:par_yield:7Y:act_act:compounded/2:2026-10-20@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-20|505|false
+row|fed-board:fed_h15|rate|507|RIFLGFCY07_XII_N.B:par_yield:7Y:act_act:compounded/2:2026-10-21@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-21|506|false
+row|fed-board:fed_h15|rate|508|RIFLGFCY10_XII_N.B:par_yield:10Y:act_act:compounded/2:2026-09-21@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-21|507|false
+row|fed-board:fed_h15|rate|509|RIFLGFCY10_XII_N.B:par_yield:10Y:act_act:compounded/2:2026-09-22@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-22|508|false
+row|fed-board:fed_h15|rate|50|RIFSPPNAAD60_N.B:discount:2M:act_360:discount:2026-10-05@INS-01JREF00000000000000000024|1|frb: AA nonfinancial commercial paper|6||2026-10-05|49|false
+row|fed-board:fed_h15|rate|510|RIFLGFCY10_XII_N.B:par_yield:10Y:act_act:compounded/2:2026-09-23@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-23|509|false
+row|fed-board:fed_h15|rate|511|RIFLGFCY10_XII_N.B:par_yield:10Y:act_act:compounded/2:2026-09-24@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-24|510|false
+row|fed-board:fed_h15|rate|512|RIFLGFCY10_XII_N.B:par_yield:10Y:act_act:compounded/2:2026-09-25@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-25|511|false
+row|fed-board:fed_h15|rate|513|RIFLGFCY10_XII_N.B:par_yield:10Y:act_act:compounded/2:2026-09-28@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-28|512|false
+row|fed-board:fed_h15|rate|514|RIFLGFCY10_XII_N.B:par_yield:10Y:act_act:compounded/2:2026-09-29@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-29|513|false
+row|fed-board:fed_h15|rate|515|RIFLGFCY10_XII_N.B:par_yield:10Y:act_act:compounded/2:2026-09-30@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-30|514|false
+row|fed-board:fed_h15|rate|516|RIFLGFCY10_XII_N.B:par_yield:10Y:act_act:compounded/2:2026-10-01@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-01|515|false
+row|fed-board:fed_h15|rate|517|RIFLGFCY10_XII_N.B:par_yield:10Y:act_act:compounded/2:2026-10-02@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-02|516|false
+row|fed-board:fed_h15|rate|518|RIFLGFCY10_XII_N.B:par_yield:10Y:act_act:compounded/2:2026-10-05@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-05|517|false
+row|fed-board:fed_h15|rate|519|RIFLGFCY10_XII_N.B:par_yield:10Y:act_act:compounded/2:2026-10-06@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-06|518|false
+row|fed-board:fed_h15|rate|51|RIFSPPNAAD60_N.B:discount:2M:act_360:discount:2026-10-06@INS-01JREF00000000000000000024|1|frb: AA nonfinancial commercial paper|6||2026-10-06|50|false
+row|fed-board:fed_h15|rate|520|RIFLGFCY10_XII_N.B:par_yield:10Y:act_act:compounded/2:2026-10-07@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-07|519|false
+row|fed-board:fed_h15|rate|521|RIFLGFCY10_XII_N.B:par_yield:10Y:act_act:compounded/2:2026-10-08@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-08|520|false
+row|fed-board:fed_h15|rate|522|RIFLGFCY10_XII_N.B:par_yield:10Y:act_act:compounded/2:2026-10-09@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-09|521|false
+row|fed-board:fed_h15|rate|523|RIFLGFCY10_XII_N.B:par_yield:10Y:act_act:compounded/2:2026-10-13@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-13|522|false
+row|fed-board:fed_h15|rate|524|RIFLGFCY10_XII_N.B:par_yield:10Y:act_act:compounded/2:2026-10-14@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-14|523|false
+row|fed-board:fed_h15|rate|525|RIFLGFCY10_XII_N.B:par_yield:10Y:act_act:compounded/2:2026-10-15@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-15|524|false
+row|fed-board:fed_h15|rate|526|RIFLGFCY10_XII_N.B:par_yield:10Y:act_act:compounded/2:2026-10-16@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-16|525|false
+row|fed-board:fed_h15|rate|527|RIFLGFCY10_XII_N.B:par_yield:10Y:act_act:compounded/2:2026-10-19@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-19|526|false
+row|fed-board:fed_h15|rate|528|RIFLGFCY10_XII_N.B:par_yield:10Y:act_act:compounded/2:2026-10-20@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-20|527|false
+row|fed-board:fed_h15|rate|529|RIFLGFCY10_XII_N.B:par_yield:10Y:act_act:compounded/2:2026-10-21@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-21|528|false
+row|fed-board:fed_h15|rate|52|RIFSPPNAAD60_N.B:discount:2M:act_360:discount:2026-10-07@INS-01JREF00000000000000000024|1|frb: AA nonfinancial commercial paper|6||2026-10-07|51|false
+row|fed-board:fed_h15|rate|530|RIFLGFCY20_XII_N.B:par_yield:20Y:act_act:compounded/2:2026-09-21@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-21|529|false
+row|fed-board:fed_h15|rate|531|RIFLGFCY20_XII_N.B:par_yield:20Y:act_act:compounded/2:2026-09-22@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-22|530|false
+row|fed-board:fed_h15|rate|532|RIFLGFCY20_XII_N.B:par_yield:20Y:act_act:compounded/2:2026-09-23@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-23|531|false
+row|fed-board:fed_h15|rate|533|RIFLGFCY20_XII_N.B:par_yield:20Y:act_act:compounded/2:2026-09-24@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-24|532|false
+row|fed-board:fed_h15|rate|534|RIFLGFCY20_XII_N.B:par_yield:20Y:act_act:compounded/2:2026-09-25@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-25|533|false
+row|fed-board:fed_h15|rate|535|RIFLGFCY20_XII_N.B:par_yield:20Y:act_act:compounded/2:2026-09-28@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-28|534|false
+row|fed-board:fed_h15|rate|536|RIFLGFCY20_XII_N.B:par_yield:20Y:act_act:compounded/2:2026-09-29@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-29|535|false
+row|fed-board:fed_h15|rate|537|RIFLGFCY20_XII_N.B:par_yield:20Y:act_act:compounded/2:2026-09-30@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-30|536|false
+row|fed-board:fed_h15|rate|538|RIFLGFCY20_XII_N.B:par_yield:20Y:act_act:compounded/2:2026-10-01@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-01|537|false
+row|fed-board:fed_h15|rate|539|RIFLGFCY20_XII_N.B:par_yield:20Y:act_act:compounded/2:2026-10-02@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-02|538|false
+row|fed-board:fed_h15|rate|53|RIFSPPNAAD60_N.B:discount:2M:act_360:discount:2026-10-08@INS-01JREF00000000000000000024|1|frb: AA nonfinancial commercial paper|6||2026-10-08|52|false
+row|fed-board:fed_h15|rate|540|RIFLGFCY20_XII_N.B:par_yield:20Y:act_act:compounded/2:2026-10-05@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-05|539|false
+row|fed-board:fed_h15|rate|541|RIFLGFCY20_XII_N.B:par_yield:20Y:act_act:compounded/2:2026-10-06@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-06|540|false
+row|fed-board:fed_h15|rate|542|RIFLGFCY20_XII_N.B:par_yield:20Y:act_act:compounded/2:2026-10-07@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-07|541|false
+row|fed-board:fed_h15|rate|543|RIFLGFCY20_XII_N.B:par_yield:20Y:act_act:compounded/2:2026-10-08@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-08|542|false
+row|fed-board:fed_h15|rate|544|RIFLGFCY20_XII_N.B:par_yield:20Y:act_act:compounded/2:2026-10-09@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-09|543|false
+row|fed-board:fed_h15|rate|545|RIFLGFCY20_XII_N.B:par_yield:20Y:act_act:compounded/2:2026-10-13@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-13|544|false
+row|fed-board:fed_h15|rate|546|RIFLGFCY20_XII_N.B:par_yield:20Y:act_act:compounded/2:2026-10-14@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-14|545|false
+row|fed-board:fed_h15|rate|547|RIFLGFCY20_XII_N.B:par_yield:20Y:act_act:compounded/2:2026-10-15@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-15|546|false
+row|fed-board:fed_h15|rate|548|RIFLGFCY20_XII_N.B:par_yield:20Y:act_act:compounded/2:2026-10-16@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-16|547|false
+row|fed-board:fed_h15|rate|549|RIFLGFCY20_XII_N.B:par_yield:20Y:act_act:compounded/2:2026-10-19@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-19|548|false
+row|fed-board:fed_h15|rate|54|RIFSPPNAAD60_N.B:discount:2M:act_360:discount:2026-10-09@INS-01JREF00000000000000000024|1|frb: AA nonfinancial commercial paper|6||2026-10-09|53|false
+row|fed-board:fed_h15|rate|550|RIFLGFCY20_XII_N.B:par_yield:20Y:act_act:compounded/2:2026-10-20@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-20|549|false
+row|fed-board:fed_h15|rate|551|RIFLGFCY20_XII_N.B:par_yield:20Y:act_act:compounded/2:2026-10-21@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-21|550|false
+row|fed-board:fed_h15|rate|552|RIFLGFCY30_XII_N.B:par_yield:30Y:act_act:compounded/2:2026-09-21@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-21|551|false
+row|fed-board:fed_h15|rate|553|RIFLGFCY30_XII_N.B:par_yield:30Y:act_act:compounded/2:2026-09-22@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-22|552|false
+row|fed-board:fed_h15|rate|554|RIFLGFCY30_XII_N.B:par_yield:30Y:act_act:compounded/2:2026-09-23@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-23|553|false
+row|fed-board:fed_h15|rate|555|RIFLGFCY30_XII_N.B:par_yield:30Y:act_act:compounded/2:2026-09-24@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-24|554|false
+row|fed-board:fed_h15|rate|556|RIFLGFCY30_XII_N.B:par_yield:30Y:act_act:compounded/2:2026-09-25@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-25|555|false
+row|fed-board:fed_h15|rate|557|RIFLGFCY30_XII_N.B:par_yield:30Y:act_act:compounded/2:2026-09-28@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-28|556|false
+row|fed-board:fed_h15|rate|558|RIFLGFCY30_XII_N.B:par_yield:30Y:act_act:compounded/2:2026-09-29@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-29|557|false
+row|fed-board:fed_h15|rate|559|RIFLGFCY30_XII_N.B:par_yield:30Y:act_act:compounded/2:2026-09-30@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-09-30|558|false
+row|fed-board:fed_h15|rate|55|RIFSPPNAAD60_N.B:discount:2M:act_360:discount:2026-10-13@INS-01JREF00000000000000000024|1|frb: AA nonfinancial commercial paper|6||2026-10-13|54|false
+row|fed-board:fed_h15|rate|560|RIFLGFCY30_XII_N.B:par_yield:30Y:act_act:compounded/2:2026-10-01@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-01|559|false
+row|fed-board:fed_h15|rate|561|RIFLGFCY30_XII_N.B:par_yield:30Y:act_act:compounded/2:2026-10-02@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-02|560|false
+row|fed-board:fed_h15|rate|562|RIFLGFCY30_XII_N.B:par_yield:30Y:act_act:compounded/2:2026-10-05@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-05|561|false
+row|fed-board:fed_h15|rate|563|RIFLGFCY30_XII_N.B:par_yield:30Y:act_act:compounded/2:2026-10-06@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-06|562|false
+row|fed-board:fed_h15|rate|564|RIFLGFCY30_XII_N.B:par_yield:30Y:act_act:compounded/2:2026-10-07@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-07|563|false
+row|fed-board:fed_h15|rate|565|RIFLGFCY30_XII_N.B:par_yield:30Y:act_act:compounded/2:2026-10-08@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-08|564|false
+row|fed-board:fed_h15|rate|566|RIFLGFCY30_XII_N.B:par_yield:30Y:act_act:compounded/2:2026-10-09@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-09|565|false
+row|fed-board:fed_h15|rate|567|RIFLGFCY30_XII_N.B:par_yield:30Y:act_act:compounded/2:2026-10-13@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-13|566|false
+row|fed-board:fed_h15|rate|568|RIFLGFCY30_XII_N.B:par_yield:30Y:act_act:compounded/2:2026-10-14@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-14|567|false
+row|fed-board:fed_h15|rate|569|RIFLGFCY30_XII_N.B:par_yield:30Y:act_act:compounded/2:2026-10-15@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-15|568|false
+row|fed-board:fed_h15|rate|56|RIFSPPNAAD60_N.B:discount:2M:act_360:discount:2026-10-15@INS-01JREF00000000000000000024|1|frb: AA nonfinancial commercial paper|6||2026-10-15|55|false
+row|fed-board:fed_h15|rate|570|RIFLGFCY30_XII_N.B:par_yield:30Y:act_act:compounded/2:2026-10-16@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-16|569|false
+row|fed-board:fed_h15|rate|571|RIFLGFCY30_XII_N.B:par_yield:30Y:act_act:compounded/2:2026-10-19@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-19|570|false
+row|fed-board:fed_h15|rate|572|RIFLGFCY30_XII_N.B:par_yield:30Y:act_act:compounded/2:2026-10-20@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-20|571|false
+row|fed-board:fed_h15|rate|573|RIFLGFCY30_XII_N.B:par_yield:30Y:act_act:compounded/2:2026-10-21@INS-01JREF00000000000000000020|1|ustreasury: Daily Treasury Par Real Yield Curve Rates|4||2026-10-21|572|false
+row|fed-board:fed_h15|rate|574|RIFLGFL_XII_N.B:average:-:act_act:compounded/2:2026-09-21@INS-01JREF00000000000000000028|1|frb: Treasury inflation-indexed long-term average|2||2026-09-21|0|false
+row|fed-board:fed_h15|rate|575|RIFLGFL_XII_N.B:average:-:act_act:compounded/2:2026-09-22@INS-01JREF00000000000000000028|1|frb: Treasury inflation-indexed long-term average|2||2026-09-22|574|false
+row|fed-board:fed_h15|rate|576|RIFLGFL_XII_N.B:average:-:act_act:compounded/2:2026-09-23@INS-01JREF00000000000000000028|1|frb: Treasury inflation-indexed long-term average|2||2026-09-23|575|false
+row|fed-board:fed_h15|rate|577|RIFLGFL_XII_N.B:average:-:act_act:compounded/2:2026-09-24@INS-01JREF00000000000000000028|1|frb: Treasury inflation-indexed long-term average|2||2026-09-24|576|false
+row|fed-board:fed_h15|rate|578|RIFLGFL_XII_N.B:average:-:act_act:compounded/2:2026-09-25@INS-01JREF00000000000000000028|1|frb: Treasury inflation-indexed long-term average|2||2026-09-25|577|false
+row|fed-board:fed_h15|rate|579|RIFLGFL_XII_N.B:average:-:act_act:compounded/2:2026-09-28@INS-01JREF00000000000000000028|1|frb: Treasury inflation-indexed long-term average|2||2026-09-28|578|false
+row|fed-board:fed_h15|rate|57|RIFSPPNAAD60_N.B:discount:2M:act_360:discount:2026-10-20@INS-01JREF00000000000000000024|1|frb: AA nonfinancial commercial paper|6||2026-10-20|56|false
+row|fed-board:fed_h15|rate|580|RIFLGFL_XII_N.B:average:-:act_act:compounded/2:2026-09-29@INS-01JREF00000000000000000028|1|frb: Treasury inflation-indexed long-term average|2||2026-09-29|579|false
+row|fed-board:fed_h15|rate|581|RIFLGFL_XII_N.B:average:-:act_act:compounded/2:2026-09-30@INS-01JREF00000000000000000028|1|frb: Treasury inflation-indexed long-term average|2||2026-09-30|580|false
+row|fed-board:fed_h15|rate|582|RIFLGFL_XII_N.B:average:-:act_act:compounded/2:2026-10-01@INS-01JREF00000000000000000028|1|frb: Treasury inflation-indexed long-term average|2||2026-10-01|581|false
+row|fed-board:fed_h15|rate|583|RIFLGFL_XII_N.B:average:-:act_act:compounded/2:2026-10-02@INS-01JREF00000000000000000028|1|frb: Treasury inflation-indexed long-term average|2||2026-10-02|582|false
+row|fed-board:fed_h15|rate|584|RIFLGFL_XII_N.B:average:-:act_act:compounded/2:2026-10-05@INS-01JREF00000000000000000028|1|frb: Treasury inflation-indexed long-term average|2||2026-10-05|583|false
+row|fed-board:fed_h15|rate|585|RIFLGFL_XII_N.B:average:-:act_act:compounded/2:2026-10-06@INS-01JREF00000000000000000028|1|frb: Treasury inflation-indexed long-term average|2||2026-10-06|584|false
+row|fed-board:fed_h15|rate|586|RIFLGFL_XII_N.B:average:-:act_act:compounded/2:2026-10-07@INS-01JREF00000000000000000028|1|frb: Treasury inflation-indexed long-term average|2||2026-10-07|585|false
+row|fed-board:fed_h15|rate|587|RIFLGFL_XII_N.B:average:-:act_act:compounded/2:2026-10-08@INS-01JREF00000000000000000028|1|frb: Treasury inflation-indexed long-term average|2||2026-10-08|586|false
+row|fed-board:fed_h15|rate|588|RIFLGFL_XII_N.B:average:-:act_act:compounded/2:2026-10-09@INS-01JREF00000000000000000028|1|frb: Treasury inflation-indexed long-term average|2||2026-10-09|587|false
+row|fed-board:fed_h15|rate|589|RIFLGFL_XII_N.B:average:-:act_act:compounded/2:2026-10-13@INS-01JREF00000000000000000028|1|frb: Treasury inflation-indexed long-term average|2||2026-10-13|588|false
+row|fed-board:fed_h15|rate|58|RIFSPPNAAD60_N.B:discount:2M:act_360:discount:2026-10-21@INS-01JREF00000000000000000024|1|frb: AA nonfinancial commercial paper|6||2026-10-21|57|false
+row|fed-board:fed_h15|rate|590|RIFLGFL_XII_N.B:average:-:act_act:compounded/2:2026-10-14@INS-01JREF00000000000000000028|1|frb: Treasury inflation-indexed long-term average|2||2026-10-14|589|false
+row|fed-board:fed_h15|rate|591|RIFLGFL_XII_N.B:average:-:act_act:compounded/2:2026-10-15@INS-01JREF00000000000000000028|1|frb: Treasury inflation-indexed long-term average|2||2026-10-15|590|false
+row|fed-board:fed_h15|rate|592|RIFLGFL_XII_N.B:average:-:act_act:compounded/2:2026-10-16@INS-01JREF00000000000000000028|1|frb: Treasury inflation-indexed long-term average|2||2026-10-16|591|false
+row|fed-board:fed_h15|rate|593|RIFLGFL_XII_N.B:average:-:act_act:compounded/2:2026-10-19@INS-01JREF00000000000000000028|1|frb: Treasury inflation-indexed long-term average|2||2026-10-19|592|false
+row|fed-board:fed_h15|rate|594|RIFLGFL_XII_N.B:average:-:act_act:compounded/2:2026-10-20@INS-01JREF00000000000000000028|1|frb: Treasury inflation-indexed long-term average|2||2026-10-20|593|false
+row|fed-board:fed_h15|rate|595|RIFLGFL_XII_N.B:average:-:act_act:compounded/2:2026-10-21@INS-01JREF00000000000000000028|1|frb: Treasury inflation-indexed long-term average|2||2026-10-21|594|false
+row|fed-board:fed_h15|rate|59|RIFSPPNAAD90_N.B:discount:3M:act_360:discount:2026-09-21@INS-01JREF00000000000000000024|1|frb: AA nonfinancial commercial paper|6||2026-09-21|58|false
 row|fed-board:fed_h15|rate|5|RIFSPFF_N.B:fixing:-:act_360:simple:2026-09-25@INS-01JREF00000000000000000002|1|nyfed: EFFR|1||2026-09-25|4|false
-row|fed-board:fed_h15|rate|60|RIFLGFCM03_N.B:par_yield:3M:act_act:compounded/2:2026-10-13@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-13|59|false
-row|fed-board:fed_h15|rate|61|RIFLGFCM03_N.B:par_yield:3M:act_act:compounded/2:2026-10-14@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-14|60|false
-row|fed-board:fed_h15|rate|62|RIFLGFCM03_N.B:par_yield:3M:act_act:compounded/2:2026-10-15@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-15|61|false
-row|fed-board:fed_h15|rate|63|RIFLGFCM03_N.B:par_yield:3M:act_act:compounded/2:2026-10-16@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-16|62|false
-row|fed-board:fed_h15|rate|64|RIFLGFCM03_N.B:par_yield:3M:act_act:compounded/2:2026-10-19@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-19|63|false
-row|fed-board:fed_h15|rate|65|RIFLGFCM03_N.B:par_yield:3M:act_act:compounded/2:2026-10-20@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-20|64|false
-row|fed-board:fed_h15|rate|66|RIFLGFCM03_N.B:par_yield:3M:act_act:compounded/2:2026-10-21@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-21|65|false
-row|fed-board:fed_h15|rate|67|RIFLGFCM06_N.B:par_yield:6M:act_act:compounded/2:2026-09-21@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-21|66|false
-row|fed-board:fed_h15|rate|68|RIFLGFCM06_N.B:par_yield:6M:act_act:compounded/2:2026-09-22@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-22|67|false
-row|fed-board:fed_h15|rate|69|RIFLGFCM06_N.B:par_yield:6M:act_act:compounded/2:2026-09-23@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-23|68|false
+row|fed-board:fed_h15|rate|60|RIFSPPNAAD90_N.B:discount:3M:act_360:discount:2026-10-05@INS-01JREF00000000000000000024|1|frb: AA nonfinancial commercial paper|6||2026-10-05|59|false
+row|fed-board:fed_h15|rate|61|RIFSPPNAAD90_N.B:discount:3M:act_360:discount:2026-10-06@INS-01JREF00000000000000000024|1|frb: AA nonfinancial commercial paper|6||2026-10-06|60|false
+row|fed-board:fed_h15|rate|62|RIFSPPNAAD90_N.B:discount:3M:act_360:discount:2026-10-07@INS-01JREF00000000000000000024|1|frb: AA nonfinancial commercial paper|6||2026-10-07|61|false
+row|fed-board:fed_h15|rate|63|RIFSPPNAAD90_N.B:discount:3M:act_360:discount:2026-10-09@INS-01JREF00000000000000000024|1|frb: AA nonfinancial commercial paper|6||2026-10-09|62|false
+row|fed-board:fed_h15|rate|64|RIFSPPNAAD90_N.B:discount:3M:act_360:discount:2026-10-13@INS-01JREF00000000000000000024|1|frb: AA nonfinancial commercial paper|6||2026-10-13|63|false
+row|fed-board:fed_h15|rate|65|RIFSPPFAAD30_N.B:discount:1M:act_360:discount:2026-09-25@INS-01JREF00000000000000000025|1|frb: AA financial commercial paper|6||2026-09-25|0|false
+row|fed-board:fed_h15|rate|66|RIFSPPFAAD30_N.B:discount:1M:act_360:discount:2026-10-05@INS-01JREF00000000000000000025|1|frb: AA financial commercial paper|6||2026-10-05|65|false
+row|fed-board:fed_h15|rate|67|RIFSPPFAAD30_N.B:discount:1M:act_360:discount:2026-10-20@INS-01JREF00000000000000000025|1|frb: AA financial commercial paper|6||2026-10-20|66|false
+row|fed-board:fed_h15|rate|68|RIFSPPFAAD60_N.B:discount:2M:act_360:discount:2026-09-22@INS-01JREF00000000000000000025|1|frb: AA financial commercial paper|6||2026-09-22|67|false
+row|fed-board:fed_h15|rate|69|RIFSPPFAAD60_N.B:discount:2M:act_360:discount:2026-09-25@INS-01JREF00000000000000000025|1|frb: AA financial commercial paper|6||2026-09-25|68|false
 row|fed-board:fed_h15|rate|6|RIFSPFF_N.B:fixing:-:act_360:simple:2026-09-28@INS-01JREF00000000000000000002|1|nyfed: EFFR|1||2026-09-28|5|false
-row|fed-board:fed_h15|rate|70|RIFLGFCM06_N.B:par_yield:6M:act_act:compounded/2:2026-09-24@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-24|69|false
-row|fed-board:fed_h15|rate|71|RIFLGFCM06_N.B:par_yield:6M:act_act:compounded/2:2026-09-25@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-25|70|false
-row|fed-board:fed_h15|rate|72|RIFLGFCM06_N.B:par_yield:6M:act_act:compounded/2:2026-09-28@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-28|71|false
-row|fed-board:fed_h15|rate|73|RIFLGFCM06_N.B:par_yield:6M:act_act:compounded/2:2026-09-29@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-29|72|false
-row|fed-board:fed_h15|rate|74|RIFLGFCM06_N.B:par_yield:6M:act_act:compounded/2:2026-09-30@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-30|73|false
-row|fed-board:fed_h15|rate|75|RIFLGFCM06_N.B:par_yield:6M:act_act:compounded/2:2026-10-01@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-01|74|false
-row|fed-board:fed_h15|rate|76|RIFLGFCM06_N.B:par_yield:6M:act_act:compounded/2:2026-10-02@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-02|75|false
-row|fed-board:fed_h15|rate|77|RIFLGFCM06_N.B:par_yield:6M:act_act:compounded/2:2026-10-05@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-05|76|false
-row|fed-board:fed_h15|rate|78|RIFLGFCM06_N.B:par_yield:6M:act_act:compounded/2:2026-10-06@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-06|77|false
-row|fed-board:fed_h15|rate|79|RIFLGFCM06_N.B:par_yield:6M:act_act:compounded/2:2026-10-07@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-07|78|false
+row|fed-board:fed_h15|rate|70|RIFSPPFAAD60_N.B:discount:2M:act_360:discount:2026-09-28@INS-01JREF00000000000000000025|1|frb: AA financial commercial paper|6||2026-09-28|69|false
+row|fed-board:fed_h15|rate|71|RIFSPPFAAD60_N.B:discount:2M:act_360:discount:2026-09-29@INS-01JREF00000000000000000025|1|frb: AA financial commercial paper|6||2026-09-29|70|false
+row|fed-board:fed_h15|rate|72|RIFSPPFAAD60_N.B:discount:2M:act_360:discount:2026-10-05@INS-01JREF00000000000000000025|1|frb: AA financial commercial paper|6||2026-10-05|71|false
+row|fed-board:fed_h15|rate|73|RIFSPPFAAD60_N.B:discount:2M:act_360:discount:2026-10-06@INS-01JREF00000000000000000025|1|frb: AA financial commercial paper|6||2026-10-06|72|false
+row|fed-board:fed_h15|rate|74|RIFSPPFAAD60_N.B:discount:2M:act_360:discount:2026-10-15@INS-01JREF00000000000000000025|1|frb: AA financial commercial paper|6||2026-10-15|73|false
+row|fed-board:fed_h15|rate|75|RIFSPPFAAD60_N.B:discount:2M:act_360:discount:2026-10-16@INS-01JREF00000000000000000025|1|frb: AA financial commercial paper|6||2026-10-16|74|false
+row|fed-board:fed_h15|rate|76|RIFSPPFAAD60_N.B:discount:2M:act_360:discount:2026-10-20@INS-01JREF00000000000000000025|1|frb: AA financial commercial paper|6||2026-10-20|75|false
+row|fed-board:fed_h15|rate|77|RIFSPPFAAD60_N.B:discount:2M:act_360:discount:2026-10-21@INS-01JREF00000000000000000025|1|frb: AA financial commercial paper|6||2026-10-21|76|false
+row|fed-board:fed_h15|rate|78|RIFSPPFAAD90_N.B:discount:3M:act_360:discount:2026-09-21@INS-01JREF00000000000000000025|1|frb: AA financial commercial paper|6||2026-09-21|77|false
+row|fed-board:fed_h15|rate|79|RIFSPPFAAD90_N.B:discount:3M:act_360:discount:2026-09-24@INS-01JREF00000000000000000025|1|frb: AA financial commercial paper|6||2026-09-24|78|false
 row|fed-board:fed_h15|rate|7|RIFSPFF_N.B:fixing:-:act_360:simple:2026-09-29@INS-01JREF00000000000000000002|1|nyfed: EFFR|1||2026-09-29|6|false
-row|fed-board:fed_h15|rate|80|RIFLGFCM06_N.B:par_yield:6M:act_act:compounded/2:2026-10-08@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-08|79|false
-row|fed-board:fed_h15|rate|81|RIFLGFCM06_N.B:par_yield:6M:act_act:compounded/2:2026-10-09@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-09|80|false
-row|fed-board:fed_h15|rate|82|RIFLGFCM06_N.B:par_yield:6M:act_act:compounded/2:2026-10-13@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-13|81|false
-row|fed-board:fed_h15|rate|83|RIFLGFCM06_N.B:par_yield:6M:act_act:compounded/2:2026-10-14@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-14|82|false
-row|fed-board:fed_h15|rate|84|RIFLGFCM06_N.B:par_yield:6M:act_act:compounded/2:2026-10-15@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-15|83|false
-row|fed-board:fed_h15|rate|85|RIFLGFCM06_N.B:par_yield:6M:act_act:compounded/2:2026-10-16@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-16|84|false
-row|fed-board:fed_h15|rate|86|RIFLGFCM06_N.B:par_yield:6M:act_act:compounded/2:2026-10-19@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-19|85|false
-row|fed-board:fed_h15|rate|87|RIFLGFCM06_N.B:par_yield:6M:act_act:compounded/2:2026-10-20@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-20|86|false
-row|fed-board:fed_h15|rate|88|RIFLGFCM06_N.B:par_yield:6M:act_act:compounded/2:2026-10-21@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-21|87|false
-row|fed-board:fed_h15|rate|89|RIFLGFCY01_N.B:par_yield:1Y:act_act:compounded/2:2026-09-21@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-21|88|false
+row|fed-board:fed_h15|rate|80|RIFSPPFAAD90_N.B:discount:3M:act_360:discount:2026-09-28@INS-01JREF00000000000000000025|1|frb: AA financial commercial paper|6||2026-09-28|79|false
+row|fed-board:fed_h15|rate|81|RIFSPPFAAD90_N.B:discount:3M:act_360:discount:2026-09-29@INS-01JREF00000000000000000025|1|frb: AA financial commercial paper|6||2026-09-29|80|false
+row|fed-board:fed_h15|rate|82|RIFSPPFAAD90_N.B:discount:3M:act_360:discount:2026-10-01@INS-01JREF00000000000000000025|1|frb: AA financial commercial paper|6||2026-10-01|81|false
+row|fed-board:fed_h15|rate|83|RIFSPPFAAD90_N.B:discount:3M:act_360:discount:2026-10-05@INS-01JREF00000000000000000025|1|frb: AA financial commercial paper|6||2026-10-05|82|false
+row|fed-board:fed_h15|rate|84|RIFSPPFAAD90_N.B:discount:3M:act_360:discount:2026-10-06@INS-01JREF00000000000000000025|1|frb: AA financial commercial paper|6||2026-10-06|83|false
+row|fed-board:fed_h15|rate|85|RIFSPPFAAD90_N.B:discount:3M:act_360:discount:2026-10-13@INS-01JREF00000000000000000025|1|frb: AA financial commercial paper|6||2026-10-13|84|false
+row|fed-board:fed_h15|rate|86|RIFSPPFAAD90_N.B:discount:3M:act_360:discount:2026-10-16@INS-01JREF00000000000000000025|1|frb: AA financial commercial paper|6||2026-10-16|85|false
+row|fed-board:fed_h15|rate|87|RIFSPPFAAD90_N.B:discount:3M:act_360:discount:2026-10-20@INS-01JREF00000000000000000025|1|frb: AA financial commercial paper|6||2026-10-20|86|false
+row|fed-board:fed_h15|rate|88|RIFSPBLP_N.B:fixing:-:act_360:simple:2026-09-21@INS-01JREF00000000000000000026|1|frb: Bank prime loan rate|1||2026-09-21|0|false
+row|fed-board:fed_h15|rate|89|RIFSPBLP_N.B:fixing:-:act_360:simple:2026-09-22@INS-01JREF00000000000000000026|1|frb: Bank prime loan rate|1||2026-09-22|88|false
 row|fed-board:fed_h15|rate|8|RIFSPFF_N.B:fixing:-:act_360:simple:2026-09-30@INS-01JREF00000000000000000002|1|nyfed: EFFR|1||2026-09-30|7|false
-row|fed-board:fed_h15|rate|90|RIFLGFCY01_N.B:par_yield:1Y:act_act:compounded/2:2026-09-22@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-22|89|false
-row|fed-board:fed_h15|rate|91|RIFLGFCY01_N.B:par_yield:1Y:act_act:compounded/2:2026-09-23@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-23|90|false
-row|fed-board:fed_h15|rate|92|RIFLGFCY01_N.B:par_yield:1Y:act_act:compounded/2:2026-09-24@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-24|91|false
-row|fed-board:fed_h15|rate|93|RIFLGFCY01_N.B:par_yield:1Y:act_act:compounded/2:2026-09-25@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-25|92|false
-row|fed-board:fed_h15|rate|94|RIFLGFCY01_N.B:par_yield:1Y:act_act:compounded/2:2026-09-28@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-28|93|false
-row|fed-board:fed_h15|rate|95|RIFLGFCY01_N.B:par_yield:1Y:act_act:compounded/2:2026-09-29@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-29|94|false
-row|fed-board:fed_h15|rate|96|RIFLGFCY01_N.B:par_yield:1Y:act_act:compounded/2:2026-09-30@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-09-30|95|false
-row|fed-board:fed_h15|rate|97|RIFLGFCY01_N.B:par_yield:1Y:act_act:compounded/2:2026-10-01@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-01|96|false
-row|fed-board:fed_h15|rate|98|RIFLGFCY01_N.B:par_yield:1Y:act_act:compounded/2:2026-10-02@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-02|97|false
-row|fed-board:fed_h15|rate|99|RIFLGFCY01_N.B:par_yield:1Y:act_act:compounded/2:2026-10-05@INS-01JREF00000000000000000019|1|ustreasury: Daily Treasury Par Yield Curve Rates|4||2026-10-05|98|false
+row|fed-board:fed_h15|rate|90|RIFSPBLP_N.B:fixing:-:act_360:simple:2026-09-23@INS-01JREF00000000000000000026|1|frb: Bank prime loan rate|1||2026-09-23|89|false
+row|fed-board:fed_h15|rate|91|RIFSPBLP_N.B:fixing:-:act_360:simple:2026-09-24@INS-01JREF00000000000000000026|1|frb: Bank prime loan rate|1||2026-09-24|90|false
+row|fed-board:fed_h15|rate|92|RIFSPBLP_N.B:fixing:-:act_360:simple:2026-09-25@INS-01JREF00000000000000000026|1|frb: Bank prime loan rate|1||2026-09-25|91|false
+row|fed-board:fed_h15|rate|93|RIFSPBLP_N.B:fixing:-:act_360:simple:2026-09-28@INS-01JREF00000000000000000026|1|frb: Bank prime loan rate|1||2026-09-28|92|false
+row|fed-board:fed_h15|rate|94|RIFSPBLP_N.B:fixing:-:act_360:simple:2026-09-29@INS-01JREF00000000000000000026|1|frb: Bank prime loan rate|1||2026-09-29|93|false
+row|fed-board:fed_h15|rate|95|RIFSPBLP_N.B:fixing:-:act_360:simple:2026-09-30@INS-01JREF00000000000000000026|1|frb: Bank prime loan rate|1||2026-09-30|94|false
+row|fed-board:fed_h15|rate|96|RIFSPBLP_N.B:fixing:-:act_360:simple:2026-10-01@INS-01JREF00000000000000000026|1|frb: Bank prime loan rate|1||2026-10-01|95|false
+row|fed-board:fed_h15|rate|97|RIFSPBLP_N.B:fixing:-:act_360:simple:2026-10-02@INS-01JREF00000000000000000026|1|frb: Bank prime loan rate|1||2026-10-02|96|false
+row|fed-board:fed_h15|rate|98|RIFSPBLP_N.B:fixing:-:act_360:simple:2026-10-05@INS-01JREF00000000000000000026|1|frb: Bank prime loan rate|1||2026-10-05|97|false
+row|fed-board:fed_h15|rate|99|RIFSPBLP_N.B:fixing:-:act_360:simple:2026-10-06@INS-01JREF00000000000000000026|1|frb: Bank prime loan rate|1||2026-10-06|98|false
 row|fed-board:fed_h15|rate|9|RIFSPFF_N.B:fixing:-:act_360:simple:2026-10-01@INS-01JREF00000000000000000002|1|nyfed: EFFR|1||2026-10-01|8|false
 row|fed-board:fed_zero|rate|100|SVENY10:zero:10Y:act_365_fixed:continuous:2026-09-21@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-21|99|false
 row|fed-board:fed_zero|rate|101|SVENY11:zero:11Y:act_365_fixed:continuous:2026-09-21@INS-01JREF00000000000000000022|1|frb: feds200628|5||2026-09-21|100|false
