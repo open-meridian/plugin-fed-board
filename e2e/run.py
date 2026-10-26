@@ -15,11 +15,10 @@ standard library only.
    each referential record by its administrator's code (a symbol scoped to
    nyfed, ustreasury or frb) to the platform's `INS-` record, and records
    their last month: the federal funds rate, Treasury's two par curves and
-   the zero curve. The harness at a5da59a holds the platform's 22 records
-   seeded before ruling 541, so H.15's six own records (the bills, the two
-   commercial papers, prime, primary credit, the long-term average) are
-   reported missing and their rows wait: the platform holds them (seeded
-   2026-10-23), and core's next harness carries them.
+   the zero curve. From core v28's harness (8def82a) H.15's six own records
+   (the bills, the two commercial papers, prime, primary credit, the
+   long-term average; seeded on the platform 2026-10-23, ruling 541) are
+   held too, so every record resolves and none is reported missing.
 3. Parity: through the deployment's MCP, `read_connection` and
    `read_datasets` answer what the pages show, under the data role's names
    (contract v20) -- the release, its days, its
@@ -44,16 +43,14 @@ standard library only.
    `source_silent`; the franc's own instrument, which H.10 never prices
    (the Board quotes francs per dollar, and nothing inverts it), `not_covered`.
 7. `store lake` is e2e/expected.lake, each subject named by its ISO code or
-   its record's code; its `miss` line, the six records the harness does not
-   hold, is held apart: six a process, once a day each, and the harness
-   restarts the plugin when it rewrites its configuration (`entitle`), so
-   the count is six or a multiple of it.
+   its record's code; with every record held, no miss is counted.
 8. A new container: it reads the release again and records nothing twice;
    the lake is unchanged.
 """
 
 import json
 import os
+import re
 import subprocess
 import sys
 import time
@@ -71,11 +68,11 @@ H15 = "fed-board:fed_h15"
 ZERO = "fed-board:fed_zero"
 PAR = "ustreasury: Daily Treasury Par Yield Curve Rates"
 REAL = "ustreasury: Daily Treasury Par Real Yield Curve Rates"
-#: The records the harness at a5da59a holds, as Datasets' Records names them.
-HELD = ("nyfed: EFFR", PAR, REAL, "frb: feds200628")
-#: H.15's own records, seeded on the platform 2026-10-23 (ruling 541), which
-#: core's next harness carries.
-NOT_IN_HARNESS = (
+#: The records the harness at 8def82a holds, as Datasets' Records names them:
+#: from core v28 H.15's own six too (seeded on the platform 2026-10-23,
+#: ruling 541).
+HELD = (
+    "nyfed: EFFR", PAR, REAL, "frb: feds200628",
     "frb: Treasury bills secondary market",
     "frb: AA nonfinancial commercial paper",
     "frb: AA financial commercial paper",
@@ -252,8 +249,6 @@ def run():
     held = {name: r["instrument_id"] for name, r in records.items() if r["instrument_id"]}
     must(sorted(held) == sorted(HELD) and all(i.startswith("INS-") for i in held.values()),
          f"step 3, each record the harness holds resolves to its INS- record: {records}")
-    must(all("reported missing" in records[name]["why_none"] for name in NOT_IN_HARNESS),
-         f"step 3, H.15's six own records, not in this harness, reported missing: {records}")
     shown = page("fed-board", "admin", "/datasets?tab=records")
     must(all(i in shown for i in held.values()), "step 3, Records shows what read_datasets answers")
     for instrument, name in ((i, n) for n, i in held.items()):
@@ -317,8 +312,7 @@ def run():
     # 7. The lake.
     lines = store_lake()
     count = misses(lines)
-    must(count >= 6 and count % 6 == 0,
-         f"step 7, the six records the harness does not hold reported missing, once a process: {count}")
+    must(count == 0, f"step 7, every record held, none reported missing: {count}")
     got = named(lines, codes)
     with open(".e2e/lake", "w", encoding="utf-8") as kept:
         kept.write(got)
@@ -338,7 +332,7 @@ def run():
     must(again == got, "step 8, the new container recorded something twice:\n"
          + subprocess.run(["diff", "-u", "-", ".e2e/lake"], input=again, capture_output=True, text=True).stdout[-2000:])
     logs = compose("logs", "--no-color", "fed-board").stdout
-    must("0 rates recorded, 0 restated, 115 unchanged" in logs,
+    must(re.search(r"0 rates recorded, 0 restated, [1-9][0-9]* unchanged", logs) is not None,
          "step 8, the new container's check was answered unchanged: " + logs[-800:])
     until(90, lambda: all(s["licensed"] for s in call(read_datasets)["served"]),
           "step 8, the new container never read its dataset's licence")
@@ -346,9 +340,8 @@ def run():
     rows = got.count("row|")
     print(f"e2e OK in {int(time.time() - started)}s on the plugin harness: the Board unreachable said on "
           f"Connection, nothing recorded; sample data's release of 5 October 2026 recorded, 24 currencies "
-          f"resolved; H.15's and the zero curve's files read, four records resolved and read back "
-          f"(EFFR 3.88, the par curve's 10-year 5.13, the real curve, the zero curve's 30 points), "
-          f"six not in this harness reported missing; "
+          f"resolved; H.15's and the zero curve's files read, ten records resolved, four read back "
+          f"(EFFR 3.88, the par curve's 10-year 5.13, the real curve, the zero curve's 30 points); "
           f"read_connection and read_datasets answering what the pages show, and core listing "
           f"its three datasets as declared; licensed and entitled; the dollar priced in 19 currencies (francs 0.8293) "
           f"and the euro in dollars (1.1259), each a close on its business date with the Board's published "
