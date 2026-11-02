@@ -129,24 +129,24 @@ def latest_day(key: str, body: bytes) -> date | None:
 
 class Rates:
     """The plugin's rates: its two files read, resolved, recorded, its
-    wants answered. `plugin` is the connected `meridian.Plugin`, or the
-    suite's `Recorder` in its tests."""
+    wants answered. `role` is the data role's class (`__main__`'s `Lake`,
+    open-meridian 0.35), or the suite's `Recorder` in its tests."""
 
     def __init__(
         self,
-        plugin: Any,
+        role: Any,
         board: Board,
         raw: RawStore,
         wants: data.Wants,
         now: Callable[[], datetime] = utc_now,
     ) -> None:
-        self.plugin = plugin
+        self.role = role
         self.board = board
         self.raw = raw
         self.wants = wants
         self.now = now
         self.feed = rates.Feed(
-            plugin, SOURCE, wants=wants, day_zone=RATES_ZONE, clock_ns=lambda: _ns(self.now())
+            role, SOURCE, wants=wants, day_zone=RATES_ZONE, clock_ns=lambda: _ns(self.now())
         )
         self.sources = {key: Source(key) for key in FILES}
         for key, source in self.sources.items():

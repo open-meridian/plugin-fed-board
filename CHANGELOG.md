@@ -1,5 +1,34 @@
 # Changelog
 
+## 1.2.0
+
+On open-meridian 0.35.1, contract v29 (rulings 1001 to 1005 and 1009 to 1023:
+each role one class), on core v29's harness.
+
+- **Each role one class:** `__main__`'s `Lake` is the data role's class
+  (`meridian.roles.data.Role`): H.10's work (`Feed`) and the rates'
+  (`Rates`) beside each other, each making its acts through it (their
+  `role`, which was the connection), and the SDK's `Wants`, `rates.Feed` and
+  `Latency` given it (ruling 1023). It hears each want and hands it to the
+  dataset's work, and is registered with `meridian.run`, which delivers the
+  settings to `on_settings` before anything is heard, serves the pages and
+  sets the figures; its hourly read, H.10's backfill, tending, the licences'
+  read and the feed delay's report are its `run`, started again after a
+  backoff should it fail. The hand-wired tasks, the `receive` closures and
+  signal handling are gone.
+- **The settings are declared untyped** (`DECLARED.declared()`), so the
+  storage kind's window settings reach `on_settings` beside them, which
+  0.35.1's typed delivery leaves out; to be dropped with SDK 0.35.2.
+- **The suite's v29 cases:** a derived series and a pool's factor not
+  presented, with why; its wants heard through `Lake` on the recorder.
+- **Tests and preview:** the role class bound to the suite's `Recorder`
+  (`recorder.bind`), what it hears handed by `recorder.hear`.
+- **e2e:** the reader a role class run with `meridian.run_async`.
+- **The pins:** open-meridian 0.35.1 and plugin-python:0.35.1 by tag and
+  digest (`meridian plugin migrate --to 0.35.1`); core v29's runtime and
+  harness at `1ae36f0` (chart 0.1.339) by digest; `meridian` 0.1.56 in
+  check.yaml (was 0.1.52).
+
 ## 1.1.1
 
 SDK 0.33.4: raw-record writes and enum conversion fixes (ruling 937).

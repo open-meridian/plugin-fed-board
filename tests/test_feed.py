@@ -20,7 +20,7 @@ async def test_a_release_pushed_whole(tmp_path: Path) -> None:
     work = feed(tmp_path)
     done = await work.check()
     assert done is not None and done.recorded == 115
-    recorder = work.plugin
+    recorder = work.role
     assert isinstance(recorder, Recorder)
     batches = recorder.on("RecordPrices")
     assert len(batches) == 1 and not batches[0].want_id
@@ -38,7 +38,7 @@ async def test_a_release_read_again_is_not_sent_again(tmp_path: Path) -> None:
     work = feed(tmp_path)
     await work.check()
     assert await work.check() is None
-    assert len(work.plugin.on("RecordPrices")) == 1
+    assert len(work.role.on("RecordPrices")) == 1
 
 
 async def test_a_release_read_again_names_the_response_first_read(tmp_path: Path) -> None:
@@ -47,7 +47,7 @@ async def test_a_release_read_again_names_the_response_first_read(tmp_path: Path
     # A restart: a new process, the same storage, the same release read again.
     again = feed(tmp_path, at=AT + timedelta(hours=1))
     await again.check()
-    keys = [{p.meta.raw.key for p in w.plugin.on("RecordPrices")[0].prices} for w in (first, again)]
+    keys = [{p.meta.raw.key for p in w.role.on("RecordPrices")[0].prices} for w in (first, again)]
     assert keys[0] == keys[1] and len(keys[0]) == 1
     assert again.status.release_key != first.status.release_key
     assert len(again.raw.keys()) == 2
@@ -82,7 +82,7 @@ async def test_a_past_week_wanted_is_recorded_against_the_want(tmp_path: Path) -
     await work.check()
     usd = work.status.currencies["USD"].instrument_id
     await work.on_want(want("w-1", [usd], day="2026-09-25"))
-    batch = work.plugin.on("RecordPrices")[-1]
+    batch = work.role.on("RecordPrices")[-1]
     assert batch.want_id == "w-1"
     assert {p.meta.business_date for p in batch.prices} == {"2026-09-25"}
     assert {p.meta.subjects[0].entity_id for p in batch.prices} == {usd}
@@ -96,10 +96,10 @@ async def test_a_currency_quoted_per_dollar_is_declined_not_covered(tmp_path: Pa
     chf = work.status.currencies["CHF"].instrument_id
     eur = work.status.currencies["EUR"].instrument_id
     await work.on_want(want("w-2", [chf, eur, "LCL-elsewhere"], day="2026-10-02"))
-    [declined] = work.plugin.on("DeclineWant")
+    [declined] = work.role.on("DeclineWant")
     assert declined.reason == ops.UNANSWERED_REASON_NOT_COVERED
     assert [s.entity_id for s in declined.subjects] == [chf, "LCL-elsewhere"]
-    batch = work.plugin.on("RecordPrices")[-1]
+    batch = work.role.on("RecordPrices")[-1]
     assert batch.want_id == "w-2" and [p.meta.row_key for p in batch.prices] == ["EUR:2026-10-02"]
 
 
@@ -108,7 +108,7 @@ async def test_a_week_not_published_yet_is_declined_silent(tmp_path: Path) -> No
     await work.check()
     usd = work.status.currencies["USD"].instrument_id
     await work.on_want(want("w-3", [usd], day="2026-10-08"))
-    [declined] = work.plugin.on("DeclineWant")
+    [declined] = work.role.on("DeclineWant")
     assert declined.reason == ops.UNANSWERED_REASON_SOURCE_SILENT
 
 
@@ -117,7 +117,7 @@ async def test_a_day_past_the_history_is_declined(tmp_path: Path) -> None:
     await work.check()
     usd = work.status.currencies["USD"].instrument_id
     await work.on_want(want("w-4", [usd], day="2001-01-08"))
-    [declined] = work.plugin.on("DeclineWant")
+    [declined] = work.role.on("DeclineWant")
     assert declined.reason == ops.UNANSWERED_REASON_BEYOND_HISTORY
 
 
@@ -127,14 +127,14 @@ async def test_a_kind_or_a_type_not_served_is_declined(tmp_path: Path) -> None:
     usd = work.status.currencies["USD"].instrument_id
     await work.on_want(want("w-5", [usd], day="2026-10-02", kinds=(ops.PRICE_KIND_NAV,)))
     await work.on_want(want("w-6", [usd], day="2026-10-02", data_type="meridian.v1.Bar"))
-    reasons = [d.reason for d in work.plugin.on("DeclineWant")]
+    reasons = [d.reason for d in work.role.on("DeclineWant")]
     assert reasons == [ops.UNANSWERED_REASON_NOT_COVERED] * 2
 
 
 async def test_another_dataset_is_not_this_plugins(tmp_path: Path) -> None:
     work = feed(tmp_path)
     await work.on_want(want("w-7", ["LCL-1"], dataset="other:daily"))
-    assert not work.plugin.on("DeclineWant") and not work.status.wants
+    assert not work.role.on("DeclineWant") and not work.status.wants
 
 
 async def test_a_standing_want_is_kept_until_withdrawn(tmp_path: Path) -> None:
@@ -167,7 +167,7 @@ async def test_the_board_unreachable_is_said(tmp_path: Path) -> None:
     work.board = Offline()
     assert await work.check() is None
     assert "ConnectionRefusedError" in work.status.error
-    assert not work.plugin.on("RecordPrices")
+    assert not work.role.on("RecordPrices")
 
 
 def test_the_release_holding_a_day() -> None:
@@ -233,7 +233,7 @@ def test_the_first_run_backfills_dailys_history(
 
     monkeypatch.setattr(feed_module, "HISTORY", 21)
     work = feed(tmp_path)
-    recorder = work.plugin
+    recorder = work.role
     assert isinstance(recorder, Recorder)
     asyncio.run(work.check())
     before = len(recorder.on("RecordPrices"))

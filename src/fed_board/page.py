@@ -202,7 +202,7 @@ def connection_read(
         window = "in the storage the deployment grants, as its responses settings say"
     elif feed is not None:
         window = "in a directory of the plugin's own: this deployment grants no storage"
-    instance = feed.plugin.identity.instance_id if feed is not None else "fed-board"
+    instance = feed.role.plugin.identity.instance_id if feed is not None else "fed-board"
     lines = sources(status, rates, instance)
     errors = [line.last_error for line in lines if line.last_error]
     return records.ConnectionRead(
@@ -363,7 +363,7 @@ def records_of(rates: Rates | None, instance: str) -> list[records.RecordRead]:
 def datasets_read(
     status: Status, feed: Feed | None, rates: Rates | None = None
 ) -> records.DatasetsRead:
-    instance = feed.plugin.identity.instance_id if feed is not None else "fed-board"
+    instance = feed.role.plugin.identity.instance_id if feed is not None else "fed-board"
     entry = DAILY_DATASET
     dataset = f"{instance}:{entry.key}"
     currencies = sorted(status.currencies.values(), key=lambda c: (c.code != USD, c.code))

@@ -81,6 +81,9 @@ NEVER = {
     "holdings": "the Board publishes rates: no holdings report",
     "corporate actions": "the Board publishes rates: no declared dividend",
     "ratings": "the Board publishes rates: no rating",
+    # Contract v29 (SDK 0.34.0, 0.35.0).
+    "derived series": "the Board's rates are recorded as published: no series derived from them",
+    "factors": "the Board publishes rates: no pool, so no pool's factor",
 }
 
 #: The rates cases the Board's datasets never present, with why.
@@ -192,6 +195,13 @@ def producers(tmp: Path) -> dict[str, Callable[[Recorder], Awaitable[None]]]:
     def work(recorder: Recorder, board: Any = None) -> Feed:
         return Feed(recorder, board or SyntheticBoard(lambda: AT), RawStore(tmp), now=lambda: AT)
 
+    def lake_on(recorder: Recorder) -> Any:
+        # The data role's class, bound to the recorder (open-meridian 0.35),
+        # each want handed to the dataset's work as the plugin's is.
+        from fed_board.__main__ import Lake
+
+        return recorder.bind(Lake(SyntheticBoard(lambda: AT), RawStore(tmp), now=lambda: AT))
+
     async def a_release_read(recorder: Recorder) -> None:
         _resolving(recorder)
         await work(recorder).check()
@@ -211,9 +221,9 @@ def producers(tmp: Path) -> dict[str, Callable[[Recorder], Awaitable[None]]]:
     def wanted(message: Any) -> Callable[[Recorder], Awaitable[None]]:
         async def produce(recorder: Recorder) -> None:
             _resolving(recorder)
-            feed = work(recorder)
+            lake = lake_on(recorder)
             recorder.answer("ObservationsWanted", lambda _: message)
-            await recorder.receive(observations_wanted=feed.on_want)
+            await recorder.hear(lake)
 
         return produce
 
@@ -231,12 +241,12 @@ def producers(tmp: Path) -> dict[str, Callable[[Recorder], Awaitable[None]]]:
 
     async def withdrawn(recorder: Recorder) -> None:
         _resolving(recorder)
-        feed = work(recorder)
+        lake = lake_on(recorder)
         recorder.answer(
             "WantWithdrawn",
             lambda _: ops.WantWithdrawnEvent(want_id="w-standing", dataset=DATASET),
         )
-        await recorder.receive(want_withdrawn=feed.on_withdrawn)
+        await recorder.hear(lake)
 
     stores = iter(range(1000))
 

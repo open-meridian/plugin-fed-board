@@ -1,7 +1,7 @@
 # meridian-fed-board
 
 The Federal Reserve Board as an Open Meridian data plugin, titled "Federal
-Reserve Board", in Python on the open-meridian SDK (0.33.1, contract v28):
+Reserve Board", in Python on the open-meridian SDK (0.35.1, contract v29):
 `plugin-fed-h10` renamed (rulings 348, 349 and 504). It runs beside a
 sidecar in a Meridian deployment and puts each week's H.10 noon buying rates
 into the deployment's lake, each rate the price of one currency's cash
@@ -44,6 +44,13 @@ and `spec/a-public-rates-and-filings-data-plugin.md`, `plugin-fed-board`.
   reports what does not resolve (W3.2), records each release in batches of at
   most 500 (W10.4), answers the lake's wants or declines them per subject
   (W10.7), and on the first run backfills H.10's declared history.
+- `src/fed_board/__main__.py`'s `Lake` is the data role's class
+  (open-meridian 0.35: each role one class): `Feed` and `Rates` make their
+  acts through it (their `role`), it hands each want to the dataset's work,
+  and it carries the lifecycle (`on_settings`, and the loops in `run`),
+  registered with `meridian.run`. Tests give `Feed` and `Rates` the suite's
+  `Recorder` as their role, and bind `Lake` to it (`recorder.bind(...)`,
+  `recorder.hear(...)`).
 - `src/fed_board/raw.py` keeps every response as received in the storage the
   deployment grants, and moves months past their window as the SDK's
   settings say.
