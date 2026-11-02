@@ -18,7 +18,7 @@ moves unchanged as its `daily` dataset, backfilled on the first run, and
 H.15 and the zero curve join it from the same publisher. GitHub redirects
 the old repository's address here.
 
-It is built on the SDK it pins, `open-meridian==0.35.1`, which declares
+It is built on the SDK it pins, `open-meridian==0.35.2`, which declares
 contract v29 (its work one class for its role, registered with
 `meridian.run`; from v27 its rates slice: the `Rate` row, recorded through
 `meridian.roles.data.rates`); its work is the lake prices the book
@@ -121,7 +121,7 @@ holdings, dividends and ratings, and contract v29's derived series and
 pools' factors. The feed delay is presented (ruling 518):
 each H.15 and zero-curve rate's age at the edge from its published time.
 
-**open-meridian 0.35.1 is on PyPI** and its base image on ghcr.io: the
+**open-meridian 0.35.2 is on PyPI** and its base image on ghcr.io: the
 runners install the pin from there. Locally the Makefile builds
 both from the sibling meridian-python checkout.
 

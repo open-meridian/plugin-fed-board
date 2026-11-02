@@ -1,7 +1,7 @@
 # meridian-fed-board
 
 The Federal Reserve Board as an Open Meridian data plugin, titled "Federal
-Reserve Board", in Python on the open-meridian SDK (0.35.1, contract v29):
+Reserve Board", in Python on the open-meridian SDK (0.35.2, contract v29):
 `plugin-fed-h10` renamed (rulings 348, 349 and 504). It runs beside a
 sidecar in a Meridian deployment and puts each week's H.10 noon buying rates
 into the deployment's lake, each rate the price of one currency's cash
