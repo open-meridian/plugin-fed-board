@@ -30,6 +30,7 @@ import meridian
 from meridian import Interface, Page, SourceChoice
 from meridian.operations import as_decimal, as_money
 from meridian.plugin.v1 import operations_pb2 as ops
+from meridian.roles import reporting
 from meridian.roles.data import rates
 
 PORT = 8088
@@ -70,9 +71,9 @@ def rate_json(rate):
     }
 
 
-class Reader:
-    def __init__(self, plugin):
-        self.plugin = plugin
+class Reader(reporting.Role):
+    """The stand-in's `reporting` role class (SDK 0.35: each role one class,
+    its acts made through it): it reads what it asks, and hears nothing."""
 
     async def prices(self, query):
         one = lambda name: query.get(name, [""])[0]  # noqa: E731
@@ -83,7 +84,7 @@ class Reader:
             asked["kinds"] = [one("kind")]
         if one("date"):
             asked["business_date"] = one("date")
-        answer = await self.plugin.list_prices(**asked)
+        answer = await self.list_prices(**asked)
         return {
             "prices": [price_json(p) for p in answer.prices],
             "unanswered": [
@@ -95,7 +96,7 @@ class Reader:
 
     async def rates(self, query):
         one = lambda name: query.get(name, [""])[0]  # noqa: E731
-        read = await rates.read_curve(self.plugin, one("subject"), one("date"),
+        read = await rates.read_curve(self, one("subject"), one("date"),
                                       sources=SourceChoice(named=[one("dataset")]))
         return {"rates": [rate_json(r) for r in read]}
 
@@ -105,7 +106,7 @@ class Reader:
         if path == "/rates":
             return await self.rates(query)
         if path == "/datasets":
-            listed = await self.plugin.list_datasets()
+            listed = await self.list_datasets()
             return {"datasets": [d.dataset for d in listed.datasets]}
         return {"page": "the e2e's reader"}
 
@@ -141,17 +142,15 @@ DECLARATION = meridian.Declaration(
 )
 
 
-async def main():
-    plugin = await meridian.connect(
-        # Contract v25: what the stand-in registers is its declaration.
-        declaration=DECLARATION
-    )
-    print(f"reader registered as {plugin.identity.instance_id}", flush=True)
-    threading.Thread(target=serve, args=(Reader(plugin),), daemon=True).start()
-    while True:
-        await asyncio.sleep(3600)
+def main():
+    reader = Reader()
+    threading.Thread(target=serve, args=(reader,), daemon=True).start()
+    # SDK 0.35: its role class registered on one connection, until the
+    # harness stops it. Contract v25: what the stand-in registers is its
+    # declaration.
+    LOOP.run_until_complete(meridian.run_async(declaration=DECLARATION, roles=[reader]))
 
 
 if __name__ == "__main__":
     asyncio.set_event_loop(LOOP)
-    LOOP.run_until_complete(main())
+    main()

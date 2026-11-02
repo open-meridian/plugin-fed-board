@@ -6,17 +6,19 @@ plans/the-lake-prices-the-book, row 7); and from 1.0.0 H.15's selected
 interest rates and the Board's zero curve, as rates
 (spec/a-public-rates-and-filings-data-plugin).
 
-It connects to the sidecar it is launched beside with its catalogue, its
-storage and its one setting (declaration.py), serves its two pages
-(page.py), hears what the lake wants of it, and reads the Board at start and
+It runs its data role class, `Lake` (here: H.10's work and the rates'
+beside each other, each want handed to the dataset's), with `meridian.run`
+on the sidecar it is launched beside, declaring its catalogue, its storage
+and its one setting (declaration.py); `meridian.run` delivers the settings,
+serves its two pages (page.py), hands it what the lake wants of it, and sets
+the data role's figures on each heartbeat. It reads the Board at start and
 every hour: H.10's current release, recording a release it has not recorded
 in this process (feed.py), and H.15's and the zero curve's files, pushing
 their recent days when the Board has changed them (rates_feed.py). On its
 first run it backfills H.10's history (feed.py). What the Board answered is
 kept in the storage the deployment grants (raw.py), and moved past its
 window as the settings say. It reads which of its datasets a deployment
-admin has licensed, on start and every minute, and reports the data role's
-figures on its heartbeat. A restart reads the Board again, and the lake
+admin has licensed, on start and every minute. A restart reads the Board again, and the lake
 answers what it recorded before unchanged; it does not stream, so it has no
 restart's gap to backfill.
 
@@ -30,13 +32,15 @@ from __future__ import annotations
 import asyncio
 import contextlib
 import logging
-import signal
+from collections.abc import Callable
+from datetime import datetime
 from typing import Any
 
 import meridian
+from meridian.plugin.v1 import operations_pb2 as ops
 from meridian.roles import Latency, data
 
-from .board import board
+from .board import Board, board, utc_now
 from .declaration import DECLARATION, PORT
 from .declared import CATALOGUE
 from .feed import Feed
@@ -49,194 +53,161 @@ log = logging.getLogger("fed_board")
 
 #: How often the current release is checked, in seconds: hourly.
 CHECK_SECONDS = 3600
-#: How long before a broken settings stream is asked again, in seconds.
-RETRY_SECONDS = 5
 #: How often storage is tended past its window, in seconds: daily.
 TEND_SECONDS = 86_400
-#: How often the datasets' licences are read again, and the figures set.
+#: How often the datasets' licences are read again.
 LICENCES_SECONDS = 60
 #: How long a backfill the Board stopped answering waits to carry on.
 BACKFILL_RETRY_SECONDS = 3600
 
 
-async def watch_settings(
-    plugin: meridian.Plugin, feed: Feed, rates: Rates, held: list[Config], wake: asyncio.Event
-) -> None:
-    """Apply each delivery of the settings: sample data on or off, and the
-    responses' window, tended at once. A stream that breaks -- the deployment
-    not serving its configuration yet at a first start, or restarting -- is
-    asked again after a pause, and delivers the settings whole."""
-    while True:
-        try:
-            async for delivered in plugin.settings():
-                config = config_from(delivered.values)
-                held[0] = config
-                read = board(config.sample_data)
-                feed.use(read)
-                rates.use(read)
-                wake.set()
-                await feed.raw.tend(plugin, config.window_days, config.past_window, feed.now())
-        except Exception as broken:  # noqa: BLE001 - a broken stream, asked again
-            log.warning("the settings were not delivered (%s); asking again", broken)
-        await asyncio.sleep(RETRY_SECONDS)
-
-
-async def check(feed: Feed, rates: Rates, wake: asyncio.Event, checked: asyncio.Event) -> None:
-    """Read the Board once the settings have come, then hourly, or at once
-    when the settings change: H.10's current release, then H.15's and the
-    zero curve's files."""
-    await wake.wait()
-    while True:
-        wake.clear()
-        try:
-            await feed.check()
-        except meridian.MeridianError as failed:
-            # The sidecar refused something a recording needed; say so and
-            # keep the schedule rather than spin.
-            feed.status.error = f"the deployment refused a recording: {failed}"
-            log.warning("this check stopped: %s", failed)
-        try:
-            await rates.check()
-        except meridian.MeridianError as failed:
-            for source in rates.sources.values():
-                source.error = f"the deployment refused a recording: {failed}"
-            log.warning("this check of the rates stopped: %s", failed)
-        checked.set()
-        with contextlib.suppress(TimeoutError):
-            await asyncio.wait_for(wake.wait(), timeout=CHECK_SECONDS)
-
-
-async def backfill(feed: Feed, checked: asyncio.Event) -> None:
-    """H.10's history, once, on the Board's own site: after a check has read
-    the current release, carried on an hour later where the Board stopped
-    answering, until it is done."""
-    while not feed.status.backfill_done:
-        await checked.wait()
-        checked.clear()
-        if feed.board.mode != "live" or feed.status.release is None:
-            continue
-        try:
-            await feed.backfill()
-        except meridian.MeridianError as failed:
-            log.warning("the backfill stopped: %s", failed)
-        if not feed.status.backfill_done:
-            await asyncio.sleep(BACKFILL_RETRY_SECONDS)
-
-
-async def tend(plugin: meridian.Plugin, feed: Feed, held: list[Config]) -> None:
-    while True:
-        await asyncio.sleep(TEND_SECONDS)
-        config = held[0]
-        await feed.raw.tend(plugin, config.window_days, config.past_window, feed.now())
-
-
-async def read_licences(plugin: Any, feed: Feed, rates: Rates | None = None) -> None:
+async def read_licences(role: Any, feed: Feed, rates: Rates | None = None) -> None:
     """Which of its own declared datasets a deployment admin has licensed
-    (contract v20, W10.9), for the Datasets page: a dataset with none is
-    served by its catalogue's default terms until one is set."""
-    answered = await plugin.list_datasets()
+    (contract v20, W10.9), read through the data role's class (`role`), for
+    the Datasets page: a dataset with none is served by its catalogue's
+    default terms until one is set."""
+    answered = await role.list_datasets()
     licensed = frozenset(licence.dataset for licence in answered.licences)
     feed.status.licensed = licensed
     if rates is not None:
         rates.wants.licensed = licensed
 
 
-async def licences(plugin: meridian.Plugin, feed: Feed, rates: Rates) -> None:
-    """The licences, read on start and every minute; and the data role's
-    figures, set for the next heartbeat."""
-    while True:
-        try:
-            await read_licences(plugin, feed, rates)
-        except meridian.MeridianError as failed:
-            log.warning("the datasets' licences were not read this time: %s", failed)
-        plugin.figures = figures(feed.status, feed, rates)
-        await asyncio.sleep(LICENCES_SECONDS)
+class Lake(data.Role):
+    """The data role's class (open-meridian 0.35, rulings 1004, 1005, 1009
+    to 1023): H.10's work (`Feed`) and the rates' (`Rates`) beside each
+    other, each making its acts through it. `meridian.run` delivers each
+    settings to `on_settings` -- the first before anything is heard --
+    hands it each want, which goes to the dataset's work, and starts `run`,
+    again after a backoff should it fail."""
 
-
-def wanted(feed: Feed, rates: Rates) -> Any:
-    """What the lake wants, each want to the dataset it names: H.10's to the
-    feed, H.15's and the zero curve's to the rates."""
-
-    async def hear(heard: meridian.Heard[Any]) -> None:
-        if rates.wants.key_of(heard.message.dataset) in rates.sources:
-            await rates.wants.hear(heard, rates.answer)
-        else:
-            await feed.on_want(heard)
-
-    return hear
-
-
-def withdrawn(feed: Feed, rates: Rates) -> Any:
-    async def hear(heard: meridian.Heard[Any]) -> None:
-        if rates.wants.withdraw(heard.message.want_id) is None:
-            await feed.on_withdrawn(heard)
-
-    return hear
-
-
-def _said(task: asyncio.Task[None]) -> None:
-    """A task that ended on an error says so, rather than ending unseen."""
-    if not task.cancelled() and task.exception() is not None:
-        log.error("%s stopped", task.get_name(), exc_info=task.exception())
-
-
-async def run() -> None:
-    stopped = asyncio.Event()
-    loop = asyncio.get_running_loop()
-    for stop in (signal.SIGTERM, signal.SIGINT):
-        loop.add_signal_handler(stop, stopped.set)
-
-    # The version's whole declaration (declaration.py): its settings, its
-    # pages with the levels each serves and their tools, and its documentation.
-    # A version registers exactly what it was uploaded with (contract v25).
-    async with await meridian.connect(declaration=DECLARATION) as plugin:
-        log.info("registered as %s, roles %s", plugin.identity.instance_id, plugin.identity.roles)
-        raw = RawStore()
-        feed = Feed(plugin, board(False), raw)
-        wants = data.Wants(plugin, keys=tuple(entry.key for entry in CATALOGUE))
+    def __init__(self, read: Board, raw: RawStore, now: Callable[[], datetime] = utc_now) -> None:
+        self.feed = Feed(self, read, raw, now=now)
+        self.wants = data.Wants(self, keys=tuple(entry.key for entry in CATALOGUE))
         # Contract v28 (ruling 518): each H.15 and zero-curve rate recorded
         # unasked or for a standing want has its age at the edge recorded from
         # its published time, reported every 10 seconds.
-        latency = Latency(plugin)
-        wants.latency = latency
-        rates = Rates(plugin, board(False), raw, wants)
-        hold(feed, rates)
-        held = [Config()]
-        wake = asyncio.Event()
-        checked = asyncio.Event()
-        server = pages.serve(plugin, PORT)
-        log.info("serving its pages on 127.0.0.1:%d", PORT)
-        tasks = [
-            asyncio.create_task(
-                plugin.receive(
-                    observations_wanted=wanted(feed, rates),
-                    want_withdrawn=withdrawn(feed, rates),
-                )
-            ),
-            asyncio.create_task(watch_settings(plugin, feed, rates, held, wake)),
-            asyncio.create_task(check(feed, rates, wake, checked)),
-            asyncio.create_task(backfill(feed, checked)),
-            asyncio.create_task(tend(plugin, feed, held)),
-            asyncio.create_task(licences(plugin, feed, rates)),
-            asyncio.create_task(latency.run()),
-        ]
-        for task in tasks:
-            task.add_done_callback(_said)
-        await stopped.wait()
-        log.info("stopping")
-        for task in tasks:
-            task.cancel()
-        for task in tasks:
-            with contextlib.suppress(asyncio.CancelledError):
-                await task
-        server.shutdown()
+        self.latency = Latency(self)
+        self.wants.latency = self.latency
+        self.rates = Rates(self, read, raw, self.wants, now=now)
+        self.config = Config()
+        self.wake = asyncio.Event()
+        self.checked = asyncio.Event()
+
+    # ── What the lake wants ─────────────────────────────────────────────
+
+    async def on_observations_wanted(
+        self, heard: meridian.Heard[ops.ObservationsWantedEvent]
+    ) -> None:
+        """Each want to the dataset it names: H.10's to the feed, H.15's and
+        the zero curve's to the rates."""
+        if self.rates.wants.key_of(heard.message.dataset) in self.rates.sources:
+            await self.rates.wants.hear(heard, self.rates.answer)
+        else:
+            await self.feed.on_want(heard)
+
+    async def on_want_withdrawn(self, heard: meridian.Heard[ops.WantWithdrawnEvent]) -> None:
+        if self.rates.wants.withdraw(heard.message.want_id) is None:
+            await self.feed.on_withdrawn(heard)
+
+    # ── Its lifecycle ───────────────────────────────────────────────────
+
+    async def on_settings(self, delivered: Any) -> None:
+        """Apply each delivery of the settings: sample data on or off, and the
+        responses' window, tended at once."""
+        config = config_from(delivered.values)
+        self.config = config
+        read = board(config.sample_data)
+        self.feed.use(read)
+        self.rates.use(read)
+        self.wake.set()
+        feed = self.feed
+        await feed.raw.tend(self.plugin, config.window_days, config.past_window, feed.now())
+
+    async def run(self) -> None:
+        """The Board read, H.10's history backfilled, storage tended, the
+        licences read, and the feed delay reported (contract v28,
+        ReportLatency)."""
+        await asyncio.gather(
+            self._check(), self._backfill(), self._tend(), self._licences(), self.latency.run()
+        )
+
+    async def _check(self) -> None:
+        """Read the Board at once, then hourly, or at once when the settings
+        change: H.10's current release, then H.15's and the zero curve's
+        files."""
+        feed, rates = self.feed, self.rates
+        while True:
+            self.wake.clear()
+            try:
+                await feed.check()
+            except meridian.MeridianError as failed:
+                # The sidecar refused something a recording needed; say so and
+                # keep the schedule rather than spin.
+                feed.status.error = f"the deployment refused a recording: {failed}"
+                log.warning("this check stopped: %s", failed)
+            try:
+                await rates.check()
+            except meridian.MeridianError as failed:
+                for source in rates.sources.values():
+                    source.error = f"the deployment refused a recording: {failed}"
+                log.warning("this check of the rates stopped: %s", failed)
+            self.checked.set()
+            with contextlib.suppress(TimeoutError):
+                await asyncio.wait_for(self.wake.wait(), timeout=CHECK_SECONDS)
+
+    async def _backfill(self) -> None:
+        """H.10's history, once, on the Board's own site: after a check has
+        read the current release, carried on an hour later where the Board
+        stopped answering, until it is done."""
+        feed = self.feed
+        while not feed.status.backfill_done:
+            await self.checked.wait()
+            self.checked.clear()
+            if feed.board.mode != "live" or feed.status.release is None:
+                continue
+            try:
+                await feed.backfill()
+            except meridian.MeridianError as failed:
+                log.warning("the backfill stopped: %s", failed)
+            if not feed.status.backfill_done:
+                await asyncio.sleep(BACKFILL_RETRY_SECONDS)
+
+    async def _tend(self) -> None:
+        feed = self.feed
+        while True:
+            await asyncio.sleep(TEND_SECONDS)
+            config = self.config
+            await feed.raw.tend(self.plugin, config.window_days, config.past_window, feed.now())
+
+    async def _licences(self) -> None:
+        """The licences, read on start and every minute."""
+        while True:
+            try:
+                await read_licences(self, self.feed, self.rates)
+            except meridian.MeridianError as failed:
+                log.warning("the datasets' licences were not read this time: %s", failed)
+            await asyncio.sleep(LICENCES_SECONDS)
 
 
 def main() -> None:
     logging.basicConfig(
         level=logging.INFO, format="%(asctime)s %(levelname)s %(name)s: %(message)s"
     )
-    asyncio.run(run())
+    lake = Lake(board(False), RawStore())
+    hold(lake.feed, lake.rates)
+    # The version's whole declaration (declaration.py): its settings, its
+    # pages with the levels each serves and their tools, and its
+    # documentation. A version registers exactly what it was uploaded with
+    # (contract v25).
+    meridian.run(
+        declaration=DECLARATION,
+        roles=[lake],
+        pages=pages,
+        port=PORT,
+        on_settings=lake.on_settings,
+        figures=lambda: figures(lake.feed.status, lake.feed, lake.rates),
+    )
 
 
 if __name__ == "__main__":

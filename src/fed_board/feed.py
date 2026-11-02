@@ -162,18 +162,19 @@ class Outcome:
 
 
 class Feed:
-    """The plugin's work, on its typed operations -- `plugin` is the
-    connected `meridian.Plugin`, or the suite's `Recorder` in its tests --
-    reading the Board, resolving, recording, answering wants."""
+    """H.10's work, on its typed operations -- `role` is the data role's
+    class (`__main__`'s `Lake`, open-meridian 0.35), or the suite's
+    `Recorder` in its tests -- reading the Board, resolving, recording,
+    answering wants."""
 
     def __init__(
         self,
-        plugin: Any,
+        role: Any,
         board: Board,
         raw: RawStore,
         now: Callable[[], datetime] = utc_now,
     ) -> None:
-        self.plugin = plugin
+        self.role = role
         self.board = board
         self.raw = raw
         self.now = now
@@ -182,7 +183,7 @@ class Feed:
 
     @property
     def dataset(self) -> str:
-        return f"{self.plugin.identity.instance_id}:{DAILY}"
+        return f"{self.role.plugin.identity.instance_id}:{DAILY}"
 
     def use(self, board: Board) -> None:
         """Read from `board` from now on: sample data turned on or off."""
@@ -237,7 +238,7 @@ class Feed:
             # As of now, said: an as-of left out is the epoch, which no
             # identifier window the deployment keeps from a date covers, and
             # a record was minted beside the currency's (2026-10-10, USD).
-            found = await self.plugin.resolve_identifier(
+            found = await self.role.resolve_identifier(
                 identifiers=[identifier],
                 as_of_ns=_ns(self.now()),
                 stated_asset_class="cash",
@@ -249,7 +250,7 @@ class Feed:
                 continue
             reason = found.miss_reason or ops.MISS_REASON_NOT_FOUND
             held.miss = ops.MissReason.Name(reason).removeprefix("MISS_REASON_").lower()
-            await self.plugin.report_missing_instrument(
+            await self.role.report_missing_instrument(
                 source=SOURCE,
                 asset_class="cash",
                 identifiers=[identifier],
@@ -294,7 +295,7 @@ class Feed:
             release,
             instruments,
             dataset=self.dataset,
-            raw=self.plugin.raw_record(first),
+            raw=self.role.plugin.raw_record(first),
             published_ns=last_modified_ns(fetched.last_modified),
             days=days,
         )
@@ -311,7 +312,7 @@ class Feed:
                 self.status.lags.append(max(0, meta.source_times[0].at_ns - meta.valid_until_ns))
         del self.status.lags[:-2000]
         for start in range(0, len(prices), BATCH):
-            done = await self.plugin.record_prices(
+            done = await self.role.record_prices(
                 prices=prices[start : start + BATCH], want_id=want_id
             )
             outcome = outcome + Outcome(done.recorded, done.restated, done.unchanged)
@@ -426,7 +427,7 @@ class Feed:
     ) -> None:
         if not subjects:
             return
-        await self.plugin.decline_want(
+        await self.role.decline_want(
             want_id=want_id,
             subjects=[meridian.SubjectRef(entity_id=s) for s in subjects],
             reason=reason,
