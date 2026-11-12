@@ -7,7 +7,7 @@ weekly foreign exchange rates, as prices; [H.15](https://www.federalreserve.gov/
 selected interest rates; and the Board's
 [zero curve](https://www.federalreserve.gov/data/nominal-yield-curve.htm)
 (`feds200628`), as rates. It holds the `data` role, a data plugin. This is
-release 1.2.0. How to set it up and use it is in [docs/](docs/README.md);
+release 1.3.0. How to set it up and use it is in [docs/](docs/README.md);
 how a plugin like it is built is documented at
 [open-meridian.dev](https://open-meridian.dev).
 
