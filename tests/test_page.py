@@ -75,7 +75,9 @@ def test_datasets_lists_the_datasets_in_tabs(client: PageClient) -> None:
     assert text.index("<h2>Served</h2>") < text.index("<h2>Wants</h2>")
     for dataset in ("fed-board:daily", "fed-board:fed_h15", "fed-board:fed_zero"):
         assert f"<code>{dataset}</code>" in text
-    assert "kept; public domain" in text and "kept; US government work" in text
+    # Each dataset's terms in words (contract 30, ruling 1032).
+    assert "public domain" in text and "noon buying rates in New York certified" in text
+    assert "staff research product" in text
     assert "Not licensed yet" in text
     assert "Kept current" in text and "2026-09-25" in text
     # Each tab draws its own.

@@ -375,7 +375,7 @@ def datasets_read(
             data="noon buying rates",
             arrives=", ".join(mode_name(m) for m in entry.modes),
             day="New York's, to noon",
-            default_terms="kept; public domain",
+            default_terms=entry.terms_and_pricing,
             entitled_at_vendor="Yes: no key needed" if answered else "Not asked yet",
             recorded=status.recorded,
             declined=status.declined,
@@ -416,7 +416,7 @@ def datasets_read(
                     data=what,
                     arrives=", ".join(mode_name(m) for m in entry.modes),
                     day="New York's, to midnight",
-                    default_terms="kept; US government work",
+                    default_terms=entry.terms_and_pricing,
                     entitled_at_vendor=(
                         "Yes: no key needed"
                         if source.raw_key or status.mode == "synthetic"
@@ -579,13 +579,14 @@ async def connection(request: meridian.Request) -> meridian.Response:
     description=(
         "What this plugin serves the lake, as every data plugin's Datasets answers it: its "
         "three datasets as the catalogue declares them (H.10's weekly noon buying rates, "
-        "daily; H.15's selected interest rates, fed_h15; the zero curve, fed_zero; each US "
-        "government work), whether a deployment admin has licensed each, what it recorded "
-        "and declined; the standing wants it keeps current and the wants it answered. Then "
-        "the Board's own: each currency H.10 publishes, how the Board quotes it and the "
-        "deployment's instrument for it or why there is none; each record the rates are "
-        "recorded against and its instrument or why none; each dataset's lag "
-        "from a day to its publication; and the citation the Board's terms ask for. No rate."
+        "daily; H.15's selected interest rates, fed_h15; the zero curve, fed_zero; each "
+        "with the Board's terms in words), whether a deployment admin has licensed each, "
+        "what it recorded and declined; the standing wants it keeps current and the wants "
+        "it answered. Then the Board's own: each currency H.10 publishes, how the Board "
+        "quotes it and the deployment's instrument for it or why there is none; each record"
+        " the rates are recorded against and its instrument or why none; each dataset's lag"
+        " from a day to its publication; and the citation the Board's terms ask for. No "
+        "rate."
     ),
 )
 async def datasets(request: meridian.Request) -> meridian.Response:
