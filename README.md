@@ -7,7 +7,7 @@ weekly foreign exchange rates, as prices; [H.15](https://www.federalreserve.gov/
 selected interest rates; and the Board's
 [zero curve](https://www.federalreserve.gov/data/nominal-yield-curve.htm)
 (`feds200628`), as rates. It holds the `data` role, a data plugin. This is
-release 1.2.0. How to set it up and use it is in [docs/](docs/README.md);
+release 1.3.0. How to set it up and use it is in [docs/](docs/README.md);
 how a plugin like it is built is documented at
 [open-meridian.dev](https://open-meridian.dev).
 
@@ -18,8 +18,9 @@ moves unchanged as its `daily` dataset, backfilled on the first run, and
 H.15 and the zero curve join it from the same publisher. GitHub redirects
 the old repository's address here.
 
-It is built on the SDK it pins, `open-meridian==0.35.2`, which declares
-contract v29 (its work one class for its role, registered with
+It is built on the SDK it pins, `open-meridian==0.36.0`, which declares
+contract 30 (each dataset's terms in words and how a gap in it is
+recovered; from contract v29 its work one class for its role, registered with
 `meridian.run`; from v27 its rates slice: the `Rate` row, recorded through
 `meridian.roles.data.rates`); its work is the lake prices the book
 (meridian-design `plans/the-lake-prices-the-book.md`, row 7) and the public
@@ -49,10 +50,13 @@ rates plugins (`plans/the-v27-build.md`, B).
   - **`<instance>:fed_zero`**, the zero curve: rates against `frb:
     feds200628`, zero-coupon yields continuously compounded, 1 to 30 years;
     weekly, as the Board updates it in batches; history from June 1961.
-- **US government work**: each dataset's default licence is kept, derived
-  use not restricted, displayed; the Board cited on the Datasets page and in
-  docs/terms.md. The data terms' attribution fields wait for a core that
-  accepts them at registration.
+- **The Board's terms in words** (contract 30, ruling 1032): each dataset
+  describes them (`declared.H10_TERMS`, `H15_TERMS`, `ZERO_TERMS`) --
+  public domain, free, the Board cited as the source, and each release's
+  own nature -- shown on Data sources and the Datasets page, and declares
+  no licence; until a deployment admin sets one, the lake keeps the rows and
+  reads every use right restrictively. A gap in each is asked again of the
+  Board's files (`gap_recovery` `backfill`).
 
 For H.10:
 
@@ -121,7 +125,7 @@ holdings, dividends and ratings, and contract v29's derived series and
 pools' factors. The feed delay is presented (ruling 518):
 each H.15 and zero-curve rate's age at the edge from its published time.
 
-**open-meridian 0.35.2 is on PyPI** and its base image on ghcr.io: the
+**open-meridian 0.36.0 is on PyPI** and its base image on ghcr.io: the
 runners install the pin from there. Locally the Makefile builds
 both from the sibling meridian-python checkout.
 
@@ -132,10 +136,8 @@ Not legal advice; read the Board's own words before relying on them.
 - **Public domain.** The Board's site says its information is in the public
   domain and "may be copied and distributed without permission"
   ([disclaimer](https://www.federalreserve.gov/disclaimer.htm)); it asks
-  that the Board be cited as the source. So the dataset's default licence
-  is kept, with no limit on retention, derived use or display, and not one
-  person's terms (`personal_use` false). A deployment's licence on its Data
-  sources page confirms or replaces it.
+  that the Board be cited as the source. Each dataset says so in words; a
+  deployment's licence on its Data sources page is the one enforced.
 - **Read from the Board itself,** not through FRED, whose API has terms and a
   key of its own.
 - **What the rates are.** Noon buying rates in New York for cable transfers

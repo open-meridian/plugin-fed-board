@@ -25,9 +25,10 @@ Its settings, in the dashboard's Settings form:
 On the deployment's **Data sources** page (deployment admins), for each of
 `<instance>:daily`, `<instance>:fed_h15` and `<instance>:fed_zero`:
 
-1. **License it.** The catalogue's default is US government work: kept, no
-   limit on retention, derived use not restricted, displayed, not one
-   person's terms. Confirm it, or set your own, with a note saying why.
+1. **License it.** Each dataset describes the Board's terms in words (US
+   government work, public domain, the Board cited) and declares no
+   licence. Set yours, with a note saying why; until one is set, the lake
+   keeps the rows and reads every use right restrictively.
 2. **Entitle** each plugin that reads it, such as your reporting or
    analytics plugin.
 3. **Priority**, where another dataset serves the same: H.15's federal funds

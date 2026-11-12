@@ -23,30 +23,31 @@ released, and any past week pulled when the lake wants it:
 - its day New York's, ending at noon (`America/New_York`, 720): the rates
   are noon buying rates, so a rate's date is its business date;
 - no venue: the rates are the New York Fed's certified rates, no venue's;
-- the licence the Board's terms give: public domain, so kept, with no limit
-  on retention, derived use or display, and not one person's terms
-  (`personal_use` false). A deployment's licence confirms or replaces it on
-  the Data sources page; the plugin says nothing of whether a deployment
-  meets anyone's terms.
+- its terms and pricing (contract 30, ruling 1032) the Board's, in plain
+  words (`H10_TERMS`), and no licence declared: public domain, free, the
+  Board cited as the source. A deployment's licence, set on the Data sources
+  page, is the one enforced; the plugin says nothing of whether a deployment
+  meets anyone's terms;
+- a gap asked again (`gap_recovery` `backfill`, W10.14): the Board's files
+  hold every past day.
 
 **`fed_h15`**, H.15's selected interest rates (h15.py): rates, pushed each
 business day when the Board posts the release and pulled for any past day;
 daily; history from July 1954, the federal funds rate's first day; New
 York's day, ending at midnight; no settlement calendar yet (the spec's Q15:
 a US government securities calendar is curated on a miss, and none is
-declared until then); US government work, kept, derived use not
-restricted, display.
+declared until then); the Board's terms in words (`H15_TERMS`); a gap
+asked again (`backfill`).
 
 **`fed_zero`**, the Board's zero curve (zero.py): rates, pushed when the
 Board updates the file and pulled for any past date; weekly, as the spec's
 catalogue has it, since the Board updates it in batches; history from 14
-June 1961; New York's day; no calendar, as `fed_h15`; the same terms.
+June 1961; New York's day; no calendar, as `fed_h15`; the Board's terms in
+words (`ZERO_TERMS`); a gap asked again (`backfill`).
 
 The Board's citation ("Source: Board of Governors of the Federal Reserve
-System") is on the Datasets page and in docs/terms.md. The data terms'
-attribution fields (SDK 0.32.2: `redistribution`, `attribution_required`,
-`attribution_text`, `copyright_class`) are held until a core accepts them at
-registration, and declared in the next version.
+System") is on the Datasets page, in docs/terms.md and in each dataset's
+terms in words.
 
 **Storage:** the Board's responses (raw.py), archivable, ten years by
 default.
@@ -54,7 +55,7 @@ default.
 
 from __future__ import annotations
 
-from meridian import DatasetDeclaration, DatasetLicence
+from meridian import DatasetDeclaration
 from meridian.declaration import RecordKind
 from meridian.plugin.v1 import operations_pb2 as ops
 
@@ -82,14 +83,25 @@ RATES_ZONE = "America/New_York"
 #: What the Board's citation says, on the Datasets page and in docs/terms.md.
 ATTRIBUTION = "Source: Board of Governors of the Federal Reserve System"
 
-#: US government work (spec/a-public-rates-and-filings-data-plugin, section
-#: 7): kept, no limit on retention, derived use not restricted, displayed,
-#: not one person's terms. The data terms' attribution fields (SDK 0.32.2)
-#: wait for a core that accepts them at registration (core v27 refuses a
-#: catalogue carrying them), so the Board's citation is on the Datasets page
-#: and in docs/terms.md.
-GOVERNMENT_WORK = DatasetLicence(
-    kept=True, derived_use=True, derived_use_terms="not_restricted", display=True
+#: The Board's terms, in plain words (contract 30, ruling 1032): its site's
+#: disclaimer, as docs/terms.md summarises it, and each release's own nature.
+BOARD_TERMS = (
+    "The Federal Reserve Board's public Data Download Program: free, no key or account. The "
+    "Board's site states its information is in the public domain and may be copied and "
+    "distributed without permission; it asks to be cited as the source ('Source: Board of "
+    "Governors of the Federal Reserve System')."
+)
+H10_TERMS = BOARD_TERMS + (
+    " H.10's rates are noon buying rates in New York certified by the Federal Reserve Bank of "
+    "New York for customs purposes, released weekly: midday rates, not a market's close."
+)
+H15_TERMS = BOARD_TERMS + (
+    " H.15 reprints series from others: the effective federal funds rate is the New York "
+    "Fed's, and the Treasury yields are the Treasury's."
+)
+ZERO_TERMS = BOARD_TERMS + (
+    " The zero curve is a staff research product, not an official Federal Reserve statistical "
+    "release, and may be revised without notice."
 )
 
 DAILY_DATASET = DatasetDeclaration(
@@ -99,7 +111,8 @@ DAILY_DATASET = DatasetDeclaration(
     modes=["push", "pull"],
     cadence=CADENCE,
     history=HISTORY,
-    licence_default=GOVERNMENT_WORK,
+    terms_and_pricing=H10_TERMS,
+    gap_recovery="backfill",
     day_time_zone=DAY_TIME_ZONE,
     day_end_minute=DAY_END_MINUTE,
 )
@@ -111,7 +124,8 @@ H15_DATASET = DatasetDeclaration(
     modes=["push", "pull"],
     cadence=DAY,
     history=H15_HISTORY,
-    licence_default=GOVERNMENT_WORK,
+    terms_and_pricing=H15_TERMS,
+    gap_recovery="backfill",
     day_time_zone=RATES_ZONE,
 )
 
@@ -122,7 +136,8 @@ ZERO_DATASET = DatasetDeclaration(
     modes=["push", "pull"],
     cadence=CADENCE,
     history=ZERO_HISTORY,
-    licence_default=GOVERNMENT_WORK,
+    terms_and_pricing=ZERO_TERMS,
+    gap_recovery="backfill",
     day_time_zone=RATES_ZONE,
 )
 

@@ -15,8 +15,8 @@ which can change. Not legal advice.
 - The Board's site says its information is public domain and may be copied
   and distributed without permission, and asks to be cited as the source
   ([disclaimer](https://www.federalreserve.gov/disclaimer.htm)). US
-  government work: the datasets declare it kept, derived use not
-  restricted, displayed.
+  government work: each dataset describes these terms in words on Data
+  sources, and declares no licence.
 - H.10's rates are noon buying rates in New York certified by the Federal
   Reserve Bank of New York for customs purposes
   ([about H.10](https://www.federalreserve.gov/releases/h10/about.htm)):
