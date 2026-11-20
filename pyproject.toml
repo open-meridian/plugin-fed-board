@@ -14,7 +14,7 @@ requires-python = ">=3.11"
 # pages and files are read with the standard library: no third-party
 # dependency.
 dependencies = [
-  "open-meridian==0.37.0",
+  "open-meridian==0.37.1",
 ]
 
 [project.urls]
