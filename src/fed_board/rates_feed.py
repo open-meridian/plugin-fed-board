@@ -149,6 +149,14 @@ class Rates:
             role, SOURCE, wants=wants, day_zone=RATES_ZONE, clock_ns=lambda: _ns(self.now())
         )
         self.sources = {key: Source(key) for key in FILES}
+        self._built_on = board.mode
+
+    def read_noted(self) -> None:
+        """What was noted of each file, read from storage once the plugin has
+        registered (`Lake.on_start`; open-meridian 0.37.0), for the board it
+        was built with: one switched to since keeps nothing noted (`use`)."""
+        if self.board.mode != self._built_on:
+            return
         for key, source in self.sources.items():
             noted = self._noted(key)
             source.raw_key = noted.get("raw_key", "")
