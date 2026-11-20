@@ -18,7 +18,7 @@ moves unchanged as its `daily` dataset, backfilled on the first run, and
 H.15 and the zero curve join it from the same publisher. GitHub redirects
 the old repository's address here.
 
-It is built on the SDK it pins, `open-meridian==0.37.0`, which declares
+It is built on the SDK it pins, `open-meridian==0.37.1`, which declares
 contract 30 (each dataset's terms in words and how a gap in it is
 recovered; from contract v29 its work one class for its role, registered with
 `meridian.run`; from v27 its rates slice: the `Rate` row, recorded through
