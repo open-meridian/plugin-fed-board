@@ -124,6 +124,18 @@ class Lake(data.Role):
         feed = self.feed
         await feed.raw.tend(self.plugin, config.window_days, config.past_window, feed.now())
 
+    async def on_start(self) -> None:
+        """Its storage read once registered: on an instance run as shards or
+        with a standby pod, the shard's own folder (open-meridian 0.37.0)."""
+        await super().on_start()
+        self.feed.raw.open()
+        self.rates.read_noted()
+
+    async def on_stop(self) -> None:
+        """Its storage forgotten: registered again, it is read afresh."""
+        self.feed.raw.close()
+        await super().on_stop()
+
     async def run(self) -> None:
         """The Board read, H.10's history backfilled, storage tended, the
         licences read, and the feed delay reported (contract v28,

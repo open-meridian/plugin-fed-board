@@ -220,6 +220,7 @@ def test_a_restart_asks_since_the_copy_kept_and_names_it(tmp_path: Path) -> None
             return await site.get(path, since)
 
     board = rates(tmp_path, again)
+    board.read_noted()  # as the class's on_start reads it, once registered
     board.board = Counting()
     asyncio.run(board.check())
     assert asked == ["Thu, 22 Oct 2026 20:15:14 GMT", "Tue, 20 Oct 2026 19:00:12 GMT"]
