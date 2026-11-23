@@ -7,6 +7,8 @@ on an instance run as shards or with a standby pod the shard's own folder.
 
 SDK 0.37.1: a raw record kept from two threads at once waits instead of being dropped.
 
+The zero curve's file is read a line at a time and each response kept a piece at a time: their memory no longer grows with the file.
+
 ## 1.3.0
 
 On open-meridian 0.36.0, contract 30, on core aae501d's harness (contract v30,

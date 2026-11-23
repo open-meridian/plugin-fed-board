@@ -40,6 +40,7 @@ records in a directory of its own and moves nothing.
 from __future__ import annotations
 
 import base64
+import codecs
 import gzip
 import json
 import logging
@@ -65,6 +66,9 @@ DEFAULT_WINDOW_DAYS = 3650
 MOST_WINDOW_DAYS = 36500
 
 _PAGE = re.compile(r"[^a-z0-9]+")
+#: How much of a response is written at once as it is kept: a multiple of
+#: three bytes, so each piece's base64 joins the next's.
+PIECE = 3 * 64 * 1024
 #: Which response first held each release's rates, at the storage's root.
 FIRSTS = "responses-first.json"
 
@@ -139,10 +143,6 @@ class RawStore:
             "last_modified": fetched.last_modified,
             "received_at": at.isoformat(),
         }
-        try:
-            document["body"] = fetched.body.decode("utf-8")
-        except UnicodeDecodeError:
-            document["body_base64"] = base64.b64encode(fetched.body).decode("ascii")
         target = self.root / key
         # Two responses received in the same microsecond are two records.
         again = 1
@@ -152,7 +152,7 @@ class RawStore:
             target = self.root / key
         target.parent.mkdir(parents=True, exist_ok=True)
         partial = target.with_suffix(".partial")
-        partial.write_bytes(gzip.compress(json.dumps(document).encode(), mtime=0))
+        _write(partial, document, fetched.body)
         partial.replace(target)
         return key
 
@@ -310,6 +310,40 @@ class Firsts:
         partial = self.path.with_suffix(".partial")
         partial.write_text(json.dumps(self.held, sort_keys=True, indent=0))
         partial.replace(self.path)
+
+
+def _is_text(body: bytes) -> bool:
+    """Whether `body` is UTF-8, read a piece at a time."""
+    decoder = codecs.getincrementaldecoder("utf-8")()
+    try:
+        for start in range(0, len(body), PIECE):
+            decoder.decode(body[start : start + PIECE])
+        decoder.decode(b"", final=True)
+    except UnicodeDecodeError:
+        return False
+    return True
+
+
+def _write(target: Path, document: dict[str, Any], body: bytes) -> None:
+    """The record `document` with `body`, as one gzipped JSON file: the body
+    its last field, `body` as text or `body_base64` where it is not UTF-8,
+    written a piece at a time so that keeping a file takes a piece's memory,
+    not several copies of the file."""
+    text = _is_text(body)
+    opening = json.dumps(document)[:-1] + (', "body": "' if text else ', "body_base64": "')
+    with (
+        target.open("wb") as out,
+        gzip.GzipFile(filename="", fileobj=out, mode="wb", mtime=0) as packed,
+    ):
+        packed.write(opening.encode())
+        decoder = codecs.getincrementaldecoder("utf-8")()
+        for start in range(0, len(body), PIECE):
+            piece = body[start : start + PIECE]
+            if text:
+                packed.write(json.dumps(decoder.decode(piece))[1:-1].encode())
+            else:
+                packed.write(base64.b64encode(piece))
+        packed.write(b'"}')
 
 
 def _received(name: str) -> datetime | None:

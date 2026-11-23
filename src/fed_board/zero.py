@@ -23,6 +23,9 @@ are left in the kept file: the fitting is the analytics component's
 
 Every number is kept as the text the Board wrote and made a Decimal from
 it, never a float.
+
+The file is read a line at a time: about 16.7 MB in November 2026 and a row
+longer each business day, it is never held again as text, lines or a table.
 """
 
 from __future__ import annotations
@@ -59,13 +62,17 @@ def points(body: bytes, wanted: Callable[[date], bool] = lambda _: True) -> Iter
     """Each zero-coupon yield the file states on a day `wanted` keeps, by
     date then tenor; a tenor left `NA` is no point. NotTheFile where the
     response has no header naming the zero-coupon columns."""
-    text = body.decode("utf-8", errors="replace")
-    lines = text.splitlines()
-    start = next((n for n, line in enumerate(lines) if line.startswith("Date,")), None)
-    if start is None:
+    # Read a line at a time, never the whole file as text: its memory is a
+    # line's, whatever the file's size (it grows by a row a day).
+    lines = io.TextIOWrapper(io.BytesIO(body), encoding="utf-8", errors="replace", newline="")
+    header: list[str] | None = None
+    for line in lines:
+        if line.startswith("Date,"):
+            header = next(csv.reader([line]))
+            break
+    if header is None:
         raise NotTheFile("the zero curve's CSV has no header line beginning Date,")
-    reader = csv.reader(io.StringIO("\n".join(lines[start:])))
-    header = next(reader)
+    reader = csv.reader(lines)
     at = {name: n for n, name in enumerate(header)}
     missing = [c for c in COLUMNS if c not in at]
     if missing:
