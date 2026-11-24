@@ -9,6 +9,8 @@ SDK 0.37.1: a raw record kept from two threads at once waits instead of being dr
 
 The zero curve's file is read a line at a time and each response kept a piece at a time: their memory no longer grows with the file.
 
+H.15's file and the zero curve's are kept as received beside their records and read from there, beside the event loop: a file answered 304 since it was pushed is not read, and a restart's push or a want no longer holds either file in memory.
+
 ## 1.3.0
 
 On open-meridian 0.36.0, contract 30, on core aae501d's harness (contract v30,

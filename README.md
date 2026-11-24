@@ -82,7 +82,9 @@ For H.10:
 For H.15 and the zero curve, each file is asked for every hour with the
 Last-Modified the Board last answered, so an unchanged one costs nothing;
 a new one has its last month recorded again, a revised value becoming the
-row's next version, each rate naming the file it was first read from.
+row's next version, each rate naming the file it was first read from. The
+latest of each is held as received beside its record and read from there a
+piece at a time, beside the event loop, so neither file is held in memory.
 
 Its pages, under Manage alone, are the data role's, the same on every data
 plugin, and show how it reaches the Board and what it serves, never a rate:

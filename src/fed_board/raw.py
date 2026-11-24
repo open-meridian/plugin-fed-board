@@ -31,7 +31,10 @@ The rates (H.15 and the zero curve) are read from a whole file each day, so
 the same observation is in many files. Each rate names the file it was first
 read from with its value (`Firsts`, `firsts-<dataset>.json` at the storage's
 root), for the days the plugin pushes again; a value the Board revised names
-the file that revised it.
+the file that revised it. Beside its record, the file of each kept last is
+held as received, under `current/` at the storage's root (rates_feed.py),
+read from there a piece at a time; it is not a unit of the kind and never
+moves.
 
 Where no storage is granted -- a test, a preview -- the store keeps its
 records in a directory of its own and moves nothing.
@@ -183,6 +186,12 @@ class RawStore:
         except (OSError, ValueError):
             return {}
         return held
+
+    def holds(self, key: str) -> bool:
+        """Whether storage still holds the response kept under `key`, read
+        from nothing but its name."""
+        path = (self.root / key).resolve()
+        return path.is_relative_to(self.root.resolve()) and path.is_file()
 
     def body(self, key: str) -> bytes | None:
         """A kept response's body as received, or None where storage no
