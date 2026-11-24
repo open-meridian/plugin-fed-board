@@ -15,7 +15,8 @@ Its settings, in the dashboard's Settings form:
   and whether they are then archived, kept or deleted. H.10's pages are
   small; H.15's file (about 4 MB a business day) and the zero curve's
   (about 5 MB each time the Board updates it) come to about 1.4 GB a year.
-  Set the window, or archive past it, to suit the storage you grant.
+  Set the window, or archive past it, to suit the storage you grant. The
+  latest of each is also held as received, about 21 MB.
 - **Sample data**, on a deployment installed for development only: the
   Board's responses recorded on 10 and 23 October 2026, committed with the
   plugin, in place of the site. For trying it offline.

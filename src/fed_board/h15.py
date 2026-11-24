@@ -49,7 +49,7 @@ The FOMC's target range is not in H.15: FRED supplies its bounds (ruling
 
 Every number is kept as the text the Board wrote and made a Decimal from it,
 never a float. The file is about 70 MB unzipped: it is read as a stream,
-keeping only the observations asked for.
+from where it is kept, keeping only the observations asked for.
 """
 
 from __future__ import annotations
@@ -59,6 +59,8 @@ import zipfile
 from collections.abc import Callable, Iterator
 from dataclasses import dataclass
 from datetime import date
+from pathlib import Path
+from typing import IO
 from xml.etree import ElementTree
 
 from meridian.operations import RateConvention
@@ -230,17 +232,27 @@ class Observation:
 
 
 def observations(
-    body: bytes, wanted: Callable[[date], bool] = lambda _: True
+    file: bytes | Path, wanted: Callable[[date], bool] = lambda _: True
 ) -> Iterator[Observation]:
     """Each value of the series in `SERIES` the file states on a day
     `wanted` keeps, in the file's order; a day with no value is no
-    observation. NotTheFile where the response is not the zip holding
-    H.15's data."""
+    observation. `file` is the zip as received, or where it is kept: read
+    from there, it is never held whole. NotTheFile where the response is not
+    the zip holding H.15's data."""
     try:
-        archive = zipfile.ZipFile(io.BytesIO(body))
-        member = archive.open(DATA)
-    except (zipfile.BadZipFile, KeyError) as wrong:
+        archive = zipfile.ZipFile(io.BytesIO(file) if isinstance(file, bytes) else file)
+    except zipfile.BadZipFile as wrong:
         raise NotTheFile(f"not H.15's SDMX zip holding {DATA}: {wrong}") from wrong
+    with archive:
+        try:
+            member = archive.open(DATA)
+        except KeyError as wrong:
+            raise NotTheFile(f"not H.15's SDMX zip holding {DATA}: {wrong}") from wrong
+        with member:
+            yield from _read(member, wanted)
+
+
+def _read(member: IO[bytes], wanted: Callable[[date], bool]) -> Iterator[Observation]:
     current: Series | None = None
     seen = 0
     try:

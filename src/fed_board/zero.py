@@ -35,6 +35,7 @@ import io
 from collections.abc import Callable, Iterator
 from dataclasses import dataclass
 from datetime import date
+from pathlib import Path
 
 #: The record the curve is recorded against, as the platform seeds it.
 CURVE = ("symbol", "feds200628", "frb")
@@ -58,13 +59,19 @@ class Point:
     value: str
 
 
-def points(body: bytes, wanted: Callable[[date], bool] = lambda _: True) -> Iterator[Point]:
+def points(file: bytes | Path, wanted: Callable[[date], bool] = lambda _: True) -> Iterator[Point]:
     """Each zero-coupon yield the file states on a day `wanted` keeps, by
-    date then tenor; a tenor left `NA` is no point. NotTheFile where the
-    response has no header naming the zero-coupon columns."""
+    date then tenor; a tenor left `NA` is no point. `file` is the CSV as
+    received, or where it is kept. NotTheFile where the response has no
+    header naming the zero-coupon columns."""
     # Read a line at a time, never the whole file as text: its memory is a
     # line's, whatever the file's size (it grows by a row a day).
-    lines = io.TextIOWrapper(io.BytesIO(body), encoding="utf-8", errors="replace", newline="")
+    raw = io.BytesIO(file) if isinstance(file, bytes) else file.open("rb")
+    with io.TextIOWrapper(raw, encoding="utf-8", errors="replace", newline="") as lines:
+        yield from _read(lines, wanted)
+
+
+def _read(lines: io.TextIOWrapper, wanted: Callable[[date], bool]) -> Iterator[Point]:
     header: list[str] | None = None
     for line in lines:
         if line.startswith("Date,"):

@@ -6,9 +6,12 @@ from __future__ import annotations
 
 import asyncio
 import gzip
+import time
+from collections.abc import Iterator
 from datetime import date
 from importlib import resources
 from pathlib import Path
+from typing import Any
 
 import pytest
 from meridian.operations import as_decimal
@@ -201,6 +204,97 @@ def test_a_file_pushed_is_not_pushed_again(tmp_path: Path) -> None:
     assert board.sources["fed_h15"].calls == 2
 
 
+def test_the_event_loop_answers_while_h15_is_read(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    """H.15's file is 70 MB of XML on the Board's site, read for seconds:
+    it is read beside the event loop, which answers everything else the
+    plugin serves -- its health check, its pages, the lake -- meanwhile."""
+    read = h15.observations
+
+    def slow(*args: Any, **kwargs: Any) -> Iterator[h15.Observation]:
+        time.sleep(0.5)  # a large file's read, holding whatever runs it
+        yield from read(*args, **kwargs)
+
+    monkeypatch.setattr(h15, "observations", slow)
+    recorder = Recorder(INSTANCE)
+    seeded(recorder)
+    board = rates(tmp_path, recorder)
+
+    async def run() -> list[float]:
+        gaps: list[float] = []
+        done = asyncio.Event()
+
+        async def tick() -> None:
+            last = time.monotonic()
+            while not done.is_set():
+                await asyncio.sleep(0.01)
+                now = time.monotonic()
+                gaps.append(now - last)
+                last = now
+
+        ticker = asyncio.create_task(tick())
+        await asyncio.sleep(0)
+        await board.check()
+        done.set()
+        await ticker
+        return gaps
+
+    gaps = asyncio.run(run())
+    assert max(gaps) < 0.25, f"the event loop went {max(gaps):.2f} s unanswered"
+    assert {r.meta.source.dataset for r in _sent(recorder)} == {H15_DATASET, ZERO_DATASET}
+
+
+def _reads(monkeypatch: pytest.MonkeyPatch) -> tuple[list[str], list[str]]:
+    """The kept records read back, and the files read, from here on."""
+    reads: list[str] = []
+    parsed: list[str] = []
+    monkeypatch.setattr(RawStore, "read", lambda self, key: reads.append(key))
+    for module, name in ((h15, "observations"), (zero, "points")):
+        held = getattr(module, name)
+
+        def counted(*args: Any, _held: Any = held, _name: str = name, **kwargs: Any) -> Any:
+            parsed.append(_name)
+            return _held(*args, **kwargs)
+
+        monkeypatch.setattr(module, name, counted)
+    return reads, parsed
+
+
+def test_a_304_reads_nothing_kept(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:
+    """A file pushed and answered 304 since is not read again: neither the
+    record kept of it nor the file."""
+    recorder = Recorder(INSTANCE)
+    seeded(recorder)
+    board = rates(tmp_path, recorder)
+    asyncio.run(board.check())
+    reads, parsed = _reads(monkeypatch)
+    asyncio.run(board.check())
+    assert board.sources["fed_h15"].calls == 2 and board.sources["fed_zero"].calls == 2
+    assert reads == [] and parsed == []
+
+
+def test_a_restart_answered_304_reads_no_record_back(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    """The next process, answered 304, pushes the file kept without reading
+    its record back (a record holds the file escaped in JSON, three times
+    its size to read), naming the same record as before."""
+    first = Recorder(INSTANCE)
+    seeded(first)
+    asyncio.run(rates(tmp_path, first).check())
+    again = Recorder(INSTANCE)
+    seeded(again)
+    board = rates(tmp_path, again)
+    board.read_noted()
+    reads, _ = _reads(monkeypatch)
+    asyncio.run(board.check())
+    assert reads == []
+    assert board.sources["fed_h15"].calls == 1
+    before = {r.meta.row_key: r.meta.raw.key for r in _sent(first)}
+    assert {r.meta.row_key: r.meta.raw.key for r in _sent(again)} == before
+
+
 def test_a_restart_asks_since_the_copy_kept_and_names_it(tmp_path: Path) -> None:
     """The next process asks with the Last-Modified noted, is answered 304,
     and records the same rows naming the same kept file: unchanged."""
@@ -314,6 +408,18 @@ def test_what_a_dataset_does_not_cover_is_declined(tmp_path: Path) -> None:
 
 def test_the_raw_store_keeps_a_zip_as_received(tmp_path: Path) -> None:
     board = rates(tmp_path)
-    body = asyncio.run(board.file("fed_h15"))
-    assert body == _file("FRB_h15_xml.zip")
-    assert RawStore(tmp_path).body(board.sources["fed_h15"].raw_key) == body
+    held = asyncio.run(board.file("fed_h15"))
+    assert held is not None and held.read_bytes() == _file("FRB_h15_xml.zip")
+    assert RawStore(tmp_path).body(board.sources["fed_h15"].raw_key) == held.read_bytes()
+
+
+def test_only_the_file_kept_last_is_kept_as_received(tmp_path: Path) -> None:
+    """Beside its record, each file is kept as received once: the copy the
+    Board answered before is let go of when it answers a new one."""
+    board = rates(tmp_path)
+    first = asyncio.run(board.file("fed_zero"))
+    board.sources["fed_zero"].last_modified = ""  # asked for anew: answered 200
+    second = asyncio.run(board.file("fed_zero"))
+    assert first is not None and second is not None and first != second
+    assert not first.exists() and second.exists()
+    assert board.held("fed_zero") == second

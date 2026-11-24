@@ -19,6 +19,15 @@ as the row's next version. Each rate names the file it was first read from
 with its value, and that file's published time (raw.Firsts), so a value read
 again is answered unchanged.
 
+**Memory and the event loop.** Beside the record kept of each file (raw.py),
+which holds it escaped in JSON, the file is kept as received
+(`current/<dataset>-<record>`), and read from there a piece at a time: a
+304, a restart's push and a want hold neither the file nor its record. A
+file answered 304 since it was pushed is not read at all. Keeping a file and
+reading it -- H.15's is 70 MB of XML, seconds to read -- run beside the event
+loop, which answers the plugin's health check, its pages and the lake
+meanwhile; one read of each file at a time.
+
 **Subjects.** Each record is resolved by the identifiers the platform seeds
 (`symbol`, its administrator's code, at its source), once per process; one
 the deployment does not hold is reported missing, once a day, and its rows
@@ -33,11 +42,13 @@ dataset's history `beyond_history`; a day the file holds no value for
 
 from __future__ import annotations
 
+import asyncio
 import json
 import logging
-from collections.abc import Callable, Sequence
+from collections.abc import Callable, Iterator, Sequence
 from dataclasses import dataclass, field
 from datetime import date, datetime, timedelta
+from pathlib import Path
 from typing import Any
 from zoneinfo import ZoneInfo
 
@@ -47,7 +58,7 @@ from meridian.roles import data
 from meridian.roles.data import rates
 
 from . import h15, zero
-from .board import H15_FILE, ZERO_FILE, Board, BoardUnreachable, utc_now
+from .board import H15_FILE, ZERO_FILE, Board, BoardUnreachable, Fetched, utc_now
 from .declared import H15, H15_HISTORY, RATES_ZONE, ZERO, ZERO_HISTORY
 from .raw import Firsts, RawStore
 from .release import last_modified_ns
@@ -60,6 +71,11 @@ SOURCE = "fed-board"
 PUSH_DAYS = 31
 #: The most days one want is answered for: a year.
 MOST_DAYS = 366
+#: Where each file is kept as received, at the storage's root.
+COPIES = "current"
+#: How many values a push holds while it finds the file's latest day before
+#: it lets go of those too old.
+PRUNE = 4096
 
 NEW_YORK = ZoneInfo(RATES_ZONE)
 
@@ -118,13 +134,45 @@ class Source:
     lags: list[int] = field(default_factory=list)
 
 
-def latest_day(key: str, body: bytes) -> date | None:
-    """The latest day the dataset's file states a value it records on."""
+def parse(
+    key: str, file: bytes | Path, wanted: Callable[[date], bool] = lambda _: True
+) -> Iterator[Any]:
+    """The values the dataset's file states on the days `wanted` keeps: H.15's
+    observations, the zero curve's points, each with its `day`."""
     if key == H15:
-        days = (o.day for o in h15.observations(body))
-    else:
-        days = (p.day for p in zero.points(body))
-    return max(days, default=None)
+        return h15.observations(file, wanted)
+    return zero.points(file, wanted)
+
+
+def recent(key: str, file: bytes | Path, days: int) -> tuple[date | None, list[Any]]:
+    """The latest day the dataset's file states a value on, and its values on
+    the `days` days to it, in the file's order: read once, holding no more
+    than those (and at most `PRUNE` more)."""
+    latest: date | None = None
+    cut = date.min
+    kept: list[Any] = []
+    most = PRUNE
+    for value in parse(key, file):
+        if latest is None or value.day > latest:
+            latest = value.day
+            cut = latest - timedelta(days=days)
+        if value.day > cut:
+            kept.append(value)
+            if len(kept) > most:
+                kept = [v for v in kept if v.day > cut]
+                most = max(PRUNE, 2 * len(kept))
+    return latest, [v for v in kept if v.day > cut]
+
+
+@dataclass(frozen=True)
+class Read:
+    """What was read of a file kept: the record it was kept under and its
+    Last-Modified, its latest day where that was asked, and its values."""
+
+    raw_key: str
+    last_modified: str
+    latest: date | None
+    values: list[Any]
 
 
 class Rates:
@@ -150,6 +198,12 @@ class Rates:
         )
         self.sources = {key: Source(key) for key in FILES}
         self._built_on = board.mode
+        #: One read of each file at a time; a copy no longer kept is let go
+        #: of only between reads.
+        self._reading = {key: asyncio.Lock() for key in FILES}
+        #: One request for each file at a time: a want arriving while a push
+        #: asks for the file waits for it and reads the copy it kept.
+        self._asking = {key: asyncio.Lock() for key in FILES}
 
     def read_noted(self) -> None:
         """What was noted of each file, read from storage once the plugin has
@@ -190,13 +244,49 @@ class Rates:
         )
         partial.replace(target)
 
-    async def file(self, key: str) -> bytes | None:
-        """The dataset's file as the Board serves it now: asked for since the
-        copy kept, which answers where it has not changed; None, said on the
-        source, where neither can be read."""
+    def _copy(self, key: str, raw_key: str) -> Path:
+        """Where the file kept under `raw_key` is kept as received."""
+        name = Path(raw_key).name.removesuffix(".json.gz")
+        return self.raw.root / COPIES / f"{key}-{name}"
+
+    def held(self, key: str) -> Path | None:
+        """The dataset's file kept last, as received, where storage holds both
+        it and its record; None otherwise. Nothing is read."""
+        source = self.sources[key]
+        if not source.raw_key or not self.raw.holds(source.raw_key):
+            return None
+        copy = self._copy(key, source.raw_key)
+        return copy if copy.is_file() else None
+
+    def _keep(self, key: str, fetched: Fetched) -> tuple[str, Path]:
+        """Keep a file the Board answered: its record, then the file as
+        received; the record's key and where the file is."""
+        raw_key = self.raw.keep(fetched)
+        copy = self._copy(key, raw_key)
+        copy.parent.mkdir(parents=True, exist_ok=True)
+        partial = copy.with_name(copy.name + ".partial")
+        partial.write_bytes(fetched.body)
+        partial.replace(copy)
+        return raw_key, copy
+
+    def _let_go(self, key: str, copy: Path) -> None:
+        """Remove the dataset's files kept before `copy`."""
+        for older in copy.parent.glob(f"{key}-*"):
+            if older != copy:
+                older.unlink(missing_ok=True)
+
+    async def file(self, key: str) -> Path | None:
+        """Where the dataset's file as the Board serves it now is kept: asked
+        for since the copy kept, which answers where it has not changed;
+        None, said on the source, where neither can be read. The file is not
+        read here."""
+        async with self._asking[key]:
+            return await self._ask(key)
+
+    async def _ask(self, key: str) -> Path | None:
         source = self.sources[key]
         source.checked_at = self.now()
-        held = self.raw.body(source.raw_key) if source.raw_key else None
+        held = self.held(key)
         since = source.last_modified if held is not None else ""
         try:
             fetched = await self.board.get(FILES[key], since=since)
@@ -211,11 +301,32 @@ class Rates:
         if fetched.status != 200:
             source.error = f"{fetched.url} answered {fetched.status}"
             return held
-        source.raw_key = self.raw.keep(fetched)
+        raw_key, copy = await asyncio.to_thread(self._keep, key, fetched)
+        source.raw_key = raw_key
         source.last_modified = fetched.last_modified
         source.error = ""
         self._note(source)
-        return fetched.body
+        async with self._reading[key]:
+            self._let_go(key, copy)
+        return copy
+
+    async def read(
+        self, key: str, wanted: Callable[[date], bool] | None = None, days: int = 0
+    ) -> Read | None:
+        """The dataset's file kept last, read beside the event loop: its values
+        on the days `wanted` keeps; or, with no `wanted`, its latest day and
+        its values on the `days` days to it. None where none is kept."""
+        source = self.sources[key]
+        async with self._reading[key]:
+            file = self.held(key)
+            if file is None:
+                return None
+            raw_key, last_modified = source.raw_key, source.last_modified
+            if wanted is not None:
+                values = await asyncio.to_thread(lambda: list(parse(key, file, wanted)))
+                return Read(raw_key, last_modified, None, values)
+            latest, values = await asyncio.to_thread(recent, key, file, days)
+            return Read(raw_key, last_modified, latest, values)
 
     # ── Rows ────────────────────────────────────────────────────────────
 
@@ -232,23 +343,23 @@ class Rates:
     async def rows(
         self,
         key: str,
-        body: bytes,
-        wanted: Callable[[date], bool],
+        values: Sequence[Any],
+        raw_key: str,
+        last_modified: str,
         subjects: set[str] | None = None,
     ) -> list[Rate]:
-        """The dataset's rows the file states on the days `wanted` keeps, for
-        `subjects` where given; each naming the file it was first read from
-        with its value."""
-        source = self.sources[key]
+        """The dataset's rows for the `values` read from the file kept under
+        `raw_key`, for `subjects` where given; each naming the file it was
+        first read from with its value."""
         found = await self.resolved(key)
-        published = last_modified_ns(source.last_modified)
+        published = last_modified_ns(last_modified)
         firsts = Firsts(self.raw, key, PUSH_DAYS * 2)
         out: list[Rate] = []
 
         def keep(subject: str, series: str, day: date, value: str, **given: Any) -> None:
             if not subject or (subjects is not None and subject not in subjects):
                 return
-            raw_key, at = firsts.first(series, day.isoformat(), value, source.raw_key, published)
+            first, at = firsts.first(series, day.isoformat(), value, raw_key, published)
             out.append(
                 self.feed.rate(
                     subject,
@@ -256,7 +367,7 @@ class Rates:
                     business_date=day,
                     published_ns=at,
                     series=series,
-                    raw_key=raw_key,
+                    raw_key=first,
                     value=value,
                     **given,
                 )
@@ -264,7 +375,7 @@ class Rates:
 
         try:
             if key == H15:
-                for seen in h15.observations(body, wanted):
+                for seen in values:
                     series = h15.BY_KEY[seen.series]
                     keep(
                         found.get(series.subject, ""),
@@ -276,7 +387,7 @@ class Rates:
                         tenor=series.tenor or None,
                     )
             else:
-                for point in zero.points(body, wanted):
+                for point in values:
                     keep(
                         found.get(zero.CURVE, ""),
                         point.column,
@@ -310,25 +421,25 @@ class Rates:
         for key in FILES:
             try:
                 await self._check(key)
-            except (h15.NotTheFile, zero.NotTheFile) as wrong:
+            except (h15.NotTheFile, zero.NotTheFile, OSError) as wrong:
                 self.sources[key].error = str(wrong)
                 log.warning("%s did not read: %s", LABELS[key], wrong)
 
     async def _check(self, key: str) -> None:
         source = self.sources[key]
-        body = await self.file(key)
-        if body is None or source.pushed == source.raw_key:
+        if await self.file(key) is None or source.pushed == source.raw_key:
             return
-        latest = latest_day(key, body)
-        source.latest_day = latest
-        if latest is None:
-            source.pushed = source.raw_key
+        read = await self.read(key, days=PUSH_DAYS)
+        if read is None:
             return
-        cut = latest - timedelta(days=PUSH_DAYS)
-        pushed = await self.rows(key, body, lambda day: day > cut)
+        source.latest_day = read.latest
+        if read.latest is None:
+            source.pushed = read.raw_key
+            return
+        pushed = await self.rows(key, read.values, read.raw_key, read.last_modified)
         await self.record(key, pushed)
-        source.pushed = source.raw_key
-        log.info("%s: %d rates pushed, to %s", LABELS[key], len(pushed), latest)
+        source.pushed = read.raw_key
+        log.info("%s: %d rates pushed, to %s", LABELS[key], len(pushed), read.latest)
 
     # ── Wants ───────────────────────────────────────────────────────────
 
@@ -358,21 +469,22 @@ class Rates:
         if not mine:
             return declined
         source = self.sources[key]
-        body = self.raw.body(source.raw_key) if source.raw_key else None
-        if body is None:
-            body = await self.file(key)
-        if body is None:
-            return {**declined, **{s: "source_silent" for s in mine}}
+        silent = {**declined, **{s: "source_silent" for s in mine}}
+        if self.held(key) is None and await self.file(key) is None:
+            return silent
         days = self._days(want, source.latest_day)
         oldest = self.now().astimezone(NEW_YORK).date() - timedelta(days=HISTORIES[key])
         if days and all(d < oldest for d in days):
             return {**declined, **{s: "beyond_history" for s in mine}}
-        if not days:
+        if days:
+            asked_days = set(days)
+            read = await self.read(key, asked_days.__contains__)
+        else:
             # The latest: the file's last day.
-            last = latest_day(key, body)
-            days = [last] if last is not None else []
-        asked_days = set(days)
-        rows = await self.rows(key, body, lambda d: d in asked_days, mine)
+            read = await self.read(key, days=1)
+        if read is None:
+            return silent
+        rows = await self.rows(key, read.values, read.raw_key, read.last_modified, mine)
         await self.record(key, rows, want.want_id)
         answered = {r.meta.subjects[0].entity_id for r in rows if r.meta is not None}
         return {**declined, **{s: "source_silent" for s in mine if s not in answered}}
